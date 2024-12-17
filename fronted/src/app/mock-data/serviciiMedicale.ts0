@@ -1,0 +1,229 @@
+export const serviciiMedicale = [
+  {
+    title: "Cardiologie",
+    description:
+      "Specialitatea medicală care se ocupă cu diagnosticarea și tratamentul bolilor inimii și ale vaselor de sânge, inclusiv hipertensiune, aritmii și insuficiență cardiacă.",
+    prezentare:
+      "Cardiologia reprezintă o ramură esențială a medicinei, având ca obiectiv diagnosticarea, tratarea și prevenirea bolilor inimii și ale sistemului circulator. La Vessa Hospital Timișoara, secția de Cardiologie oferă pacienților acces la servicii moderne, utilizând tehnologii de ultimă generație și metode avansate de tratament. Indiferent de complexitatea afecțiunilor – de la hipertensiune arterială și aritmii până la insuficiență cardiacă sau boala arterială coronariană – echipa noastră multidisciplinară pune accent pe o abordare personalizată și pe educația pacientului pentru menținerea unei inimi sănătoase. Pe lângă tratamentul afecțiunilor deja diagnosticate, ne concentrăm și pe prevenție, ajutând pacienții să adopte un stil de viață sănătos și să reducă riscurile asociate bolilor cardiovasculare.",
+    statistici: [
+      "Bolile cardiovasculare sunt principala cauză de mortalitate la nivel global, fiind responsabile de aproximativ 18 milioane de decese anual (Organizația Mondială a Sănătății).",
+      "Hipertensiunea arterială afectează aproximativ 1 din 3 adulți.",
+      "În Europa, aproximativ 45% dintre decese sunt cauzate de afecțiuni cardiovasculare.",
+      "În Europa, aproximativ 45% dintre decese sunt cauzate de afecțiuni cardiovasculare.",
+    ],
+    title3: "cardiolog",
+    text3:
+      "Medicii cardiologi din cadrul Vessa Hospital Timișoara sunt experți în diagnosticarea și gestionarea unui spectru larg de afecțiuni ale inimii și vaselor de sânge. Aceștia sunt instruiți să interpreteze investigații complexe, să efectueze intervenții minim invazive și să colaboreze cu alți specialiști pentru un tratament complet. Cu o abordare bazată pe empatie și profesionalism, medicii cardiologi sprijină pacienții de la diagnosticare până la recuperare, punând accent pe educația pacientului și prevenirea complicațiilor. Fiecare caz este tratat individual, iar metodele moderne utilizate asigură atât precizia diagnosticelor, cât și eficiența tratamentelor, indiferent de gradul de severitate al afecțiunii.",
+    title4: "cardiologi",
+    text4:
+      "În cadrul secției de Cardiologie, medicii efectuează o gamă variată de teste pentru a evalua funcția inimii și starea generală a sistemului cardiovascular. Investigațiile includ electrocardiograma (ECG), folosită pentru monitorizarea activității electrice a inimii, și ecocardiografia, care oferă imagini detaliate ale structurii și funcției inimii. Alte teste esențiale includ testul de efort, pentru detectarea ischemiei miocardice, monitorizarea Holter, utilizată pentru depistarea aritmiilor pe termen lung, și coronarografia, o procedură minim invazivă ce vizualizează arterele coronare. În plus, medicii cardiologi recomandă analize de sânge specifice, precum măsurarea nivelului de troponină, colesterol și markeri inflamatori, toate acestea contribuind la stabilirea unui diagnostic corect și complet.",
+    title5: "cardiolog",
+    text5:
+      "Consultația la un medic cardiolog este recomandată ori de câte ori apar simptome care pot indica o problemă cardiovasculară, precum durerea în piept, dificultăți de respirație, palpitații sau amețeli inexplicabile. De asemenea, dacă ai antecedente familiale de boli de inimă, hipertensiune arterială sau diabet, este esențial să efectuezi controale periodice. Vizita la cardiolog devine obligatorie după un eveniment cardiovascular, cum ar fi un infarct miocardic, pentru monitorizare și recuperare. Totodată, persoanele cu un stil de viață sedentar, fumătorii sau cei care suferă de obezitate ar trebui să solicite o evaluare cardiologică pentru a preveni dezvoltarea unor afecțiuni grave. La Vessa Hospital Timișoara, punem accent pe diagnosticarea precoce și pe tratamente adaptate nevoilor fiecărui pacient, oferindu-le acestora șansa unei vieți mai sănătoase și mai sigure.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Cardiologie.svg",
+    metaTitle: "Cardiologie - Tratament Inimă | VESSA Hospital Timișoara",
+    metaDescription:
+      "Află despre serviciile de cardiologie de la VESSA Hospital Timișoara. Consult cardiologic, electrocardiogramă, ecocardiografie, Holter EKG și alte teste avansate pentru sănătatea inimii.",
+    keywords:
+      "cardiologie, afecțiuni cardiovasculare, boli coronariene, hipertensiune arterială, aritmii, ecocardiografie, Holter EKG, consult cardiologic, test de efort, stimulator cardiac, prevenire boli inimă, VESSA Hospital Timișoara",
+    slug: "cardiologie",
+  },
+  {
+    title: "Electrofiziologie Cardiacă",
+    description:
+      "Se ocupă cu diagnosticul și tratamentul tulburărilor de ritm cardiac, cum ar fi aritmiile. Aceasta utilizează tehnici avansate, inclusiv ablația prin cateter, pentru a restabili ritmul normal al inimii.",
+    prezentare:
+      "Electrofiziologia cardiacă este o ramură a cardiologiei care se concentrează pe studiul ritmurilor inimii și al tulburărilor electrice ale acesteia. Această specialitate implică diagnosticarea și tratamentul aritmiilor, inclusiv fibrilația atrială, tahicardiile și bradicardiile, folosind tehnici avansate precum electrofiziologia invazivă. Procedurile specifice, cum ar fi ablația prin cateter, ajută la corectarea ritmurilor cardiace anormale. Scopul este de a restabili ritmul normal al inimii și de a preveni complicațiile grave asociate cu tulburările de ritm.",
+    statistici: [
+      "Aproximativ 1 din 4 persoane va dezvolta o formă de aritmie pe parcursul vieții.",
+      "Ablația prin cateter este un tratament eficient pentru mulți pacienți cu aritmii persistente.",
+    ],
+    title3: "specialist electrofiziologie",
+    text3:
+      "Medicul specialist în electrofiziologie cardiacă este antrenat pentru a evalua și trata tulburările electrice ale inimii, folosind tehnici moderne pentru diagnostic și tratament. Acest specialist poate efectua teste invazive și non-invazive, cum ar fi electrocardiograma sau studiile electrofiziologice pentru a identifica și trata aritmiile.",
+    title4: "electrofiziologi",
+    text4:
+      "Electrocardiograma (EKG), Studiile electrofiziologice invazive, Monitorizarea Holter, Teste de stres cardiac, Ablație prin cateter",
+    title5: "când să consulți un electrofiziolog",
+    text5:
+      "Consultă un specialist în electrofiziologie cardiacă dacă ai palpitații frecvente, amețeli, leșin sau orice simptom care sugerează un ritm cardiac anormal. De asemenea, este recomandat să te adresezi unui medic dacă ai un istoric de aritmii sau dacă medicul tău de familie consideră că ai un risc crescut pentru aceste afecțiuni.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Electrofiziologie.svg",
+    metaTitle: "Electrofiziologie Cardiacă | VESSA Hospital Timișoara",
+    metaDescription:
+      "Electrofiziologia cardiacă la VESSA Hospital Timișoara: diagnostic și tratament avansat pentru aritmii. Servicii precum ablația prin cateter, studiile electrofiziologice și implantarea de stimulator cardiac.",
+    keywords:
+      "electrofiziologie cardiacă, aritmii cardiace, fibrilație atrială, tahicardie, bradicardie, ablație prin cateter, studii electrofiziologice, monitorizare Holter, test de efort, stimulator cardiac, VESSA Hospital Timișoara",
+    slug: "electrofiziologie-cardiaca",
+  },
+  {
+    title: "Neurochirurgie",
+    description:
+      "Tratează afecțiunile creierului, măduvei spinării și nervilor periferici prin intervenții chirurgicale. Specialiștii neurochirurgi folosesc tehnici avansate pentru a rezolva probleme neurologice complexe.",
+    prezentare:
+      "Neurochirurgia este ramura medicină care se ocupă cu diagnosticarea și tratamentul intervențiilor chirurgicale asupra sistemului nervos central și periferic, inclusiv creierul, coloana vertebrală și nervii. Specialiștii în neurochirurgie tratează afecțiuni complexe, cum ar fi tumori cerebrale, hernii de disc, traumatisme craniene și afecțiuni ale coloanei vertebrale. Intervențiile pot varia de la proceduri minore la operații majore, având scopul de a îmbunătăți calitatea vieții pacienților și a le reduce riscurile asociate cu afecțiunile neurologice.",
+    statistici: [
+      "Aproximativ 1 din 10 persoane suferă de afecțiuni ale coloanei vertebrale.",
+      "Tumorile cerebrale sunt o cauză importantă de morbiditate și mortalitate la nivel global.",
+    ],
+    title3: "neurochirurg",
+    text3:
+      "Neurochirurgii sunt specializați în realizarea intervențiilor chirurgicale pe creier, măduva spinării și nervi periferici. Aceștia folosesc tehnici avansate pentru diagnostic și tratament, asigurându-se că pacienții beneficiază de cele mai bune soluții în cazuri de urgență sau afecțiuni cronice.",
+    title4: "neurochirurgicale",
+    text4:
+      "RMN (rezonanță magnetică nucleară), CT (tomografie computerizată), Electroencefalograma (EEG), EMG (electromiografie), Teste neuropsihologice",
+    title5: "când să consulți un neurochirurg",
+    text5:
+      "Este recomandat să consulti un neurochirurg dacă te confrunți cu dureri de cap severe și persistente, amețeli, pierderi de echilibru, slăbiciune musculară, amorțeală sau dificultăți de mișcare, semne ce pot indica probleme neurologice serioase.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Neurochirurgie.svg",
+    metaTitle: "Neurochirurgie - Hernie de Disc | VESSA Hospital Timișoara",
+    metaDescription:
+      "Neurochirurgie la VESSA Hospital Timișoara: diagnostic și tratament pentru tumori cerebrale, hernii de disc, traumatisme craniene, hidrocefalie și alte afecțiuni ale sistemului nervos. Intervenții de înaltă specialitate.",
+    keywords:
+      "neurochirurgie, tumori cerebrale, hernie de disc, traumatisme craniene, hidrocefalie, intervenții chirurgicale, sistem nervos, diagnostic și tratament, VESSA Hospital Timișoara",
+    slug: "neurochirurgie",
+  },
+  {
+    title: "Chirurgie generală",
+    description:
+      "Se ocupă cu tratamentul afecțiunilor care necesită intervenții chirurgicale pe organele interne, cum ar fi stomacul, ficatul sau intestinul.",
+    prezentare:
+      "Chirurgia generală este specialitatea medicală care se ocupă cu diagnosticarea și tratamentul afecțiunilor ce necesită intervenții chirurgicale, incluzând proceduri pe organele interne, cum ar fi stomacul, intestinele, ficatul, pancreasul și vezica biliară. Chirurgii generali sunt specializați în tratamente pentru hernii, apendicite, infecții, traumatisme și cancer, având un rol esențial în gestionarea afecțiunilor care necesită intervenție rapidă și eficientă.",
+    statistici: [
+      "Aproape 30% din populație va necesita o intervenție chirurgicală generală pe parcursul vieții.",
+      "Herniile reprezintă una dintre cele mai frecvente afecțiuni tratate chirurgical.",
+    ],
+    title3: "chirurg",
+    text3:
+      "Chirurgii generali sunt experți în realizarea intervențiilor pe diverse organe interne. La VessaHospital, echipa noastră de chirurgi generali utilizează tehnici moderne pentru a efectua proceduri minim invazive și tradiționale, oferind pacienților tratamente sigure și eficiente.",
+    title4: "chirurgie generală",
+    text4:
+      "Ecografie abdominală, Tomografie computerizată (CT), Analize de sânge, Endoscopie, Examinări imagistice pentru evaluarea organelor interne",
+    title5: "chirurg general",
+    text5:
+      "Consultă un chirurg general dacă ai dureri abdominale persistente, umflături sau dureri la nivelul abdomenului, greață sau vărsături frecvente, sânge în scaun sau orice simptom care sugerează o afecțiune care necesită intervenție chirurgicală.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Medicina-Interna.svg",
+    metaTitle: "Chirurgie Generală - Apendicite | VESSA Hospital Timișoara",
+    metaDescription:
+      "Chirurgie generală la VESSA Hospital Timișoara: tratamente pentru hernii, apendicite, tumori intraabdominale, intervenții pe stomac, ficat, pancreas și alte organe interne. Proceduri minim invazive pentru o recuperare rapidă.",
+    keywords:
+      "chirurgie generală, tratament hernie inghinală, intervenție chirurgicală abdominală, apendicectomie, colecistectomie, gastrectomie, chirurgie laparoscopică, tratament tumori intraabdominale, chirurgie minim invazivă, tratament hemoroizi, chirurgie pentru chisturi ovariene, tratament hernii abdominale, tratament cancer de sân, chirurgie abdominală, VESSA Hospital Timișoara",
+    slug: "chirurgie-generala",
+  },
+  {
+    title: "Endocrinologie",
+    description:
+      "Este ramura medicinei care se ocupă cu diagnosticul și tratamentul afecțiunilor glandelor endocrine, care produc hormoni.",
+    prezentare:
+      "Endocrinologia se ocupă cu diagnosticarea și tratarea afecțiunilor care afectează glandele endocrine și hormonii acestora. Aceste afecțiuni includ diabetul, tulburările tiroidiene, sindromul Cushing, menopauza precoce și problemele de fertilitate. Endocrinologii sunt specializați în stabilirea unui echilibru hormonal corect, utilizând tratamente medicamentoase și terapii hormonale personalizate.",
+    statistici: [
+      "Aproape 500 milioane de persoane trăiesc cu diabet la nivel global.",
+      "Bolile tiroidiene afectează 1 din 10 persoane, în special femeile.",
+    ],
+    title3: "endocrinolog",
+    text3:
+      "Endocrinologul este specialist în diagnosticul și tratamentul afecțiunilor hormonale, ajutând pacienții să mențină un echilibru hormonal sănătos.",
+    title4: "endocrinologie",
+    text4:
+      "Analize de sânge (niveluri hormonale), Ecografie tiroidiană, Teste de toleranță la glucoză, RMN al glandelor endocrine",
+    title5: "endocrinolog",
+    text5:
+      "Consultă un endocrinolog dacă ai simptome precum oboseală inexplicabilă, creștere în greutate sau pierdere în greutate rapidă, modificări ale ciclului menstrual sau simptome legate de diabet sau tiroidă.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Endocrinologie.svg",
+    metaTitle: "Endocrinologie - Diabet si Tiroida | VESSA Hospital Timișoara",
+    metaDescription:
+      "Consultă specialiștii în endocrinologie de la VESSA Hospital Timișoara pentru diagnosticul și tratamentul afecțiunilor hormonale, precum diabet, tulburări tiroidiene, sindromul Cushing, menopauza precoce și problemele de fertilitate.",
+    keywords:
+      "endocrinologie, tratament diabet, tulburări tiroidiene, sindromul Cushing, menopauza precoce, probleme fertilitate, echilibru hormonal, tratament hormonal personalizat, analize sânge hormoni, ecografie tiroidiană, test toleranță glucoză, RMN glande endocrine, endocrinolog VESSA Hospital, VESSA Hospital Timișoara",
+    slug: "endocrinologie",
+  },
+  {
+    title: "Ortopedie",
+    description:
+      "Ortopedia se ocupă cu diagnosticul și tratamentul afecțiunilor sistemului musculo-scheletic, inclusiv oase, articulații și mușchi.",
+    prezentare:
+      "Ortopedia este ramura medicală care se ocupă cu diagnosticul, tratamentul și prevenirea afecțiunilor sistemului musculo-scheletic, inclusiv oase, articulații, ligamente, tendoane și mușchi. Ortopedii tratează probleme precum fracturi, entorse, afecțiuni ale coloanei vertebrale, artrită și deformări congenitale. Aceștia folosesc atât metode chirurgicale, cât și non-chirurgicale pentru a ajuta pacienții să recupereze mobilitatea și să reducă durerea, îmbunătățind astfel calitatea vieții.",
+    statistici: [
+      "1 din 3 persoane va suferi de o afecțiune musculo-scheletică de-a lungul vieții.",
+      "Artrita este una dintre cele mai frecvente cauze ale dizabilității.",
+    ],
+    title3: "chirurg ortoped",
+    text3:
+      "Chirurgii ortopezi sunt specializați în tratamentul afecțiunilor sistemului musculo-scheletic. Aceștia efectuează atât intervenții chirurgicale, cât și tratamente conservatoare pentru a trata fracturile, leziunile ligamentare și alte afecțiuni.",
+    title4: "ortopedie",
+    text4:
+      "Radiografie, RMN (rezonanță magnetică), Tomografie computerizată (CT), Ecografie musculo-scheletică",
+    title5: "medic ortoped",
+    text5:
+      "Este recomandat să consulți un ortoped dacă ai dureri persistente ale articulațiilor sau oaselor, dificultăți de mișcare, umflături sau deformări ale membrelor, sau dacă ai suferit o leziune recentă.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Ortopedie.svg",
+    metaTitle: "Ortopedie - Afecțiuni Scheletice | VESSA Hospital Timișoara",
+    metaDescription:
+      "Consultă specialiștii în ortopedie de la VESSA Hospital Timișoara pentru tratamente chirurgicale și non-chirurgicale pentru afecțiuni musculo-scheletice, inclusiv fracturi, artrită, afecțiuni ale coloanei vertebrale și deformări congenitale.",
+    keywords:
+      "ortopedie, tratament fracturi, artroplastii șold, chirurgie genunchi, tratament artrită, chirurgie ortopedică, afecțiuni musculo-scheletice, tratament leziuni ligamentare, artroscopie genunchi, sutură tendon Achilean, infiltrație acid hialuronic, chirurgie deformități picior, osteotomie hallux valgus, tratament sindrom tunel carpian, artroplastie totală genunchi, reconstrucție ligamentară, VESSA Hospital Timișoara",
+    slug: "ortopedie",
+  },
+  {
+    title: "Medicină internă",
+    description:
+      "Medicina internă se ocupă cu diagnosticarea și tratamentul afecțiunilor interne ale organismului, inclusiv boli ale inimii, plămânilor, ficatului și rinichilor.",
+    prezentare:
+      "Medicina internă se concentrează pe diagnosticarea și tratamentul afecțiunilor interne ale corpului, care nu necesită intervenții chirurgicale. Aceasta include boli ale sistemului cardiovascular, respirator, digestiv, endocrin și renal. Medicii internisti sunt experți în gestionarea afecțiunilor cronice și complexe, coordonând tratamentele pentru multiple condiții ce pot afecta diverse organe ale corpului.",
+    statistici: [
+      "Aproape 60% din pacienții care se prezintă la medic au afecțiuni ce necesită diagnosticare și tratament internist.",
+      "Bolile cardiovasculare sunt principala cauză de deces la nivel global.",
+    ],
+    title3: "medic internist",
+    text3:
+      "Medicul internist se ocupă cu diagnosticarea și tratamentul afecțiunilor multiple, gestionând boala cronică, monitorizând evoluția bolilor și coordonând tratamentele între diverse specialități.",
+    title4: "medicină internă",
+    text4:
+      "Analize de sânge (colesterol, glicemie, enzime hepatice, etc.), Electrocardiogramă (EKG), Radiografie toracică, Ecografie abdominală, Teste funcționale pulmonare",
+    title5: "internist",
+    text5:
+      "Consultă un medic internist dacă ai simptome persistente, cum ar fi oboseală inexplicabilă, dureri în piept, dificultăți de respirație, dureri abdominale sau probleme de digestie.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Medicina-Interna.svg",
+    metaTitle:
+      "Medicină Internă - Afecțiuni Cronice | VESSA Hospital Timișoara",
+    metaDescription:
+      "Consultă medicii internisti de la VESSA Hospital Timișoara pentru diagnosticarea și tratamentul afecțiunilor cardiovasculare, respiratorii, digestive și cronice, folosind analize și investigații imagistice moderne.",
+    keywords:
+      "medicină internă, tratament afecțiuni cardiovasculare, diagnosticare boli respiratorii, tratament afecțiuni digestive, medic internist, tratament boli cronice, analize sânge colesterol, glicemie test, ecografie abdominală, electrocardiogramă EKG, investigații imagistice, boli renale tratament, consult medic internist, VESSA Hospital Timișoara, diagnosticare boli cronice",
+    slug: "medicina-interna",
+  },
+  {
+    title: "Gastroenterologie",
+    description:
+      "Gastroenterologia se ocupă cu diagnosticarea și tratamentul bolilor tractului digestiv, inclusiv afecțiuni ale stomacului, ficatului, intestinelor și pancreasului.",
+    prezentare:
+      "Gastroenterologia este specialitatea medicală care se ocupă cu diagnosticul și tratamentul afecțiunilor tractului digestiv, incluzând esofagul, stomacul, ficatul, pancreasul, intestinul subțire și gros, precum și rectul. Gastroenterologii sunt experți în gestionarea bolilor precum refluxul gastroesofagian, sindromul colonului iritabil, hepatitele, ulcerul gastric și cancerul gastro-intestinal. Tratamentul include adesea metode non-chirurgicale, precum medicație, dietă și proceduri endoscopice.",
+    statistici: [
+      "Aproape 40% din populație suferă de tulburări gastrointestinale.",
+      "Cancerul colorectal este a doua cauză principală de deces din cauza cancerului în lume.",
+    ],
+    title3: "gastroenterolog",
+    text3:
+      "Gastroenterologii sunt specializați în diagnosticarea și tratamentul afecțiunilor tractului digestiv, folosind atât metode medicamentoase, cât și proceduri endoscopice pentru a trata condiții complexe.",
+    title4: "gastroenterologice",
+    text4:
+      "Endoscopie digestivă, Colonoscopie, Ecografie abdominală, Analize de sânge pentru hepatită și enzime hepatice, Teste pentru intoleranțe alimentare",
+    title5: "gastroenterolog",
+    text5:
+      "Consultă un gastroenterolog dacă ai simptome precum dureri abdominale persistente, balonare, greață, vărsături, diaree cronică sau sânge în scaun.",
+    buttonText: "Servicii medicale",
+    imageUrl: "/images/Gastroenterologie.svg",
+    metaTitle: "Gastroenterologie -  Ulcer, Cancer | VESSA Hospital Timișoara",
+    metaDescription:
+      "Consultă gastroenterologii de la VESSA Hospital Timișoara pentru diagnosticarea și tratamentul afecțiunilor gastrointestinale, inclusiv reflux gastroesofagian, sindromul colonului iritabil, hepatite și cancer gastro-intestinal, folosind tehnici moderne precum endoscopia și analizele de sânge.",
+    keywords:
+      "gastroenterologie, tratament reflux gastroesofagian, tratament sindrom colon iritabil, hepatite, ulcer gastric, cancer gastrointestinal, endoscopie digestivă, colonoscopie, ecografie abdominală, teste hepatită, analize enzime hepatice, intoleranțe alimentare, consult gastroenterolog, VESSA Hospital Timișoara, biopsie gastrică, scleroterapie hemoroizi, sigmoidoscopie",
+    slug: "gastroenterologie",
+  },
+];

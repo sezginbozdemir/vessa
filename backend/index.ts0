@@ -1,0 +1,94 @@
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+import authRoutes from "./api/auth";
+import appointmentRoutes from "./api/appointmentRoutes";
+
+// Load environment variables from .env file
+dotenv.config(); // Load environment variables
+console.log("🔍 MONGO_URI:", process.env.MONGO_URI); // Debug log for MongoDB URI
+
+// Initialize Express app
+const app = express();
+
+// Apply CORS middleware to allow requests from different origins
+app.use(
+  cors({
+    origin: [
+      "http://demo.vessahospital.ro",
+      "http://spital.vessahospital.ro",
+      "https://spital.vessahospital.ro",
+/*      "http://localhost:3000",
+      "http://localhost:3001",
+      "http://localhost:3002",
+      "http://vh.itastic.ro",
+      "https://vh.itastic.ro",
+      "https://vh.itastic.ro/api/auth/login",
+      "https://vh.itastic.ro/login",
+      "http://localhost:3001/api/auth/login",
+      "http://145.223.117.37:3000",
+      "http://145.223.117.37:3001/api/auth/login",
+      "http://145.223.117.37:3001",
+      "http://145.223.117.37:3002",
+      "http://145.223.117.37:3002/api/auth/login",
+      "http://localhost:3002/api/auth/login",
+      "https://vessa-hospital-app.vercel.app",
+      "https://vessa-hospital-app.vercel.app/api/auth/login",
+      "https://vessa-hospital-app.vercel.app/login",
+*/
+    ],
+    credentials: true,
+  })
+);
+
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// MongoDB Connection
+const MONGO_URI = process.env.MONGO_URI; // Use the correct environment variable
+if (!MONGO_URI) {
+  console.error("❌ MONGO_URI is not defined in environment variables!");
+  process.exit(1); // Exit the process if MONGO_URI is missing
+}
+
+mongoose
+  .connect(MONGO_URI)
+  .then(() => {
+    console.log("✅ MongoDB connected successfully");
+
+    // Ensure that mongoose.connection.db is defined before accessing it
+    if (mongoose.connection.db) {
+      mongoose.connection.db
+        .listCollections()
+        .toArray()
+        .then((collections: any[]) => {
+          console.log("All collections in the database:", collections);
+        })
+        .catch((err: Error) => {
+          console.error("❌ Error fetching collections:", err);
+        });
+    } else {
+      console.error("❌ Database connection is not ready.");
+    }
+  })
+  .catch((error) => {
+    console.error("❌ MongoDB connection error:", error.message);
+    process.exit(1); // Exit the process if MongoDB connection fails
+  });
+
+// Routes
+app.use("/api/auth", authRoutes);
+app.use("/api", appointmentRoutes);
+
+// Error handling for unhandled routes
+app.use((req, res) => {
+  console.error(`❌ Route not found: ${req.method} ${req.originalUrl}`);
+  res.status(404).json({ message: "Route not found" });
+});
+
+// Start server
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`🌐 Server running on port ${PORT}`);
+});

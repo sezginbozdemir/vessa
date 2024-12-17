@@ -1,0 +1,63 @@
+.custom-select__control {
+  width: 100% !important; /* w-full */
+  margin-top: 0.5rem !important; /* mt-2 */
+  border: 1px solid rgb(45 54 134) !important; /* border-gray-400 */
+  border-radius: 1.25rem !important; /* rounded-2xl */
+  height: 5rem !important; /* h-[5rem] */
+  color: #333333 !important;
+  font-size: 16px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.custom-select__control--is-focused {
+  border-color: #9ca3af !important;
+}
+
+.custom-select__menu {
+  background-color: #ffffff !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+  font-size: large;
+  z-index: 1001 !important;
+}
+
+.custom-select__option {
+  padding: 10px 12px !important;
+  background-color: white !important;
+  color: #333333 !important;
+}
+
+.custom-select__option--is-selected {
+  background-color: #f0f0f0 !important;
+  color: #333333 !important;
+}
+
+.custom-select__option--is-focused {
+  background-color: #f0f0f0 !important;
+}
+
+.custom-select__placeholder {
+  color: #6b7280 !important;
+}
+
+.custom-select__single-value {
+  color: #333333 !important;
+}
+.custom-highlighted-date {
+  background-color: #3b82f6 !important;
+  color: white;
+}
+.custom-date .react-datepicker__day--highlighted {
+  background-color: #3b82f6 !important;
+}
+.no-nav .react-datepicker__navigation {
+  display: none;
+}
+.custom-date {
+  border-color: rgb(45 54 134) !important;
+  border-radius: 2rem !important;
+}
+.custom-date .react-datepicker__day:hover {
+  border-radius: 2rem !important;
+}

@@ -1,0 +1,507 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import "react-datepicker/dist/react-datepicker.css";
+import Typography from "../UI/Typography";
+import Spacing from "../UI/Spacing";
+import {
+  FaUser,
+  FaEnvelope,
+  FaPhone,
+  FaCalendarAlt,
+  FaStethoscope,
+} from "react-icons/fa";
+import Button from "../UI/Button";
+import { doctorsData } from "@/app/mock-data/doctorsData";
+import DatePicker from "react-datepicker";
+import TimeSlotPickerDropdown from "../UI/TimeSlotPicker";
+import "react-datepicker/dist/react-datepicker.css";
+
+export type AppointmentData = {
+  _id: string;
+  lastName: string;
+  firstName: string;
+  email: string;
+  phone: string;
+  specialization: string;
+  doctor: string;
+  date: Date | null;
+  timeSlot: string;
+  isModify?: boolean;
+};
+
+export type TimeSlot = {
+  time: string;
+  isBooked: boolean;
+};
+
+type AppointmentFormProps = {
+  initialData?: AppointmentData | null;
+  onSubmitSuccess: (message: string) => void;
+  onSubmitError: (message: string) => void;
+  onCancel: () => void;
+};
+
+const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
+  initialData,
+  onSubmitSuccess,
+  onSubmitError,
+  onCancel,
+}) => {
+  const [lastName, setLastName] = useState(initialData?.lastName ?? "");
+  const [firstName, setFirstName] = useState(initialData?.firstName ?? "");
+  const [email, setEmail] = useState(initialData?.email ?? "");
+  const [phone, setPhone] = useState(initialData?.phone ?? "");
+  const [selectedSpecialty, setSelectedSpecialty] = useState(
+    initialData?.specialization ?? ""
+  );
+  const [selectedDoctor, setSelectedDoctor] = useState(
+    initialData?.doctor ?? ""
+  );
+
+  // useEffect(() => {
+  //   ("selectedDoctor updated to:", selectedDoctor);console.log
+  // }, [selectedDoctor]);
+
+  const [selectedDate, setSelectedDate] = useState<Date | null>(
+    initialData?.date ?? null
+  );
+  const [filteredDoctors, setFilteredDoctors] = useState(
+    doctorsData.filter(
+      (doctor) => Array.isArray(doctor.schedule) && doctor.schedule.length > 0
+    )
+  );
+  const [bookedTimeSlots, setBookedTimeSlots] = useState<string[]>([]);
+  const [availableDays, setAvailableDays] = useState<string[]>([]);
+  const [availableTimeSlots, setAvailableTimeSlots] = useState<TimeSlot[]>([]);
+  const [selectedTimeSlot, setSelectedTimeSlot] = useState(
+    initialData?.timeSlot ?? ""
+  );
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+  // Add these two lines
+  const [role, setRole] = useState<string>("");
+
+  const [fullname, setFullname] = useState<string>("");
+
+  useEffect(() => {
+    const userData = localStorage.getItem("user");
+
+    if (!userData) {
+      console.error("No user data found in localStorage");
+      return;
+    }
+
+    try {
+      const parsedUser = JSON.parse(userData);
+
+      const { fullname, role } = parsedUser || {};
+      setRole(role || "");
+      setFullname(fullname || "");
+
+      if (role === "medic" && !selectedDoctor) {
+        setSelectedDoctor(fullname || ""); // Set the doctor field
+
+        // Find the doctor and populate availableDays (similar to handleDoctorChange)
+        const doctor = doctorsData.find((doc) => doc.name === selectedDoctor);
+
+        if (
+          doctor &&
+          Array.isArray(doctor.schedule) &&
+          doctor.schedule.length > 0
+        ) {
+          const days = doctor.schedule.map((day) => day.day);
+          setAvailableDays(days); // Populate available days based on doctor's schedule
+        } else {
+          setAvailableDays([]); // Clear available days if no schedule exists
+        }
+      }
+    } catch (err) {
+      console.error("Error parsing localStorage user data:", err);
+    }
+  }, [selectedDoctor]);
+  // Add this AFTER your existing useEffect hooks
+  useEffect(() => {
+    if (selectedDoctor) {
+      const doctor = doctorsData.find((doc) => doc.name === selectedDoctor);
+
+      if (doctor && Array.isArray(doctor.schedule)) {
+        const days = doctor.schedule.map((schedule) => schedule.day);
+        setAvailableDays(days);
+      } else {
+        setAvailableDays([]);
+        console.warn("No schedule found for selected doctor.");
+      }
+    } else {
+      setAvailableDays([]); // Reset if no doctor is selected
+      console.warn("No doctor selected.");
+    }
+  }, [selectedDoctor]);
+
+  useEffect(() => {
+    if (initialData) {
+      const doctorsForSpecialty = doctorsData.filter(
+        (doctor) => doctor.specialization === initialData.specialization
+      );
+      setFilteredDoctors(doctorsForSpecialty);
+    }
+  }, [initialData]);
+
+  const handleSpecialtyChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedSpecialty = e.target.value;
+    setSelectedSpecialty(selectedSpecialty);
+
+    // Filter doctors based on selected specialization and check if they have a schedule
+    const doctorsForSpecialty = doctorsData.filter(
+      (doctor) =>
+        doctor.specialization === selectedSpecialty &&
+        Array.isArray(doctor.schedule) &&
+        doctor.schedule.some((day) => day.hours) // Ensure there are hours scheduled for the doctor
+    );
+
+    setFilteredDoctors(doctorsForSpecialty);
+    setSelectedDoctor("");
+  };
+
+  const isDateAvailable = (date: Date) => {
+    const dayOfWeekIndex = date.getDay();
+    const romanianDays = [
+      "Duminica",
+      "Luni",
+      "Marti",
+      "Miercuri",
+      "Joi",
+      "Vineri",
+      "Sambata",
+    ];
+    const dayOfWeek = romanianDays[dayOfWeekIndex];
+    return availableDays.includes(dayOfWeek);
+  };
+
+  const formatDateToYYYYMMDD = (date: Date | null) => {
+    if (!date) return "";
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+
+  const handleDateChange = async (date: Date | null) => {
+    setSelectedDate(date);
+
+    if (date && selectedDoctor) {
+      const doctor = doctorsData.find((doc) => doc.name === selectedDoctor);
+      const dayOfWeekIndex = date.getDay();
+      const romanianDays = [
+        "Duminica",
+        "Luni",
+        "Marti",
+        "Miercuri",
+        "Joi",
+        "Vineri",
+        "Sambata",
+      ];
+      const selectedDay = romanianDays[dayOfWeekIndex];
+
+      if (doctor && Array.isArray(doctor.schedule)) {
+        const scheduleForSelectedDay = doctor.schedule.find(
+          (schedule) => schedule.day === selectedDay
+        );
+
+        if (scheduleForSelectedDay) {
+          const timeSlotsForDay = generateTimeSlots(
+            scheduleForSelectedDay.hours
+          );
+
+          try {
+            const response = await fetch(
+              `${backendUrl}/api/appointments/booked-slots?doctor=${selectedDoctor}&date=${formatDateToYYYYMMDD(
+                date
+              )}`
+            );
+
+            if (response.ok) {
+              const bookedSlots = await response.json();
+              setBookedTimeSlots(bookedSlots);
+
+              const updatedTimeSlots = timeSlotsForDay.map((slot) => ({
+                time: slot.time,
+                isBooked: bookedSlots.includes(slot.time),
+              }));
+
+              setAvailableTimeSlots(updatedTimeSlots);
+            }
+          } catch (error) {
+            console.error("Error fetching booked time slots:", error);
+          }
+        } else {
+          setAvailableTimeSlots([]);
+        }
+      } else {
+        setAvailableTimeSlots([]);
+      }
+    } else {
+      setAvailableTimeSlots([]);
+    }
+  };
+
+  const generateTimeSlots = (hours: string): TimeSlot[] => {
+    const [startTime, endTime] = hours.split("-").map((time) => time.trim());
+    const [startHour, startMinutes] = startTime.split(":").map(Number);
+    const [endHour] = endTime.split(":").map(Number);
+    const slots: TimeSlot[] = []; // Array of TimeSlot objects
+
+    for (let hour = startHour; hour < endHour; hour++) {
+      if (hour === startHour && startMinutes !== 0) {
+        const slotTime = `${hour}:${startMinutes.toString().padStart(2, "0")}`;
+        slots.push({
+          time: slotTime,
+          isBooked: bookedTimeSlots.includes(slotTime),
+        });
+      } else {
+        slots.push({
+          time: `${hour}:00`,
+          isBooked: bookedTimeSlots.includes(`${hour}:00`),
+        });
+      }
+      if (hour < endHour || startMinutes !== 0) {
+        slots.push({
+          time: `${hour}:30`,
+          isBooked: bookedTimeSlots.includes(`${hour}:30`),
+        });
+      }
+    }
+
+    return slots;
+  };
+
+  const handleSubmit = async () => {
+    const appointmentData = {
+      lastName,
+      firstName,
+      email,
+      phone,
+      specialization: selectedSpecialty,
+      doctor: selectedDoctor,
+      date: formatDateToYYYYMMDD(selectedDate),
+      timeSlot: selectedTimeSlot,
+      isModify: initialData ? true : false,
+    };
+
+    try {
+      let response;
+      if (initialData && initialData._id) {
+        // Actualizare programare
+        response = await fetch(
+          `${backendUrl}/api/appointments/${initialData._id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(appointmentData),
+          }
+        );
+      } else {
+        // Creare programare nouă
+        response = await fetch(`${backendUrl}/api/appointments`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(appointmentData),
+        });
+      }
+
+      if (response.ok) {
+        const message = initialData
+          ? "Programarea a fost actualizată!"
+          : "Programarea a fost creată cu succes!";
+        onSubmitSuccess(message); // Trimitem mesajul de succes
+      } else {
+        onSubmitError("Eroare la trimiterea programării");
+      }
+    } catch (error) {
+      onSubmitError("Eroare de rețea");
+    }
+  };
+
+  return (
+    <section className="mx-[20rem]">
+      {/* <Spacing size="2" /> */}
+      <div className="grid grid-cols-12 gap-x-[3.2rem]">
+        <div className="col-span-6">
+          <label className="flex items-center">
+            <FaUser className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Numele dvs.
+            </Typography>
+          </label>
+          <input
+            type="text"
+            placeholder="Nume"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+          />
+        </div>
+
+        <div className="col-span-6">
+          <label className="flex items-center">
+            <FaUser className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Prenume
+            </Typography>
+          </label>
+          <input
+            type="text"
+            placeholder="Prenume"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+          />
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <label className="flex items-center">
+            <FaEnvelope className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Emailul dvs.
+            </Typography>
+          </label>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+          />
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <label className="flex items-center">
+            <FaPhone className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Număr de telefon
+            </Typography>
+          </label>
+          <input
+            type="text"
+            placeholder="Număr de telefon"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+          />
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <label className="flex items-center">
+            <FaStethoscope className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Selectați Specialitate
+            </Typography>
+          </label>
+          <select
+            value={selectedSpecialty}
+            onChange={handleSpecialtyChange}
+            className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+          >
+            <option value="">Specialitate</option>
+            {[
+              ...new Set(doctorsData.map((doctor) => doctor.specialization)),
+            ].map((specialty, index) => (
+              <option key={index} value={specialty}>
+                {specialty}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <label className="flex items-center">
+            <FaUser className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Selectați Medicul
+            </Typography>
+          </label>
+          <select
+            value={role === "medic" ? fullname : selectedDoctor} // If role is "medic", use fullname
+            onChange={(e) => setSelectedDoctor(e.target.value)}
+            disabled={role === "medic"} // Disable dropdown if role is "medic"
+            className={`w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem] ${
+              role === "medic" ? "bg-gray-100 cursor-not-allowed" : ""
+            }`}
+          >
+            <option value="">Medic</option>
+            {role === "medic" ? (
+              <option value={fullname}>{fullname}</option> // If "medic", display fullname as the only option
+            ) : (
+              filteredDoctors.map((doctor, index) => (
+                <option key={index} value={doctor.name}>
+                  {doctor.name}
+                </option>
+              ))
+            )}
+          </select>
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <label className="flex items-center">
+            <FaCalendarAlt className="mr-2 text-dark-blue w-[1.5rem] h-[1.5rem]" />
+            <Typography variant="detailsBold" className="text-dark-black-75">
+              Selectați Data
+            </Typography>
+          </label>
+          <div className="relative w-full mt-2">
+            <DatePicker
+              selected={selectedDate}
+              onChange={handleDateChange}
+              filterDate={isDateAvailable}
+              dateFormat="dd MMM yyyy"
+              className="w-full py-[1.6rem] px-[1.2rem] border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
+              placeholderText="Selectați data"
+              calendarClassName="custom-datepicker-calendar"
+              popperPlacement="bottom-end"
+              popperClassName="custom-popper-style"
+            />
+          </div>
+        </div>
+
+        <div className="col-span-6">
+          <Spacing size="4.8" />
+          <TimeSlotPickerDropdown
+            availableTimeSlots={availableTimeSlots}
+            selectedTimeSlot={selectedTimeSlot}
+            onTimeSlotChange={(time) => {
+              const slot = availableTimeSlots.find(
+                (slot) => slot.time === time
+              );
+              if (slot && !slot.isBooked) {
+                setSelectedTimeSlot(time);
+              }
+            }}
+          />
+        </div>
+
+        <Spacing size="3" />
+
+        <div className="z-0 col-span-12">
+          <div className="flex gap-[1rem]">
+            <Button label="Anulează" onClick={onCancel} />
+
+            <Button
+              label={`${initialData ? "Editeaza" : "Creaza"} programarea`}
+              onClick={handleSubmit}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AppointmentFormAdmin;

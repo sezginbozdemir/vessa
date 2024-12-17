@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input,
+textarea {
+  box-shadow: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  width: 100%; /* Se asigură că select-ul ocupă toată lățimea containerului */
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+  max-width: 100%; /* Opțional, pentru a limita opțiunile să fie la fel de late */
+}
+
+.hide-scrollbar {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+  width: 100% !important;
+}
+
+.custom-popper-style {
+  transform: translateX(100) !important;
+  transform-origin: bottom center !important;
+}
+
+/* Stil pentru input */
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+/* Stiluri pentru calendarul propriu-zis */
+.custom-datepicker-calendar {
+  width: 100%;
+  font-size: 1.6rem; /* Dimensiune mai mare pentru text */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3; /* Adăugăm un border subtil */
+  border-radius: 8px; /* Colțuri rotunjite */
+  padding: 1rem;
+}
+
+.custom-datepicker-calendar .react-datepicker__month-container {
+  width: 100%;
+}
+
+.custom-datepicker-calendar .react-datepicker__header {
+  background-color: #fff; /* Albastru pentru header */
+  color: white;
+  padding: 1rem 0; /* Spațiere uniformă în header */
+  border-bottom: 1px solid #d3d3d3;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.custom-datepicker-calendar .react-datepicker__current-month {
+  font-size: 1.6rem; /* Mărim dimensiunea lunii */
+  font-weight: 600; /* Facem textul bold */
+}
+
+.custom-datepicker-calendar .react-datepicker__day-names,
+.custom-datepicker-calendar .react-datepicker__week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Aliniere pe 7 coloane */
+  text-align: center;
+}
+
+.custom-datepicker-calendar .react-datepicker__day-name,
+.custom-datepicker-calendar .react-datepicker__day {
+  font-size: 1.4rem; /* Dimensiune consistentă a zilelor */
+  margin: 0.5rem 0; /* Spațiere între zile */
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+}
+
+.custom-datepicker-calendar .react-datepicker__day--selected,
+.custom-datepicker-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #4a90e2; /* Albastru consistent pentru zilele selectate */
+  color: white;
+}
+
+.custom-datepicker-calendar .react-datepicker__day:hover {
+  background-color: #cce4f7; /* Culoarea la hover pentru zile */
+  color: black;
+}
+
+.custom-datepicker-calendar .react-datepicker__day--outside-month {
+  color: #d3d3d3; /* Zilele din afara lunii să fie mai estompate */
+}
+
+.react-datepicker-popper[data-placement^="bottom"] {
+  transform: translateX(0);
+  width: auto;
+  min-width: 100%; /* Calendarul să se extindă complet */
+  z-index: 20;
+}
