@@ -19,7 +19,7 @@ const DoctorProfileCard = ({
       onClick={onClick}
       className="relative transition-shadow bg-light-blue border border-gray-300 rounded-[15px] shadow-md hover:shadow-lg group"
     >
-      <div className="relative w-full  pb-[120%]">
+      <div className="relative w-full pb-[120%]">
         {/* Blue Blur Effect */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full max-w-[500px] overflow-hidden z-0">
           <Image

@@ -14,7 +14,7 @@ import Link from "next/link";
 import AppointmentFormAdmin, {
   AppointmentData,
 } from "@/components/ProgramatorPageComponents/ProgramatorAdminForm";
-import { sortOptions } from "../mock-data/programatorAdmin";
+import { sortOptions, filterOptions } from "../mock-data/programatorAdmin";
 import Toast from "@/components/UI/Toast";
 import ConfirmationModal from "@/components/UI/ConfirmationModal";
 import DatePicker from "react-datepicker";
@@ -35,6 +35,7 @@ const ProgramatorAdmin = () => {
   const router = useRouter();
   const [user, setUser] = useState<User | null>(null);
   const [sortMenuOpen, setSortMenuOpen] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(false);
   const [openedRow, setOpenedRow] = useState<number | null>(null);
   const [expandedRows, setExpandedRows] = useState<string[]>([]);
   const [showForm, setShowForm] = useState(false);
@@ -101,6 +102,9 @@ const ProgramatorAdmin = () => {
 
   const toggleSortMenu = () => {
     setSortMenuOpen(!sortMenuOpen);
+  };
+  const toggleFilter = () => {
+    setFilterOpen(!filterOpen);
   };
 
   const toggleRowMenu = (index: number) => {
@@ -257,6 +261,23 @@ const ProgramatorAdmin = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
+
+  const handleFilter = (filterOption: string) => {
+    let filteredAppointmentsList = [...appointments];
+
+    if (filterOption.toLowerCase() !== "toate") {
+      filteredAppointmentsList = filteredAppointmentsList.filter(
+        (appointment) =>
+          appointment.appointmentType &&
+          appointment.appointmentType.toLowerCase() ===
+            filterOption.toLowerCase()
+      );
+    }
+
+    setFilteredAppointments(filteredAppointmentsList);
+
+    setFilterOpen(false);
+  };
 
   const handleSort = (sortOption: string) => {
     console.log("Sorting started with option:", sortOption);
@@ -588,7 +609,7 @@ const ProgramatorAdmin = () => {
         <>
           {/* Info and Sort Section */}
 
-          <div className="relative flex  justify-between sm:flex-col mt-2">
+          <div className="relative flex justify-between sm:flex mt-2">
             <div className="flex items-center space-x-2">
               <div className="w-[1.6rem] h-[1.6rem] rounded-full bg-light-blue"></div>
               <Typography variant="paragraph">
@@ -599,26 +620,54 @@ const ProgramatorAdmin = () => {
               <Spacing sm="2" />
             </div>
 
-            <div className="flex items-center justify-center  sm:hidden">
-              <button
-                className="flex items-center gap-2 text-medium-blue"
-                onClick={handlePrint}
-              >
-                <Typography variant="detailsBold"> Printează</Typography>
-                <SlPrinter className="w-[2.5rem] h-[2.5rem]" />
-              </button>
-            </div>
-            <div className="flex gap-[3rem] sm:w-full xs:justify-end sm:justify-end sm:mb-[1rem]">
-              <div
-                className="flex items-center  cursor-pointer text-medium-blue md:justify-start"
-                onClick={toggleSortMenu}
-              >
-                <Typography variant="detailsBold">Sortează</Typography>
-                <MdKeyboardArrowDown className="w-[2.5rem] h-[2.5rem]" />
+            <div className="flex sm:w-[40%] gap-[4rem]">
+              <div className="flex items-center justify-center  sm:hidden">
+                <button
+                  className="flex items-center gap-2 text-medium-blue"
+                  onClick={handlePrint}
+                >
+                  <Typography variant="detailsBold"> Printează</Typography>
+                  <SlPrinter className="w-[2.5rem] h-[2.5rem]" />
+                </button>
+              </div>
+              <div className="flex gap-[3rem] sm:w-full xs:justify-end sm:justify-end sm:mb-[1rem]">
+                <div
+                  className="flex items-center  cursor-pointer text-medium-blue md:justify-start"
+                  onClick={toggleFilter}
+                >
+                  <Typography variant="detailsBold">Alege tipul</Typography>
+                  <MdKeyboardArrowDown className="w-[2.5rem] h-[2.5rem]" />
+                </div>
+              </div>
+
+              <div className="flex gap-[3rem] sm:w-full xs:justify-end sm:justify-end sm:mb-[1rem]">
+                <div
+                  className="flex items-center  cursor-pointer text-medium-blue md:justify-start"
+                  onClick={toggleSortMenu}
+                >
+                  <Typography variant="detailsBold">Sortează</Typography>
+                  <MdKeyboardArrowDown className="w-[2.5rem] h-[2.5rem]" />
+                </div>
               </div>
             </div>
 
             {/* Dropdown menu */}
+            {filterOpen && (
+              <div className="absolute sm:top-[3.5rem] sm:right-[20%] right-[7.5%] md:right-[13%] top-[3rem] bg-white border border-gray-300 p-[2rem] shadow-lg rounded-[1.2rem] z-10">
+                {filterOptions.map((option, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleFilter(option.label)} // Setăm opțiunea de sortare
+                    className="cursor-pointer hover:text-medium-blue"
+                  >
+                    <Typography variant="detailsBold">
+                      {option.label}
+                    </Typography>
+                    <Spacing size="2" />
+                  </div>
+                ))}
+              </div>
+            )}
             {sortMenuOpen && (
               <div className="absolute right-0 sm:top-[4.5rem] top-[3rem] bg-white border border-gray-300 p-[2rem] shadow-lg rounded-[1.2rem] z-10">
                 {sortOptions.map((option, index) => (

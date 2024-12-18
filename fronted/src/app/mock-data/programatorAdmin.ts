@@ -5,3 +5,9 @@ export const sortOptions = [
   { label: "Programări nemodificate" },
   { label: "Tip Programare (A-Z)" },
 ];
+
+export const filterOptions = [
+  { label: "Toate" },
+  { label: "Consultatie" },
+  { label: "Operatie" },
+];
