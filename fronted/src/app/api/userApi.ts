@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from "axios";
+import { useCallback } from "react";
 
 const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -36,19 +37,18 @@ export const UserApi = () => {
     }
   };
 
-  const getUsers = async (): Promise<User[]> => {
+  const getUsers = useCallback(async (): Promise<User[]> => {
     try {
       const res = await axios.get<User[]>(`${backendUrl}/api/users/get`);
       return res.data;
     } catch (error) {
-      if (error instanceof Error) {
-        errorMessage = error.message;
-      }
-
-      console.error("Error fetching users", errorMessage);
+      console.error(
+        "Error fetching users",
+        error instanceof Error ? error.message : error
+      );
       return [];
     }
-  };
+  }, []);
 
   const updateUser = async (
     id: string,

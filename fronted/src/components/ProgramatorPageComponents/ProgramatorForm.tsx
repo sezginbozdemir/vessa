@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import Typography from "../UI/Typography";
 import Spacing from "../UI/Spacing";
@@ -113,17 +113,24 @@ const AppointmentForm = () => {
   };
 
   useEffect(() => {
-    (async () => {
-      const fetchedDoctors = await getUsers();
-      setUsers(fetchedDoctors);
-    })();
+    function fetchData() {
+      getUsers()
+        .then((fetchedDoctors) => setUsers(fetchedDoctors))
+        .catch((error) => {
+          console.error("Error fetching users:", error);
+        });
+    }
+    fetchData();
   }, [getUsers]);
-  const filterDoctorsByRole = (users: User[]) => {
-    const doctorsData = users.filter((user) => user.role === "medic");
-    return doctorsData;
-  };
 
-  const doctorsData = filterDoctorsByRole(users);
+  const doctorsData = useMemo(() => {
+    return users.filter((user) => user.role === "medic");
+  }, [users]);
+
+  // Memoize unique specialties
+  const uniqueSpecialties = useMemo(() => {
+    return [...new Set(doctorsData.flatMap((doctor) => doctor.specialization))];
+  }, [doctorsData]);
 
   useEffect(() => {
     if (selectedDoctor) {
@@ -198,10 +205,6 @@ const AppointmentForm = () => {
     setSelectedDate(null);
     setAvailableTimeSlots([]);
   };
-
-  const uniqueSpecialties = [
-    ...new Set(doctorsData.flatMap((doctor) => doctor.specialization)),
-  ];
 
   const isDateAvailable = (date: Date) => {
     return availableDates.some(

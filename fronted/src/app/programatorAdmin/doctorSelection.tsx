@@ -19,22 +19,22 @@ const DoctorSelection: React.FC<DoctorSelectionProps> = ({
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const { getUsers } = UserApi();
 
-  const fetchDoctors = async (): Promise<void> => {
-    try {
-      const users = await getUsers();
-      const doctors = users.filter((user) => user.role === "medic");
-      setDoctors(doctors);
-      const doctorFullNames = doctors.map((doctor) => doctor.fullname);
-
-      setDoctorNames(doctorFullNames);
-    } catch (error) {
-      console.error("Error fetching users", error);
-    }
-  };
-
   useEffect(() => {
+    const fetchDoctors = async (): Promise<void> => {
+      try {
+        const users = await getUsers();
+        const doctors = users.filter((user) => user.role === "medic");
+        setDoctors(doctors);
+        const doctorFullNames = doctors.map((doctor) => doctor.fullname);
+
+        setDoctorNames(doctorFullNames);
+      } catch (error) {
+        console.error("Error fetching users", error);
+      }
+    };
+
     fetchDoctors();
-  });
+  }, [getUsers]);
 
   const handleDoctorChange = (doctorName: string) => {
     setSelectedDoctor(doctorName);
