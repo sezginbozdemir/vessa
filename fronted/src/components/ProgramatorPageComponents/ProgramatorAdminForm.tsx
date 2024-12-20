@@ -10,6 +10,7 @@ import {
   FaCalendarAlt,
   FaStethoscope,
 } from "react-icons/fa";
+import { addDays } from "date-fns";
 import Button from "../UI/Button";
 import DatePicker from "react-datepicker";
 import TimeSlotPickerDropdown from "../UI/TimeSlotPicker";
@@ -510,6 +511,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
           <div className="relative w-full mt-2">
             <DatePicker
               selected={selectedDate}
+              maxDate={addDays(new Date(), 30)}
               onChange={handleDateChange}
               filterDate={isDateAvailable}
               dateFormat="dd MMM yyyy"

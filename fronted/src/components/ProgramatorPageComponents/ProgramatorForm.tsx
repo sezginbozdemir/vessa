@@ -3,6 +3,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import Typography from "../UI/Typography";
 import Spacing from "../UI/Spacing";
+import { addDays } from "date-fns";
 import {
   FaUser,
   FaEnvelope,
@@ -541,6 +542,7 @@ const AppointmentForm = () => {
                 selected={selectedDate}
                 onChange={handleDateChange}
                 filterDate={isDateAvailable}
+                minDate={addDays(new Date(), 30)}
                 dateFormat="dd MMM yyyy"
                 className="w-full py-[1.6rem] px-[1.2rem] border border-gray-400 rounded-2xl text-details placeholder:text-dark-opacity-75 placeholder:text-details h-[6.4rem]"
                 placeholderText="Selectează data"
