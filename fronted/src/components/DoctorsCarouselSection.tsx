@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Typography from "./UI/Typography";
 import Spacing from "./UI/Spacing";
 import DoctorProfileCard from "./UI/DoctorProfileCard";
@@ -74,13 +75,25 @@ const DoctorsCarouselSection: React.FC = () => {
     <Wrapper>
       <div className="relative">
         <div className="flex flex-col items-center">
-          <Typography
-            variant="h2"
-            className="col-span-12 text-center text-black"
-          >
-            Medicii noștri
-          </Typography>
-          <div className="w-[10rem] h-[0.3rem] bg-dark-blue mt-[1rem]" />
+          <div className="w-max relative flex">
+            <div className="absolute -left-9 sm:top-0 md:top-4 top-8">
+              <Image
+                src="/images/xmas/mistletoe.svg"
+                width={45}
+                height={45}
+                alt="Bell"
+              />
+            </div>
+            <div className="sm:pl-[1.3rem]">
+              <Typography
+                variant="h2"
+                className="col-span-12 text-center text-black"
+              >
+                Medicii noștri
+              </Typography>
+              <div className="w-[10rem] h-[0.3rem] bg-dark-blue mt-[1rem]" />
+            </div>
+          </div>
         </div>
 
         <Spacing size="2.5" md="1.5" sm="2" />

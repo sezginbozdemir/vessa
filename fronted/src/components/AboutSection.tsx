@@ -63,10 +63,22 @@ const AboutSection = () => {
           </div>
 
           <div className="z-10 flex flex-col col-span-6 md:col-span-4 sm:col-span-2 sm:order-first">
-            <Typography variant="h2" className="text-black">
-              Despre noi
-            </Typography>
-            <div className="w-[5rem] h-[0.2rem] bg-dark-blue mb-[2.5rem]" />
+            <div className="relative flex items-start">
+              <div className="absolute  sm:top-0 top-2 xl:top-[2rem] lg:top-[2rem] -left-10 z-20">
+                <Image
+                  src="/images/xmas/mistletoe.svg"
+                  width={40}
+                  height={40}
+                  alt="Bell"
+                />
+              </div>
+              <div className="sm:pl-[0.5rem]">
+                <Typography variant="h2" className="text-black relative z-10">
+                  Despre noi
+                </Typography>
+                <div className="w-[6rem] h-[0.2rem] bg-dark-blue mb-[2.5rem]" />
+              </div>
+            </div>
 
             <Typography variant="paragraph" className="text-black opacity-75">
               La Vessa Hospital, oferim îngrijire medicală completă, bazată pe
@@ -86,7 +98,14 @@ const AboutSection = () => {
                       checked
                       readOnly
                     />
-                    <div className="h-[2rem] w-[2rem] bg-dark-blue border-2 border-dark-blue rounded flex items-center justify-center">
+                    <Image
+                      src="/images/xmas/flake.svg"
+                      width={42}
+                      height={42}
+                      alt="Snow Flake"
+                    />
+
+                    <div className="hidden h-[2rem] w-[2rem] bg-dark-blue border-2 border-dark-blue rounded flex items-center justify-center">
                       {true && (
                         <IoCheckmark className="text-white h-[2rem] w-[2rem]" />
                       )}

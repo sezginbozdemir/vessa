@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import ServiceCard from "./UI/ServiceCard";
 import Typography from "./UI/Typography";
 import Spacing from "./UI/Spacing";
@@ -38,14 +39,26 @@ const MedicalSpecialities: React.FC = () => {
   return (
     <Wrapper>
       <div className="relative">
-        <div className="flex flex-col items-center md:items-start sm:items-start">
-          <Typography
-            variant="h2"
-            className="col-span-12 text-center text-black"
-          >
-            Specialități medicale
-          </Typography>
-          <div className="w-[10rem] h-[0.3rem] bg-dark-blue mt-[1rem]" />
+        <div className="flex w-full justify-center md:justify-start sm:justify-start">
+          <div className="w-max relative flex">
+            <div className="absolute -left-9 sm:top-0 md:top-4 top-8">
+              <Image
+                src="/images/xmas/mistletoe.svg"
+                width={45}
+                height={45}
+                alt="Bell"
+              />
+            </div>
+            <div className="sm:pl-[1.3rem]">
+              <Typography
+                variant="h2"
+                className="col-span-12 text-center text-black"
+              >
+                Specialități medicale
+              </Typography>
+              <div className="w-[10rem] h-[0.3rem] bg-dark-blue mt-[1rem]" />
+            </div>
+          </div>
         </div>
 
         <Spacing size="1.8" md="3" sm="3" />
