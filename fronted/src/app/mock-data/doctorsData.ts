@@ -110,7 +110,7 @@ export const doctorsData = [
   {
     name: "Dr. Călin Ștefan",
     specialization: "Fiziokinetoterapie",
-    imageUrl: "/images/icon-medic.png",
+    imageUrl: "/images/calin-stefan.png",
     about:
       "Dr. Călin Ștefan este un specialist în fiziokinetoterapie cu o vastă experiență și expertiză în domeniu, activând în cadrul Vessa Hospital din Timișoara. Având o pregătire solidă și un parcurs profesional remarcabil, Dr. Ștefan este dedicat recuperării și îmbunătățirii mobilității pacienților, ajutându-i să depășească diverse afecțiuni musculo-scheletale și neurologice printr-o abordare integrată a fizioterapiei și kinetoterapiei. Printr-o combinație de exerciții terapeutice, masaj, electroterapie, termoterapie și alte metode inovative, Dr. Ștefan ajută pacienții să își recâștige mobilitatea și să își reducă durerile cauzate de afecțiuni cronice sau leziuni recente.",
     contact: "+40 744 833 815",
@@ -938,7 +938,7 @@ export const doctorsData = [
   {
     name: "Dr. Ana Silvia Corlan",
     specialization: "Endocrinologie",
-    imageUrl: "/images/icon-medic.png",
+    imageUrl: "/images/ana-silvia-corlan.png",
     about:
       "Dr. Ana Silvia Coran este un specialist în endocrinologie cu o vastă experiență, activând în cadrul Vessa Hospital din Timișoara. Prin competențele sale profesionale, Dr. Coran oferă tratamente personalizate pentru o gamă largă de afecțiuni endocrine, cu o abordare centrată pe nevoile pacientului. În cadrul clinicii, sunt tratate condiții precum tulburările tiroidiene, disfuncțiile hormonale și problemele legate de metabolism, utilizând metode moderne și eficiente.",
     contact: "+40 744 833 815",
