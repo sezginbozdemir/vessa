@@ -29,7 +29,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-light-blue overflow-hidden">
-      <div className="absolute top-[-20%] sm:top-[-7%] xs:top-[-6%] custom:top-[-8%] lg:top-[-17%] md:top-[-11%] w-full h-full">
+      <div className="flex justify-center items-center w-full sm:h-[15px] h-[10px]">
         <Image
           src="/images/xmas/xmas-header.png"
           alt="Header"
@@ -41,7 +41,7 @@ const HeroSection = () => {
       </div>
       <Wrapper>
         <Spacing sm="1.8" md="4.8" size="12" />
-        <div className="grid items-center grid-cols-12 gap-8 md:grid-cols-8 sm:grid-cols-1 pt-[6.5rem]">
+        <div className="grid items-center grid-cols-12 gap-8 md:grid-cols-8 sm:grid-cols-1 pt-[3.5rem]">
           <div className="flex flex-col justify-center col-span-6 md:col-span-8 sm:col-span-12 md:text-center">
             <Typography variant="h1" className="text-black whitespace-nowrap">
               SOLUȚIA <span className="text-dark-blue">SĂNĂTĂȚII</span>

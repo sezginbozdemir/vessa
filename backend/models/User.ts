@@ -48,10 +48,11 @@ const seedUsers = async () => {
   try {
     await User.create([
       {
-        username: "guru",
-        password: 5555,
-        role: "guru",
-        fullname: "guru",
+        username: "Mihai-Hurmuz",
+        password: 1299,
+        role: "medic",
+        specialization: ["Ortopedie"],
+        fullname: "Dr. Mihai Hurmuz",
       },
     ]);
 

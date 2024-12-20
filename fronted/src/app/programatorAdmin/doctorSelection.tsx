@@ -68,11 +68,11 @@ const DoctorSelection: React.FC<DoctorSelectionProps> = ({
         />
 
         {isDropdownOpen && (
-          <div className="absolute mt-12 bg-white border border-gray-300 rounded shadow-lg z-10">
+          <div className="absolute mt-12 bg-white border border-gray-300 rounded shadow-lg max-h-[37rem] overflow-scroll z-10">
             {doctorNames.map((doctor, index) => (
               <div
                 key={index}
-                className="p-4 cursor-pointer hover:bg-gray-100 mr-10 w-full"
+                className=" w-max p-4 cursor-pointer hover:bg-gray-100 mr-10 w-full"
                 onClick={() => handleDoctorChange(doctor)}
               >
                 <Typography variant="paragraph" className="text-black">
