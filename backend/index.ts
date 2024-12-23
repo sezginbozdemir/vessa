@@ -5,6 +5,7 @@ import cors from "cors";
 import authRoutes from "./api/auth";
 import appointmentRoutes from "./api/appointmentRoutes";
 import userRoutes from "./api/userRoutes";
+import subscriberRoutes from "./api/subscriberRoutes";
 
 import sendEmailRoute from "./api/send-email/route";
 // Load environment variables from .env file
@@ -19,7 +20,7 @@ app.use(
       "http://demo.vessahospital.ro",
       "http://spital.vessahospital.ro",
       "https://spital.vessahospital.ro",
-      "http://localhost:3000",
+      // "http://localhost:3000",
     ],
     credentials: true,
   })
@@ -55,6 +56,7 @@ console.log("✅ /api/send-email route registered");
 app.use("/api/auth", authRoutes);
 app.use("/api", appointmentRoutes);
 app.use("/api", userRoutes);
+app.use("/api", subscriberRoutes);
 
 // Error handling for unhandled routes
 app.use((req, res) => {
