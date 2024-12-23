@@ -61,3 +61,6 @@
 .custom-date .react-datepicker__day:hover {
   border-radius: 2rem !important;
 }
+.popper-custom {
+  z-index: 1001 !important;
+}

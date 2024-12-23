@@ -18,6 +18,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { jwtDecode } from "jwt-decode";
 import { ProgramatorEmailTemplate } from "./ProgramatorEmailTemplate";
 import { User, UserApi } from "../../app/api/userApi";
+import "./select.css";
 
 interface CustomJwtPayload {
   userId: string;
@@ -519,7 +520,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
               placeholderText="Selectați data"
               calendarClassName="custom-datepicker-calendar"
               popperPlacement="bottom-end"
-              popperClassName="custom-popper-style"
+              popperClassName="custom-popper-style popper-custom"
             />
           </div>
         </div>

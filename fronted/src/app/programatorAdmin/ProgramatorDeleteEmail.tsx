@@ -21,8 +21,8 @@ export const ProgramatorDeleteEmail = (
     <div>
       <!-- Header Section -->
       <div style="text-align: center; padding-bottom: 20px;">
-        <a href="https://demo.vessahospital.ro/" target="_blank">
-          <img src="https://demo.vessahospital.ro/images/vessa-logo.png" alt="Logo" style="max-width: 200px; margin-bottom: 20px;" />
+        <a href="https://vessahospital.ro/" target="_blank">
+          <img src="https://vessahospital.ro/images/vessa-logo.png" alt="Logo" style="max-width: 200px; margin-bottom: 20px;" />
         </a>
         <h1 style="text-align: center; font-size: 32px; color: #080808; font-family: 'Montserrat', sans-serif;">Programarea a fost ștearsă cu succes:</h1> <!-- Montserrat applied -->
       </div>

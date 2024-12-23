@@ -164,6 +164,7 @@ const HeroSection = () => {
           alt="Header"
           width={1920}
           height={100}
+          layout="responsive"
           objectFit="cover"
         />
       </div>

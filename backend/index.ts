@@ -17,10 +17,11 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://demo.vessahospital.ro",
+      "http://vessahospital.ro",
+      "https://vessahospital.ro",
       "http://spital.vessahospital.ro",
       "https://spital.vessahospital.ro",
-      // "http://localhost:3000",
+      "http://localhost:3000",
     ],
     credentials: true,
   })

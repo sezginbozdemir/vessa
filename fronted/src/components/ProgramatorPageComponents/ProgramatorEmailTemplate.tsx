@@ -22,10 +22,10 @@ export const ProgramatorEmailTemplate = (
     <div>
       <!-- Header Section -->
       <div style="text-align: center; padding-bottom: 20px;">
-        <a href="https://demo.vessahospital.ro" target="_blank">
-          <img src="https://demo.vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="margin-bottom: 2rem; max-width: 200px;" />
+        <a href="https://vessahospital.ro" target="_blank">
+          <img src="https://vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="margin-bottom: 2rem; max-width: 200px;" />
         </a>
-        <h2 style="text-align: center; font-size: 32px; color: #080808; font-family: 'Montserrat', sans-serif;">Bună ${lastName},</h2> <!-- Montserrat applied -->
+        <h2 style="text-align: center; font-size: 32px; color: #080808; font-family: 'Montserrat', sans-serif;">Bună ${firstName},</h2> <!-- Montserrat applied -->
         <h3 style="text-align: center; font-size: 24px; color: #080808; font-family: 'Montserrat', sans-serif;">${message}</h3> <!-- Montserrat applied -->
       </div>
 

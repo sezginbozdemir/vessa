@@ -12,8 +12,8 @@ export const NewsletterConfirmation = (): string => {
     <div>
       <!-- Header Section -->
       <div style="text-align: center; padding-bottom: 20px;">
-        <a href="https://demo.vessahospital.ro" target="_blank">
-          <img src="https://demo.vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="margin-bottom: 2rem; max-width: 200px;" />
+        <a href="https://vessahospital.ro" target="_blank">
+          <img src="https://vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="margin-bottom: 2rem; max-width: 200px;" />
         </a>
         
       </div>

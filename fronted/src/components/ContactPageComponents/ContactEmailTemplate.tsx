@@ -18,8 +18,8 @@ export const ContactEmailTemplate = (
     <div>
       <!-- Header Section -->
       <div style="text-align: center; padding-bottom: 20px;">
-        <a href="https://demo.vessahospital.ro" target="_blank">
-          <img src="https://demo.vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="max-width: 200px; margin-bottom: 20px;" />
+        <a href="https://vessahospital.ro" target="_blank">
+          <img src="https://vessahospital.ro/images/vessa-logo.png" alt="Vessa Hospital" style="max-width: 200px; margin-bottom: 20px;" />
         </a>
         <h1 style="font-size: 32px; color: #080808; font-family: 'Montserrat', sans-serif;">Formular de Contact</h1> <!-- Montserrat applied -->
       </div>
