@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import Typography from "@/components/UI/Typography";
 import Image from "next/image";
 import Wrapper from "./UI/Wrapper";
 import Spacing from "./UI/Spacing";
+import { NewsletterConfirmation } from "./NewsletterConfirmation";
+import { newsletterApi } from "@/app/api/newsletterApi";
 
 type NewsletterSectionProps = {
   shape1?: boolean;
@@ -11,6 +14,49 @@ type NewsletterSectionProps = {
 };
 
 const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
+  const [message, setMessage] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+
+  const createSubscriber = newsletterApi().createSubscriber;
+  const handleSubscription = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setMessage("Introduceți o adresă de e-mail validă.");
+      return;
+    }
+
+    try {
+      const subscriberResponse = await createSubscriber({ email });
+      if (subscriberResponse) {
+        const response = await fetch("/api/send-email", {
+          method: "POST",
+          body: JSON.stringify({
+            to: email,
+            subject: "Abonare newsletter",
+            text: NewsletterConfirmation(),
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (response.ok) {
+          setMessage("Te-ai abonat cu succes!");
+          setTimeout(() => setMessage(""), 3000);
+          setEmail("");
+        } else {
+          setMessage("A apărut o eroare. Vă rugăm să încercați din nou.");
+          setTimeout(() => setMessage(""), 3000);
+        }
+      }
+    } catch (error) {
+      console.error("Eroare la trimiterea e-mailului la catch", error);
+      setMessage("A apărut o eroare. Vă rugăm să încercați din nou.");
+      setTimeout(() => setMessage(""), 3000);
+    }
+  };
+
   return (
     <section className="relative w-full bg-white py-[10rem] md:py-[8rem] sm:py-[8rem]">
       <Wrapper>
@@ -55,19 +101,36 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
                 </div>
                 <div className="sm:pl-[2.5rem] w-full">
                   <div className="flex items-center border-2 border-gray-300 rounded-2xl px-[2rem] py-[1.2rem] w-[60%] lg:w-[75%] md:w-[85%] sm:w-[100%]">
-                    <input
-                      type="email"
-                      placeholder="Introdu adresa de e-mail"
-                      className="flex-grow transition-all duration-300 ease-in-out outline-none text-dark-opacity-99 placeholder:text-details placeholder:opacity-70 text-details"
-                    />
-                    <FaPaperPlane className="text-gray-500 ml-[1rem] w-[2.4rem] h-auto" />
+                    <form
+                      className="flex w-full justify-between items-center"
+                      onSubmit={handleSubscription}
+                    >
+                      <input
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        name="email"
+                        type="email"
+                        placeholder="Introdu adresa de e-mail"
+                        className="flex-grow transition-all duration-300 ease-in-out outline-none text-dark-opacity-99 placeholder:text-details placeholder:opacity-70 text-details"
+                      />
+                      <button
+                        type="submit"
+                        className="text-gray-500 ml-[1rem] w-[2.4rem] h-auto cursor-pointer"
+                      >
+                        <FaPaperPlane size={20} />
+                      </button>
+                    </form>
                   </div>
+                  {message && (
+                    <div className="text-start text-gray-700 mt-3">
+                      <Typography variant="paragraph">{message}</Typography>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {shape1 && (
           <div className="absolute xl:top-[-32%] lg:top-[-32%]  md:hidden sm:hidden xl:left-0 left-0 w-full h-[30rem] z-0 pointer-events-none">
             <Image
