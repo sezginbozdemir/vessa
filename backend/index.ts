@@ -21,7 +21,7 @@ app.use(
       "https://vessahospital.ro",
       "http://spital.vessahospital.ro",
       "https://spital.vessahospital.ro",
-      "http://localhost:3000",
+      // "http://localhost:3000",
     ],
     credentials: true,
   })
