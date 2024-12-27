@@ -9,8 +9,7 @@ export const createSubscriber = async (
     const { email } = req.body;
     const existingSubscriber = await Subscriber.findOne({ email });
     if (existingSubscriber) {
-      console.error("Subscriber already exists");
-      return res.status(400).json({ message: "Subscriber already exists" });
+      return res.status(400).json({ message: "Email deja există." });
     }
 
     const newSubscriber = new Subscriber({
@@ -21,7 +20,7 @@ export const createSubscriber = async (
 
     return res
       .status(200)
-      .json({ message: "Subscriber created successfully!" });
+      .json({ message: "Abonatul a fost creat cu succes!" });
   } catch (error) {
     console.error("Error creating subscriber", error);
   }
