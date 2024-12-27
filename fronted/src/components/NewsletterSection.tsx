@@ -28,7 +28,13 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
 
     try {
       const subscriberResponse = await createSubscriber({ email });
+
       if (subscriberResponse) {
+        if (subscriberResponse.status !== 200) {
+          setMessage(subscriberResponse.message || "A apărut o eroare.");
+          setTimeout(() => setMessage(""), 5000);
+          return;
+        }
         const response = await fetch("/api/send-email", {
           method: "POST",
           body: JSON.stringify({
@@ -43,17 +49,17 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
 
         if (response.ok) {
           setMessage("Te-ai abonat cu succes!");
-          setTimeout(() => setMessage(""), 3000);
+          setTimeout(() => setMessage(""), 5000);
           setEmail("");
         } else {
-          setMessage("A apărut o eroare. Vă rugăm să încercați din nou.");
-          setTimeout(() => setMessage(""), 3000);
+          setMessage("A apărut o eroare.");
+          setTimeout(() => setMessage(""), 5000);
         }
       }
     } catch (error) {
-      console.error("Eroare la trimiterea e-mailului la catch", error);
-      setMessage("A apărut o eroare. Vă rugăm să încercați din nou.");
-      setTimeout(() => setMessage(""), 3000);
+      console.error("Eroare", error);
+      setMessage("A apărut o eroare.");
+      setTimeout(() => setMessage(""), 5000);
     }
   };
 
@@ -122,7 +128,7 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
                     </form>
                   </div>
                   {message && (
-                    <div className="text-start text-gray-700 mt-3">
+                    <div className="text-start text-red-500 ml-8 mt-3">
                       <Typography variant="paragraph">{message}</Typography>
                     </div>
                   )}

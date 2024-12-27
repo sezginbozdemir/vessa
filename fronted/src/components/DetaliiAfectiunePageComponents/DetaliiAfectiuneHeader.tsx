@@ -5,7 +5,7 @@ import Wrapper from "../UI/Wrapper";
 
 const HeaderDetaliiAfectiune = () => {
   return (
-    <section className="relative w-full h-[50vh] lg:h-[70vh] bg-light-blue">
+    <section className="relative w-full h-[60vh] md:h-[50vh] sm:h-[40vh] xs:h-[30vh] transition-all bg-light-blue">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/detaliiAfectiuneHeader.png"
@@ -20,9 +20,7 @@ const HeaderDetaliiAfectiune = () => {
 
       <div className="relative z-10 flex items-end justify-start h-full px-8 md:px-0 sm:px-0">
         <Wrapper>
-          <Typography
-            variant="h2"
-            className="text-black">
+          <Typography variant="h2" className="text-black">
             Dicționar Afecțiuni
           </Typography>
           <div className="w-[8rem] h-[0.3rem] bg-dark-blue mt-1"></div>

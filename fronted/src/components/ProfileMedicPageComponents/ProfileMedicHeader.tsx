@@ -5,7 +5,7 @@ import WrapperLarge from "../UI/WrapperLarge";
 
 const HeaderProfileMedic = () => {
   return (
-    <section className="relative w-full h-[50vh] lg:h-[70vh] bg-light-blue">
+    <section className="relative w-full h-[60vh] md:h-[50vh] sm:h-[40vh] xs:h-[30vh] transition-all bg-light-blue">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/mediciHeader.png"
@@ -21,16 +21,11 @@ const HeaderProfileMedic = () => {
       <div className="relative z-10 flex items-end justify-start h-full">
         <WrapperLarge>
           <div>
-            <Typography
-              variant="h2"
-              className="text-black">
+            <Typography variant="h2" className="text-black">
               MEDICI
             </Typography>
             <div className="w-[8rem] h-[0.3rem] bg-dark-blue mt-1"></div>
-            <Spacing
-              size="6.8"
-              md="1.2"
-            />
+            <Spacing size="6.8" md="1.2" />
           </div>
         </WrapperLarge>
       </div>
