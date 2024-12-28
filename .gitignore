@@ -6,7 +6,7 @@ node_modules/
 
 # Ignore build output (for frontend)
 .next/
-
+out
 # Ignore log files (for backend)
 logs/
 
