@@ -21,6 +21,7 @@ const logAll = async (): Promise<void> => {
     console.error("Error logging", error);
   }
 };
+
 //logAll();
 
 export default Subscriber;
