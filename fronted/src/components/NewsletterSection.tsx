@@ -14,6 +14,7 @@ type NewsletterSectionProps = {
 };
 
 const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
+  const [messageOk, setMessageOk] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
@@ -48,8 +49,9 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
         });
 
         if (response.ok) {
-          setMessage("Te-ai abonat cu succes!");
-          setTimeout(() => setMessage(""), 5000);
+          setMessage("");
+          setMessageOk("Te-ai abonat cu succes!");
+          setTimeout(() => setMessageOk(""), 5000);
           setEmail("");
         } else {
           setMessage("A apărut o eroare.");
@@ -130,6 +132,11 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
                   {message && (
                     <div className="text-start text-red-500 ml-8 mt-3">
                       <Typography variant="paragraph">{message}</Typography>
+                    </div>
+                  )}
+                  {messageOk && (
+                    <div className="text-start text-green-500 ml-8 mt-3">
+                      <Typography variant="paragraph">{messageOk}</Typography>
                     </div>
                   )}
                 </div>
