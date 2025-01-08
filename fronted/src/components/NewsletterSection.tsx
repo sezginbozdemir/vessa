@@ -71,14 +71,6 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
         <div className="relative z-10 grid justify-between grid-cols-12 md:grid-cols-8 sm:grid-cols-2">
           <div className="col-span-5 ml-10 md:col-span-3 sm:col-span-2 sm:ml-0">
             <div className="w-max relative flex">
-              <div className="absolute -left-9 sm:top-0 md:top-4 top-8 z-20">
-                <Image
-                  src="/images/xmas/mistletoe.svg"
-                  width={45}
-                  height={45}
-                  alt="Bell"
-                />
-              </div>
               <div className="sm:pl-[1.3rem]">
                 <Typography
                   variant="h2"
@@ -97,16 +89,8 @@ const NewsletterSection = ({ shape1, shape2 }: NewsletterSectionProps) => {
             <Typography variant="h3" className="text-black mb-[1.5rem]">
               Abonează-te la Newsletter
             </Typography>
-            <div className="col-span-5 ml-10 md:col-span-3 sm:col-span-2 sm:ml-0">
+            <div className="col-span-5  md:col-span-3 sm:col-span-2 sm:ml-0">
               <div className="relative flex">
-                <div className="absolute -left-9 sm:top-0 md:top-4 top-8 z-20">
-                  <Image
-                    src="/images/xmas/bell.svg"
-                    width={55}
-                    height={55}
-                    alt="Bell"
-                  />
-                </div>
                 <div className="sm:pl-[2.5rem] w-full">
                   <div className="flex items-center border-2 border-gray-300 rounded-2xl px-[2rem] py-[1.2rem] w-[60%] lg:w-[75%] md:w-[85%] sm:w-[100%]">
                     <form

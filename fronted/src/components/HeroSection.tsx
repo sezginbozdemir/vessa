@@ -29,16 +29,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative bg-light-blue overflow-hidden">
-      <div className="flex justify-center items-center w-full sm:h-[15px] h-[10px]">
-        <Image
-          src="/images/xmas/xmas-header.png"
-          alt="Header"
-          width={1920}
-          height={100}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
       <Wrapper>
         <Spacing sm="1.8" md="4.8" size="12" />
         <div className="grid items-center grid-cols-12 gap-8 md:grid-cols-8 sm:grid-cols-1 pt-[3.5rem]">
@@ -91,7 +81,7 @@ const HeroSection = () => {
               {/* Doctor Image */}
               <div className="relative w-[59.4rem] md:items-center md:justify-center h-[59.5rem] z-10 md:w-[45rem] md:h-[45rem] sm:w-[30rem] sm:h-[30rem]">
                 <Image
-                  src="/images/xmas/hero-xmas.png"
+                  src="/images/hero.png"
                   alt="Doctor"
                   layout="fill"
                   objectFit="contain"
@@ -158,16 +148,6 @@ const HeroSection = () => {
           </Typography>
         </div>
       </Wrapper>
-      <div className="absolute md:top-[95%] custom:top-[96.3%] lg:top-[92%] xl:top-[91%]  sm:top-[97%] w-full h-full z-10">
-        <Image
-          src="/images/xmas/snow.png"
-          alt="Header"
-          width={1920}
-          height={100}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
     </section>
   );
 };

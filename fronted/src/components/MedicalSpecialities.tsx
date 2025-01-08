@@ -41,14 +41,6 @@ const MedicalSpecialities: React.FC = () => {
       <div className="relative">
         <div className="flex w-full justify-center md:justify-start sm:justify-start">
           <div className="w-max relative flex">
-            <div className="absolute -left-9 sm:top-0 md:top-4 top-8">
-              <Image
-                src="/images/xmas/mistletoe.svg"
-                width={45}
-                height={45}
-                alt="Bell"
-              />
-            </div>
             <div className="sm:pl-[1.3rem]">
               <Typography
                 variant="h2"

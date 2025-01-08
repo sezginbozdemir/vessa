@@ -27,14 +27,6 @@ const DictionarySection = () => {
         <div className="grid grid-cols-12 md:grid-cols-8 sm:grid-cols-2 gap-[3.2rem] md:gap-2 relative">
           <div className="relative z-10 flex flex-col col-span-12 md:col-span-12 sm:col-span-2">
             <div className="w-max relative flex">
-              <div className="absolute -left-9 sm:top-0 md:top-4 top-8">
-                <Image
-                  src="/images/xmas/mistletoe.svg"
-                  width={45}
-                  height={45}
-                  alt="Bell"
-                />
-              </div>
               <div className="sm:pl-[1.3rem]">
                 <Typography variant="h2" className="text-black">
                   Dicționar de afecțiuni
