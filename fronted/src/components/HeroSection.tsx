@@ -34,10 +34,10 @@ const HeroSection = () => {
         <div className="grid items-center grid-cols-12 gap-8 md:grid-cols-8 sm:grid-cols-1 pt-[3.5rem]">
           <div className="flex flex-col justify-center col-span-6 md:col-span-8 sm:col-span-12 md:text-center">
             <Typography variant="h1" className="text-black whitespace-nowrap">
-              SOLUȚIA <span className="text-dark-blue">SĂNĂTĂȚII</span>
+              SPITALUL <span className="text-dark-blue">TĂU</span>,
             </Typography>
             <Typography variant="h1" className="text-black">
-              ABSOLUTE
+              MEDICII <span className="text-dark-blue">TĂI</span>.
             </Typography>
 
             <div className="max-w-[85%] md:max-w-[70%] sm:max-w-full md:mx-auto">
@@ -45,10 +45,11 @@ const HeroSection = () => {
                 variant="paragraph"
                 className="mt-4 text-dark-opacity-75"
               >
-                Vessa Hospital este locul în care sănătatea ta primește atenția
-                și grija pe care le meriți. Cu o echipă de experți și servicii
-                medicale complete, ne asigurăm că ai parte de îngrijire modernă
-                și personalizată, într-un mediu sigur și confortabil.
+                La Vessa Hospital, sănătatea ta este prioritatea noastră. Cu o
+                echipă de experți dedicați și servicii medicale complete, ne
+                adaptăm permanent pentru a răspunde nevoilor tale.Suntem aici să
+                te sprijinim, într-un mediu sigur, confortabil și orientat către
+                binele tău.
               </Typography>
             </div>
 

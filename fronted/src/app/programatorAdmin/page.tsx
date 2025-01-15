@@ -720,6 +720,9 @@ const ProgramatorAdmin = () => {
               <th className="px-4 py-2 border border-gray-200 text-menu">
                 Oră
               </th>
+              <th className="sm:hidden xs:hidden px-4 py-2 border border-gray-200 text-menu">
+                Creat de
+              </th>
               {(user?.role === "admin" || user?.role === "guru") && (
                 <th className="px-4 py-2 border border-gray-200 text-menu"></th>
               )}
@@ -770,6 +773,9 @@ const ProgramatorAdmin = () => {
 
                     <td className="px-4 py-2 border border-gray-200 text-paragraph">
                       {appointment.timeSlot}
+                    </td>
+                    <td className="sm:hidden px-4 py-2 border border-gray-200 text-paragraph">
+                      {appointment.createdBy}
                     </td>
 
                     {(user?.role === "admin" || user?.role === "guru") && (
@@ -838,6 +844,10 @@ const ProgramatorAdmin = () => {
                           <div>
                             <strong>Tip programare: </strong>
                             {appointment.appointmentType}
+                          </div>
+                          <div>
+                            <strong>Creat de: </strong>
+                            {appointment.createdBy}
                           </div>
                           <div></div>
                           <Typography

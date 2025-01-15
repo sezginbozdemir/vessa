@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import ServiceCard from "./UI/ServiceCard";
 import Typography from "./UI/Typography";
 import Spacing from "./UI/Spacing";

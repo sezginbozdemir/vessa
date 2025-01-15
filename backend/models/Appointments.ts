@@ -11,6 +11,8 @@ export interface AppointmentDocument extends Document {
   timeSlot: string;
   isModify: boolean;
   appointmentType: string;
+  createdAt?: Date;
+  createdBy?: string;
 }
 
 const AppointmentSchema = new Schema<AppointmentDocument>({
@@ -23,6 +25,7 @@ const AppointmentSchema = new Schema<AppointmentDocument>({
   date: { type: String, required: true },
   timeSlot: { type: String, required: true },
   appointmentType: { type: String, required: true },
+  createdBy: { type: String, required: true },
   isModify: {
     type: Boolean,
     default: false,

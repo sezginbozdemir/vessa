@@ -15,11 +15,11 @@ import { Metadata } from "next";
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: "Servicii Medicale de Top | VESSA Hospital Timișoara",
+    title: "Îngrijire Medicală Personalizată | VESSA Hospital Timișoara",
     description:
-      "Bine ai venit la VESSA Hospital! Descoperă servicii medicale de top, o echipă dedicată și tehnologie avansată pentru sănătatea ta. Programează-te online și află mai multe despre specialitățile și articolele noastre recente.",
+      "La VessaHospital, sănătatea ta este prioritatea noastră. Spitalul tău îți oferă îngrijire medicală personalizată, susținută de medicii tăi dedicați și tehnologie avansată. Descoperă cum ne adaptăm permanent pentru a răspunde nevoilor tale, într-un mediu sigur și confortabil, orientat către binele tău.",
     keywords:
-      "VESSA Hospital, servicii medicale, sănătate, programare online, dicționar medical, articole sănătate, medici specializați, tehnologie avansată, îngrijire personalizată",
+      "îngrijire medicală personalizată, tehnologie avansată, echipă medicală dedicată, sănătatea pacientului, VessaHospital, tratament adaptat, spitalul tău, medicii tăi, servicii medicale de top, medici empatici, plan de tratament personalizat, inovație în sănătate, recuperare completă, servicii de sănătate accesibile",
   };
 };
 

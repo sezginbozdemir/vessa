@@ -20,10 +20,20 @@ import { TimeSlot } from "./ProgramatorAdminForm";
 import { ProgramatorEmailTemplate } from "./ProgramatorEmailTemplate";
 import { useRouter } from "next/navigation";
 import { User, UserApi } from "../../app/api/userApi";
+import { jwtDecode } from "jwt-decode";
+
+interface CustomJwtPayload {
+  userId: string;
+  username: string;
+  role: string;
+  fullname: string;
+  iat: number;
+}
 
 const AppointmentForm = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState("");
   const [users, setUsers] = useState<User[]>([]);
+  const [userRole, setUserRole] = useState<string>("User");
   const [selectedDoctor, setSelectedDoctor] = useState("");
   const [filteredDoctors, setFilteredDoctors] = useState<User[]>([]);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -124,6 +134,24 @@ const AppointmentForm = () => {
     fetchData();
   }, [getUsers]);
 
+  useEffect(() => {
+    const getUserRole = (): string => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        return "User";
+      }
+      try {
+        const decodedToken = jwtDecode<CustomJwtPayload>(token);
+        return decodedToken.role;
+      } catch (error) {
+        console.error("Invalid token", error);
+        return "User";
+      }
+    };
+
+    const role = getUserRole();
+    setUserRole(role);
+  }, [userRole]);
   const doctorsData = useMemo(() => {
     return users.filter((user) => user.role === "medic");
   }, [users]);
@@ -286,6 +314,7 @@ const AppointmentForm = () => {
       timeSlot: selectedTimeSlot,
       checkboxChecked: checkboxChecked,
       appointmentType: "Consultatie",
+      createdBy: userRole,
 
       isModify: false, // Set isModify to false for all user-created appointments
     };

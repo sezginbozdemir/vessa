@@ -74,8 +74,8 @@ const AboutSection = () => {
 
             <Typography variant="paragraph" className="text-black opacity-75">
               La Vessa Hospital, oferim îngrijire medicală completă, bazată pe
-              profesionalism, empatie și tehnologie modernă. Suntem alături de
-              tine pentru o sănătate absolută
+              profesionalism, empatie și tehnologie modernă. Ne adaptăm după
+              tine și nevoile tale, pentru că sănătatea ta este pe primul loc.
             </Typography>
 
             <Spacing size="2.5" md="1.2" sm="2" />

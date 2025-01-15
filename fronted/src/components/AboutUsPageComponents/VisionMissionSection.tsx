@@ -44,7 +44,8 @@ const VisionMissionSection = () => {
           <Spacing size="1" md="1.5" />
           <Typography variant="paragraph" className="text-black opacity-75">
             Să oferim îngrijire medicală de excepție, cu o echipă dedicată și
-            tehnologie avansată, punând pacientul pe primul loc.
+            tehnologie avansată, adaptându-ne permanent după pacient și nevoile
+            sale.
           </Typography>
         </div>
       </div>

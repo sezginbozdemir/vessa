@@ -1270,7 +1270,7 @@ export const doctorsData = [
         title: "Interpretare Imagistică de Specialitate",
         servicesText:
           "Interpretarea imagistică de specialitate este un proces esențial pentru diagnosticarea corectă a afecțiunilor musculo-scheletale sau traumatice. Acest serviciu presupune analiza de către un specialist ortoped a investigațiilor imagistice, cum ar fi radiografiile, RMN-urile, tomografiile computerizate sau ecografiile. Medicul examinează imaginile pentru a identifica leziuni, fracturi, inflamații, afecțiuni degenerative sau alte anomalii structurale. Interpretarea imagistică este crucială pentru stabilirea unui plan de tratament precis și personalizat, deoarece oferă informații detaliate despre localizarea și gravitatea afecțiunii. Specialistul poate corela aceste informații cu simptomele și istoricul medical al pacientului pentru un diagnostic complet. Acest proces reprezintă o etapă esențială în gestionarea oricărei afecțiuni ortopedice, fie că este vorba despre o problemă acută, cum ar fi o fractură, fie despre una cronică, precum artroza.",
-        slug: "interpretare-imagistică-de-specialitate",
+        slug: "interpretare-imagistica-de-specialitate",
         metaTitle: "Interpretare Imagistică de Specialitate | vessahospital.ro",
         metaDescription:
           "Interpretarea imaginilor medicale (radiografii, RMN, CT, ecografii) pentru un diagnostic corect și un tratament personalizat al afecțiunilor musculo-scheletale.",

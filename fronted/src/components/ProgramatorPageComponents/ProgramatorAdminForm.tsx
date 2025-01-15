@@ -40,6 +40,7 @@ export type AppointmentData = {
   timeSlot: string;
   isModify?: boolean;
   appointmentType: string;
+  createdBy: string;
 };
 
 export type TimeSlot = {
@@ -62,6 +63,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
 }) => {
   const { getUsers, appointmentCheck } = UserApi();
   const [users, setUsers] = useState<User[]>([]);
+  const [userRole, setUserRole] = useState<string>("User");
   const [lastName, setLastName] = useState(initialData?.lastName ?? "");
   const [firstName, setFirstName] = useState(initialData?.firstName ?? "");
   const [email, setEmail] = useState(initialData?.email ?? "");
@@ -90,21 +92,24 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
 
   const [fullname, setFullname] = useState<string>("");
 
-  const isAdmin = (): boolean => {
-    const token = localStorage.getItem("token");
+  useEffect(() => {
+    const getUserRole = (): string => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        return "User";
+      }
+      try {
+        const decodedToken = jwtDecode<CustomJwtPayload>(token);
+        return decodedToken.role;
+      } catch (error) {
+        console.error("Invalid token", error);
+        return "User";
+      }
+    };
 
-    if (!token) {
-      return false;
-    }
-
-    try {
-      const decodedToken = jwtDecode<CustomJwtPayload>(token);
-      return decodedToken.role === "guru";
-    } catch (error) {
-      console.error("Invalid token", error);
-      return false;
-    }
-  };
+    const role = getUserRole();
+    setUserRole(role);
+  }, [userRole]);
 
   useEffect(() => {
     const userData = localStorage.getItem("user");
@@ -272,7 +277,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
     const formattedDate = formatDateToYYYYMMDD(selectedDate);
 
     if (formattedDate < currenDate) {
-      if (!isAdmin()) {
+      if (userRole != "guru") {
         onSubmitError("Data programării nu poate fi in trecut.");
         return;
       }
@@ -288,6 +293,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
       timeSlot: selectedTimeSlot,
       isModify: initialData ? true : false,
       appointmentType: selectedType,
+      createdBy: userRole,
     };
 
     try {
@@ -375,8 +381,8 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
           <input
             type="text"
             placeholder="Nume"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
             className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
           />
         </div>
@@ -391,8 +397,8 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
           <input
             type="text"
             placeholder="Prenume"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
           />
         </div>
@@ -429,7 +435,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
           />
         </div>
 
-        {isAdmin() && (
+        {userRole === "guru" && (
           <div className="col-span-6 md:col-span-4 sm:col-span-2">
             <Spacing size="4.8" md="3" sm="3" />
             <label className="flex items-center">

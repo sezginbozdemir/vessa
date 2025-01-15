@@ -12,11 +12,11 @@ import { Metadata } from "next";
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: "Despre Noi - Îngrijire Medicală | VESSA Hospital Timișoara",
+    title: "Colaborăm pentru o Sănătate Mai Bună | VESSA Hospital Timișoara",
     description:
-      "Descoperă VessaHospital, locul unde sănătatea ta este prioritatea noastră. Oferim servicii medicale personalizate, tehnologii avansate și o echipă dedicată pentru tratamente eficiente și sprijin continuu.",
+      "La VessaHospital, sănătatea ta este prioritatea noastră. Credem că fiecare pacient merită îngrijire personalizată și un plan de tratament adaptat nevoilor sale. VessaHospital este un loc în care fiecare detaliu contează, iar echipa noastră dedicată se asigură că îți oferim nu doar tratamente eficiente, ci și sprijin constant pe parcursul întregii tale recuperări.",
     keywords:
-      "despre noi VESSA Hospital, viziune, misiune, colaborare, succes VESSA, echipă medicală, tehnologie avansată, sănătate, îngrijire medicală personalizată",
+      "îngrijire medicală personalizată, tehnologie avansată, echipă medicală dedicată, sănătatea pacientului, VessaHospital, tratament adaptat, spitalul tău, medicii tăi, servicii medicale de top, medici empatici, plan de tratament personalizat,inovație în sănătate, recuperare completă, servicii de sănătate accesibile, evoluție medicală",
   };
 };
 

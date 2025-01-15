@@ -15,6 +15,7 @@ export const createAppointment = async (req: Request, res: Response) => {
       timeSlot,
       isModify,
       appointmentType,
+      createdBy,
     } = req.body;
 
     const formattedDate = new Date(date).toISOString().split("T")[0]; // Obținem doar "YYYY-MM-DD"
@@ -45,6 +46,7 @@ export const createAppointment = async (req: Request, res: Response) => {
       timeSlot,
       isModify,
       appointmentType,
+      createdBy,
     });
 
     await newAppointment.save();

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Typography from "./UI/Typography";
 import Spacing from "./UI/Spacing";
 import DoctorProfileCard from "./UI/DoctorProfileCard";
