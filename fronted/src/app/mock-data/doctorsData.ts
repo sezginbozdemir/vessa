@@ -1534,20 +1534,6 @@ export const doctorsData = [
       "Dr. Mihai Hurmuz, ortopedie, tratamente ortopedice, recuperare mobilitate, Vessa Hospital",
     slug: "dr-hurmuz-mihai_ortopedie",
   },
-  {
-    name: "Dr. Calin Ungureanu",
-    specialization: "Ortopedie",
-    imageUrl: "/images/icon-medic.png",
-    about:
-      " Specialist în Ortopedie, Dr. Călin Ungureanu este dedicat tratamentului afecțiunilor musculo-scheletale, combinând intervențiile chirurgicale cu soluții conservative pentru a asigura o recuperare optimă. Cu o experiență vastă în domeniu și o abordare personalizată, el ajută pacienții să își recâștige mobilitatea și calitatea vieții. Dr. Ungureanu face parte din echipa de elită a Vessa Hospital, aducând excelență și empatie în fiecare caz.",
-    contact: "+40 744 833 815",
-    metaTitle: "Dr. Călin Ungureanu - Specialist Ortopedie | vessahospital.ro",
-    metaDescription:
-      "Dr. Călin Ungureanu, specialist în Ortopedie la Vessa Hospital, oferă tratamente personalizate pentru afecțiuni musculo-scheletale, combinând intervenții chirurgicale și soluții conservatoare.",
-    keywords:
-      "Dr. Călin Ungureanu, ortopedie, afecțiuni musculo-scheletale, tratament personalizat, Vessa Hospital",
-    slug: "dr-calin-ungureanu_ortopedie",
-  },
 
   {
     name: "Dr. Cristian Ferdean ",
