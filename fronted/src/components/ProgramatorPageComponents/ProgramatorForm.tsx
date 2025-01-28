@@ -571,7 +571,7 @@ const AppointmentForm = () => {
                 selected={selectedDate}
                 onChange={handleDateChange}
                 filterDate={isDateAvailable}
-                minDate={new Date(2025, 0, 13)}
+                minDate={addDays(new Date(), 1)}
                 maxDate={addDays(new Date(), 30)}
                 dateFormat="dd MMM yyyy"
                 className="w-full py-[1.6rem] px-[1.2rem] border border-gray-400 rounded-2xl text-details placeholder:text-dark-opacity-75 placeholder:text-details h-[6.4rem]"
