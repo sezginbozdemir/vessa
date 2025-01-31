@@ -89,6 +89,27 @@ const logAllUsers = async (): Promise<void> => {
     console.error("Error logging users:", error);
   }
 };
+const changeUserPassword = async (username: string, newPassword: string) => {
+  try {
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    const result = await User.findOneAndUpdate(
+      { username },
+      { password: hashedPassword },
+      { new: true }
+    );
+
+    if (result) {
+      console.log(`Password updated for user: ${username}`);
+    } else {
+      console.log(`User "${username}" not found.`);
+    }
+  } catch (error) {
+    console.error("Error updating password:", error);
+  }
+};
+
+////changeUserPassword("Daniel-Costea", "429467");
 //deleteUserByFullname("");
 //seedUsers();
 //logAllUsers();
