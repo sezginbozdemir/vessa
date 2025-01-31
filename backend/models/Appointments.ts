@@ -15,22 +15,25 @@ export interface AppointmentDocument extends Document {
   createdBy?: string;
 }
 
-const AppointmentSchema = new Schema<AppointmentDocument>({
-  lastName: { type: String, required: true },
-  firstName: { type: String, required: false },
-  email: { type: String, required: true },
-  phone: { type: String, required: true },
-  specialization: { type: String, required: true },
-  doctor: { type: String, required: true },
-  date: { type: String, required: true },
-  timeSlot: { type: String, required: true },
-  appointmentType: { type: String, required: true },
-  createdBy: { type: String, required: true },
-  isModify: {
-    type: Boolean,
-    default: false,
+const AppointmentSchema = new Schema<AppointmentDocument>(
+  {
+    lastName: { type: String, required: true },
+    firstName: { type: String, required: false },
+    email: { type: String, required: true },
+    phone: { type: String, required: true },
+    specialization: { type: String, required: true },
+    doctor: { type: String, required: true },
+    date: { type: String, required: true },
+    timeSlot: { type: String, required: true },
+    appointmentType: { type: String, required: true },
+    createdBy: { type: String, required: true },
+    isModify: {
+      type: Boolean,
+      default: false,
+    },
   },
-});
+  { timestamps: true }
+);
 
 const Appointment = mongoose.model<AppointmentDocument>(
   "Appointment",
