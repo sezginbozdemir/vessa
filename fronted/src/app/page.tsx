@@ -28,7 +28,7 @@ export const generateMetadata = (): Metadata => {
       type: "website",
       images: [
         {
-          url: "https://vessahospital.ro/images/vessa-logo.png",
+          url: "https://vessahospital.ro/images/logo.webp",
           alt: "VESSA Hospital - Îngrijire Medicală Personalizată",
         },
       ],
