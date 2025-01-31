@@ -20,6 +20,19 @@ export const generateMetadata = (): Metadata => {
       "La VessaHospital, sănătatea ta este prioritatea noastră. Spitalul tău privat din Timișoara îți oferă îngrijire medicală personalizată, susținută de medicii tăi dedicați și tehnologie avansată. Descoperă cum ne adaptăm permanent pentru a răspunde nevoilor tale, într-un mediu sigur și confortabil, orientat către binele tău.",
     keywords:
       "îngrijire medicală personalizată, tehnologie avansată, echipă medicală dedicată, sănătatea pacientului, VessaHospital, tratament adaptat, spitalul tău, spital privat, medicii tăi, servicii medicale de top, medici empatici, plan de tratament personalizat, inovație în sănătate, recuperare completă, servicii de sănătate accesibile",
+    openGraph: {
+      title: "Îngrijire Medicală Personalizată | VESSA Hospital Timișoara",
+      description:
+        "La VessaHospital, sănătatea ta este prioritatea noastră. Spitalul tău privat din Timișoara îți oferă îngrijire medicală personalizată, susținută de medicii tăi dedicați și tehnologie avansată.",
+      url: "https://vessahospital.ro",
+      type: "website",
+      images: [
+        {
+          url: "https://vessahospital.ro/images/vessa-logo.png",
+          alt: "VESSA Hospital - Îngrijire Medicală Personalizată",
+        },
+      ],
+    },
   };
 };
 
