@@ -124,3 +124,9 @@ option {
   min-width: 100%; /* Calendarul să se extindă complet */
   z-index: 20;
 }
+.custom-blue-text {
+  color: #2d3686;
+}
+.accent {
+  color: #6c94e9;
+}

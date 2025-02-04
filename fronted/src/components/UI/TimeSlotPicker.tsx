@@ -10,11 +10,13 @@ type TimeSlot = {
 type TimeSlotPickerDropdownProps = {
   availableTimeSlots: TimeSlot[];
   selectedTimeSlot?: string | null;
+  selectedDate?: Date | null;
   onTimeSlotChange?: (time: string) => void;
   className?: string;
 };
 
 const TimeSlotPickerDropdown = ({
+  selectedDate,
   availableTimeSlots,
   selectedTimeSlot,
   onTimeSlotChange,
@@ -66,7 +68,11 @@ const TimeSlotPickerDropdown = ({
         }`}
       >
         <span className="text-dark-opacity-75">
-          {selectedTimeSlot ? selectedTimeSlot : "Selectează ora"}
+          {selectedTimeSlot
+            ? selectedTimeSlot
+            : selectedDate !== null
+            ? "Selectează ora"
+            : "Selectează întâi data"}
         </span>
         <FaClock className="text-dark-blue" />
       </div>

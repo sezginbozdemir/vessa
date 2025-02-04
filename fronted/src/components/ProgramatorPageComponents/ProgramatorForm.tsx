@@ -21,6 +21,7 @@ import { ProgramatorEmailTemplate } from "./ProgramatorEmailTemplate";
 import { useRouter } from "next/navigation";
 import { User, UserApi } from "../../app/api/userApi";
 import { jwtDecode } from "jwt-decode";
+import { useSpecialty } from "./SpecialtyContext";
 
 interface CustomJwtPayload {
   userId: string;
@@ -31,7 +32,7 @@ interface CustomJwtPayload {
 }
 
 const AppointmentForm = () => {
-  const [selectedSpecialty, setSelectedSpecialty] = useState("");
+  const { selectedSpecialty, setSelectedSpecialty } = useSpecialty();
   const [users, setUsers] = useState<User[]>([]);
   const [userRole, setUserRole] = useState<string>("User");
   const [selectedDoctor, setSelectedDoctor] = useState("");
@@ -120,6 +121,17 @@ const AppointmentForm = () => {
     }
 
     setErrors(newErrors);
+    if (!formIsValid) {
+      const hasErrors = Object.values(newErrors).some((error) => error !== "");
+      const checkboxErrorOnly =
+        newErrors.checkboxChecked !== "" &&
+        Object.values(newErrors).filter((error) => error !== "").length === 1;
+
+      if (hasErrors && !checkboxErrorOnly && window.innerWidth <= 768) {
+        const form = document.getElementById("form");
+        form?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     return formIsValid;
   };
 
@@ -211,18 +223,24 @@ const AppointmentForm = () => {
     }
   };
 
+  useEffect(() => {
+    if (selectedSpecialty) {
+      const doctorsForSpecialty = doctorsData.filter(
+        (doctor) =>
+          doctor.specialization.includes(selectedSpecialty) &&
+          Array.isArray(doctor.availability!) &&
+          doctor.availability!.length > 0
+      );
+      setFilteredDoctors(doctorsForSpecialty);
+      if (doctorsForSpecialty.length === 1) {
+        setSelectedDoctor(doctorsForSpecialty[0].fullname);
+      }
+    }
+  }, [selectedSpecialty, doctorsData]);
+
   const handleSpecialtyChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const specialty = e.target.value;
     setSelectedSpecialty(specialty);
-
-    const doctorsForSpecialty = doctorsData.filter(
-      (doctor) =>
-        doctor.specialization.includes(specialty) && // Use includes to check for specialty in specialization array
-        Array.isArray(doctor.availability!) && // Ensure availability is an array
-        doctor.availability!.length > 0 // Check that there are available slots
-    );
-
-    setFilteredDoctors(doctorsForSpecialty);
     setSelectedDoctor("");
     setSelectedDate(null);
     setAvailableTimeSlots([]);
@@ -243,7 +261,7 @@ const AppointmentForm = () => {
 
   const formatDateToYYYYMMDD = (date: Date) => {
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0"); // `getMonth()` returnează indexul (0 pentru ianuarie)
+    const month = String(date.getMonth() + 1).padStart(2, "0");
     const day = String(date.getDate()).padStart(2, "0");
     return `${year}-${month}-${day}`;
   };
@@ -288,7 +306,8 @@ const AppointmentForm = () => {
   };
 
   const handleSubmit = async () => {
-    if (!validateForm()) {
+    const isFormValid = validateForm();
+    if (isFormValid === false) {
       return;
     }
 
@@ -296,11 +315,11 @@ const AppointmentForm = () => {
     const formattedDate = formatDateToYYYYMMDD(selectedDate!);
 
     if (formattedDate < currenDate) {
-      setToastMessage("Data programării nu poate fi în trecut."); // Call the error handler
+      setToastMessage("Data programării nu poate fi în trecut.");
       setShowToast(true);
       setTimeout(() => setShowToast(false), 3000);
 
-      return; // Stop further execution
+      return;
     }
 
     const appointmentData = {
@@ -316,7 +335,7 @@ const AppointmentForm = () => {
       appointmentType: "Consultatie",
       createdBy: userRole,
 
-      isModify: false, // Set isModify to false for all user-created appointments
+      isModify: false,
     };
 
     const emailData = {
@@ -412,9 +431,9 @@ const AppointmentForm = () => {
       )}
 
       <Wrapper>
-        <div className="text-center">
+        <div id="form" className="text-center">
           <Typography variant="h2" className="text-black">
-            Cere o <span className="text-dark-blue">programare</span>
+            Adaugă o <span className="text-dark-blue">programare</span>
           </Typography>
         </div>
         <Spacing size="5" md="5" sm="4" />
@@ -430,7 +449,7 @@ const AppointmentForm = () => {
             </label>
             <input
               type="text"
-              placeholder="Nume"
+              placeholder="Câmp obligatoriu*"
               value={firstName}
               onChange={handleFirstNameChange}
               className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
@@ -450,7 +469,7 @@ const AppointmentForm = () => {
             </label>
             <input
               type="text"
-              placeholder="Prenume"
+              placeholder="Câmp obligatoriu*"
               value={lastName}
               onChange={handleLastNameChange}
               className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
@@ -470,7 +489,7 @@ const AppointmentForm = () => {
             </label>
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Câmp obligatoriu*"
               value={email}
               onChange={handleEmailChange}
               className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
@@ -491,7 +510,7 @@ const AppointmentForm = () => {
             </label>
             <input
               type="text"
-              placeholder="Număr de telefon"
+              placeholder="Câmp obligatoriu*"
               value={phone}
               onChange={handlePhoneChange}
               className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
@@ -543,7 +562,11 @@ const AppointmentForm = () => {
               onChange={(e) => handleDoctorChange(e.target.value)}
               className="w-full py-[1.6rem] px-[1.2rem] mt-2 border border-gray-400 rounded-2xl text-details placeholder:text-details h-[6.4rem]"
             >
-              <option value="">Medic</option>
+              <option value="">
+                {selectedSpecialty !== ""
+                  ? "Medic"
+                  : "Selectează întâi specialitatea"}
+              </option>
               {filteredDoctors.map((doctor, index) => (
                 <option key={index} value={doctor.fullname}>
                   {doctor.fullname}
@@ -575,7 +598,11 @@ const AppointmentForm = () => {
                 maxDate={addDays(new Date(), 30)}
                 dateFormat="dd MMM yyyy"
                 className="w-full py-[1.6rem] px-[1.2rem] border border-gray-400 rounded-2xl text-details placeholder:text-dark-opacity-75 placeholder:text-details h-[6.4rem]"
-                placeholderText="Selectează data"
+                placeholderText={
+                  selectedDoctor !== ""
+                    ? "Selectează data"
+                    : "Selectează întâi un medic"
+                }
                 popperPlacement="bottom-end"
                 popperClassName="custom-popper-style"
                 calendarClassName="custom-datepicker-calendar"
@@ -590,6 +617,7 @@ const AppointmentForm = () => {
           <div className="col-span-6 md:col-span-4 sm:col-span-2">
             <Spacing size="4.8" md="3" sm="3" />
             <TimeSlotPickerDropdown
+              selectedDate={selectedDate}
               availableTimeSlots={availableTimeSlots}
               selectedTimeSlot={selectedTimeSlot}
               onTimeSlotChange={(time) => {
@@ -636,7 +664,7 @@ const AppointmentForm = () => {
           <Spacing size="3" md="3" sm="3" />
 
           <div className="col-span-12 md:col-span-8 sm:col-span-2">
-            <Button label="Programează-te" onClick={handleSubmit} />
+            <Button label="Adaugă programarea" onClick={handleSubmit} />
           </div>
         </div>
       </Wrapper>

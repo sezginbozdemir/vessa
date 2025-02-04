@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import Image from "next/image";
 import "./globals.css";
+import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
 
 export const metadata: Metadata = {
   title: "Vessa Hospital",
@@ -15,10 +18,10 @@ export default function RootLayout({
     <html lang="ro">
       <head>
         {/* Google Analytics Tag */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-        ></script>
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -29,8 +32,38 @@ export default function RootLayout({
                   `,
           }}
         />
+        {/* Facebook Pixel */}
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '982367670512175');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <SpecialtyProvider>{children}</SpecialtyProvider>
+        {/* Facebook Pixel */}
+        <noscript>
+          <Image
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            alt="facebook"
+            src="https://www.facebook.com/tr?id=982367670512175&ev=PageView&noscript=1"
+          />
+        </noscript>
+      </body>
     </html>
   );
 }

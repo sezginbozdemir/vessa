@@ -1990,21 +1990,7 @@ export const doctorsData = [
       "Dr. Daniel Ceachir, ortopedie, tratamente ortopedice, soluții personalizate, Vessa Hospital",
     slug: "dr-daniel-ceachir_ortopedie",
   },
-  {
-    name: "Dr. Vitalie Slobozian",
-    specialization: "Ortopedie",
-    imageUrl: "/images/Vitalie-Slobozian.png",
-    about:
-      " Dr. Vitalie Slobozian este specialist în Ortopedie, dedicat tratamentului afecțiunilor musculo-scheletale. La Vessa Hospital, el folosește abordări moderne și tehnici avansate pentru diagnostic și intervenții chirurgicale, axându-se pe soluții personalizate pentru fiecare pacient. Prin expertiza sa, Dr. Slobozian contribuie la îmbunătățirea mobilității și a calității vieții pacienților săi.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Vitalie Slobozian - Specialist Ortopedie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Vitalie Slobozian, specialist în Ortopedie la Vessa Hospital, utilizează tehnici avansate și personalizate pentru a trata afecțiunile musculo-scheletale și a îmbunătăți mobilitatea pacienților.",
-    keywords:
-      "Dr. Vitalie Slobozian, ortopedie, afecțiuni musculo-scheletale, tratamente personalizate, Vessa Hospital",
-    slug: "dr-vitalie-slobozian_ortopedie",
-  },
+
   {
     name: "Dr. Eduard Szucsik",
     specialization: "Chirurgie Generala",
