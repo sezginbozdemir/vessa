@@ -169,7 +169,7 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
       return false;
     }
 
-    if (selectedType === "Consultatie" && userRole !== "admin") {
+    if (selectedType === "Consultatie" && userRole !== "guru") {
       return availableDates.some(
         (availableDate) => availableDate.toDateString() === date.toDateString()
       );
@@ -182,14 +182,8 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
     { time: "08:00", isBooked: false },
     { time: "09:00", isBooked: false },
     { time: "10:00", isBooked: false },
-    { time: "11:00", isBooked: false },
-    { time: "12:00", isBooked: false },
     { time: "13:00", isBooked: false },
     { time: "14:00", isBooked: false },
-    { time: "15:00", isBooked: false },
-    { time: "16:00", isBooked: false },
-    { time: "17:00", isBooked: false },
-    { time: "18:00", isBooked: false },
   ];
 
   const handleDateChange = async (date: Date | null) => {
@@ -205,15 +199,6 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
           (entry) =>
             formatDateToYYYYMMDD(new Date(entry.date)) === formattedDate
         );
-        if (userRole === "admin") {
-          const slots = predefinedSlots.map((slot) => ({
-            time: slot.time, //
-            isBooked: false,
-          }));
-          setAvailableTimeSlots(slots);
-          console.log(slots);
-          return;
-        }
 
         if (availabilityForDate) {
           const timeSlotsForDate = availabilityForDate.timeSlots;
@@ -224,7 +209,29 @@ const AppointmentFormAdmin: React.FC<AppointmentFormProps> = ({
               const bookedSlots = res.data;
               let updatedTimeSlots;
 
-              if (selectedType === "Consultatie" && userRole !== "admin") {
+              if (userRole === "guru") {
+                const defaultTimeSlots = [
+                  "08:00",
+                  "09:00",
+                  "10:00",
+                  "11:00",
+                  "12:00",
+                  "13:00",
+                  "14:00",
+                  "15:00",
+                  "16:00",
+                  "17:00",
+                  "18:00",
+                  "19:00",
+                ];
+                updatedTimeSlots = defaultTimeSlots.map((slot) => ({
+                  time: slot,
+                  isBooked: false,
+                }));
+              } else if (
+                selectedType === "Consultatie" &&
+                userRole !== "guru"
+              ) {
                 updatedTimeSlots = timeSlotsForDate.map((slot) => ({
                   time: slot,
                   isBooked: bookedSlots.includes(slot),

@@ -1,5 +1,12 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTiktok,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import Image from "next/image";
 import Typography from "./UI/Typography";
 import Link from "next/link";
@@ -35,7 +42,7 @@ const Footer = () => {
             <div className="flex mt-4 space-x-4">
               <Link
                 target="_blank"
-                href="https://www.facebook.com/vessahospital"
+                href="https://www.facebook.com/vessahospital.ro"
               >
                 <FaFacebook
                   className="cursor-pointer text-medium-blue"
@@ -44,9 +51,21 @@ const Footer = () => {
               </Link>
               <Link
                 target="_blank"
-                href="https://www.instagram.com/vessahospital/"
+                href="https://www.instagram.com/vessahospital.ro"
               >
                 <FaInstagram
+                  className="cursor-pointer text-medium-blue"
+                  size={20}
+                />
+              </Link>
+              <Link target="_blank" href="http://tiktok.com/@vessahospital.ro">
+                <FaTiktok
+                  className="cursor-pointer text-medium-blue"
+                  size={20}
+                />
+              </Link>
+              <Link target="_blank" href="">
+                <FaYoutube
                   className="cursor-pointer text-medium-blue"
                   size={20}
                 />
@@ -56,6 +75,12 @@ const Footer = () => {
                 href="https://api.whatsapp.com/send?phone=40744833815"
               >
                 <FaWhatsapp
+                  className="cursor-pointer text-medium-blue"
+                  size={20}
+                />
+              </Link>
+              <Link target="_blank" href="">
+                <FaLinkedin
                   className="cursor-pointer text-medium-blue"
                   size={20}
                 />

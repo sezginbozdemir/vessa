@@ -9,6 +9,9 @@ import {
   FaFacebook,
   FaInstagram,
   FaWhatsapp,
+  FaLinkedin,
+  FaYoutube,
+  FaTiktok,
 } from "react-icons/fa";
 import Typography from "./UI/Typography";
 import Image from "next/image";
@@ -56,14 +59,24 @@ const Header = () => {
 
             {/* Social media icons for larger screens */}
             <div className="flex justify-end col-span-4 md:hidden sm:hidden space-x-[1.8rem]">
-              <Link href="https://www.facebook.com/vessahospital">
+              <Link href="https://www.facebook.com/vessahospital.ro">
                 <FaFacebook className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
               </Link>
-              <Link href="https://www.instagram.com/vessahospital/">
+              <Link href="https://www.instagram.com/vessahospital.ro">
                 <FaInstagram className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
               </Link>
               <Link href="https://api.whatsapp.com/send?phone=40744833815">
                 <FaWhatsapp className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
+              </Link>
+              <Link target="_blank" href="http://tiktok.com/@vessahospital.ro">
+                <FaTiktok className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
+              </Link>
+              <Link target="_blank" href="">
+                <FaYoutube className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
+              </Link>
+
+              <Link target="_blank" href="">
+                <FaLinkedin className="cursor-pointer text-dark-blue w-[2.5rem] h-[2.5rem]" />
               </Link>
             </div>
           </div>

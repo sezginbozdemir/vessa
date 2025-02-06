@@ -8,9 +8,11 @@ interface InfoProps {
 
 const Info: React.FC<InfoProps> = ({ packageData, forWho, benefits }) => {
   return (
-    <div className="flex items-center justify-center mt-36">
-      <div className="w-[60%] flex flex-col items-start">
-        <Typography variant="h3">Ce include pachetul?</Typography>
+    <div className="w-full flex items-start justify-center px-[5rem]">
+      <div className="flex flex-col items-start">
+        <Typography variant="h2" className="text-blue-300 mb-[5rem]">
+          Ce include pachetul?
+        </Typography>
         {packageData.map((pkg, index) => (
           <div key={index}>
             <Typography variant="h3" className="custom-blue-text mt-8 mb-8">

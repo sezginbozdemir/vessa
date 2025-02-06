@@ -2,12 +2,9 @@ export const promos = [
   {
     id: "1",
     specialization: "cardiologie",
-    title: "Consult cardiologic?",
-    title2: "Nu-l Amâna!",
-    subTitle: "40%",
+    title: "cardiologic + Holter EKG",
     price: "400 lei",
-    oldPrice: "550 lei",
-    availability: "în luna februarie",
+    availability: "Februarie",
     package: [
       {
         title: "Consult Cardiologic",

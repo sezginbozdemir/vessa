@@ -1,24 +1,22 @@
 "use client";
-import Image from "next/image";
 import Typography from "@/components/UI/Typography";
 import Button from "@/components/UI/Button";
 import { useState } from "react";
-const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 import { MailTemp } from "../MailTemp";
+import { FaPhone, FaUser } from "react-icons/fa";
 
 interface InputProps {
-  width?: string;
   label?: string;
-  mobileWidth?: string;
 }
-const Input: React.FC<InputProps> = ({
-  width = "60%",
-  mobileWidth = "80%",
-  label = "Vreau să fiu sunat",
-}) => {
+const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
   const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
+  };
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
   };
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!/[0-9]/.test(e.key) && e.key !== "Backspace") {
@@ -26,12 +24,10 @@ const Input: React.FC<InputProps> = ({
     }
   };
   const handleSubmit = async () => {
-    if (!phone) return;
-
     const emailData = {
-      to: `programari@vessahospital.ro`,
+      to: `debug@vessahospital.ro`,
       subject: "Programare Nouă - Vessa Hospital",
-      text: MailTemp(phone),
+      text: MailTemp(phone, name),
     };
 
     try {
@@ -56,36 +52,47 @@ const Input: React.FC<InputProps> = ({
   return (
     <div className="flex flex-col items-center">
       <Typography variant="h3" className="custom-blue-text mt-16 mb-16">
-        Lasă-ne numărul și te sunăm noi!
+        Lasă numele și numărul tău și te sunăm noi!
       </Typography>
-      <div
-        className={`w-[${width}] sm:w-[${mobileWidth}] gap-5 flex items-end`}
-      >
-        <div className="flex w-[60%] flex-col items-start">
-          <div className="flex  gap-5 mb-3">
-            <div>
-              <Image
-                src="/images/phone-icon.png"
-                width={15}
-                height={15}
-                alt="vessa hospital"
-              />
+      <div className="flex gap-5 flex-col items-center justify-center w-full">
+        <div className="flex flex-row xs:flex-col w-full gap-[3rem] px-[3rem]">
+          <div className="flex flex-col w-full items-end xs:items-start">
+            <div className="flex self-center xs:self-start items-center justify-center  gap-5 mb-3">
+              <div>
+                <FaUser className="text-dark-blue w-[1.5rem] h-[1.5rem]" />
+              </div>
+
+              <Typography variant="detailsBold">Nume</Typography>
             </div>
 
-            <Typography variant="detailsBold">Număr de telefon</Typography>
+            <input
+              type="text"
+              onChange={handleNameChange}
+              className="text-2xl h-[61px] w-[60%] xs:w-full rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
+            />
           </div>
+          <div className="flex flex-col w-full items-start">
+            <div className="flex items-center justify-center gap-5 mb-3">
+              <div>
+                <FaPhone className="rotate-[90deg] text-dark-blue w-[1.5rem] h-[1.5rem]" />
+              </div>
 
-          <input
-            type="text"
-            onKeyDown={handleKeyDown}
-            onChange={handlePhoneChange}
-            className="text-2xl w-full h-[61px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
-          />
+              <Typography variant="detailsBold">Număr de telefon</Typography>
+            </div>
+
+            <input
+              type="text"
+              onKeyDown={handleKeyDown}
+              onChange={handlePhoneChange}
+              className="text-2xl w-[60%] xs:w-full h-[61px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
+            />
+          </div>
         </div>
-        <div className="flex items-center justify-center w-[40%]">
+
+        <div className="flex items-center justify-center">
           <Typography variant="buttonText">
             <Button
-              className="h-[50px]"
+              className="h-[50px] text-white hover:text-black"
               onClick={handleSubmit}
               label={label}
             ></Button>

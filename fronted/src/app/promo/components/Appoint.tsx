@@ -4,13 +4,37 @@ import Typography from "@/components/UI/Typography";
 import Button from "@/components/UI/Button";
 import { useSpecialty } from "@/components/ProgramatorPageComponents/SpecialtyContext";
 import { useRouter } from "next/navigation";
+import Input from "./Input";
 interface AppointProps {
   specialty: string;
 }
 const Appoint: React.FC<AppointProps> = ({ specialty }) => {
   const { setSelectedSpecialty } = useSpecialty();
   const router = useRouter();
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
+    const emailData = {
+      to: `debug@vessahospital.ro`,
+      subject: "Programare Nouă - Vessa Hospital",
+      text: "Buton click - Programare direct",
+    };
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailData),
+      });
+
+      if (response.ok) {
+        console.log("Email trimis cu succes!");
+      } else {
+        console.error("A apărut o eroare la trimiterea emailului.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+
     const capitalizedSpecialty =
       specialty.charAt(0).toUpperCase() + specialty.slice(1);
 
@@ -18,22 +42,25 @@ const Appoint: React.FC<AppointProps> = ({ specialty }) => {
     router.push("/programator");
   };
   return (
-    <div className="flex justify-center items-center mt-36">
-      <div className="flex flex-row  xs:flex-col gap-36 justify-center items-center">
-        <Typography variant="h2" className="w-1/3 xs:hidden">
-          Rezervă-ți consultul și monitorizarea inimii tale,într-un interval
-          care <span className="custom-blue-text">ți se potrivește.</span>
-        </Typography>
-        <Typography variant="h2" className="w-1/3 text-center hidden xs:block">
+    <div className="flex items-center justify-center ">
+      <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12">
+        <div className="w-[50%] sm:w-full xs:w-full z-[1000]">
+          <Input label="Vreau să fiu sunat" />
+        </div>
+
+        <Typography
+          variant="h3"
+          className="w-[10%] sm:w-full xs:w-full flex justify-center"
+        >
           sau
         </Typography>
-        <Typography variant="buttonText">
+        <div className="w-[40%] sm:w-full xs:w-full flex justify-center">
           <Button
             onClick={handleButtonClick}
-            className="bg-transparent"
             label="Programează-te direct!"
+            className="rounded-[9px] bg-transparent"
           />
-        </Typography>
+        </div>
       </div>
     </div>
   );
