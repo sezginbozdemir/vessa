@@ -12,7 +12,7 @@ type EventCardProps = {
   description: string;
   isArticle?: boolean;
   date?: string;
-  onClick?: () => void;
+  slug: string;
 };
 
 const EventCard = ({
@@ -23,7 +23,7 @@ const EventCard = ({
   description,
   isArticle,
   date,
-  onClick,
+  slug,
 }: EventCardProps) => {
   return (
     <div
@@ -90,7 +90,7 @@ const EventCard = ({
 
         {isArticle && (
           <div className="pt-[2rem]">
-            <HoverText label="Citește mai mult" onClick={onClick} />
+            <HoverText label="Citește mai mult" slug={slug} />
           </div>
         )}
       </div>

@@ -57,7 +57,7 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty }) => {
         </Typography>
       </div>
       <div className="flex items-center justify-center ">
-        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12">
+        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12 xs:gap-8">
           <div className="w-[50%] sm:w-full xs:w-full z-[1000]">
             <Input label="Vreau să fiu sunat" />
           </div>
@@ -68,11 +68,11 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty }) => {
           >
             sau
           </Typography>
-          <div className="w-[40%] sm:w-full xs:w-full flex justify-center">
+          <div className="w-[40%] sm:w-full xs:w-[90%] xs:px-[3rem] flex justify-center">
             <Button
               onClick={handleButtonClick}
               label="Programează-te singur!"
-              className="rounded-[9px] bg-transparent"
+              className="rounded-[9px] bg-transparent justify-center xs:w-full"
             />
           </div>
         </div>

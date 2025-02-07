@@ -4,7 +4,6 @@ import EventCard from "./UI/EventCard";
 import Typography from "./UI/Typography";
 import Spacing from "./UI/Spacing";
 import { articleCards } from "@/app/mock-data/articleCards";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import UnderlineHoverButton from "./UI/UnderlineHoverButton";
 import Wrapper from "./UI/Wrapper";
@@ -16,7 +15,6 @@ import "swiper/css";
 const ArticleSection: React.FC = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const router = useRouter();
 
   const totalSlides = Math.ceil(articleCards.length);
 
@@ -47,10 +45,6 @@ const ArticleSection: React.FC = () => {
         setCurrentIndex(newIndex);
       }
     }
-  };
-
-  const handleArticleClick = (slug: string) => {
-    router.push(`/articole/${slug}`);
   };
 
   return (
@@ -120,7 +114,7 @@ const ArticleSection: React.FC = () => {
               <SwiperSlide key={index}>
                 <div className="sm:min-w-[100%] md:min-w-[50%] lg:min-w-[33.33%] xl:min-w-[33.33%] p-4 z-20 cursor-pointer">
                   <EventCard
-                    onClick={() => handleArticleClick(article.slug)}
+                    slug={article.slug}
                     imageUrl={article.imageUrl}
                     title={article.title}
                     description={article.description}

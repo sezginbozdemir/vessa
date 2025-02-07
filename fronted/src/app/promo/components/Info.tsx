@@ -10,7 +10,7 @@ const Info: React.FC<InfoProps> = ({ packageData, forWho, benefits }) => {
   return (
     <div className="w-full flex items-start justify-center px-[5rem]">
       <div className="flex flex-col items-start">
-        <Typography variant="h2" className="text-blue-300 mb-[5rem]">
+        <Typography variant="h2" className="text-blue-300 mb-[24px]">
           Ce include pachetul?
         </Typography>
         {packageData.map((pkg, index) => (

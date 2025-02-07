@@ -50,14 +50,14 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   return (
-    <div className="flex flex-col items-center">
-      <Typography variant="h3" className="custom-blue-text mt-16 mb-16">
+    <div className="flex flex-col items-center lg:-mt-[2rem] md:-mt-[2rem] sm:mt-[2rem] xs:mt-[2rem]">
+      <Typography variant="h3" className="custom-blue-text  mb-16 xs:mb-[15px]">
         Lasă numele și numărul tău și te sunăm noi!
       </Typography>
       <div className="flex gap-5 flex-col items-center justify-center w-full">
-        <div className="flex flex-row xs:flex-col w-full gap-[3rem] px-[3rem]">
-          <div className="flex flex-col w-full items-end xs:items-start">
-            <div className="flex self-center xs:self-start items-center justify-center  gap-5 mb-3">
+        <div className="flex flex-row items-center justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem] px-[3rem]">
+          <div className="flex flex-col w-full items-start">
+            <div className="flex items-center justify-center  gap-5 mb-3">
               <div>
                 <FaUser className="text-dark-blue w-[1.5rem] h-[1.5rem]" />
               </div>
@@ -68,7 +68,7 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
             <input
               type="text"
               onChange={handleNameChange}
-              className="text-2xl h-[61px] w-[60%] xs:w-full rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
+              className="text-2xl h-[51px] w-full xs:w-full rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
             />
           </div>
           <div className="flex flex-col w-full items-start">
@@ -84,15 +84,15 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
               type="text"
               onKeyDown={handleKeyDown}
               onChange={handlePhoneChange}
-              className="text-2xl w-[60%] xs:w-full h-[61px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
+              className="text-2xl w-full xs:w-full h-[51px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
             />
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
-          <Typography variant="buttonText">
+        <div className="flex items-center justify-center xs:w-[90%] px-[3rem]">
+          <Typography variant="buttonText" className="xs:w-full">
             <Button
-              className="h-[50px] text-white hover:text-black"
+              className="h-[50px] text-white justify-center hover:text-black xs:w-full"
               onClick={handleSubmit}
               label={label}
             ></Button>

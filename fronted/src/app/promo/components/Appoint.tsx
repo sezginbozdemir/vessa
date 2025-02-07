@@ -43,7 +43,7 @@ const Appoint: React.FC<AppointProps> = ({ specialty }) => {
   };
   return (
     <div className="flex items-center justify-center ">
-      <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12">
+      <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12 xs:gap-8">
         <div className="w-[50%] sm:w-full xs:w-full z-[1000]">
           <Input label="Vreau să fiu sunat" />
         </div>
@@ -54,11 +54,11 @@ const Appoint: React.FC<AppointProps> = ({ specialty }) => {
         >
           sau
         </Typography>
-        <div className="w-[40%] sm:w-full xs:w-full flex justify-center">
+        <div className="w-[40%] sm:w-full xs:w-[90%] flex justify-center xs:px-[3rem]">
           <Button
             onClick={handleButtonClick}
             label="Programează-te direct!"
-            className="rounded-[9px] bg-transparent"
+            className="rounded-[9px] bg-transparent xs:w-full justify-center"
           />
         </div>
       </div>

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { BsSearchHeart } from "react-icons/bs";
 import Spacing from "../UI/Spacing";
-import { useRouter } from "next/navigation";
 import { articleCards } from "@/app/mock-data/articleCards";
 import EventCard from "../UI/EventCard";
 import WrapperLarge from "../UI/WrapperLarge";
@@ -13,7 +12,6 @@ const ArticleFilter = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSpecialization, setSelectedSpecialization] = useState("");
-  const router = useRouter();
 
   // Get a list of unique specializations from articleCards
   const specializations = [
@@ -37,10 +35,6 @@ const ArticleFilter = () => {
     }
     setSearchTerm("");
     setIsOpen(false);
-  };
-
-  const handleArticleClick = (slug: string) => {
-    router.push(`/articole/${slug}`);
   };
 
   // Filter articles based on specialization, search term, and isArticle flag
@@ -80,9 +74,7 @@ const ArticleFilter = () => {
           </div>
 
           <div className="relative">
-            <div
-              className="flex items-center "
-              onClick={handleDropdownToggle}>
+            <div className="flex items-center " onClick={handleDropdownToggle}>
               <button className="flex items-center px-6 py-2 font-bold text-black text-buttonText focus:outline-none md:hidden sm:hidden">
                 Specialități medicale
               </button>
@@ -101,7 +93,8 @@ const ArticleFilter = () => {
                         selectedSpecialization === specialization
                           ? "text-dark-blue"
                           : "text-dark-opacity-bf opacity-80"
-                      }`}>
+                      }`}
+                    >
                       {specialization}
                     </li>
                   ))}
@@ -111,21 +104,15 @@ const ArticleFilter = () => {
           </div>
         </div>
       </WrapperLarge>
-      <Spacing
-        size="8"
-        md="6"
-        sm="6"
-      />
+      <Spacing size="8" md="6" sm="6" />
 
       {/* Cards layout */}
       <Wrapper>
         <div className="grid grid-cols-12 md:grid-cols-8 sm:grid-cols-2 gap-x-[3.2rem] gap-y-[6rem] mt-8 ">
           {filteredArticles.map((article, index) => (
-            <div
-              key={index}
-              className="col-span-4 md:col-span-4 sm:col-span-2">
+            <div key={index} className="col-span-4 md:col-span-4 sm:col-span-2">
               <EventCard
-                onClick={() => handleArticleClick(article.slug)}
+                slug={article.slug}
                 imageUrl={article.imageUrl}
                 title={article.title}
                 description={article.description}

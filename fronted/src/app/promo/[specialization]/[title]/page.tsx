@@ -54,7 +54,7 @@ export default function Page({
         specialization={promo.specialization}
       />
       <Appoint specialty={promo.specialization} />
-      <div className="flex flex-row sm:flex-col xs:flex-col items-start justify-center sm:gap-[3rem] xs:gap-[3rem] mt-36">
+      <div className="flex flex-row sm:flex-col xs:flex-col items-start justify-center sm:gap-[80px] xs:gap-[80px] mt-36">
         <div className="w-full order-0 sm:order-1 xs:order-1">
           <Info
             packageData={promo.package}

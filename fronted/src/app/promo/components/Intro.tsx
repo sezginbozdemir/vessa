@@ -47,9 +47,9 @@ const Intro: React.FC<IntroProps> = ({
         alt="vessa"
       />
 
-      <div className="bg-[url('/images/promo-white-shape.png')] bg-[100%_-5%] sm:bg-[100%_-15%] xs:bg-[100%_-150%] bg-cover bg-no-repeat">
-        <div className="flex flex-row  pt-16">
-          <div className="flex flex-col gap-[5rem] w-[60%] sm:w-full xs:w-full">
+      <div className="bg-[url('/images/promo-white-shape.png')] bg-[100%_-5%] sm:bg-[100%_-15%] xs:bg-[100%_-60%] bg-cover bg-no-repeat">
+        <div className="flex flex-row  pt-[10px]">
+          <div className="flex flex-col gap-[3rem] w-[60%] sm:w-full xs:w-full">
             <Link
               href="/"
               className="inline-block self-end sm:self-center xs:self-center"
@@ -59,33 +59,34 @@ const Intro: React.FC<IntroProps> = ({
                 alt="Vessa Hospital"
                 width={260}
                 height={80}
+                className="xs:w-[135px] sm:w-[152px]"
               />
             </Link>
             <div className=" z-[1000] flex flex-col self-end sm:self-center xs:self-center">
-              <Typography variant="h2" className="">
+              <Typography variant="h2" className="md:text-[50px]">
                 <span className="custom-blue-text">Beneficiază</span> acum de
               </Typography>
-              <Typography variant="h2" className="">
+              <Typography variant="h2" className="md:text-[50px]">
                 oferta lunii {availability}!
               </Typography>
             </div>
-            <div className=" z-[1000] flex flex-col gap-[3rem] ">
-              <div className="flex flex-col self-center  mr-[10rem]">
+            <div className=" z-[1000] flex flex-col gap-[5rem] ">
+              <div className="flex flex-col self-center pr-[2rem]">
                 <Typography
                   variant="h3"
-                  className="text-[40px] md:text-[40px] sm:text-[30px] xs:text-[20px]"
+                  className="text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] sm:text-[30px] xs:text-[20px]"
                 >
                   Ofertă pachet -
                   <span className="custom-blue-text"> Consult</span>
                 </Typography>
                 <Typography
                   variant="h3"
-                  className="text-[40px] md:text-[40px] sm:text-[30px] xs:text-[20px]"
+                  className="text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] sm:text-[30px] xs:text-[20px]"
                 >
                   <span className="custom-blue-text">{title}</span>
                 </Typography>
               </div>
-              <div className="rotate-[10deg] w-[200px] h-[90px]  flex flex-col items-center justify-center self-end sm:self-center xs:self-center mr-[5rem] gap-[0.5rem] bg-[url('/images/promo-tag.png')] bg-cover bg-no-repeat relative">
+              <div className="rotate-[10deg] w-[190px] h-[90px]  flex flex-col items-center justify-center self-end sm:self-center xs:self-center mr-[5rem] -mt-[4rem] gap-[0.5rem] bg-[url('/images/promo-tag.png')] bg-cover bg-no-repeat relative">
                 <Image
                   src="/images/nou.png"
                   width={90}
@@ -106,8 +107,8 @@ const Intro: React.FC<IntroProps> = ({
           <div className="flex items-center sm:hidden xs:hidden z-[1000] flex-col w-[40%]">
             <Image
               src={firstDoctor.imageUrl}
-              width={518}
-              height={594}
+              width={418}
+              height={494}
               alt="vessa"
             />
             <Typography

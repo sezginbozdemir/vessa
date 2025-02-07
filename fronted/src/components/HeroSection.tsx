@@ -82,9 +82,10 @@ const HeroSection = () => {
               {/* Doctor Image */}
               <div className="relative w-[59.4rem] md:items-center md:justify-center h-[59.5rem] z-10 md:w-[45rem] md:h-[45rem] sm:w-[30rem] sm:h-[30rem]">
                 <Image
-                  src="/images/hero.png"
-                  alt="Doctor"
+                  priority
                   layout="fill"
+                  src="/images/hero.webp"
+                  alt="Doctor"
                   objectFit="contain"
                   className="rounded-lg"
                 />
