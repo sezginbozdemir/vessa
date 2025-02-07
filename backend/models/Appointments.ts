@@ -19,8 +19,8 @@ const AppointmentSchema = new Schema<AppointmentDocument>(
   {
     lastName: { type: String, required: true },
     firstName: { type: String, required: false },
-    email: { type: String, required: true },
-    phone: { type: String, required: true },
+    email: { type: String, required: false },
+    phone: { type: String, required: false },
     specialization: { type: String, required: true },
     doctor: { type: String, required: true },
     date: { type: String, required: true },
