@@ -20,7 +20,7 @@ export const generateMetadata = (): Metadata => {
 export async function generateStaticParams() {
   return promos.map((promo) => ({
     specialization: promo.specialization,
-    title: promo.title
+    par: promo.par
       .toLowerCase()
       .replace(/\s*\+\s*/g, "-")
       .replace(/\s+/g, "-"),
@@ -30,15 +30,15 @@ export async function generateStaticParams() {
 export default function Page({
   params,
 }: {
-  params: { specialization: string; title: string };
+  params: { specialization: string; par: string };
 }) {
   const promo = promos.find(
     (p) =>
       p.specialization === params.specialization &&
-      p.title
+      p.par
         .toLowerCase()
         .replace(/\s*\+\s*/g, "-")
-        .replace(/\s+/g, "-") === params.title
+        .replace(/\s+/g, "-") === params.par
   );
 
   if (!promo) {
@@ -53,6 +53,7 @@ export default function Page({
         availability={promo.availability}
         specialization={promo.specialization}
       />
+
       <Appoint specialty={promo.specialization} />
       <div className="flex flex-row sm:flex-col xs:flex-col items-start justify-center sm:gap-[80px] xs:gap-[80px] mt-36">
         <div className="w-full order-0 sm:order-1 xs:order-1">

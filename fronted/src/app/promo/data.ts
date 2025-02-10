@@ -2,7 +2,9 @@ export const promos = [
   {
     id: "1",
     specialization: "cardiologie",
-    title: "cardiologic + Holter EKG",
+    title:
+      "Consult cardiologic + Holter EKG 24h + Interpretare rezultat + Recomandari tratament",
+    par: "cardiologic + Holter EKG",
     price: "400 lei",
     availability: "Februarie",
     package: [

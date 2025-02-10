@@ -50,12 +50,15 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   return (
-    <div className="flex flex-col items-center lg:-mt-[2rem] md:-mt-[2rem] sm:mt-[2rem] xs:mt-[2rem]">
-      <Typography variant="h3" className="custom-blue-text  mb-16 xs:mb-[15px]">
+    <div className="flex flex-col items-center lg:-mt-[2rem] xl:-mt-[2rem] md:-mt-[0rem] sm:mt-[2rem] xs:mt-[2rem]">
+      <Typography
+        variant="h3"
+        className="custom-blue-text lg:self-start lg:pl-[10%] xl:self-start xl:pl-[10%] md:self-start md:pl-[10%] mb-16 xs:mb-[15px]"
+      >
         Lasă numele și numărul tău și te sunăm noi!
       </Typography>
       <div className="flex gap-5 flex-col items-center justify-center w-full">
-        <div className="flex flex-row items-center justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem] px-[3rem]">
+        <div className="flex flex-row items-end justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem]">
           <div className="flex flex-col w-full items-start">
             <div className="flex items-center justify-center  gap-5 mb-3">
               <div>
@@ -87,12 +90,20 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
               className="text-2xl w-full xs:w-full h-[51px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
             />
           </div>
+          <div className="flex items-center justify-center w-full sm:hidden xs:hidden ">
+            <Typography variant="buttonText" className="xs:w-full">
+              <Button
+                className="h-[50px] text-white justify-center hover:text-black xs:w-full"
+                onClick={handleSubmit}
+                label={label}
+              ></Button>
+            </Typography>
+          </div>
         </div>
-
-        <div className="flex items-center justify-center xs:w-[90%] px-[3rem]">
-          <Typography variant="buttonText" className="xs:w-full">
+        <div className="hidden xs:flex sm:flex items-center justify-center w-full xs:w-[90%]">
+          <Typography variant="buttonText" className="w-[30%] xs:w-full">
             <Button
-              className="h-[50px] text-white justify-center hover:text-black xs:w-full"
+              className="w-full h-[50px] text-white justify-center hover:text-black xs:w-full"
               onClick={handleSubmit}
               label={label}
             ></Button>

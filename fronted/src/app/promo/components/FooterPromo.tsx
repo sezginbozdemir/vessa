@@ -71,7 +71,7 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty }) => {
           <div className="w-[40%] sm:w-full xs:w-[90%] xs:px-[3rem] flex justify-center">
             <Button
               onClick={handleButtonClick}
-              label="Programează-te singur!"
+              label="Programează-te on-line!"
               className="rounded-[9px] bg-transparent justify-center xs:w-full"
             />
           </div>
