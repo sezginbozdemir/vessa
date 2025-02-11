@@ -10,22 +10,27 @@ import Doctors from "../../components/Doctors";
 import Info from "../../components/Info";
 import { promos } from "../../data";
 import { Metadata } from "next";
-
-export const generateMetadata = (): Metadata => {
-  return {
-    title: "Vessa Hospital - Oferta Holter EKG | vessahospital.ro",
-  };
-};
+import InfoDef from "../../components/InfoDef";
 
 export async function generateStaticParams() {
   return promos.map((promo) => ({
     specialization: promo.specialization,
-    par: promo.par
-      .toLowerCase()
-      .replace(/\s*\+\s*/g, "-")
-      .replace(/\s+/g, "-"),
+    par: promo.par,
   }));
 }
+export const generateMetadata = ({
+  params,
+}: {
+  params: { specialization: string; par: string };
+}): Metadata => {
+  const promo = promos.find(
+    (p) => p.specialization === params.specialization && p.par === params.par
+  );
+
+  return {
+    title: promo?.metaTitle,
+  };
+};
 
 export default function Page({
   params,
@@ -33,12 +38,7 @@ export default function Page({
   params: { specialization: string; par: string };
 }) {
   const promo = promos.find(
-    (p) =>
-      p.specialization === params.specialization &&
-      p.par
-        .toLowerCase()
-        .replace(/\s*\+\s*/g, "-")
-        .replace(/\s+/g, "-") === params.par
+    (p) => p.specialization === params.specialization && p.par === params.par
   );
 
   if (!promo) {
@@ -51,21 +51,36 @@ export default function Page({
         title={promo.title}
         price={promo.price}
         availability={promo.availability}
-        specialization={promo.specialization}
+        doctor={promo.doctor}
+        id={promo.id}
       />
 
       <Appoint specialty={promo.specialization} />
       <div className="flex flex-row sm:flex-col xs:flex-col items-start justify-center sm:gap-[80px] xs:gap-[80px] mt-36">
         <div className="w-full order-0 sm:order-1 xs:order-1">
-          <Info
-            packageData={promo.package}
-            forWho={promo.forWho}
-            benefits={promo.benefits}
-          />
+          {promo.id === "variant" ? (
+            <Info
+              packageData={promo.package}
+              forWho={promo.forWho}
+              benefits={promo.benefits}
+              main={promo.main}
+            />
+          ) : (
+            <InfoDef
+              packageData={promo.package}
+              forWho={promo.forWho}
+              benefits={promo.benefits}
+              main={promo.main}
+              info={promo.info}
+            />
+          )}
         </div>
-        <Doctors specialization={promo.specialization} />
+        <Doctors doctor={promo.doctor} />
       </div>
-      <FooterPromo specialty={promo.specialization} />
+      <FooterPromo
+        footerTitle={promo.footerTitle}
+        specialty={promo.specialization}
+      />
       <Spacing size="10" md="6" sm="4" />
       <NewsletterSection />
       <GoogleMaps />

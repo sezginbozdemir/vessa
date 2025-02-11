@@ -7,20 +7,17 @@ import Link from "next/link";
 import { FaPhone } from "react-icons/fa";
 
 interface DoctorsProps {
-  specialization: string;
+  doctor: string;
 }
 
-const Doctors: React.FC<DoctorsProps> = ({ specialization }) => {
-  const matchingDoctors = doctorsData.filter(
-    (doctor) =>
-      doctor.specialization.toLowerCase() === specialization.toLowerCase()
+const Doctors: React.FC<DoctorsProps> = ({ doctor }) => {
+  const matchingDoctor = doctorsData.find(
+    (item) => item.name.toLowerCase() === doctor.toLowerCase()
   );
-
-  const firstDoctor = matchingDoctors[0];
 
   return (
     <div className="flex flex-col items-center w-full">
-      {firstDoctor && (
+      {matchingDoctor && (
         <>
           <Typography variant="h3" className="mb-[1rem] text-blue-300">
             Medicul Tău: Cine este și Cum te poate ajuta
@@ -28,13 +25,13 @@ const Doctors: React.FC<DoctorsProps> = ({ specialization }) => {
           <div className="flex mt-36 flex-col gap-[5rem] items-center justify-between">
             <div className="w-full flex items-center justify-center">
               <Link
-                href={`/profileMedic/${firstDoctor.slug}`}
+                href={`/profileMedic/${matchingDoctor.slug}`}
                 className="w-[60%] sm:w-[80%] lg:w-[70%] md:w-[80%] h-full"
               >
                 <DoctorProfileCard
-                  name={firstDoctor.name}
-                  specialization={firstDoctor.specialization}
-                  imageUrl={firstDoctor.imageUrl}
+                  name={matchingDoctor.name}
+                  specialization={matchingDoctor.specialization}
+                  imageUrl={matchingDoctor.imageUrl}
                 />
               </Link>
             </div>
@@ -43,7 +40,7 @@ const Doctors: React.FC<DoctorsProps> = ({ specialization }) => {
                 <div className="flex flex-col justify-between gap-5 bg-light-blue p-[34px] rounded-[28px]">
                   <Typography variant="h3">Despre</Typography>
                   <Typography variant="paragraph">
-                    {firstDoctor.about}
+                    {matchingDoctor.about}
                   </Typography>
                 </div>
                 <div className="flex justify-between bg-light-blue px-[25px] py-[25px] rounded-[28px]">
@@ -53,7 +50,7 @@ const Doctors: React.FC<DoctorsProps> = ({ specialization }) => {
                     className="flex items-center justify-center gap-[1rem]"
                   >
                     <FaPhone className="custom-blue-text rotate-[90deg]" />
-                    {firstDoctor.contact}
+                    {matchingDoctor.contact}
                   </Typography>
                 </div>
               </div>

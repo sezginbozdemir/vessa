@@ -50,7 +50,7 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   return (
-    <div className="flex flex-col items-center lg:-mt-[2rem] xl:-mt-[2rem] md:-mt-[0rem] sm:mt-[2rem] xs:mt-[2rem]">
+    <div className="flex flex-col items-center">
       <Typography
         variant="h3"
         className="custom-blue-text lg:self-start lg:pl-[10%] xl:self-start xl:pl-[10%] md:self-start md:pl-[10%] mb-16 xs:mb-[15px]"

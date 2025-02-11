@@ -7,9 +7,10 @@ import { useRouter } from "next/navigation";
 
 interface FooterProps {
   specialty: string;
+  footerTitle: string;
 }
 
-const FooterPromo: React.FC<FooterProps> = ({ specialty }) => {
+const FooterPromo: React.FC<FooterProps> = ({ specialty, footerTitle }) => {
   const { setSelectedSpecialty } = useSpecialty();
   const router = useRouter();
   const handleButtonClick = async () => {
@@ -46,33 +47,27 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty }) => {
   return (
     <>
       <div className=" mt-36 mb-16 flex flex-col items-center justify-center">
-        <Typography variant="h2" className="accent">
-          Sănătatea Ta Contează!
-        </Typography>
-        <Typography variant="h2" className="accent">
-          Fă-ți un Control
-        </Typography>
-        <Typography variant="h2" className="accent">
-          Cardiologic!
+        <Typography variant="h2" className="accent text-center">
+          <span dangerouslySetInnerHTML={{ __html: footerTitle }} />
         </Typography>
       </div>
       <div className="flex items-center justify-center ">
-        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-center justify-center gap-12 xs:gap-8">
-          <div className="w-[50%] sm:w-full xs:w-full z-[1000]">
+        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end justify-center gap-12 xs:gap-8">
+          <div className="w-[65%] sm:w-full xs:w-full z-[1000]">
             <Input label="Vreau să fiu sunat" />
           </div>
 
           <Typography
             variant="h3"
-            className="w-[10%] sm:w-full xs:w-full flex justify-center"
+            className="w-[5%] pb-[1rem] xs:pb-0 sm:w-full xs:w-full flex justify-center"
           >
             sau
           </Typography>
-          <div className="w-[40%] sm:w-full xs:w-[90%] xs:px-[3rem] flex justify-center">
+          <div className="w-[30%] sm:w-full xs:w-full flex justify-center xs:px-[3rem]">
             <Button
               onClick={handleButtonClick}
               label="Programează-te on-line!"
-              className="rounded-[9px] bg-transparent justify-center xs:w-full"
+              className="rounded-[9px] bg-transparent xs:w-full justify-center"
             />
           </div>
         </div>

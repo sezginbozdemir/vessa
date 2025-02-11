@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 interface SpecialtyContextType {
   selectedSpecialty: string;
@@ -15,6 +16,12 @@ export const SpecialtyProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>("");
+  const pathname = usePathname();
+  useEffect(() => {
+    if (pathname !== "/programator") {
+      setSelectedSpecialty("");
+    }
+  }, [pathname]);
   return (
     <SpecialtyContext.Provider
       value={{ selectedSpecialty, setSelectedSpecialty }}
