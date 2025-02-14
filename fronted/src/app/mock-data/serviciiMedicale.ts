@@ -62,38 +62,7 @@ export const serviciiMedicale = [
       "Fiziokinetoterapie, recuperare, prevenție, fizioterapie, tratament non-invaziv, masaj terapeutic, electroterapie, VESSA Hospital Timișoara, reabilitare, recuperare după accident",
     slug: "fiziokinetoterapie",
   },
-  {
-    title: "Electrofiziologie Cardiacă",
-    description:
-      "Se ocupă cu diagnosticul și tratamentul tulburărilor de ritm cardiac, cum ar fi aritmiile. Aceasta utilizează tehnici avansate, inclusiv ablația prin cateter, pentru a restabili ritmul normal al inimii.",
-    prezentare:
-      "Electrofiziologia cardiacă este o ramură specializată a cardiologiei, care se ocupă cu diagnosticarea și tratamentul afecțiunilor ritmului cardiac (aritmiilor). La Vessa Hospital Timișoara, departamentul de Electrofiziologie Cardiacă utilizează tehnologii avansate pentru a investiga și trata disfuncțiile electrice ale inimii, oferind pacienților soluții moderne și eficiente. Prin proceduri minim invazive, precum studiul electrofiziologic și ablația prin cateter, specialiștii noștri restabilesc ritmul cardiac normal și îmbunătățesc semnificativ calitatea vieții pacienților. Echipa noastră este dedicată nu doar tratamentului, ci și prevenirii complicațiilor asociate aritmiilor, cum ar fi accidentul vascular cerebral sau insuficiența cardiacă.",
-    statistici: [
-      "Aritmiile cardiace afectează peste 33 de milioane de persoane la nivel global, fibrilația atrială fiind cea mai frecventă formă.",
-      "În România, se estimează că 1 din 4 persoane cu vârsta peste 40 de ani dezvoltă o formă de fibrilație atrială.",
-      "Rata de succes a procedurilor de ablație prin cateter pentru fibrilație atrială este de aproximativ 80-90%, conform studiilor internaționale.",
-      "Pacienții care beneficiază de ablație pentru tahicardii ventriculare au un risc redus cu peste 50% de evenimente cardiovasculare majore.",
-      "La Vessa Hospital Timișoara, timpul de recuperare după procedurile minim invazive de electrofiziologie este redus cu până la 40% față de metodele tradiționale.",
-    ],
-    title3: "Medicul specializat în Electrofiziologie Cardiacă",
-    text3:
-      "Medicii specializați în electrofiziologie cardiacă din cadrul Vessa Hospital Timișoara sunt pregătiți să gestioneze cazuri complexe de aritmii, folosind tehnologie de ultimă generație și metode bazate pe dovezi științifice. Aceștia combină cunoștințele tehnice avansate cu o abordare empatică, asigurând confortul și siguranța pacientului în toate etapele tratamentului. Cu o pregătire extensivă în diagnosticarea disfuncțiilor electrice ale inimii, medicii noștri sunt capabili să efectueze proceduri de înaltă precizie, precum ablația prin radiofrecvență sau implantarea dispozitivelor de monitorizare și control cardiac.",
-    title4: "Ce investigații fac medicii în Electrofiziologie Cardiacă",
-    text4:
-      "Electrofiziologia cardiacă implică teste și proceduri specializate pentru evaluarea funcției electrice a inimii. Studiul electrofiziologic este o investigație minim invazivă care măsoară activitatea electrică a inimii și ajută la localizarea precisă a aritmiilor. În cazul unor afecțiuni mai complexe, poate fi recomandată ablația prin cateter, o procedură care folosește energie pentru a distruge țesuturile care cauzează aritmiile. Alte teste includ implantarea și monitorizarea stimulatorilor cardiaci (pacemakere) sau a defibrilatoarelor interne, precum și monitorizarea Holter, care analizează ritmul cardiac pe o perioadă extinsă. În plus, sunt utilizate investigații imagistice precum RMN cardiac sau ecocardiografia transtoracică pentru a înțelege mai bine contextul structural al inimii.",
-    title5: "Când să consulți un specialist în Electrofiziologie Cardiacă",
-    text5:
-      "Consultația la un medic electrofiziolog este esențială dacă experimentezi simptome precum palpitații frecvente, bătăi neregulate ale inimii, amețeli sau pierderi de cunoștință inexplicabile. Pacienții diagnosticați cu fibrilație atrială, flutter atrial sau tahicardii ventriculare ar trebui să consulte un specialist pentru un plan de tratament personalizat. Dacă suferi de insuficiență cardiacă sau ai un istoric de stop cardiac, evaluarea de către un electrofiziolog poate preveni complicații majore prin implantarea unui dispozitiv adecvat. Totodată, persoanele care au fost diagnosticate cu afecțiuni cardiace congenitale sau care necesită o evaluare detaliată a ritmului cardiac ar trebui să solicite o consultație. La Vessa Hospital Timișoara, echipa noastră oferă sprijin complet pentru diagnosticarea, tratamentul și monitorizarea pacienților cu tulburări electrice cardiace, contribuind astfel la o viață mai lungă și mai sănătoasă.",
-    buttonText: "Servicii medicale",
-    imageUrl: "/images/Electrofiziologie.svg",
-    headerImageUrl: "/images/headers/electrofiziologie.jpg",
-    metaTitle: "Electrofiziologie Cardiacă | VESSA Hospital Timișoara",
-    metaDescription:
-      "Electrofiziologia cardiacă la VESSA Hospital Timișoara: diagnostic și tratament avansat pentru aritmii. Servicii precum ablația prin cateter, studiile electrofiziologice și implantarea de stimulator cardiac.",
-    keywords:
-      "Electrofiziologie cardiacă, aritmii cardiace, fibrilație atrială, tahicardie, bradicardie, ablație prin cateter, studii electrofiziologice, monitorizare Holter, test de efort, stimulator cardiac, VESSA Hospital Timișoara.",
-    slug: "electrofiziologie-cardiaca",
-  },
+
   {
     title: "Neurochirurgie",
     description:

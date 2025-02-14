@@ -57,7 +57,7 @@ export const promos = [
     metaTitle: "Vessa Hospital - Consult Ortopedie | vessahospital.ro",
 
     specialization: "ortopedie",
-    doctor: "Dr. Adrian Lupascu",
+    doctor: "Dr. Adrian Lupașcu",
     footerTitle: "Sănătatea Ta Contează! <br/> Fă-ți un Control Acum!",
     title: "Consult ortopedie <br/> în vederea <br/> protezării de șold",
     par: "consult-ortopedie",
@@ -110,7 +110,7 @@ export const promos = [
       "Vessa Hospital - Infiltrație cu acid hialuronic | vessahospital.ro",
 
     specialization: "ortopedie",
-    doctor: "Dr. Dragos Mirosu",
+    doctor: "Dr. Dragoș Miroșu",
     footerTitle: "Sănătatea Ta Contează! <br/> Nu Rata Această Ofertă!",
     title: "Infiltrație <br/> genunchi cu acid <br/> hialuronic",
     par: "infiltratie-acid-hialuronic",

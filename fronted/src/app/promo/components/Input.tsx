@@ -11,6 +11,8 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
+  const [errors, setErrors] = useState<{ phone?: string; name?: string }>({});
+
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
   };
@@ -24,6 +26,16 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   const handleSubmit = async () => {
+    const validationErrors: { phone?: string; name?: string } = {};
+    if (!name.trim()) {
+      validationErrors.name = "Numele este obligatoriu.";
+    }
+    if (!phone.trim()) {
+      validationErrors.phone = "Numărul de telefon este obligatoriu.";
+    }
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+    }
     const emailData = {
       to: `debug@vessahospital.ro`,
       subject: "Programare Nouă - Vessa Hospital",
@@ -58,7 +70,11 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
         Lasă numele și numărul tău și te sunăm noi!
       </Typography>
       <div className="flex gap-5 flex-col items-center justify-center w-full">
-        <div className="flex flex-row items-end justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem]">
+        <div
+          className={`flex flex-row justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem] ${
+            errors.name || errors.phone ? "items-center" : "items-end"
+          }`}
+        >
           <div className="flex flex-col w-full items-start">
             <div className="flex items-center justify-center  gap-5 mb-3">
               <div>
@@ -67,12 +83,16 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
 
               <Typography variant="detailsBold">Nume</Typography>
             </div>
-
             <input
               type="text"
               onChange={handleNameChange}
               className="text-2xl h-[51px] w-full xs:w-full rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
             />
+            {errors.name && (
+              <p className="sm:text-[15px] xs:text-[15px] md:text-[12px] lg:text-[12px] xl:text-[12px] text-red-500 mt-1">
+                {errors.name}
+              </p>
+            )}
           </div>
           <div className="flex flex-col w-full items-start">
             <div className="flex items-center justify-center gap-5 mb-3">
@@ -82,13 +102,17 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
 
               <Typography variant="detailsBold">Număr de telefon</Typography>
             </div>
-
             <input
               type="text"
               onKeyDown={handleKeyDown}
               onChange={handlePhoneChange}
               className="text-2xl w-full xs:w-full h-[51px] rounded-[16px] border border-gray-300 px-4 outline-none focus:border-blue-500"
             />
+            {errors.phone && (
+              <p className="sm:text-[15px] xs:text-[15px] md:text-[12px] lg:text-[12px] xl:text-[12px] text-red-500 mt-1">
+                {errors.phone}
+              </p>
+            )}
           </div>
           <div className="flex items-center justify-center w-full sm:hidden xs:hidden ">
             <Typography variant="buttonText" className="xs:w-full">

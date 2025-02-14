@@ -2,7 +2,21 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Image from "next/image";
 import "./globals.css";
+import { FaWhatsapp } from "react-icons/fa";
 import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
+
+const WhatsAppIcon = () => {
+  return (
+    <a
+      href="https://wa.me/+40770520904"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-16 right-16 z-[5000] bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+    >
+      <FaWhatsapp size={58} />
+    </a>
+  );
+};
 
 export const metadata: Metadata = {
   title: "Vessa Hospital",
@@ -53,6 +67,7 @@ export default function RootLayout({
       </head>
       <body className={`antialiased`}>
         <SpecialtyProvider>{children}</SpecialtyProvider>
+        <WhatsAppIcon />
         {/* Facebook Pixel */}
         <noscript>
           <Image

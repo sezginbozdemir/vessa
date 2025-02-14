@@ -1,112 +1,5 @@
-// Mock Data
+// Mock DatadoctorsData
 export const doctorsData = [
-  {
-    name: "Dr. Liviu Cirin",
-    specialization: "Electrofiziologie Cardiaca",
-    imageUrl: "/images/Liviu-Cirin.png",
-    about:
-      " Specialist în Electrofiziologie Cardiacă și Cardiologie, Dr. Liviu Cirin este dedicat diagnosticării și tratamentului afecțiunilor cardiace complexe. Cu o abordare bazată pe excelență și o profundă înțelegere a sistemului cardiovascular, oferă pacienților soluții medicale personalizate. Empatia și profesionalismul său contribuie la îmbunătățirea calității vieții pacienților, fiind un pilon de încredere în echipa Vessa Hospital.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Liviu Cirin - Specialist Electrofiziologie Cardiacă | vessahospital.ro ",
-    metaDescription:
-      "Dr. Liviu Cirin, specialist în Electrofiziologie Cardiacă și Cardiologie la Vessa Hospital, oferă tratamente personalizate pentru afecțiuni cardiace complexe, cu o abordare dedicată excelenței.",
-    keywords:
-      "Dr. Liviu Cirin, electrofiziologie cardiacă, cardiologie, afecțiuni cardiace, Vessa Hospital",
-
-    servicesWithDetails: [
-      {
-        title: "Alcool Ablatie Septala",
-        servicesText:
-          "Ablatia septală alcoolică este o procedură minim invazivă utilizată pentru tratarea anumitor tipuri de hipertrofie cardiacă, în special în cazul hipertrofiei septale. Această afecțiune este caracterizată prin îngroșarea septului interventricular, ceea ce poate duce la obstrucția fluxului de sânge din ventriculul stâng și poate duce la simptome severe, cum ar fi dificultăți de respirație și dureri în piept. Ablatia septală alcoolică presupune injectarea unui agent, alcool izopropilic, direct în septul hipertrofic, pentru a induce o mică leziune controlată, care reduce dimensiunea zonei afectate și îmbunătățește circulația sângelui. Această procedură este o opțiune eficientă atunci când alte tratamente nu au avut succes, cum ar fi medicamentele sau procedurile chirurgicale mai invazive. Procedura este realizată sub ghidaj imagistic, iar pacientul va fi monitorizat atent pe parcursul întregii intervenții. Ablatia septală alcoolică este o alternativă sigură și eficientă pentru pacienții care nu sunt eligibili pentru intervenții chirurgicale sau care prezintă riscuri mari pentru astfel de proceduri. La Vessa Hospital, intervențiile sunt efectuate de echipe de specialiști cu experiență în cardiologie intervențională, care utilizează echipamente moderne de imagistică pentru a asigura o procedură precisă și cu risc minim pentru pacient. Recuperarea este rapidă și pacienții pot experimenta o îmbunătățire semnificativă a simptomelor în câteva săptămâni de la procedură.",
-        slug: "alcool-ablatie-septala",
-        metaTitle: "Alcool Ablatie Septala | vessahospital.ro",
-        metaDescription:
-          "Ablatia septală alcoolică la Vessa Hospital tratează hipertrofia septală, îmbunătățind fluxul de sânge și reducând simptomele severe, fiind o alternativă minim invazivă la tratamentele tradiționale.",
-        keywords:
-          "alcool ablatie septala, hipertrofie septala, hipertrofie cardiacă, obstrucția fluxului sanguin, dureri în piept, dificultăți de respirație, cardiologie intervențională, procedură minim invazivă, intervenție ghidată imagistic",
-      },
-      {
-        title:
-          "Ablatia prin Radiofrecvență / Crioablatie - Tratament Tahiaritmii Cardiace",
-        servicesText:
-          "Ablatia prin radiofrecvență și crioablatie sunt două tehnici utilizate pentru tratarea aritmiilor cardiace, în special pentru tahiaritmii, care sunt ritmuri anormal de rapide ale inimii. În cadrul acestor proceduri, medicii folosesc energie electrică sau rece extrem (în cazul crioablatiei) pentru a distruge zonele din inimă care cauzează ritmuri anormale. Ablatia prin radiofrecvență implică utilizarea unor catetere subțiri, care sunt introduse în inimă printr-o venă, iar prin intermediul unui impuls electric controlat se distruge zona care produce aritmiile. Crioablarea, pe de altă parte, utilizează un cateter special care răcește extrem de mult zona afectată pentru a o distruge, prevenind astfel semnalele anormale care provoacă ritmuri rapide. Aceste proceduri sunt utilizate frecvent pentru tratarea fibrilației atriale, tahicardiei ventriculare și altor tipuri de aritmii care nu răspund la medicamente. Intervențiile sunt minim invazive și se realizează sub anestezie locală. Pacientul este monitorizat pe parcursul procedurii pentru a se asigura că procesul se desfășoară în siguranță. La Vessa Hospital, aceste proceduri sunt efectuate de cardiologi intervenționali cu experiență, folosind tehnologie de ultimă oră pentru a asigura cel mai înalt standard de îngrijire. Pacienții beneficiază de un plan personalizat de tratament, iar recuperarea este rapidă, majoritatea pacienților putând reveni la activitățile normale în scurt timp.",
-        slug: "ablatie-radiofrecventa-crioablatie-tahiaritmii-cardiace",
-        metaTitle:
-          "Ablatia prin Radiofrecvență / Crioablatie - Tratament Tahiaritmii Cardiace | vessahospital.ro",
-        metaDescription:
-          "Ablatia prin radiofrecvență și crioablatie sunt tehnici minim invazive folosite la Vessa Hospital pentru tratarea tahiaritmiilor cardiace, oferind o recuperare rapidă și un plan de tratament personalizat.",
-        keywords:
-          "ablatie prin radiofrecvență, crioablatie, tratament tahiaritmii, tahiaritmii cardiace, fibrilație atrială, tahicardie ventriculară, cardiologie intervențională, proceduri minim invazive",
-      },
-      {
-        title:
-          "Cardioversie Electrică - Restabilirea Ritmului Normal al Inimii",
-        servicesText:
-          "Cardioversia electrică este o procedură medicală folosită pentru restabilirea ritmului normal al inimii în cazul în care aceasta prezintă aritmii severe sau periculoase, cum ar fi fibrilația atrială sau flutterul atrial. În timpul acestei proceduri, se aplică un șoc electric controlat asupra inimii pentru a restabili ritmul normal. Cardioversia electrică este de obicei efectuată în situații de urgență, când aritmiile pun în pericol viața pacientului, dar poate fi realizată și programat pentru pacienții care prezintă simptome grave din cauza ritmului anormal. Procedura se realizează sub anestezie generală sau sedare profundă, astfel încât pacientul să nu simtă niciun disconfort în timpul procedurii. În funcție de tipul de aritmie și starea pacientului, cardioversia electrică poate fi folosită ca metodă unică sau poate fi combinată cu tratamente medicamentoase pentru a menține ritmul normal al inimii pe termen lung. Cardioversia electrică este o procedură rapidă, dar eficientă, cu riscuri minime, și poate avea un impact semnificativ asupra stării de sănătate a pacientului. La Vessa Hospital, cardioversia electrică este efectuată de o echipă de cardiologi experimentați, care utilizează echipamente moderne pentru a asigura o procedură sigură și eficientă. Recuperarea este de obicei rapidă, iar majoritatea pacienților pot să revină la activitățile normale într-un timp scurt.",
-        slug: "cardioversie-electrica-restabilirea-ritmului-normal-al-inimii",
-        metaTitle:
-          "Cardioversie Electrică - Restabilirea Ritmului Normal al Inimii | vessahospital.ro",
-        metaDescription:
-          "Cardioversia electrică la Vessa Hospital este o procedură eficientă pentru restabilirea ritmului normal al inimii, utilizată pentru tratamentul aritmiilor severe, cu recuperare rapidă și riscuri minime.",
-        keywords:
-          "cardioversie electrică, restabilirea ritmului inimii, tratament aritmii, fibrilație atrială, flutter atrial, procedură medicală, echipamente moderne, cardiologie",
-      },
-      {
-        title:
-          "Studiu Electrofiziologic - Identificarea Zonelor de Aritmie Cardiace",
-        servicesText:
-          "Studiul electrofiziologic este o procedură medicală avansată utilizată pentru a evalua activitatea electrică a inimii și pentru a identifica zonele care cauzează aritmii cardiace. Aceasta este o investigație crucială în cazul pacienților cu tulburări ale ritmului cardiac care nu răspund la tratamentele standard sau pentru pacienții care suferă de aritmii severe sau frecvente. În cadrul studiului electrofiziologic, se introduce un cateter subțire printr-o venă sau arteră până la nivelul inimii, iar acesta colectează semnale electrice din diferite părți ale inimii. Prin stimularea controlată a diferitelor zone ale inimii și monitorizarea răspunsului, medicii pot identifica precis zonele care generează ritmuri anormale. Aceste informații sunt esențiale pentru a stabili un plan de tratament personalizat, care poate include ablația prin radiofrecvență, implantarea unui stimulator cardiac sau administrarea de medicamente. Studiul electrofiziologic este de obicei efectuat sub anestezie locală și sedare ușoară. Procedura este minim invazivă și permite medicilor să obțină date precise pentru a îmbunătăți tratamentul pacienților cu aritmii complexe. La Vessa Hospital, studiile electrofiziologice sunt realizate de cardiologi intervenționali cu experiență, care utilizează tehnologie de ultimă oră pentru a asigura rezultate precise și sigure.",
-        slug: "studiu-electrofiziologic-identificarea-zonelor-de-aritmie-cardiace",
-        metaTitle:
-          "Studiu Electrofiziologic - Identificarea Zonelor de Aritmie Cardiace | vessahospital.ro",
-        metaDescription:
-          "Studiul electrofiziologic la Vessa Hospital permite identificarea zonelor de aritmie cardiacă și personalizarea tratamentului pentru pacienții cu tulburări de ritm cardiac, folosind tehnologie avansată.",
-        keywords:
-          "studiu electrofiziologic, aritmii cardiace, identificare zone aritmii, tratament aritmii, procedură minim invazivă, cardiologie intervențională, tehnologie de ultimă oră, tratament personalizat",
-      },
-      {
-        title:
-          "Implantare Stimulator Cardiac - Tratament Dereglări de Ritm Cardiac",
-        servicesText:
-          "Implantarea unui stimulator cardiac (pacemaker) este o procedură medicală destinată pacienților care suferă de bradicardie, o afecțiune caracterizată printr-un ritm cardiac anormal de lent. Stimulatorul cardiac este un dispozitiv mic care este implantat sub piele, de obicei în zona toracică, și care trimite impulsuri electrice pentru a ajuta inima să mențină un ritm normal. Aceasta intervenție este necesară pentru pacienții care experimentează simptome severe de bradicardie, cum ar fi amețeli, sincopă (pierdere temporară a cunoștinței) sau oboseală accentuată. Procedura de implantare a stimulatorului cardiac este minim invazivă și se realizează sub anestezie locală. Dispozitivul este conectat prin fire mici la inimă, iar acesta reglează ritmul cardiac, asigurând un flux sanguin adecvat și prevenind episoadele de ritm lent. Stimulatorul cardiac poate fi programat pentru a răspunde la nevoile individuale ale pacientului, iar durata de viață a bateriei acestuia poate ajunge până la 10 ani, în funcție de tipul de stimulator și utilizarea sa. La Vessa Hospital, implantarea stimulatorului cardiac se realizează de echipe de cardiologi specializați în electrofiziologie, folosind cele mai noi tehnologii pentru a garanta o procedură de succes. Recuperarea post-operatorie este rapidă, iar majoritatea pacienților pot reveni la activitățile normale într-o perioadă scurtă de timp.",
-        slug: "implantare-stimulator-cardiac-tratament-deregari-de-ritm-cardiac",
-        metaTitle:
-          "Implantare Stimulator Cardiac - Tratament Dereglări de Ritm Cardiac | vessahospital.ro",
-        metaDescription:
-          "Implantarea stimulatorului cardiac la Vessa Hospital ajută pacienții cu bradicardie să mențină un ritm cardiac normal și să prevină simptomele severe asociate cu ritmul cardiac lent.",
-        keywords:
-          "implantare stimulator cardiac, pacemaker, bradicardie, tratament ritm cardiac, electrofiziologie, procedură minim invazivă, recuperare rapidă, tratament dereglări ritm cardiac",
-      },
-      {
-        title:
-          "Implantare Defibrilator Cardiac - Corectarea prin Șoc Electric a Ritmului Inimii",
-        servicesText:
-          "Implantarea unui defibrilator cardiac (ICD - Implantable Cardioverter Defibrillator) este o procedură medicală esențială pentru pacienții care suferă de aritmii cardiace severe, cum ar fi fibrilația ventriculară sau tahicardia ventriculară, care pot duce la stop cardiac. Defibrilatorul cardiac este un dispozitiv mic, care este implantat sub piele, de obicei în partea superioară a toracelui, și care monitorizează ritmul inimii 24 de ore pe zi, 7 zile pe săptămână. Când senzorii ICD detectează un ritm cardiac anormal, dispozitivul furnizează un șoc electric puternic pentru a restabili ritmul normal al inimii. Această procedură este destinată pacienților cu risc ridicat de stop cardiac, în special cei care au avut deja un episod de stop cardiac sau care prezintă un risc crescut de a dezvolta astfel de aritmii. Defibrilatorul poate detecta și trata automat aritmii periculoase, oferind pacientului o șansă de supraviețuire imediată și prevenind evenimentele care ar putea fi fatale. Implantarea unui defibrilator este esențială pentru pacienții cu afecțiuni cardiace grave, cum ar fi insuficiența cardiacă severă, miocardiopatia, sau cei care au un istoric familial de stop cardiac. Procedura de implantare este minim invazivă și se realizează sub anestezie locală sau sedare. Dispozitivul este plasat sub piele, iar firele sunt conectate la inimă, fără a fi nevoie de o incizie mare. După implantare, pacienții pot duce o viață normală, iar defibrilatorul va monitoriza continuu ritmul inimii și va interveni în mod automat în caz de necesitate. La Vessa Hospital, implantarea defibrilatorului cardiac este efectuată de echipe de cardiologi intervenționali cu o vastă experiență în proceduri de electrofiziologie, asigurându-se că pacienții beneficiază de tratamente de ultimă generație și îngrijire personalizată pentru prevenirea riscurilor legate de aritmii severe. Această procedură oferă pacienților o protecție suplimentară împotriva stopului cardiac, îmbunătățind semnificativ calitatea vieții acestora și oferindu-le o șansă mai mare de supraviețuire pe termen lung.",
-        slug: "implantare-defibrilator-cardiac-corectarea-prin-soc-electric-a-ritmului-inimii",
-        metaTitle:
-          "Implantare Defibrilator Cardiac - Corectarea prin Șoc Electric a Ritmului Inimii | vessahospital.ro",
-        metaDescription:
-          "Implantarea unui defibrilator cardiac la Vessa Hospital protejează pacienții cu aritmii severe și riscuri de stop cardiac, oferind o șansă de supraviețuire imediată prin corectarea ritmului inimii.",
-        keywords:
-          "implantare defibrilator cardiac, ICD, stop cardiac, aritmii severe, fibrilație ventriculară, tahicardie ventriculară, tratament aritmii, electrofiziologie, protecție stop cardiac",
-      },
-    ],
-
-    slug: "dr-liviu-cirin_electrofiziologie-cardiaca",
-    schedule: [
-      {
-        day: "Luni",
-        hours: "14:00-18:00",
-        interval: "30 min/pacient",
-      },
-      {
-        day: "Joi",
-        hours: "14:00-18:00",
-        interval: "30 min/pacient",
-      },
-    ],
-  },
   {
     name: "Dr. Călin Ștefan",
     specialization: "Fiziokinetoterapie",
@@ -150,11 +43,11 @@ export const doctorsData = [
   },
 
   {
-    name: "Dr. Andreea Albota",
+    name: "Dr. Andreea Albotă",
     specialization: "Neurochirurgie",
     imageUrl: "/images/Andreea-Albota.png",
     about:
-      " Specialist în Neurochirurgie, Dr. Andreea Albota abordează cu dedicare și profesionalism cazurile complexe din acest domeniu. Cu o combinație de expertiză tehnică și empatie, oferă soluții moderne și eficiente pentru afecțiuni ale sistemului nervos. Prin precizia și angajamentul său față de pacienți, Dr. Albota contribuie la îmbunătățirea calității vieții acestora, fiind un membru valoros al echipei Vessa Hospital.",
+      " Specialist în Neurochirurgie, Dr. Andreea Albotă abordează cu dedicare și profesionalism cazurile complexe din acest domeniu. Cu o combinație de expertiză tehnică și empatie, oferă soluții moderne și eficiente pentru afecțiuni ale sistemului nervos. Prin precizia și angajamentul său față de pacienți, Dr. Albota contribuie la îmbunătățirea calității vieții acestora, fiind un membru valoros al echipei Vessa Hospital.",
     contact: "+40 744 833 815",
     metaTitle:
       "Dr. Andreea Albota - Specialist Neurochirurgie | vessahospital.ro ",
@@ -1571,11 +1464,11 @@ export const doctorsData = [
     slug: "dr-theodor-eduard_ortopedie",
   },
   {
-    name: "Dr. Dragos Mirosu",
+    name: "Dr. Dragoș Miroșu",
     specialization: "Ortopedie",
     imageUrl: "/images/Dragos-Mirosu.png",
     about:
-      " Dr. Dragoș Mirosu este specialist în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
+      " Dr. Dragoș Miroșu este specialist în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
     contact: "+40 744 833 815",
     metaTitle:
       "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | vessahospital.ro ",
@@ -1593,7 +1486,7 @@ export const doctorsData = [
     ],
   },
   {
-    name: "Dr. Adrian Lupascu",
+    name: "Dr. Adrian Lupașcu",
     specialization: "Ortopedie",
     imageUrl: "/images/Adrian-Lupascu.png",
     about:
@@ -1619,7 +1512,7 @@ export const doctorsData = [
     specialization: "Cardiologie",
     imageUrl: "/images/Liviu-Cirin.png",
     about:
-      " Specialist în Electrofiziologie Cardiacă și Cardiologie, Dr. Liviu Cirin este dedicat diagnosticării și tratamentului afecțiunilor cardiace complexe. Cu o abordare bazată pe excelență și o profundă înțelegere a sistemului cardiovascular, oferă pacienților soluții medicale personalizate. Empatia și profesionalismul său contribuie la îmbunătățirea calității vieții pacienților, fiind un pilon de încredere în echipa Vessa Hospital.",
+      " Specialist în Cardiologie, Dr. Liviu Cirin este dedicat diagnosticării și tratamentului afecțiunilor cardiace complexe. Cu o abordare bazată pe excelență și o profundă înțelegere a sistemului cardiovascular, oferă pacienților soluții medicale personalizate. Empatia și profesionalismul său contribuie la îmbunătățirea calității vieții pacienților, fiind un pilon de încredere în echipa Vessa Hospital.",
     contact: "+40 744 833 815",
     servicesWithDetails: [
       {
@@ -1700,6 +1593,32 @@ export const doctorsData = [
           "Programarea stimulatorului cardiac la Vessa Hospital ajută pacienții cu bradicardie sau afecțiuni ale sistemului de conducere al inimii, îmbunătățind ritmul cardiac și calitatea vieții.",
         keywords:
           "stimulator cardiac, programare stimulator cardiac, bradicardie, ritm cardiac lent, bloc atrioventricular, sindrom nod sinusal bolnav, cardiologie interventțională, procedură minim invazivă",
+      },
+      {
+        title:
+          "Implantare Stimulator Cardiac - Tratament Dereglări de Ritm Cardiac",
+        servicesText:
+          "Implantarea unui stimulator cardiac (pacemaker) este o procedură medicală destinată pacienților care suferă de bradicardie, o afecțiune caracterizată printr-un ritm cardiac anormal de lent. Stimulatorul cardiac este un dispozitiv mic care este implantat sub piele, de obicei în zona toracică, și care trimite impulsuri electrice pentru a ajuta inima să mențină un ritm normal. Aceasta intervenție este necesară pentru pacienții care experimentează simptome severe de bradicardie, cum ar fi amețeli, sincopă (pierdere temporară a cunoștinței) sau oboseală accentuată. Procedura de implantare a stimulatorului cardiac este minim invazivă și se realizează sub anestezie locală. Dispozitivul este conectat prin fire mici la inimă, iar acesta reglează ritmul cardiac, asigurând un flux sanguin adecvat și prevenind episoadele de ritm lent. Stimulatorul cardiac poate fi programat pentru a răspunde la nevoile individuale ale pacientului, iar durata de viață a bateriei acestuia poate ajunge până la 10 ani, în funcție de tipul de stimulator și utilizarea sa. La Vessa Hospital, implantarea stimulatorului cardiac se realizează de echipe de cardiologi specializați în electrofiziologie, folosind cele mai noi tehnologii pentru a garanta o procedură de succes. Recuperarea post-operatorie este rapidă, iar majoritatea pacienților pot reveni la activitățile normale într-o perioadă scurtă de timp.",
+        slug: "implantare-stimulator-cardiac-tratament-deregari-de-ritm-cardiac",
+        metaTitle:
+          "Implantare Stimulator Cardiac - Tratament Dereglări de Ritm Cardiac | vessahospital.ro",
+        metaDescription:
+          "Implantarea stimulatorului cardiac la Vessa Hospital ajută pacienții cu bradicardie să mențină un ritm cardiac normal și să prevină simptomele severe asociate cu ritmul cardiac lent.",
+        keywords:
+          "implantare stimulator cardiac, pacemaker, bradicardie, tratament ritm cardiac, electrofiziologie, procedură minim invazivă, recuperare rapidă, tratament dereglări ritm cardiac",
+      },
+      {
+        title:
+          "Implantare Defibrilator Cardiac - Corectarea prin Șoc Electric a Ritmului Inimii",
+        servicesText:
+          "Implantarea unui defibrilator cardiac (ICD - Implantable Cardioverter Defibrillator) este o procedură medicală esențială pentru pacienții care suferă de aritmii cardiace severe, cum ar fi fibrilația ventriculară sau tahicardia ventriculară, care pot duce la stop cardiac. Defibrilatorul cardiac este un dispozitiv mic, care este implantat sub piele, de obicei în partea superioară a toracelui, și care monitorizează ritmul inimii 24 de ore pe zi, 7 zile pe săptămână. Când senzorii ICD detectează un ritm cardiac anormal, dispozitivul furnizează un șoc electric puternic pentru a restabili ritmul normal al inimii. Această procedură este destinată pacienților cu risc ridicat de stop cardiac, în special cei care au avut deja un episod de stop cardiac sau care prezintă un risc crescut de a dezvolta astfel de aritmii. Defibrilatorul poate detecta și trata automat aritmii periculoase, oferind pacientului o șansă de supraviețuire imediată și prevenind evenimentele care ar putea fi fatale. Implantarea unui defibrilator este esențială pentru pacienții cu afecțiuni cardiace grave, cum ar fi insuficiența cardiacă severă, miocardiopatia, sau cei care au un istoric familial de stop cardiac. Procedura de implantare este minim invazivă și se realizează sub anestezie locală sau sedare. Dispozitivul este plasat sub piele, iar firele sunt conectate la inimă, fără a fi nevoie de o incizie mare. După implantare, pacienții pot duce o viață normală, iar defibrilatorul va monitoriza continuu ritmul inimii și va interveni în mod automat în caz de necesitate. La Vessa Hospital, implantarea defibrilatorului cardiac este efectuată de echipe de cardiologi intervenționali cu o vastă experiență în proceduri de electrofiziologie, asigurându-se că pacienții beneficiază de tratamente de ultimă generație și îngrijire personalizată pentru prevenirea riscurilor legate de aritmii severe. Această procedură oferă pacienților o protecție suplimentară împotriva stopului cardiac, îmbunătățind semnificativ calitatea vieții acestora și oferindu-le o șansă mai mare de supraviețuire pe termen lung.",
+        slug: "implantare-defibrilator-cardiac-corectarea-prin-soc-electric-a-ritmului-inimii",
+        metaTitle:
+          "Implantare Defibrilator Cardiac - Corectarea prin Șoc Electric a Ritmului Inimii | vessahospital.ro",
+        metaDescription:
+          "Implantarea unui defibrilator cardiac la Vessa Hospital protejează pacienții cu aritmii severe și riscuri de stop cardiac, oferind o șansă de supraviețuire imediată prin corectarea ritmului inimii.",
+        keywords:
+          "implantare defibrilator cardiac, ICD, stop cardiac, aritmii severe, fibrilație ventriculară, tahicardie ventriculară, tratament aritmii, electrofiziologie, protecție stop cardiac",
       },
     ],
     slug: "dr-liviu-cirin_cardiologie",
