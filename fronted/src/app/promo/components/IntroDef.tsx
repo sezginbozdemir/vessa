@@ -36,7 +36,11 @@ const IntroDef: React.FC<IntroProps> = ({
             variant="h2"
             className="font-medium text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] sm:text-[30px] xs:text-[28px]"
           >
-            Profită acum de
+            Profită{" "}
+            <span className="xl:font-[600] md:font-[600] lg:font-[600] md:text-[64px] lg:text-[64px] xl:text-[64px] md:uppercase lg:uppercase xl:uppercase">
+              acum{" "}
+            </span>
+            de
           </Typography>
           <Typography
             variant="h2"

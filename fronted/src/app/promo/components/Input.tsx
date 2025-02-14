@@ -62,13 +62,16 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   return (
-    <div className="flex flex-col items-center">
-      <Typography
-        variant="h3"
-        className="custom-blue-text lg:self-start lg:pl-[10%] xl:self-start xl:pl-[10%] md:self-start md:pl-[10%] mb-16 xs:mb-[15px]"
-      >
-        Lasă numele și numărul tău și te sunăm noi!
-      </Typography>
+    <div className="flex flex-col items-center lg:items-start xl:items-start md:items-start">
+      <div className="flex flex-col lg:pl-[5%] xl:pl-[5%] md:pl-[5%] mb-16 xs:mb-[15px]  xs:text-center xs:w-[50%] xs:gap-[2rem]">
+        <div className="italic custom-blue-text font-[700] text-[30px]">
+          <span className="block xs:hidden">Vrei să prinzi un loc?</span>
+          <span className="hidden xs:block">Grăbește-te!</span>
+        </div>
+        <Typography variant="h3" className="font-[500] text-black">
+          Lasă numele și numărul tău și te sunăm noi!
+        </Typography>
+      </div>
       <div className="flex gap-5 flex-col items-center justify-center w-full">
         <div
           className={`flex flex-row justify-center xs:flex-col w-[90%] gap-[3rem] xs:gap-[1rem] ${

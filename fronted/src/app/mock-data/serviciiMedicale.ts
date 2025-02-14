@@ -114,7 +114,7 @@ export const serviciiMedicale = [
     title4: "Ce investigații fac medicii chirurgi generaliști?",
     text4:
       "Înainte de orice intervenție chirurgicală, medicii chirurgi generaliști efectuează o serie de investigații pentru a evalua starea de sănătate a pacientului și pentru a stabili diagnosticul. Acestea pot include analize de sânge, ecografii abdominale, radiografii, tomografii computerizate (CT) sau imagistică prin rezonanță magnetică (IRM). Endoscopia este frecvent utilizată pentru evaluarea afecțiunilor tractului digestiv, iar biopsia poate fi necesară pentru diagnosticarea leziunilor tumorale. În cazurile complexe, chirurgii colaborează cu alți specialiști pentru investigații suplimentare, cum ar fi testele funcționale hepatice sau colonoscopia. Toate aceste teste sunt efectuate pentru a asigura siguranța și succesul intervenției.",
-    title5: "Când s? vezi un chirurg generalist?",
+    title5: "Când să vezi un chirurg generalist?",
     text5:
       "Consultația la un chirurg generalist este necesară atunci când te confrunți cu simptome persistente sau acute care pot sugera o problemă ce necesită intervenție chirurgicală. Acestea includ dureri abdominale intense, dificultăți la înghițire, sângerări gastrointestinale, hernii vizibile sau umflături suspecte. Afecțiunile acute, cum ar fi apendicita, colecistita sau perforațiile abdominale, necesită intervenție urgentă. Totodată, pacienții cu afecțiuni cronice, cum ar fi refluxul gastro-esofagian sever sau ulcerele refractare la tratament, pot beneficia de o evaluare chirurgicală. La Vessa Hospital Timișoara, echipa noastră de chirurgie generală oferă soluții rapide și eficiente, asigurând cele mai bune rezultate pentru pacienți.",
     buttonText: "Servicii medicale",

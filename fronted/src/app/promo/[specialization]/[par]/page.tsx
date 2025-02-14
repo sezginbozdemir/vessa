@@ -53,9 +53,8 @@ export default function Page({
         availability={promo.availability}
         doctor={promo.doctor}
         id={promo.id}
+        specialty={promo.specialization}
       />
-
-      <Appoint specialty={promo.specialization} />
       <div className="flex flex-row sm:flex-col xs:flex-col items-start justify-center sm:gap-[80px] xs:gap-[80px] mt-36">
         <div className="w-full order-0 sm:order-1 xs:order-1">
           {promo.id === "variant" ? (

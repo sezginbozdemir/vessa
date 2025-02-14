@@ -2,26 +2,27 @@ import Typography from "@/components/UI/Typography";
 import Image from "next/image";
 import Link from "next/link";
 import { Doctor } from "./type";
+import Button from "@/components/UI/Button";
 
 interface IntroProps {
   title: string;
   price: string;
-  availability: string;
   doctor: Doctor | undefined;
+  handleClick: () => void;
 }
 
 const IntroVar: React.FC<IntroProps> = ({
   title,
   price,
-  availability,
   doctor,
+  handleClick,
 }) => {
   return (
     <div className="flex flex-row  pt-[10px]">
       <div className="flex flex-col gap-[2rem] w-[60%] sm:w-full xs:w-full">
         <Link
           href="/"
-          className="mb-[2rem] mt-[2rem] inline-block self-end sm:self-center xs:self-center"
+          className="mb-[2rem] mt-[2rem] pr-[3rem] sm:pr-0 xs:pr-0 inline-block self-end sm:self-center xs:self-center"
         >
           <Image
             src="/images/vessa-logo.png"
@@ -31,24 +32,49 @@ const IntroVar: React.FC<IntroProps> = ({
             className="xs:w-[135px] sm:w-[152px]"
           />
         </Link>
-        <div className=" z-[1000] flex flex-col self-center">
-          <Typography variant="h2" className="md:text-[50px]">
-            Oferta lunii {availability}!
-          </Typography>
-        </div>
         <div className=" z-[1000] flex flex-col gap-[4rem] ">
-          <div className="flex flex-col self-center w-[90%]">
+          <div className="flex flex-col self-center w-[90%] xs:gap-[2rem]">
             <Typography
               variant="h3"
-              className="text-center text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] sm:text-[30px] xs:text-[20px]"
+              className="custom-blue-text text-center text-[40px] xl:text-[40px] lg:text-[40px] md:text-[40px] sm:text-[40px] xs:text-[40px]"
             >
-              Ofertă pachet - {""}
-              <span className="custom-blue-text">{title}</span>
+              Ofertă pachet {""}
+              <span className="text-black font-[550] italic xs:hidden">
+                - {title}
+              </span>
             </Typography>
+            <ul className="list-none flex-col self-center gap-5 text-[24px] font-[600] hidden xs:flex">
+              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
+                <span className="italic">Consult cardiologic</span>
+              </li>
+              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
+                <span className="italic">Holter EKG 24h</span>
+              </li>
+              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
+                <span className="italic">Interpretare rezultat</span>
+              </li>
+              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
+                <span className="italic">Recomandări tratament</span>
+              </li>
+            </ul>
           </div>
-          <div className="flex flex-row items-center justify-center self-center gap-[5rem] xs:gap-[2rem]">
+          <div className="relative flex flex-row items-center justify-center self-center gap-[5rem] xs:gap-[2rem]">
+            <Image
+              src="/images/black-pulse.png"
+              width={60}
+              height={50}
+              alt="vessa"
+              className="absolute bottom-[-35%] left-[-10%] sm:hidden xs:hidden"
+            />
+            <Image
+              src="/images/timer-icon.png"
+              width={30}
+              height={35}
+              alt="vessa"
+              className="absolute bottom-[-50%] right-[8%] sm:hidden xs:hidden"
+            />
             <div className="relative flex flex-col items-center justify-center">
-              <div className="absolute bottom-[50%] left-[5%] w-full h-[2px] bg-gray-500 rotate-[-40deg]"></div>
+              <div className="absolute bottom-[50%] left-[5%] w-full h-[2px] bg-gray-500 rotate-[-40deg]" />
               <Typography variant="h3">Preț normal</Typography>
               <Typography variant="h3" className="custom-blue-text">
                 600 lei
@@ -74,6 +100,47 @@ const IntroVar: React.FC<IntroProps> = ({
                 className="custom-blue-text text-[40px] md:text-[40px] sm:text-[40px] xs:text-[28px]"
               >
                 {price}
+              </Typography>
+            </div>
+          </div>
+          <div className="flex flex-col items-center mb-[5rem]">
+            <div className="custom-blue-text font-[700] text-[30px]">
+              <span className="block xs:hidden">Grăbește-te!</span>
+              <span className="xs:block hidden">Vrei să prinzi loc?</span>
+            </div>
+            <div className="hidden xs:block font-[500] text-[25px]">
+              <span className="italic">Dr. Liviu Cirin {""}</span>
+              <span className="custom-blue-text text-[18px] font-[400]">
+                mai are
+              </span>
+            </div>
+
+            <div className="mb-[3rem] flex flex-row items-center justify-center gap-0 text-[#C04F2F] font-[500] text-[40px] xs:text-[20px] sm:text-[30px]">
+              <Image
+                src="/images/orange-pulse.png"
+                width={78}
+                height={66}
+                alt="vessa"
+              />
+              <p>
+                <span className="inline-block xs:hidden">Ultimele</span>
+                <span className="hidden xs:inline-block">Doar</span> 4 zile
+                disponibile
+              </p>
+              <Image
+                src="/images/orange-pulse.png"
+                width={78}
+                height={66}
+                alt="vessa"
+              />
+            </div>
+            <div className="flex items-center justify-center hidden xs:block w-[90%]">
+              <Typography variant="buttonText">
+                <Button
+                  className="h-[50px] text-white justify-center hover:text-black w-full"
+                  label="Vreau oferta!"
+                  onClick={handleClick}
+                ></Button>
               </Typography>
             </div>
           </div>
