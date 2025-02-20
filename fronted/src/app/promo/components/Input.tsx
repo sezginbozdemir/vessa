@@ -7,8 +7,9 @@ import { FaPhone, FaUser } from "react-icons/fa";
 
 interface InputProps {
   label?: string;
+  id: string;
 }
-const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
+const Input: React.FC<InputProps> = ({ id, label = "Vreau să fiu sunat" }) => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [errors, setErrors] = useState<{ phone?: string; name?: string }>({});
@@ -62,13 +63,16 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
     }
   };
   return (
-    <div className="flex flex-col items-center lg:items-start xl:items-start md:items-start">
-      <div className="flex flex-col lg:pl-[5%] xl:pl-[5%] md:pl-[5%] mb-16 xs:mb-[15px]  xs:text-center xs:w-[50%] xs:gap-[2rem]">
-        <div className="italic custom-blue-text font-[700] text-[30px]">
-          <span className="block xs:hidden">Vrei să prinzi un loc?</span>
-          <span className="hidden xs:block">Grăbește-te!</span>
-        </div>
-        <Typography variant="h3" className="font-[500] text-black">
+    <div className="flex flex-col items-center lg:items-start xl:items-start md:items-start mt-[-4rem] xs:mt-0">
+      <div className="flex flex-col lg:pl-[5%] xl:pl-[5%] md:pl-[5%] mb-[2rem] xs:mb-[15px]  xs:text-center xs:w-[50%] xs:gap-[2rem]">
+        {id === "variant" && (
+          <div className="italic custom-blue-text font-[700] text-[30px]">
+            <span className="block xs:hidden">Vrei să prinzi un loc?</span>
+            <span className="hidden xs:block">Grăbește-te!</span>
+          </div>
+        )}
+
+        <Typography variant="h3" className="font-[600] custom-blue-text">
           Lasă numele și numărul tău și te sunăm noi!
         </Typography>
       </div>
@@ -117,7 +121,7 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
               </p>
             )}
           </div>
-          <div className="flex items-center justify-center w-full sm:hidden xs:hidden ">
+          <div className="flex items-center justify-center w-full custom:hidden sm:hidden xs:hidden ">
             <Typography variant="buttonText" className="xs:w-full">
               <Button
                 className="h-[50px] text-white justify-center hover:text-black xs:w-full"
@@ -127,7 +131,7 @@ const Input: React.FC<InputProps> = ({ label = "Vreau să fiu sunat" }) => {
             </Typography>
           </div>
         </div>
-        <div className="hidden xs:flex sm:flex items-center justify-center w-full xs:w-[90%]">
+        <div className="hidden xs:flex sm:flex custom:flex items-center justify-center w-full xs:w-[90%]">
           <Typography variant="buttonText" className="w-[30%] xs:w-full">
             <Button
               className="w-full h-[50px] text-white justify-center hover:text-black xs:w-full"

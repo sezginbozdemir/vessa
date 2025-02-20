@@ -26,7 +26,8 @@ const ImageSection = () => {
                   : "h-[47rem]"
               } overflow-hidden rounded-3xl shadow-xl transition-all duration-500 ease-in-out`}
               onMouseEnter={() => setHoveredCard(1)}
-              onMouseLeave={() => setHoveredCard(null)}>
+              onMouseLeave={() => setHoveredCard(null)}
+            >
               <Image
                 src={images[0].src}
                 alt="Image 1"
@@ -36,9 +37,7 @@ const ImageSection = () => {
               />
 
               <div className="absolute bottom-0 left-0 w-full h-[8rem] bg-dark-blue text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex items-center justify-center">
-                <Typography
-                  variant="buttonText"
-                  className="text-white">
+                <Typography variant="buttonText" className="text-white">
                   {images[0].text}
                 </Typography>
               </div>
@@ -54,7 +53,8 @@ const ImageSection = () => {
                   : "h-[47rem]"
               } overflow-hidden rounded-3xl shadow-xl transition-all duration-500 ease-in-out`}
               onMouseEnter={() => setHoveredCard(2)}
-              onMouseLeave={() => setHoveredCard(null)}>
+              onMouseLeave={() => setHoveredCard(null)}
+            >
               <Image
                 src={images[1].src}
                 alt="Image 2"
@@ -64,19 +64,14 @@ const ImageSection = () => {
               />
 
               <div className="absolute bottom-0 left-0 w-full h-[8rem] bg-dark-blue text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex items-center justify-center sm:text-center">
-                <Typography
-                  variant="buttonText"
-                  className="text-white">
+                <Typography variant="buttonText" className="text-white">
                   {images[1].text}
                 </Typography>
               </div>
             </div>
           </div>
 
-          <Spacing
-            size="4"
-            md="4"
-          />
+          <Spacing size="4" md="4" />
 
           <div className="flex items-end justify-center">
             <Link href="/galerie_foto">
@@ -93,7 +88,7 @@ const ImageSection = () => {
           <div className="flex flex-col justify-center items-center h-[103rem] md:h-[75rem] sm:h-[40rem] transition-all duration-500 gap-y-[2rem]">
             <div className="w-[34rem] flex justify-center  md:justify-center h-auto ">
               <Image
-                src="images/vessa-logo.png"
+                src="/images/vessa-logo.png"
                 alt="Logo"
                 width={300}
                 height={100}
@@ -113,7 +108,8 @@ const ImageSection = () => {
                   : "h-[47rem]"
               } overflow-hidden rounded-3xl shadow-xl transition-all duration-500 ease-in-out`}
               onMouseEnter={() => setHoveredCard(3)}
-              onMouseLeave={() => setHoveredCard(null)}>
+              onMouseLeave={() => setHoveredCard(null)}
+            >
               <Image
                 src={images[2].src}
                 alt="Image 3"
@@ -123,9 +119,7 @@ const ImageSection = () => {
               />
 
               <div className="absolute bottom-0 left-0 w-full h-[8rem] bg-dark-blue text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex items-center justify-center">
-                <Typography
-                  variant="buttonText"
-                  className="text-white">
+                <Typography variant="buttonText" className="text-white">
                   {images[2].text}
                 </Typography>
               </div>
@@ -141,7 +135,8 @@ const ImageSection = () => {
                   : "h-[47rem]"
               } overflow-hidden rounded-3xl shadow-xl transition-all duration-500 ease-in-out`}
               onMouseEnter={() => setHoveredCard(4)}
-              onMouseLeave={() => setHoveredCard(null)}>
+              onMouseLeave={() => setHoveredCard(null)}
+            >
               <Image
                 src={images[3].src}
                 alt="Image 4"
@@ -151,9 +146,7 @@ const ImageSection = () => {
               />
 
               <div className="absolute bottom-0 left-0 w-full h-[8rem] bg-dark-blue text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex items-center justify-center">
-                <Typography
-                  variant="buttonText"
-                  className="text-white">
+                <Typography variant="buttonText" className="text-white">
                   {images[3].text}
                 </Typography>
               </div>

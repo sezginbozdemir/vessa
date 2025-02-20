@@ -8,9 +8,10 @@ import { useRouter } from "next/navigation";
 interface FooterProps {
   specialty: string;
   footerTitle: string;
+  id: string;
 }
 
-const FooterPromo: React.FC<FooterProps> = ({ specialty, footerTitle }) => {
+const FooterPromo: React.FC<FooterProps> = ({ id, specialty, footerTitle }) => {
   const { setSelectedSpecialty } = useSpecialty();
   const router = useRouter();
   const handleButtonClick = async () => {
@@ -46,15 +47,15 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty, footerTitle }) => {
 
   return (
     <>
-      <div className=" mt-36 mb-16 flex flex-col items-center justify-center">
+      <div className=" mt-[7rem] mb-[10rem] flex flex-col items-center justify-center">
         <Typography variant="h2" className="accent text-center">
           <span dangerouslySetInnerHTML={{ __html: footerTitle }} />
         </Typography>
       </div>
       <div className="flex items-center justify-center ">
-        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end justify-center gap-12 xs:gap-8">
+        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end custom:items-center justify-center gap-12 xs:gap-8">
           <div className="w-[65%] sm:w-full xs:w-full z-[1000]">
-            <Input label="Vreau să fiu sunat" />
+            <Input id={id} label="Vreau să fiu sunat" />
           </div>
 
           <Typography
@@ -66,7 +67,7 @@ const FooterPromo: React.FC<FooterProps> = ({ specialty, footerTitle }) => {
           <div className="w-[30%] sm:w-full xs:w-full flex justify-center xs:px-[3rem]">
             <Button
               onClick={handleButtonClick}
-              label="Programează-te on-line!"
+              label="Mă programez on-line!"
               className="rounded-[9px] bg-transparent xs:w-full justify-center"
             />
           </div>

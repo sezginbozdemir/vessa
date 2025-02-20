@@ -18,11 +18,11 @@ const IntroVar: React.FC<IntroProps> = ({
   handleClick,
 }) => {
   return (
-    <div className="flex flex-row  pt-[10px]">
-      <div className="flex flex-col gap-[2rem] w-[60%] sm:w-full xs:w-full">
+    <div className="flex flex-row  pt-[10px]  xs:mb-[100px]">
+      <div className="flex flex-col gap-[2rem] xs:gap-[0rem] w-[60%] sm:w-full xs:w-full">
         <Link
           href="/"
-          className="mb-[2rem] mt-[2rem] pr-[3rem] sm:pr-0 xs:pr-0 inline-block self-end sm:self-center xs:self-center"
+          className="mb-[2rem] mt-[2rem] xs:mt-[0rem] pr-[3rem] sm:pr-0 xs:pr-0 inline-block self-end sm:self-center xs:self-center"
         >
           <Image
             src="/images/vessa-logo.png"
@@ -32,7 +32,7 @@ const IntroVar: React.FC<IntroProps> = ({
             className="xs:w-[135px] sm:w-[152px]"
           />
         </Link>
-        <div className=" z-[1000] flex flex-col gap-[4rem] ">
+        <div className=" z-[1000] flex flex-col gap-[30px] ">
           <div className="flex flex-col self-center w-[90%] xs:gap-[2rem]">
             <Typography
               variant="h3"
@@ -43,36 +43,18 @@ const IntroVar: React.FC<IntroProps> = ({
                 - {title}
               </span>
             </Typography>
-            <ul className="list-none flex-col self-center gap-5 text-[24px] font-[600] hidden xs:flex">
-              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
-                <span className="italic">Consult cardiologic</span>
-              </li>
-              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
-                <span className="italic">Holter EKG 24h</span>
-              </li>
-              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
-                <span className="italic">Interpretare rezultat</span>
-              </li>
-              <li className=" pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px]  before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
-                <span className="italic">Recomandări tratament</span>
-              </li>
+            <ul className="list-none flex-col self-center gap-[10px] text-[24px] font-[500] hidden xs:flex">
+              {title.split(" + ").map((item, index) => (
+                <li
+                  className="pl-16 relative before:content-['✓'] before:text-white before:bg-blue-300 before:rounded-[5px] before:px-[5px] before:w-[30px] before:h-[30px] before:flex before:items-center before:justify-center before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2"
+                  key={index}
+                >
+                  <span className="italic">{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="relative flex flex-row items-center justify-center self-center gap-[5rem] xs:gap-[2rem]">
-            <Image
-              src="/images/black-pulse.png"
-              width={60}
-              height={50}
-              alt="vessa"
-              className="absolute bottom-[-35%] left-[-10%] sm:hidden xs:hidden"
-            />
-            <Image
-              src="/images/timer-icon.png"
-              width={30}
-              height={35}
-              alt="vessa"
-              className="absolute bottom-[-50%] right-[8%] sm:hidden xs:hidden"
-            />
+          <div className="flex flex-row items-center justify-center self-center gap-[5rem] xs:gap-[2rem]">
             <div className="relative flex flex-col items-center justify-center">
               <div className="absolute bottom-[50%] left-[5%] w-full h-[2px] bg-gray-500 rotate-[-40deg]" />
               <Typography variant="h3">Preț normal</Typography>
@@ -109,7 +91,9 @@ const IntroVar: React.FC<IntroProps> = ({
               <span className="xs:block hidden">Vrei să prinzi loc?</span>
             </div>
             <div className="hidden xs:block font-[500] text-[25px]">
-              <span className="italic">Dr. Liviu Cirin {""}</span>
+              <span className="italic">
+                {doctor!.name} {""}
+              </span>
               <span className="custom-blue-text text-[18px] font-[400]">
                 mai are
               </span>
@@ -124,7 +108,7 @@ const IntroVar: React.FC<IntroProps> = ({
               />
               <p>
                 <span className="inline-block xs:hidden">Ultimele</span>
-                <span className="hidden xs:inline-block">Doar</span> 4 zile
+                <span className="hidden xs:inline-block">Doar</span> 3 zile
                 disponibile
               </p>
               <Image

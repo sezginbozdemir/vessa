@@ -48,11 +48,11 @@ const seedUsers = async () => {
   try {
     await User.create([
       {
-        username: "",
+        username: "George-Mihai-Nodiți",
         password: 1,
         role: "medic",
-        specialization: ["Ortopedie"],
-        fullname: "",
+        specialization: ["Chirurgie Generala"],
+        fullname: "Dr. George Mihai Nodiți",
       },
     ]);
 
@@ -109,8 +109,8 @@ const changeUserPassword = async (username: string, newPassword: string) => {
   }
 };
 
-////changeUserPassword("Daniel-Costea", "429467");
-///deleteUserByFullname("Dr. Vitalie Slobozian");
+///changeUserPassword("George-Mihai-Nodiți", "1");
+///deleteUserByFullname("Dr. George-Mihai-Nodiți");
 //seedUsers();
 ///logAllUsers();
 

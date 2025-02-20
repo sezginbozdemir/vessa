@@ -8,10 +8,11 @@ import Input from "./Input";
 
 interface AppointProps {
   specialty: string;
+  id: string;
 }
 
 const Appoint = forwardRef<HTMLDivElement, AppointProps>(
-  ({ specialty }, ref) => {
+  ({ specialty, id }, ref) => {
     const { setSelectedSpecialty } = useSpecialty();
     const router = useRouter();
 
@@ -48,9 +49,9 @@ const Appoint = forwardRef<HTMLDivElement, AppointProps>(
 
     return (
       <div ref={ref} className="flex items-center justify-center">
-        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end justify-center gap-12 xs:gap-8">
+        <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end custom:items-center justify-center gap-12 xs:gap-8">
           <div className="w-[65%] sm:w-full xs:w-full z-[1000]">
-            <Input label="Vreau să fiu sunat" />
+            <Input id={id} label="Vreau să fiu sunat" />
           </div>
           <Typography
             variant="h3"
@@ -61,7 +62,7 @@ const Appoint = forwardRef<HTMLDivElement, AppointProps>(
           <div className="w-[30%] sm:w-full xs:w-full flex justify-center xs:px-[3rem]">
             <Button
               onClick={handleButtonClick}
-              label="Programează-te on-line!"
+              label="Mă programez on-line!"
               className="rounded-[9px] bg-transparent xs:w-full justify-center"
             />
           </div>
@@ -71,7 +72,6 @@ const Appoint = forwardRef<HTMLDivElement, AppointProps>(
   }
 );
 
-// Add display name for better debugging
 Appoint.displayName = "Appoint";
 
 export default Appoint;

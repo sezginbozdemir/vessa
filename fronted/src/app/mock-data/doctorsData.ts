@@ -1,5 +1,31 @@
-// Mock DatadoctorsData
 export const doctorsData = [
+  {
+    name: "Dr. George Mihai Nodiți",
+    specialization: "Chirurgie Generala",
+    imageUrl: "/images/noditi-george-mihai.png",
+    about:
+      "Specialist în Chirurgie Generală, Dr. George Mihai Nodiți oferă îngrijire medicală cuprinzătoare, abordând atât cazuri chirurgicale, cât și afecțiuni endocrine complexe. Cu o combinație de expertiză multidisciplinară și o abordare empatică, se concentrează pe oferirea de soluții eficiente și sigure, adaptate nevoilor fiecărui pacient. Profesionalismul și dedicarea sa contribuie la excelența echipei Vessa Hospital, asigurând o îngrijire de încredere pentru toți pacienții.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | vessahospital.ro",
+    metaDescription:
+      "Dr. George Mihai Nodiți, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
+    keywords: "Dr. George Mihai Nodiți, chirurgie generală, Vessa Hospital",
+    servicesWithDetails: [],
+    slug: "dr-noditi-george-mihai_chirurgie-generala",
+    schedule: [
+      /*
+    {
+      "day": "Luni",
+      "hours": "08:00-12:00"
+    },
+    {
+      "day": "Vineri",
+      "hours": "10:00-14:00"
+    }
+    */
+    ],
+  },
   {
     name: "Dr. Călin Ștefan",
     specialization: "Fiziokinetoterapie",
@@ -53,7 +79,7 @@ export const doctorsData = [
       "Dr. Andreea Albota - Specialist Neurochirurgie | vessahospital.ro ",
     metaDescription:
       "Dr. Andreea Albota, specialist în Neurochirurgie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni ale sistemului nervos, având o abordare personalizată și empatică.",
-    keywords:
+    keyworChi:
       "Dr. Andreea Albota, neurochirurgie, afecțiuni sistem nervos, Vessa Hospital, tratamente neurochirurgicale",
     servicesWithDetails: [
       {
@@ -332,6 +358,28 @@ export const doctorsData = [
       "Dr. Dragan Maximov, specialist în Chirurgie Generală și Endocrinologie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni endocrine și intervenții chirurgicale complexe.",
     keywords: "Dr. Dragan Maximov, chirurgie generală, Vessa Hospital",
     servicesWithDetails: [
+      {
+        title: "Abdominoplastie",
+        servicesText:
+          "Abdominoplastia este o intervenție chirurgicală estetică destinată îndepărtării excesului de piele și grăsime de la nivelul abdomenului, contribuind la obținerea unui contur corporal armonios și tonifiat. Această procedură este recomandată persoanelor care, în urma sarcinii, pierderii semnificative în greutate sau înaintării în vârstă, se confruntă cu piele lăsată, vergeturi sau slăbirea mușchilor abdominali. Operația se efectuează sub anestezie generală și implică realizarea unei incizii discrete în zona inferioară a abdomenului, prin care surplusul de piele și grăsime este eliminat, iar mușchii abdominali sunt întăriți pentru a crea un aspect ferm și plat. În unele cazuri, abdominoplastia poate fi combinată cu liposucția pentru rezultate optime. Recuperarea variază de la pacient la pacient, însă majoritatea pot reveni la activitățile normale în câteva săptămâni, respectând indicațiile medicului pentru o vindecare optimă. Rezultatele devin vizibile pe măsură ce inflamația dispare, oferind un abdomen tonifiat și un aspect natural. Pe lângă îmbunătățirea estetică, această procedură poate avea și beneficii funcționale, contribuind la corectarea diastazei abdominale și la ameliorarea durerilor de spate asociate. Abdominoplastia nu doar redefinește silueta, ci și crește încrederea în sine, ajutând pacienții să se simtă mai bine în propria piele.",
+        slug: "abdominoplastie",
+        metaTitle: "Abdominoplastie | vessahospital.ro",
+        metaDescription:
+          "Abdominoplastia este o intervenție chirurgicală estetică ce elimină excesul de piele și grăsime abdominală, oferind un aspect tonifiat și ferm.",
+        keywords:
+          "abdominoplastie, chirurgie estetică abdomen, eliminare piele flască, tonifiere mușchi abdominali, conturare siluetă, liposucție abdomen, diastază abdominală",
+      },
+      {
+        title: "Biopsie Excizională a Nodulului Mamar",
+        servicesText:
+          "Biopsia excizională a nodulului mamar este o procedură chirurgicală utilizată pentru îndepărtarea completă a unei formațiuni suspecte din sân, având rolul de a permite analiza histopatologică detaliată a țesutului pentru stabilirea unui diagnostic precis. Aceasta este indicată în cazurile în care investigațiile imagistice, precum ecografia mamară, mamografia sau RMN-ul, sugerează prezența unui nodul cu caracteristici atipice, care necesită o examinare mai amănunțită pentru a determina dacă este benign sau malign. Procedura se efectuează, de obicei, sub anestezie locală sau generală, în funcție de dimensiunea și localizarea nodulului, iar chirurgul realizează o incizie minimă pentru a extrage complet formațiunea suspectă, asigurând astfel o cicatrice cât mai discretă. Țesutul extras este apoi trimis în laborator pentru analiza microscopică, ceea ce permite medicului să ofere un diagnostic clar și să stabilească pașii următori ai tratamentului, dacă este necesar. Recuperarea după biopsia excizională este, în general, rapidă, pacienta putând resimți un disconfort ușor și o ușoară sensibilitate în zona operată, care pot fi gestionate cu analgezice uzuale. Activitățile zilnice pot fi reluate în câteva zile, iar medicul va oferi recomandări privind îngrijirea postoperatorie pentru a preveni eventuale complicații. Această procedură nu doar că elimină un posibil factor de risc, dar oferă și certitudinea unui diagnostic corect, contribuind astfel la liniștea și siguranța pacientei. În cazul în care rezultatele indică o afecțiune malignă, identificarea precoce prin biopsie excizională crește semnificativ șansele unui tratament eficient și a unei recuperări rapide, permițând pacientelor să ia cele mai bune decizii pentru sănătatea lor.",
+        slug: "biopsie-excizionala-nodul-mamar",
+        metaTitle: "Biopsie Excizională a Nodulului Mamar | vessahospital.ro",
+        metaDescription:
+          "Biopsia excizională a nodulului mamar este o procedură chirurgicală utilizată pentru îndepărtarea unui nodul suspect și stabilirea unui diagnostic precis prin analiză histopatologică.",
+        keywords:
+          "biopsie excizională, nodul mamar, diagnostic cancer sân, analiză histopatologică, excizie nodul sân, chirurgie sân, sănătatea sânului",
+      },
       {
         title: "Consult Chirurgie Generală",
         servicesText:
@@ -1643,7 +1691,7 @@ export const doctorsData = [
       " Dr. Sorin Chiriac este medic specialist în Endocrinologie și Chirurgie Generală, cu o vastă experiență în tratamentele afecțiunilor glandelor endocrine, dar și în intervențiile chirurgicale pentru diverse afecțiuni abdominale și ale aparatului digestiv. La Vessa Hospital, Dr. Chiriac aplică metode moderne pentru diagnostic și tratament, având ca scop îmbunătățirea calității vieții pacienților prin intervenții chirurgicale precise și tratamente adaptate fiecărui caz în parte.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Sorin Chiriac - Specialist Endocrinologie și Chirurgie Generală | vessahospital.ro ",
+      "Dr. Sorin Chiriac - Specialist Endocrinologie și Chirurgie Generală | vessahospital.ro",
     metaDescription:
       "Dr. Sorin Chiriac, specialist în Endocrinologie și Chirurgie Generală la Vessa Hospital, oferă tratamente personalizate pentru afecțiuni endocrine și intervenții chirurgicale abdominale.",
     keywords:

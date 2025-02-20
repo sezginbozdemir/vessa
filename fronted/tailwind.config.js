@@ -13,7 +13,7 @@ module.exports = {
         md: { max: "1333px", min: "768px" },
         sm: { max: "767px" },
         xs: { max: "550px" },
-        custom: { max: "1000px", min: "768px" },
+        custom: { max: "1024px", min: "768px" },
       },
       gridTemplateColumns: {
         12: "repeat(12, minmax(0, 1fr))",

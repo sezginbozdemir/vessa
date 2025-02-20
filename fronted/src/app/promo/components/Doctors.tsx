@@ -8,9 +8,10 @@ import { FaPhone } from "react-icons/fa";
 
 interface DoctorsProps {
   doctor: string;
+  id: string;
 }
 
-const Doctors: React.FC<DoctorsProps> = ({ doctor }) => {
+const Doctors: React.FC<DoctorsProps> = ({ id, doctor }) => {
   const matchingDoctor = doctorsData.find(
     (item) => item.name.toLowerCase() === doctor.toLowerCase()
   );
@@ -19,9 +20,11 @@ const Doctors: React.FC<DoctorsProps> = ({ doctor }) => {
     <div className="flex flex-col items-center w-full">
       {matchingDoctor && (
         <>
-          <Typography variant="h3" className="mb-[1rem] text-blue-300">
-            Medicul Tău: Cine este și Cum te poate ajuta
-          </Typography>
+          {id !== "default" && (
+            <Typography variant="h3" className="mb-[1rem] text-blue-300">
+              Medicul Tău: Cine este și Cum te poate ajuta
+            </Typography>
+          )}
           <div className="flex mt-36 flex-col gap-[5rem] items-center justify-between">
             <div className="w-full flex items-center justify-center">
               <Link

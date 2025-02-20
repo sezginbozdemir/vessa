@@ -11,6 +11,11 @@ export const promos = [
     price: "400 lei",
     availability: "Februarie",
     main: "Ce include pachetul?",
+    info: {
+      title: "",
+      content: "",
+    },
+
     package: [
       {
         title: "Consult Cardiologic",
@@ -48,6 +53,59 @@ export const promos = [
           "Diagnostic precis și monitorizare detaliată a ritmului cardiac",
           "Prevenție și depistare timpurie a bolilor cardiovasculare",
           "Recomandări personalizate pentru menținerea sănătății inimii",
+        ],
+      },
+    ],
+  },
+  {
+    id: "variantA",
+    metaTitle: "Vessa Hospital - Consult Neurochirurgie | vessahospital.ro",
+
+    specialization: "neurochirurgie",
+    doctor: "Dr. Andreea Albotă",
+    footerTitle: "Sănătatea Ta Contează! <br/> Nu Rata Această Ofertă!",
+    title: "CONSULT <br/> NEUROCHIRURGIE",
+    par: "consult-neurochirurgie",
+    price: "290",
+    availability: "",
+    main: "Ce presupune consultul?",
+    info: {
+      title: "Ce este consultația de neurochirurgie?",
+      content:
+        "Consultația neurochirurgicală este o evaluare medicală specializată realizată de un neurochirurg, având ca scop diagnosticarea și gestionarea afecțiunilor sistemului nervos central și periferic. Aceasta este necesară atunci când există suspiciuni de afecțiuni ale creierului, coloanei vertebrale sau nervilor periferici care ar putea necesita tratament chirurgical sau non-chirurgical.",
+    },
+    package: [
+      {
+        title: "Când este recomandată consultația neurochirurgicală?",
+        contents: [
+          "<strong>Dureri de cap severe și persistente</strong> – Care nu răspund la tratament și pot fi asociate cu amețeli, tulburări de vedere sau alte simptome neurologice",
+          "<strong>Hernie de disc cervicală/lombară</strong> – Dureri de spate, amorțeli, furnicături sau slăbiciune musculară",
+          "<strong>Sindrom de canal carpian sau alte neuropatii periferice</strong> – Amorțeli și dureri în mâini sau picioare",
+          "<strong>Tumoare cerebrală sau medulară</strong> – Diagnosticate prin RMN sau CT",
+          "<strong>Accidente vasculare cerebrale</strong> Pentru evaluarea opțiunilor de tratament post-AVC",
+          "<strong>Traumatisme craniene sau vertebrale</strong> Lovituri, căderi, accidente auto care pot afecta creierul sau coloana vertebrală",
+        ],
+      },
+    ],
+    forWho: [
+      {
+        title: "Cum decurge procedura?",
+        contents: [
+          "Anamneză – Discuție despre simptome, istoricul medical și tratamentele anterioare",
+          "Examinare clinică – Testarea reflexelor, forței musculare și sensibilității",
+          "Recomandare investigații – RMN, CT, electromiografie sau analize de laborator, dacă este necesar",
+          "Plan de tratament – Medicul explică opțiunile de tratament (medicamentos, fizioterapie, intervenție chirurgicală)",
+        ],
+      },
+    ],
+    benefits: [
+      {
+        title: "Beneficiile unei consultații neurochirurgicale la timp:",
+        contents: [
+          "Diagnostic precis și rapid pentru probleme neurologice",
+          "Evitarea complicațiilor prin tratament corect și la timp",
+          "Acces la opțiuni de tratament minim invaziv",
+          "Creșterea calității vieții prin reducerea durerilor și îmbunătățirea mobilității",
         ],
       },
     ],
@@ -107,16 +165,16 @@ export const promos = [
   {
     id: "default",
     metaTitle:
-      "Vessa Hospital - Infiltrație cu acid hialuronic | vessahospital.ro",
+      "Vessa Hospital - Infiltrație cu Acid Hialuronic | vessahospital.ro",
 
     specialization: "ortopedie",
-    doctor: "Dr. Dragoș Miroșu",
-    footerTitle: "Sănătatea Ta Contează! <br/> Nu Rata Această Ofertă!",
-    title: "Infiltrație <br/> genunchi cu acid <br/> hialuronic",
-    par: "infiltratie-acid-hialuronic",
+    doctor: "Dr. Adrian Lupașcu",
+    footerTitle: "Sănătatea Ta Contează! <br/> Fă-ți un Control Acum!",
+    title: "Infiltrație genunchi<br/>cu<br/>acid hialuronic",
+    par: "infiltratie-genunchi",
     price: "990",
     availability: "Februarie",
-    main: "Ce presupune procedura?",
+    main: "Ce presupune consultul?",
     info: {
       title: "Ce este infiltrația cu acid hialuronic?",
       content:

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { doctorsData } from "@/app/mock-data/doctorsData";
 import IntroVar from "./IntroVar";
+import IntroVarA from "./IntroVarA";
 import IntroDef from "./IntroDef";
 import Appoint from "./Appoint";
 import { useRef } from "react";
@@ -9,7 +10,6 @@ import { useRef } from "react";
 interface IntroProps {
   title: string;
   price: string;
-  availability: string;
   doctor: string;
   id: string;
   specialty: string;
@@ -18,7 +18,6 @@ interface IntroProps {
 const Intro: React.FC<IntroProps> = ({
   title,
   price,
-  availability,
   doctor,
   id,
   specialty,
@@ -38,7 +37,7 @@ const Intro: React.FC<IntroProps> = ({
     <>
       <div className="bg-light-blue relative">
         <Image
-          className="absolute top-[15%] xs:top-[50%] left-[2%] sm:w-[105px] xs:w-[68px]"
+          className="absolute top-[15%] xs:top-[50%] left-[2%] sm:w-[105px] xs:hidden"
           src="/images/cross.png"
           width={150}
           height={150}
@@ -60,6 +59,14 @@ const Intro: React.FC<IntroProps> = ({
         />
 
         <div className="bg-[url('/images/promo-white-shape.png')] bg-[100%_-5%] sm:bg-[100%_-15%] xs:bg-[100%_-60%] bg-cover bg-no-repeat">
+          {id === "variantA" && (
+            <IntroVarA
+              handleClick={handleClick}
+              title={title}
+              price={price}
+              doctor={matchingDoctor}
+            />
+          )}
           {id === "variant" && (
             <IntroVar
               handleClick={handleClick}
@@ -71,14 +78,14 @@ const Intro: React.FC<IntroProps> = ({
           {id === "default" && (
             <IntroDef
               title={title}
+              handleClick={handleClick}
               price={price}
-              availability={availability}
               doctor={matchingDoctor}
             />
           )}
         </div>
       </div>
-      <Appoint specialty={specialty} ref={appointRef} />
+      <Appoint id={id} specialty={specialty} ref={appointRef} />
     </>
   );
 };
