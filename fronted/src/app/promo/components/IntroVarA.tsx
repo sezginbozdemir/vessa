@@ -91,7 +91,7 @@ const IntroVar: React.FC<IntroProps> = ({
       <div className="relative flex items-end sm:hidden xs:hidden z-[1000]  w-[35%] pt-[4rem]">
         <div className="absolute z-[5000]  bottom-[6rem] w-[290px] custom:w-[230px] right-[60%] flex flex-col items-center justify-center px-[4rem] xs:hidden bg-light-blue h-[90px] custom:h-[70px] rounded-[50px]">
           <span className="italic font-[700] text-[25px] custom:text-[20px] custom-blue-text">
-            Rezervăți <span className="font-[400]">locul</span>
+            Rezerva-ti <span className="font-[400]">locul</span>
           </span>
           <span className="italic font-[700] text-[25px] custom:text-[20px] text-medium-blue">
             ACUM

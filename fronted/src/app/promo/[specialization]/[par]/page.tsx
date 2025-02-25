@@ -80,7 +80,7 @@ export default function Page({
         <div className="mt-[4rem] flex flex-col items-center justify-center">
           <Typography variant="h3" className="custom-blue-text">
             <span className="text-medium-blue">Medicii Tăi:</span> Cine sunt și
-            Cum te poate ajuta
+            Cum te pot ajuta
           </Typography>
           <div className="flex flex-row px-[10rem] custom:px-[0rem] sm:px-0 xs:px-0 sm:flex-col xs:flex-col">
             <Doctors id={promo.id} doctor="Dr. Dragoș Miroșu" />
@@ -100,6 +100,7 @@ export default function Page({
       )}
 
       <FooterPromo
+        title={promo.title}
         id={promo.id}
         footerTitle={promo.footerTitle}
         specialty={promo.specialization}

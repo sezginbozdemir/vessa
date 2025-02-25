@@ -9,10 +9,11 @@ import Input from "./Input";
 interface AppointProps {
   specialty: string;
   id: string;
+  title: string;
 }
 
 const Appoint = forwardRef<HTMLDivElement, AppointProps>(
-  ({ specialty, id }, ref) => {
+  ({ specialty, id, title }, ref) => {
     const { setSelectedSpecialty } = useSpecialty();
     const router = useRouter();
 
@@ -51,7 +52,7 @@ const Appoint = forwardRef<HTMLDivElement, AppointProps>(
       <div ref={ref} className="flex items-center justify-center">
         <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end custom:items-center justify-center gap-12 xs:gap-8">
           <div className="w-[65%] sm:w-full xs:w-full z-[1000]">
-            <Input id={id} label="Vreau să fiu sunat" />
+            <Input title={title} id={id} label="Vreau să fiu sunat" />
           </div>
           <Typography
             variant="h3"

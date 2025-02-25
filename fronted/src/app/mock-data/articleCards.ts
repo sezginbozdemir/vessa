@@ -1,5 +1,66 @@
 export const articleCards = [
   {
+    promo: true,
+    imageUrl: "/images/article-promo-01.png",
+    title: "Tehnologii Avansate în Protezarea de Șold și Genunchi",
+    description:
+      "Mai multe tehnologii moderne au revoluționat chirurgia de protezare articulară, incluzând robotica, navigația computerizată, implanturile personalizate prin imprimare 3D...",
+    guestName: "HSS",
+    prezentare:
+      "În ultimii ani, tehnologiile utilizate în <span class='text-dark-blue font-[700]'>implantul de proteză</span> a șoldului și genunchiului au evoluat semnificativ. Printre inovațiile principale se numără:",
+    titlu2: "",
+    titlu3: "Proteză articulară asistată robotic",
+    titlu4: "Navigația computerizată",
+    titlu5: "Imagistica avansată",
+    titlu6: "Tehnologia realității augmentate",
+    titlu7: "Tehnologia imprimării 3D",
+    titlu8: "Implanturi inteligente și tehnologia wearable",
+    titlu9: "Tehnici de reducere a durerii",
+    titlu10: "Colectarea datelor și progresele cercetării",
+    text2:
+      "Mai multe tehnologii moderne au revoluționat chirurgia de protezare articulară, incluzând robotica, navigația computerizată, implanturile personalizate prin imprimare 3D, senzorii inteligenți și realitatea augmentată. Aceste inovații îmbunătățesc precizia intervențiilor și recuperarea pacienților.<br/><br/>Chirurgia artroscopică sau minim invazivă este utilizată în anumite proceduri ortopedice, dar protezarea genunchiului necesită îndepărtarea unei părți semnificative de os, ceea ce face imposibilă realizarea acesteia printr-o abordare artroscopică clasică.",
+    text3:
+      "Brațele robotizate utilizate în chirurgia de <span class='text-dark-blue font-[700]'>protezare a șoldului</span> și genunchiului oferă o precizie excepțională, permițând personalizarea fiecărei intervenții. Înainte de operație, senzori speciali sunt plasați în jurul articulației pentru a transmite poziția și orientarea acesteia către sistemul robotic. Acest sistem ajustează alinierea în timp real și poate opri procedura dacă apar deviații.<br/><br/>În timpul intervenției, chirurgul și brațul robotic controlează simultan instrumentele, iar sistemul previne abaterile de la planul inițial. Dacă sunt necesare modificări, echipa medicală le poate implementa și recalibra dispozitivul în timp real.<br/><br/>După implantarea protezei, computerul creează o randare 3D a poziției finale a implantului, permițând chirurgilor să evalueze stabilitatea și alinierea articulației. Această tehnologie ajută la prevenirea complicațiilor și la optimizarea rezultatelor postoperatorii, asigurând o proteză bine poziționată și funcțională pe termen lung.",
+    text4:
+      "În cazul protezării genunchiului, navigația computerizată ajută la alinierea corectă a protezei cu structura osoasă și ligamentele pacientului, reducând riscul de instabilitate articulară și alte complicații. Pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, chirurgul poate folosi navigația pentru a poziționa optim cupa acetabulară, ceea ce este esențial pentru funcționalitatea implantului și pentru prevenirea luxațiilor postoperatorii.<br/><br/>Această tehnologie nu este potrivită pentru toți pacienții sau pentru toate tipurile de protezare articulară, însă studiile arată că utilizarea navigației computerizate contribuie la o mai bună precizie chirurgicală, ceea ce poate duce la o reducere a durerii postoperatorii și la o recuperare mai rapidă.",
+    text4a:
+      "Navigația computerizată este o tehnologie avansată utilizată în chirurgia de <span class='text-dark-blue font-[700]'>protezare a șoldului</span> și genunchiului pentru a asigura o aliniere precisă a implantului. Acest sistem utilizează software specializat și senzori care creează un model tridimensional al articulației pacientului înainte de operație. Chirurgul poate folosi acest model digital în timp real pentru a ghida poziționarea implantului cu o precizie milimetrică.",
+    text5:
+      "Tehnicile imagistice, cum ar fi radiografiile și RMN-ul, au fost mereu esențiale în chirurgia de protezare a șoldului și genunchiului, atât înainte, cât și îndupă intervenție. O inovație recentă în acest domeniu este tehnologia de captură a mișcării 3D, care utilizează un set de camere pentru a monitoriza în timp real mișcarea pacientului, oferind imagini detaliate pentru planificarea chirurgicală.<br/><br/>După operație, chirurgii pot folosi fluoroscopia pentru a analiza performanța biomecanică a implantului și pentru a evalua modul întrucât acesta reproduce mișcarea naturală a articulației. Fluoroscopia este o tehnică imagistică de înaltă rezoluție, bazată pe raze X continue, care permite vizualizarea structurilor interne ale corpului în timp real.<br/><br/>După operație, chirurgii pot folosi fluoroscopia pentru a analiza performanța biomecanică a implantului și pentru a evalua modul întrucât acesta reproduce mișcarea naturală a articulației. Fluoroscopia este o tehnică imagistică de înaltă rezoluție, bazată pe raze X continue, care permite vizualizarea structurilor interne ale corpului în timp real.",
+    text6:
+      "La începutul anului 2021, HSS a realizat prima intervenție de înlocuire a genunchiului asistată de realitate augmentată din Statele Unite. În această variantă a navigației computerizate, chirurgii poartă ochelari inteligenți de realitate augmentată (AR), care le permit să vizualizeze structurile genunchiului pacientului și să urmărească progresul intervenției în timp real, suprapunând imaginile direct pe câmpul chirurgical. Astfel, chirurgul nu mai trebuie să își întoarcă privirea spre un ecran de computer. Această tehnologie are potențialul de a îmbunătăți poziționarea implanturilor.",
+    text7:
+      "Scopul final al oricărei intervenții de <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare de șold</a> este de a crea un implant care să funcționeze pe toată durata vieții pacientului. Pentru unii pacienți, tehnologiile de imprimare 3D permit chirurgilor de la HSS să construiască implanturi personalizate pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, adaptate anatomiei lor specifice. Aceste implanturi personalizate pot reduce sau chiar elimina necesitatea utilizării fixativelor, cum ar fi cimentul osos.<br/><br/>Implanturile personalizate oferă, de asemenea, o mai bună integrare a osului natural cu implantul, un aspect esențial în cazul pacienților cu afecțiuni complexe, inclusiv al celor care au avut <span class='text-dark-blue font-[700]'>proteze de șold</span> anterioare care nu au avut succes.<br/><br/>În 2021, HSS și LimaCorporate au deschis primul centru de design și imprimare 3D într-un spital. Acest centru permite HSS să creeze implanturi personalizate pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, destinate pacienților care necesită intervenții complexe de reconstrucție a șoldului.",
+    text8:
+      "Tehnologiile wearable și implanturile „inteligente” transformă recuperarea post-chirurgicală, facilitând în același timp parteneriate mai active între pacient, chirurg și kinetoterapeut.<br/><br/>În octombrie 2021, chirurgii de la HSS au realizat prima intervenție de protezare a genunchiului care a inclus un implant protezic cu senzor inteligent. Senzorul are capacitatea de a măsura pașii pacientului, viteza de mers, amplitudinea mișcării și alți indicatori ai funcției genunchiului după intervenție. Tehnologia utilizată este similară cu cea din multe dispozitive de tip pacemaker cardiac, care colectează date ce sunt trimise către cardiologul pacientului.<br/><br/>După implantare, genunchiul „inteligent” înregistrează și transmite wireless date care permit chirurgilor să monitorizeze progresul pacientului, în special în primii ani de după operație. Datele colectate de implant sunt trimise către un dispozitiv care se conectează la o priză din locuința pacientului. Ulterior, acestea sunt trimise securizat pe o platformă bazată pe cloud, unde echipa medicală le poate analiza pentru a verifica progresul și recuperarea pacientului și a face ajustări ale regimului de kinetoterapie, dacă este necesar.<br/><br/>Implanturile inteligente și dispozitivele, cum ar fi inelele și ceasurile inteligente, permit medicilor și kinetoterapeuților să monitorizeze activitățile pacienților. Senzorii purtabili ajută kinetoterapeuții să evalueze impactul anumitor mișcări asupra piciorului pacientului după intervenția de protezare a genunchiului.",
+    text9:
+      "Intervențiile de protezare articulară la HSS sunt de obicei efectuate cu anestezie spinală (cunoscută și sub denumirea de epidurală), în loc de anestezie generală. Deoarece acest tip de anestezie dispare treptat, ajută la controlul durerii imediat după intervenție.<br/><br/>În plus, atunci când anestezia spinală începe să dispară, pacienților li se pot administra blocaje nervoase în zona în care a avut loc protezarea articulației. Medicamentele injectate în nervii de deasupra genunchiului pot oferi o ameliorare a durerii între 24 și 36 de ore.<br/><br/>Aceste tehnologii, combinate cu medicamente care includ antiinflamatoare, analgezice pentru durerea nervoasă și antidepresive, ajută la reducerea necesității de narcotice și facilitează o recuperare rapidă.",
+    text10:
+      "De la momentul în care un pacient de la HSS primește prima sa radiografie sau RMN, începe colectarea datelor. Aceste date – fie că sunt obținute prin imagistică, simulare a mersului sau kinetoterapie – permit chirurgilor să înțeleagă mai bine anatomia pacientului și să studieze rezultatele diferitelor abordări chirurgicale.<br/><br/>Nicio altă instituție ortopedică nu dispune de volumul de date ale pacienților pe care îl are HSS. Registrul nostru colaborativ de protezare articulară include date despre mai mult de 55.000 de pacienți. Fiecare dintre chirurgii noștri specializați în <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare de șold</a> și genunchi participă la cercetări clinice continue, folosind datele colectate pentru a evalua noi tehnologii. Această cercetare ne ajută să ghidăm dezvoltarea de noi standarde în chirurgia de protezare articulară, impactând pacienții de astăzi și din viitor.",
+
+    textList: [
+      "<span class='text-dark-blue font-[700]'>Proteza de șold</span> <strong>asistată robotic</strong> – Precizie sporită în alinierea implantului prin utilizarea brațelor robotizate.",
+      "<strong>Navigație computerizată</strong> – Modelare 3D a articulației pentru poziționarea optimă a protezei.",
+      "<strong>Implanturi inteligente</strong> – Senzori ce monitorizează recuperarea pacientului.",
+      "<strong>Tehnologie 3D</strong> – Personalizarea implanturilor pentru o integrare osoasă superioară.",
+    ],
+    image1: "/images/article-promo-01.png",
+    image2: "/images/article-promo-02.jpg",
+    image3: "/images/imagistica-01.jpg",
+    image4: "/images/imagistica-02.jpg",
+    image5: "/images/footer-01.jpg",
+    image6: "/images/footer-02.jpg",
+    isArticle: true,
+    date: "27 Feb 2025",
+    specialization: "Ortopedie",
+    metaTitle:
+      " Tehnologii Avansate în Protezarea de Șold și Genunchi  | VESSA Hospital Timișoara ",
+    metaDescription: "",
+    keywords: "",
+    slug: "tehnologii-avansate-in-protezare",
+  },
+  {
+    promo: false,
     imageUrl: "/images/article1a.jpg",
     title: "Viitorul Endocrinologiei",
     description:
@@ -155,6 +216,7 @@ export const articleCards = [
       "diabet zaharat, diabet tip 1, diabet tip 2, simptome diabet, tratament diabet, prevenție diabet, insulină, glicemie, complicații diabet, diabet zaharat tip 1 și 2, management diabet, tratarea diabetului, glicemia, sănătate pancreas, VESSA Hospital Timișoara",
     slug: "ce-este-diabetul-si-cum-poate-fi-gestionat",
   },
+
   // {
   //   imageUrl: "/images/article2.png",
   //   title: "Breast Cancer Treatment",

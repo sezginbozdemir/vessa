@@ -1,4 +1,8 @@
-export const MailTemp = (phone: string, name: string): string => {
+export const MailTemp = (
+  phone: string,
+  name: string,
+  title: string
+): string => {
   return `
    <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +43,15 @@ export const MailTemp = (phone: string, name: string): string => {
             </div>
             <div style="font-size: 20px; color: #333;">${phone}</div>
           </div>
+		          <!-- Oferta Details -->
+        <div style="font-size: 20px; color: #333; padding-top: 10px;">
+          <div style="padding: 15px 0;">
+            <div style="font-size: 16px; color: #7a7a7a; text-transform: uppercase; font-weight: lighter;">
+              Oferta:
+            </div>
+            <div style="font-size: 20px; color: #333;">${title}</div>
+          </div>
+
 
           <!-- Footer Section -->
           <div style="margin-top: 20px; text-align: center; font-size: 16px; color: #7a7a7a; font-family: 'Open Sans', sans-serif;">

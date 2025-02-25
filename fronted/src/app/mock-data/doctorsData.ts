@@ -1,10 +1,37 @@
 export const doctorsData = [
   {
+    name: "Dr. Isaic Alexandru",
+    specialization: "Chirurgie Generala",
+    imageUrl: "/images/isaic-alexandru.png",
+    about:
+      "Dr. Alexandru Isaic este medic primar în chirurgie generală și asistent universitar la UMFT. Cu o vastă experiență în tehnici chirurgicale moderne, precum chirurgia laparoscopică și minim invazivă, Dr. Isaic își desfășoară activitatea în cadrul spitalului privat Vessa Hospital din Timișoara.Aderarea sa la echipa Vessa Hospital aduce multiple beneficii instituției. Expertiza sa în proceduri chirurgicale avansate permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte. Prin dedicarea și profesionalismul său, Dr. Alexandru Isaic consolidează reputația Vessa Hospital ca un centru de excelență în domeniul chirurgiei generale, asigurând pacienților servicii medicale de înaltă calitate și acces la cele mai recente inovații în practica chirurgicală.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. Isaic Alexandru - Specialist Chirurgie Generală | vessahospital.ro",
+    metaDescription:
+      "Dr. Isaic Alexandru, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
+    keywords: "Dr. Isaic Alexandru, chirurgie generală, Vessa Hospital",
+    servicesWithDetails: [],
+    slug: "dr-isaic-alexandru_chirurgie-generala",
+    schedule: [
+      /*
+    {
+      "day": "Luni",
+      "hours": "08:00-12:00"
+    },
+    {
+      "day": "Vineri",
+      "hours": "10:00-14:00"
+    }
+    */
+    ],
+  },
+  {
     name: "Dr. George Mihai Nodiți",
     specialization: "Chirurgie Generala",
     imageUrl: "/images/noditi-george-mihai.png",
     about:
-      "Specialist în Chirurgie Generală, Dr. George Mihai Nodiți oferă îngrijire medicală cuprinzătoare, abordând atât cazuri chirurgicale, cât și afecțiuni endocrine complexe. Cu o combinație de expertiză multidisciplinară și o abordare empatică, se concentrează pe oferirea de soluții eficiente și sigure, adaptate nevoilor fiecărui pacient. Profesionalismul și dedicarea sa contribuie la excelența echipei Vessa Hospital, asigurând o îngrijire de încredere pentru toți pacienții.",
+      "Dr. George Mihai Nodiți este un medic specialist în chirurgie generală, cu o vastă experiență în chirurgia laparoscopică și minim invazivă. În calitate de asistent universitar la UMFT, Dr. Nodiți a contribuit semnificativ la formarea noilor generații de medici, împărtășindu-le cunoștințele și expertiza sa în domeniul chirurgical. Aderarea sa la echipa Vessa Hospital din Timișoara aduce multiple beneficii instituției. Expertiza sa în tehnici chirurgicale avansate, precum chirurgia laparoscopică, permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte.",
     contact: "+40 744 833 815",
     metaTitle:
       "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | vessahospital.ro",
@@ -1269,18 +1296,58 @@ export const doctorsData = [
       {
         title: "Artroplastie Totală de Șold, Unilateral",
         servicesText:
-          "Artroplastia totală de șold unilateral este o intervenție chirurgicală majoră destinată înlocuirii unei articulații deteriorate de boli degenerative, cum ar fi coxartroza, traumatismele severe sau necroza avasculară. Operația constă în îndepărtarea suprafețelor articulare afectate și înlocuirea acestora cu o proteză artificială din materiale biocompatibile, precum titanul sau ceramica. Procedura se desfășoară sub anestezie generală sau rahidiană, iar durata este de aproximativ 1-2 ore. După intervenție, pacientul este încurajat să înceapă mobilizarea precoce, cu ajutorul unui kinetoterapeut, pentru a preveni complicațiile și a accelera recuperarea. Recuperarea completă poate dura câteva luni, dar rezultatele includ reducerea semnificativă a durerii, îmbunătățirea mobilității și a calității vieții. Artroplastia totală de șold este una dintre cele mai frecvente și eficiente operații ortopedice, cu o rată de succes foarte mare.",
+          "Artroplastia totală de șold unilateral, cunoscută și sub denumirea de protezare a șoldului, este o procedură chirurgicală avansată, disponibilă la Vessa Hospital din Timișoara, prin care articulația deteriorată a șoldului este înlocuită cu o proteză artificială, având scopul de a reduce durerea, a îmbunătăți mobilitatea și a crește calitatea vieții pacientului. Această intervenție este recomandată pacienților care suferă de afecțiuni severe ale șoldului, precum osteoartrita, artrita reumatoidă, displazia de șold sau necroza avasculară, și care nu mai răspund la tratamentele conservatoare, precum medicația, fizioterapia sau infiltrațiile intraarticulare.",
+        title1: "Tipuri de proteze de șold",
+        title2: "Ce presupune intervenția?",
+        title3: "Beneficiile artroplastiei totale de șold unilateral",
+        title4: "Recuperarea după intervenție",
+        title5: "Cine poate beneficia de această intervenție?",
+        title6: "Artroplastia Totală de Șold Unilateral la Vessa Hospital",
+        title7:
+          "De ce să alegi Vessa Hospital pentru artroplastia totală de șold unilateral?",
+        text1: "Există două tipuri principale de protezare a șoldului:",
+        text2:
+          "Artroplastia totală de șold unilateral se efectuează atunci când doar un singur șold necesită protezare. Procedura constă în îndepărtarea structurilor afectate ale articulației – capul femural și acetabulul deteriorat – și înlocuirea acestora cu o proteză special concepută pentru a reda funcționalitatea normală a șoldului.<br/><br/>Proteza utilizată poate fi <strong>metalică, ceramică sau din polietilenă</strong>, fiind alcătuită dintr-o componentă femurală (tija care se fixează în osul coapsei) și o componentă acetabulară (cupă care se montează în bazin). Alegerea tipului de proteză depinde de vârsta, nivelul de activitate și nevoile individuale ale pacientului.",
+        text3:
+          "Recuperarea după artroplastia totală de șold unilateral implică spitalizare de câteva zile, urmată de un program de fizioterapie și reabilitare. Pacienții încep să se mobilizeze la scurt timp după operație, cu ajutorul unui cadru de mers sau al cârjelor. În general, recuperarea completă durează între 6 și 12 săptămâni, timp în care este esențială respectarea recomandărilor medicale pentru a preveni complicațiile și a obține cele mai bune rezultate.",
+        text4:
+          "Artroplastia totală de șold unilateral este indicată pacienților care prezintă:",
+        text5:
+          "La Vessa Hospital Timișoara, pacienții beneficiază de tratamente moderne, efectuate de o echipă medicală specializată, utilizând tehnologie de ultimă generație. Intervenția este realizată în condiții de maximă siguranță, cu o abordare personalizată pentru fiecare pacient.<br/><br/>Dacă te confrunți cu dureri persistente de șold și vrei să afli dacă această procedură este potrivită pentru tine, programează o consultație la Vessa Hospital și descoperă soluția optimă pentru sănătatea articulațiilor tale!",
+        list1: [
+          "<strong>Artroplastia totală de șold</strong>, în care atât capul femural, cât și cavitatea acetabulară sunt înlocuite cu componente artificiale din metal, ceramică sau polietilenă.",
+          "<strong>Artroplastia parțială de șold</strong>, unde doar capul femural este înlocuit, fiind indicată în special în cazul fracturilor de col femural la pacienții vârstnici.",
+        ],
+        list2: [
+          "<strong>Reducerea durerii – Pacienții scapă de durerea persistentă care le afecta mobilitatea și calitatea vieții.</strong>",
+          "<strong>Îmbunătățirea funcționalității – După perioada de recuperare, pacienții pot reveni la activitățile zilnice fără disconfort.</strong>",
+          "<strong>Creșterea mobilității – Articulația nouă permite mișcări mai fluide și o postură mai corectă.</strong>",
+          "<strong>Îmbunătățirea calității vieții – Pacienții se pot bucura din nou de independență și de un stil de viață activ.</strong>",
+        ],
+        list3: [
+          "<strong>Durere intensă și persistentă care afectează activitățile zilnice</strong>",
+          "<strong>Rigiditate articulară și pierderea mobilității</strong>",
+          "<strong>Deformări articulare evidente</strong>",
+          "<strong>Lipsa răspunsului la tratamente conservatoire</strong>",
+        ],
+        list4: [
+          "<strong>Expertiză medicală de top – Intervențiile sunt realizate de chirurgi cu experiență vastă în ortopedie și chirurgie articulară.</strong>",
+          "<strong>Tehnologie de ultimă generație – Folosim proteze performante și tehnici minim invazive pentru o recuperare mai rapidă și rezultate optime.</strong>",
+          "<strong>Îngrijire personalizată – De la consultația inițială până la recuperare, fiecare pacient beneficiază de un plan de tratament adaptat nevoilor sale.</strong>",
+          "<strong>Condiții premium de spitalizare – Pacienții se recuperează într-un mediu modern, confortabil și sigur.</strong>",
+        ],
         slug: "artroplastie-totala-de-sold-unilateral",
-        metaTitle: "Artroplastie Totală de Șold Unilateral | vessahospital.ro",
+        metaTitle: "Protezare de șold | vessahospital.ro",
         metaDescription:
-          "Artroplastia totală de șold unilateral ajută la înlocuirea articulației deteriorate, reducând durerea și îmbunătățind mobilitatea pacienților.",
+          "Protezare de șold la Vessa Hospital Timișoara – Artroplastia totală de șold unilateral, realizată de specialiști în ortopedie, cu tehnici minim invazive pentru o recuperare rapidă.",
         keywords:
-          "artroplastie totală șold unilateral, înlocuire articulație șold, chirurgie șold, coxartroză, necroză avasculară, vessahospital.ro",
+          "protezare de șold, artroplastia totală de șold unilateral, chirurgie ortopedică, recuperare după protezare de șold, Vessa Hospital Timișoara, proteză șold minim invazivă",
       },
       {
         title: "Artroplastie Totală de Genunchi, Unilateral",
         servicesText:
           "Artroplastia totală de genunchi unilateral este o intervenție chirurgicală complexă destinată pacienților care suferă de artroză avansată sau alte afecțiuni care au compromis ireversibil articulația genunchiului. Operația constă în îndepărtarea cartilajului și a osului deteriorat, urmată de implantarea unei proteze artificiale care restaurează funcționalitatea articulației. Proteza este fabricată din materiale rezistente și biocompatibile, garantând o durată lungă de viață. Intervenția durează între 1 și 2 ore și este urmată de un program de recuperare intensivă, care include exerciții de fizioterapie și kinetoterapie pentru recăpătarea forței și mobilității. Beneficiile sunt semnificative: reducerea durerii, corectarea deformărilor articulare și îmbunătățirea considerabilă a calității vieții. Pacienții pot reveni la activități normale în câteva luni, iar rata de succes este foarte ridicată, cu rezultate care se mențin pe termen lung.",
+
         slug: "artroplastie-totala-de-genunchi-unilateral",
         metaTitle:
           "Artroplastie Totală de Genunchi Unilateral | vessahospital.ro",
@@ -1516,7 +1583,7 @@ export const doctorsData = [
     specialization: "Ortopedie",
     imageUrl: "/images/Dragos-Mirosu.png",
     about:
-      " Dr. Dragoș Miroșu este specialist în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
+      " Dr. Dragoș Miroșu este medic primar în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
     contact: "+40 744 833 815",
     metaTitle:
       "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | vessahospital.ro ",

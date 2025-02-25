@@ -8,8 +8,13 @@ import { FaPhone, FaUser } from "react-icons/fa";
 interface InputProps {
   label?: string;
   id: string;
+  title: string;
 }
-const Input: React.FC<InputProps> = ({ id, label = "Vreau să fiu sunat" }) => {
+const Input: React.FC<InputProps> = ({
+  title,
+  id,
+  label = "Vreau să fiu sunat",
+}) => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [errors, setErrors] = useState<{ phone?: string; name?: string }>({});
@@ -40,7 +45,7 @@ const Input: React.FC<InputProps> = ({ id, label = "Vreau să fiu sunat" }) => {
     const emailData = {
       to: `debug@vessahospital.ro`,
       subject: "Programare Nouă - Vessa Hospital",
-      text: MailTemp(phone, name),
+      text: MailTemp(phone, name, title),
     };
 
     try {

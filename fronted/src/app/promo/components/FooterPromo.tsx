@@ -9,9 +9,15 @@ interface FooterProps {
   specialty: string;
   footerTitle: string;
   id: string;
+  title: string;
 }
 
-const FooterPromo: React.FC<FooterProps> = ({ id, specialty, footerTitle }) => {
+const FooterPromo: React.FC<FooterProps> = ({
+  title,
+  id,
+  specialty,
+  footerTitle,
+}) => {
   const { setSelectedSpecialty } = useSpecialty();
   const router = useRouter();
   const handleButtonClick = async () => {
@@ -55,7 +61,7 @@ const FooterPromo: React.FC<FooterProps> = ({ id, specialty, footerTitle }) => {
       <div className="flex items-center justify-center ">
         <div className="w-full flex flex-row sm:flex-col xs:flex-col items-end custom:items-center justify-center gap-12 xs:gap-8">
           <div className="w-[65%] sm:w-full xs:w-full z-[1000]">
-            <Input id={id} label="Vreau să fiu sunat" />
+            <Input title={title} id={id} label="Vreau să fiu sunat" />
           </div>
 
           <Typography

@@ -6,10 +6,10 @@ import Spacing from "@/components/UI/Spacing";
 import HeaderServiciiMedicale from "@/components/ServiciiMedicalePageComponents/HeaderServiciiMedicale";
 import { doctorsData } from "@/app/mock-data/doctorsData";
 import { serviciiMedicale } from "@/app/mock-data/serviciiMedicale";
-import ServiciuDetalii from "@/components/ServiciuDetalii/ServiciuDetalii";
 import MedicalTeam from "@/components/ServiciiMedicalePageComponents/MedicalTeam";
 import ServiciOrar from "@/components/ServiciiMedicalePageComponents/ServiciInfo";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
+import ServiceDetail from "./components/ServiceDetail";
 
 export async function generateMetadata({
   params,
@@ -62,7 +62,7 @@ export async function generateMetadata({
 
 type ParamsType = {
   slug: string;
-  serviciu: string;
+  serviciu: string | undefined;
 };
 
 // Generating static params for all possible combinations of slug and serviciu
@@ -96,7 +96,7 @@ const ServiciuMedical = async ({
 }: {
   params: { slug: string; serviciu: string };
 }) => {
-  const { slug, serviciu } = await params;
+  const { slug, serviciu } = params;
 
   // Găsește doctorul pe baza slug-ului specializării
   const doctor = doctorsData.find((doc) => {
@@ -124,7 +124,7 @@ const ServiciuMedical = async ({
       .replace(/[^a-z0-9-]/gi, ""); // Elimină caracterele nepermise
 
   const serviceWithDetails = doctor.servicesWithDetails?.find(
-    (service) => normalizeSlug(service.slug) === normalizeSlug(serviciu)
+    (service) => normalizeSlug(service.slug!) === normalizeSlug(serviciu)
   );
 
   if (!serviceWithDetails) {
@@ -140,9 +140,8 @@ const ServiciuMedical = async ({
       <HeaderServiciiMedicale
         headerImageUrl={serviciuDetails?.headerImageUrl}
       />
-
       <Spacing size="6" md="6" sm="6" />
-      <ServiciuDetalii serviceDetails={serviceWithDetails} />
+      <ServiceDetail serviceDetails={serviceWithDetails} />
       <Spacing size="10" md="6" sm="6" />
       <ServiciOrar newTitle />
       <Spacing size="10" md="6" sm="6" />

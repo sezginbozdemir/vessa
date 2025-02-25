@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import NewsletterSection from "@/components/NewsletterSection";
 import GoogleMaps from "@/components/UI/GoogleMaps";
 import ArticleDetail from "@/components/ArticolePageComponents/ArticleDetails";
+import ArticleDetailPromo from "../components/ArticleDetailPromo";
 import HeaderArticole from "@/components/ArticolePageComponents/HeaderArticole";
 import Spacing from "@/components/UI/Spacing";
 import { Metadata } from "next";
@@ -31,9 +32,13 @@ const ArticleDetailPage = async ({ params }: PageProps) => {
   return (
     <div>
       <Header />
-      <HeaderArticole />
+      <HeaderArticole promo={article.promo} />
       <Spacing size="8" md="8" sm="8" />
-      <ArticleDetail article={article} />
+      {article.promo ? (
+        <ArticleDetailPromo article={article} />
+      ) : (
+        <ArticleDetail article={article} />
+      )}
       <NewsletterSection />
       <GoogleMaps />
       <Footer />

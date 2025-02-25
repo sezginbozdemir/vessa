@@ -85,7 +85,7 @@ const Intro: React.FC<IntroProps> = ({
           )}
         </div>
       </div>
-      <Appoint id={id} specialty={specialty} ref={appointRef} />
+      <Appoint title={title} id={id} specialty={specialty} ref={appointRef} />
     </>
   );
 };

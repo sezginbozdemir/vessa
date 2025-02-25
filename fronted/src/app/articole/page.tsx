@@ -10,12 +10,8 @@ const ArticolePage = () => {
   return (
     <div>
       <Header />
-      <HeaderArticole />
-      <Spacing
-        size="8"
-        md="6"
-        sm="6"
-      />
+      <HeaderArticole promo={false} />
+      <Spacing size="8" md="6" sm="6" />
       <ArticleFilter />
       <NewsletterSection />
       <GoogleMaps />
