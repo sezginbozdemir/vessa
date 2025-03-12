@@ -1,7 +1,7 @@
 export const articleCards = [
   {
     promo: true,
-    imageUrl: "/images/acid-article-06.webp",
+    imageUrl: "/images/acid-article-06.png",
     title: "Beneficiile Infiltrațiilor cu Acid Hialuronic",
     description:
       "Infiltrațiile cu acid hialuronic au devenit un tratament extrem de popular în estetica modernă datorită rezultatelor rapide și eficiente pe care le oferă....",
@@ -61,19 +61,19 @@ export const articleCards = [
       "Afectiuni care necesita infiltratii cu acid hialuronic",
       "Care sunt beneficiile infiltratiilor cu acid hialuronic?",
     ],
-    image1: "/images/acid-article-06.webp",
-    image2: "/images/acid-article-01.webp",
-    image3: "/images/acid-article-02.webp",
-    image4: "/images/acid-article-03.webp",
-    image5: "/images/acid-article-04.webp",
-    image6: "/images/acid-article-05.webp",
+    image1: "/images/acid-article-06.png",
+    image2: "/images/acid-article-01.png",
+    image3: "/images/acid-article-02.png",
+    image4: "/images/acid-article-03.png",
+    image5: "/images/acid-article-04.png",
+    image6: "/images/acid-article-05.png",
     isArticle: true,
     date: "Feb 2025",
     specialization: "Ortopedie",
     metaTitle:
-      "Beneficiile Infiltrațiilor cu Acid Hialuronic | VESSA Hospital Timișoara ",
-    metaDescription: "",
-    keywords: "",
+      "Beneficiile infiltrațiilor cu acid hialuronic | Vessa Hospital Timișoara",
+    metaDescription: "Aflați cum infiltrațiile cu acid hialuronic pot reduce durerea articulară, îmbunătăți mobilitatea și proteja cartilajul osos. Descoperiți beneficiile acestei terapii moderne la Vessa Hospital Timișoara.",
+    keywords: "infiltratii acid hialuronic, tratament durere articulatii, osteoartrita, lubrifiere articulatii, protejare cartilaj, infiltratie genunchi, infiltratii ortopedie, ameliorare durere articulatii, Vessa Hospital Timișoara",
     slug: "beneficiile-infiltratiilor-acid-hialuronic",
   },
   {
@@ -144,9 +144,9 @@ export const articleCards = [
     date: "Feb 2025",
     specialization: "Neurochirurgie",
     metaTitle:
-      " Beneficiile Consultului cu Holter EKG  | VESSA Hospital Timișoara ",
-    metaDescription: "",
-    keywords: "",
+      "Consulturi preventive în neurochirurgie | Vessa Hospital Timișoara",
+    metaDescription: "Prevenția în neurochirurgie joacă un rol crucial în depistarea precoce a afecțiunilor neurologice. Aflați când este recomandat un consult preventiv și cum poate contribui la o sănătate optimă a creierului.",
+    keywords: "consult neurochirurgie, prevenție neurologică, depistare boli neurologice, control neurochirurgie, simptome neurologice, evaluare neurochirurgicală, prevenirea complicațiilor neurologice, Vessa Hospital Timișoara",
     slug: "consulturi-preventive-neurochirurgie",
   },
   {
@@ -222,9 +222,9 @@ export const articleCards = [
     date: "Feb 2025",
     specialization: "Cardiologie",
     metaTitle:
-      " Beneficiile Consultului cu Holter EKG  | VESSA Hospital Timișoara ",
-    metaDescription: "",
-    keywords: "",
+      "Beneficiile consultului cu Holter EKG | Vessa Hospital Timișoara",
+    metaDescription: "Monitorizarea Holter EKG este esențială pentru depistarea aritmiilor și evaluarea sănătății cardiace. Aflați cum această investigație ajută la prevenirea complicațiilor cardiovasculare.",
+    keywords: "Holter EKG, monitorizare ritm cardiac, detectare aritmii, diagnostic cardiac, prevenție boli cardiovasculare, testare EKG 24h, Vessa Hospital Timișoara",
     slug: "beneficiile-holter-ekg",
   },
   {
@@ -282,9 +282,9 @@ export const articleCards = [
     date: "27 Feb 2025",
     specialization: "Ortopedie",
     metaTitle:
-      " Tehnologii Avansate în Protezarea de Șold și Genunchi  | VESSA Hospital Timișoara ",
-    metaDescription: "",
-    keywords: "",
+      "Tehnologii avansate în protezarea de șold și genunchi | Vessa Hospital Timișoara",
+    metaDescription: "Descoperiți inovațiile moderne în protezarea de șold și genunchi, de la navigația computerizată la implanturile personalizate 3D. Aflați cum noile tehnologii îmbunătățesc recuperarea și rezultatele chirurgicale.",
+    keywords: "proteza șold, proteza genunchi, chirurgie ortopedică avansată, navigație computerizată ortopedie, protezare asistată robotic, implanturi 3D ortopedie, artroplastie, Vessa Hospital Timișoara",
     slug: "tehnologii-avansate-in-protezare",
   },
   {
