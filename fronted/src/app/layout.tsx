@@ -13,7 +13,6 @@ declare global {
 import Script from "next/script";
 import Image from "next/image";
 import "./globals.css";
-import { FaWhatsapp } from "react-icons/fa";
 import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
 
 const WhatsAppIcon = () => {
@@ -22,14 +21,14 @@ const WhatsAppIcon = () => {
       href="https://wa.me/+40770520904"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-16 right-16 z-[5000] bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+      className="fixed bottom-16 right-16 z-[5000] sm:bottom-8 sm:right-8"
       onClick={() => {
         if (typeof window !== "undefined" && window.fbq) {
           window.fbq("trackCustom", "WhatsApp");
         }
       }}
     >
-      <FaWhatsapp size={58} />
+      <Image src="/images/whatsapp.svg" alt="vessa" width={120} height={120} />
     </a>
   );
 };

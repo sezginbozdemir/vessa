@@ -569,47 +569,6 @@ export const doctorsData = [
     */
     ],
   },
-  {
-    name: "Dr. Călin Ștefan",
-    specialization: "Fiziokinetoterapie",
-    imageUrl: "/images/calin-stefan.png",
-    about:
-      "Dr. Călin Ștefan este un specialist în fiziokinetoterapie cu o vastă experiență și expertiză în domeniu, activând în cadrul Vessa Hospital din Timișoara. Având o pregătire solidă și un parcurs profesional remarcabil, Dr. Ștefan este dedicat recuperării și îmbunătățirii mobilității pacienților, ajutându-i să depășească diverse afecțiuni musculo-scheletale și neurologice printr-o abordare integrată a fizioterapiei și kinetoterapiei. Printr-o combinație de exerciții terapeutice, masaj, electroterapie, termoterapie și alte metode inovative, Dr. Ștefan ajută pacienții să își recâștige mobilitatea și să își reducă durerile cauzate de afecțiuni cronice sau leziuni recente.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Călin Ștefan - Specialist Fiziokinetoterapie | Vessa Hospital Timișoara",
-    metaDescription:
-      "Dr. Călin Ștefan este specialist în fiziokinetoterapie la Vessa Hospital Timișoara. Oferă tratamente personalizate pentru afecțiuni musculo-scheletale și neurologice, ajutând pacienții să își recâștige mobilitatea.",
-    keywords:
-      "Dr. Călin Ștefan, fiziokinetoterapie, Vessa Hospital, recuperare mobilitate, fizioterapie Timișoara, terapie musculo-scheletală, kinetoterapie Timișoara, electroterapie, masaj terapeutic, recuperare afecțiuni neurologice",
-    servicesWithDetails: [
-      {
-        title: "Recuperare postoperatorie",
-        servicesText:
-          "Serviciul de Recuperare Postoperatorie oferit de Vessa Hospital Timișoara este o etapă esențială în procesul de recuperare a pacienților care au suferit intervenții chirurgicale, având ca scop principal restabilirea funcționalității și a mobilității pacienților într-un interval cât mai scurt, cu minimizarea riscurilor de complicații și cu o calitate îmbunătățită a vieții. Recuperarea postoperatorie nu se limitează doar la vindecarea fizică, ci se concentrează pe un proces integrat ce include atât aspectele fizioterapeutice, cât și pe cele emoționale și psihologice ale pacientului, asigurând astfel o recuperare completă. În cadrul Vessa Hospital, procesul de recuperare este personalizat, adaptat tipului de intervenție chirurgicală efectuată și stării generale a pacientului. Echipa de specialiști în fiziokinetoterapie și recuperare postoperatorie colaborează îndeaproape cu medicii chirurgi, astfel încât să se poată realiza un plan de tratament optim pentru fiecare pacient în parte. În general, programul de recuperare postoperatorie include o combinație de tehnici de fizioterapie, exerciții de mobilizare pasivă și activă, terapie manuală, electroterapie, masaj terapeutic și alte metode inovative care ajută la reducerea durerii și inflamației, stimularea circulației sanguine și îmbunătățirea flexibilității și forței musculare.",
-        slug: "recuperare-postoperatorie",
-        metaTitle:
-          "Recuperare Postoperatorie Personalizată: Tratament Fizioterapeutic și Suport | vessahospital.ro",
-        metaDescription:
-          "Recuperare postoperatorie completă la Vessa Hospital: tratamente fizioterapeutice, exerciții de mobilizare și masaj terapeutic pentru o recuperare rapidă și eficientă.",
-        keywords:
-          "recuperare postoperatorie, tratament postchirurgical, fizioterapie, masaj terapeutic, Vessa Hospital, recuperare postoperatorie personalizată",
-      },
-    ],
-    slug: "dr-calin-stefan_fiziokinetoterapie",
-    schedule: [
-      /*
-    {
-      "day": "Luni",
-      "hours": "08:00-12:00"
-    },
-    {
-      "day": "Vineri",
-      "hours": "10:00-14:00"
-    }
-    */
-    ],
-  },
 
   {
     name: "Dr. Andreea Albotă",
@@ -1142,19 +1101,20 @@ export const doctorsData = [
       },
     ],
   },
-*/ {
-    name: "Prof Dr Fabian Tatu",
+*/
+  {
+    name: "Dr. Dragoș Miroșu",
     specialization: "Ortopedie",
-    imageUrl: "/images/icon-medic.png",
+    imageUrl: "/images/Dragos-Mirosu.png",
     about:
-      " Specialist în Ortopedie, Prof. Dr. Fabian Tatu este un expert recunoscut în tratamentele chirurgicale și conservative ale afecțiunilor sistemului musculo-scheletic. Cu o experiență vastă în domeniu și o abordare bazată pe cele mai recente tehnici medicale, Prof. Tatu asigură pacienților soluții eficiente pentru recuperare și o viață activă. Angajamentul său față de excelență și inovație îl face un membru esențial al echipei Vessa Hospital.",
+      " Dr. Dragoș Miroșu este medic primar în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Prof. Dr. Fabian Tatu - Specialist Ortopedie | vessahospital.ro ",
+      "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | vessahospital.ro ",
     metaDescription:
-      "Prof. Dr. Fabian Tatu, specialist în Ortopedie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni musculo-scheletale, folosind tehnici moderne și inovative.",
+      "Dr. Dragoș Mirosu, specialist în Ortopedie-Traumatologie la Vessa Hospital, utilizează tehnici moderne pentru tratamente chirurgicale și de recuperare, restabilind mobilitatea pacienților.",
     keywords:
-      "Prof. Dr. Fabian Tatu, ortopedie, tratamente ortopedice, tehnici chirurgicale, Vessa Hospital",
+      "Dr. Dragoș Mirosu, ortopedie, traumatologie, tratamente ortopedice, Vessa Hospital",
     servicesWithDetails: [
       {
         title: "Consultație Ortopedie și Traumatologie",
@@ -1597,71 +1557,6 @@ export const doctorsData = [
           "extragere material osteosinteză, plăci, șuruburi, tije centromedulare, broșe, chirurgia osteosintezei, vessahospital.ro",
       },
     ],
-    slug: "prof-dr-fabian-tatu_ortopedie",
-  },
-  {
-    name: "Dr. Mihai Hurmuz ",
-    specialization: "Ortopedie",
-    imageUrl: "/images/Mihai-Hurmuz.png",
-    about:
-      " Specialist în Ortopedie, Dr. Mihai Hurmuz se remarcă prin expertiza sa în tratamentele chirurgicale și conservatoare ale afecțiunilor sistemului musculo-scheletic. Cu o abordare bazată pe cele mai avansate tehnici și tehnologii, el asigură pacienților soluții eficiente pentru recuperare și mobilitate. Dr. Hurmuz este un profesionist dedicat, cu o pasiune pentru îmbunătățirea calității vieții pacienților, fiind un membru de bază al echipei Vessa Hospital.",
-    contact: "+40 744 833 815",
-    metaTitle: "Dr. Mihai Hurmuz - Specialist Ortopedie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Mihai Hurmuz, specialist în Ortopedie la Vessa Hospital, oferă soluții eficiente pentru tratamente ortopedice și recuperare, folosind tehnici avansate.",
-    keywords:
-      "Dr. Mihai Hurmuz, ortopedie, tratamente ortopedice, recuperare mobilitate, Vessa Hospital",
-    slug: "dr-hurmuz-mihai_ortopedie",
-  },
-
-  {
-    name: "Dr. Cristian Ferdean ",
-    specialization: "Ortopedie",
-    imageUrl: "/images/icon-medic.png",
-    about:
-      " Specialist în Ortopedie, Dr. Cristian Ferdean este dedicat tratamentului eficient al afecțiunilor musculo-scheletale, aplicând atât metode chirurgicale de ultimă oră, cât și tratamente conservatoare. Cu un angajament ferm față de excelență, Dr. Ferdean se concentrează pe recuperarea completă a pacienților, oferindu-le soluții personalizate pentru o viață activă și fără dureri. Ca membru valoros al echipei Vessa Hospital, el joacă un rol esențial în îmbunătățirea sănătății pacienților.",
-    contact: "+40 744 833 815",
-    metaTitle: "Dr. Cristian Ferdean - Specialist Ortopedie | vessahospital.ro",
-    metaDescription:
-      "Dr. Cristian Ferdean, specialist în Ortopedie la Vessa Hospital, oferă soluții personalizate pentru afecțiuni musculo-scheletale, folosind tehnici moderne de tratament.",
-    keywords:
-      "Dr. Cristian Ferdean, ortopedie, tratament ortopedic, Vessa Hospital, recuperare completă",
-    slug: "dr-ferdean--cristian-nicoale_ortopedie",
-    schedule: [
-      {
-        day: "Marti",
-        hours: "15:00-18:00",
-        interval: "30 min/pacient",
-      },
-    ],
-  },
-  {
-    name: "Dr. Eduard Theodor ",
-    specialization: "Ortopedie",
-    imageUrl: "/images/icon-medic.png",
-    about:
-      " Specialist în Ortopedie, Dr. Eduard Theodor combină experiența vastă cu o abordare modernă pentru tratamente eficiente ale afecțiunilor musculo-scheletale. Folosind tehnici avansate și personalizate, el se concentrează pe recuperarea rapidă a pacienților și pe îmbunătățirea calității vieții acestora. Dr. Theodor este un profesionist dedicat, care contribuie la succesul echipei Vessa Hospital prin expertiza și angajamentul său față de sănătatea pacienților.",
-    contact: "+40 744 833 815",
-    metaTitle: "Dr. Eduard Theodor - Specialist Ortopedie | vessahospital.ro",
-    metaDescription:
-      "Dr. Eduard Theodor, specialist în Ortopedie la Vessa Hospital, folosește tehnici avansate și personalizate pentru a ajuta pacienții să recupereze mobilitatea și calitatea vieții.",
-    keywords:
-      "Dr. Eduard Theodor, ortopedie, recuperare ortopedică, tratament personalizat, Vessa Hospital",
-    slug: "dr-theodor-eduard_ortopedie",
-  },
-  {
-    name: "Dr. Dragoș Miroșu",
-    specialization: "Ortopedie",
-    imageUrl: "/images/Dragos-Mirosu.png",
-    about:
-      " Dr. Dragoș Miroșu este medic primar în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Dragoș Mirosu, specialist în Ortopedie-Traumatologie la Vessa Hospital, utilizează tehnici moderne pentru tratamente chirurgicale și de recuperare, restabilind mobilitatea pacienților.",
-    keywords:
-      "Dr. Dragoș Mirosu, ortopedie, traumatologie, tratamente ortopedice, Vessa Hospital",
     slug: "dr-dragos-mirosu_ortopedie",
     schedule: [
       {
@@ -2115,20 +2010,6 @@ export const doctorsData = [
 	  */
     ],
   },
-  {
-    name: "Dr. Daniel Ceachir",
-    specialization: "Ortopedie",
-    imageUrl: "/images/Daniel-Ceachir.png",
-    about:
-      " Dr. Daniel Ceachir este specialist în Ortopedie, având o vastă experiență în diagnosticarea și tratamentul afecțiunilor musculo-scheletale. La Vessa Hospital, el utilizează tehnici moderne și intervenții chirurgicale avansate pentru a ajuta pacienții să își recâștige mobilitatea și să îmbunătățească calitatea vieții. Dr. Ceachir este dedicat tratamentelor personalizate, aplicând cele mai bune soluții pentru fiecare caz în parte.",
-    contact: "+40 744 833 815",
-    metaTitle: "Dr. Daniel Ceachir - Specialist Ortopedie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Daniel Ceachir, specialist în Ortopedie la Vessa Hospital, oferă soluții personalizate pentru afecțiuni musculo-scheletale folosind tehnici moderne pentru recuperare rapidă.",
-    keywords:
-      "Dr. Daniel Ceachir, ortopedie, tratamente ortopedice, soluții personalizate, Vessa Hospital",
-    slug: "dr-daniel-ceachir_ortopedie",
-  },
 
   {
     name: "Dr. Eduard Szucsik",
@@ -2160,36 +2041,6 @@ export const doctorsData = [
     ],
   },
 
-  // {
-  //   name: "Dr. Calin Stefan",
-  //   specialization: "Fiziokinetoterapie",
-  //   imageUrl: "/images/Vitalie-Slobozian.png",
-  //   about:
-  //     "Dr. Călin Ștefan este un specialist în fiziokinetoterapie cu o vastă experiență și expertiză în domeniu, activând în cadrul Vessa Hospital din Timișoara. Având o pregătire solidă și un parcurs profesional remarcabil, Dr. Ștefan este dedicat recuperării și îmbunătățirii mobilității pacienților, ajutându-i să depășească diverse afecțiuni musculo-scheletale și neurologice printr-o abordare integrată a fizioterapiei și kinetoterapiei. Printr-o combinație de exerciții terapeutice, masaj, electroterapie, termoterapie și alte metode inovative, Dr. Ștefan ajută pacienții să își recâștige mobilitatea și să își reducă durerile cauzate de afecțiuni cronice sau leziuni recente.",
-  //   contact: "+40 744 833 815",
-  //   metaTitle:
-  //     "Dr. Călin Ștefan - Specialist Fiziokinetoterapie | Vessa Hospital Timișoara",
-  //   metaDescription:
-  //     "Dr. Călin Ștefan este specialist în fiziokinetoterapie la Vessa Hospital Timișoara. Oferă tratamente personalizate pentru afecțiuni musculo-scheletale și neurologice, ajutând pacienții să își recâștige mobilitatea.",
-  //   keywords:
-  //     "Dr. Călin Ștefan, specialist fiziokinetoterapie Timișoara, fiziokinetoterapie Vessa Hospital, recuperare mobilitate Timișoara, terapie musculo-scheletală, kinetoterapie Timișoara, electroterapie, terapie pentru dureri cronice, recuperare afecțiuni neurologice, fizioterapie inovatoare, masaj terapeutic, recuperare leziuni recente",
-  //   servicesWithDetails: [
-  //     {
-  //       title:
-  //         "Recuperare Postoperatorie: Tratament Personalizat și Suport pentru Recuperare Rapidă",
-  //       servicesText:
-  //         "Serviciul de Recuperare Postoperatorie oferit de Vessa Hospital Timișoara este o etapă esențială în procesul de recuperare a pacienților care au suferit intervenții chirurgicale, având ca scop principal restabilirea funcționalității și a mobilității pacienților într-un interval cât mai scurt, cu minimizarea riscurilor de complicații și cu o calitate îmbunătățită a vieții. Recuperarea postoperatorie nu se limitează doar la vindecarea fizică, ci se concentrează pe un proces integrat ce include atât aspectele fizioterapeutice, cât și pe cele emoționale și psihologice ale pacientului, asigurând astfel o recuperare completă. În cadrul Vessa Hospital, procesul de recuperare este personalizat, adaptat tipului de intervenție chirurgicală efectuată și stării generale a pacientului. Echipa de specialiști în fiziokinetoterapie și recuperare postoperatorie colaborează îndeaproape cu medicii chirurgi, astfel încât să se poată realiza un plan de tratament optim pentru fiecare pacient în parte. În general, programul de recuperare postoperatorie include o combinație de tehnici de fizioterapie, exerciții de mobilizare pasivă și activă, terapie manuală, electroterapie, masaj terapeutic și alte metode inovative care ajută la reducerea durerii și inflamației, stimularea circulației sanguine și îmbunătățirea flexibilității și forței musculare.",
-  //       slug: "recuperare-postoperatorie",
-  //       metaTitle:
-  //         "Recuperare Postoperatorie Personalizată: Tratament Fizioterapeutic și Suport | vessahospital.ro",
-  //       metaDescription:
-  //         "Recuperare postoperatorie completă la Vessa Hospital: tratamente fizioterapeutice, exerciții de mobilizare și masaj terapeutic pentru o recuperare rapidă și eficientă.",
-  //       keywords:
-  //         "recuperare postoperatorie, tratament postchirurgical, fizioterapie, masaj terapeutic, Vessa Hospital, recuperare postoperatorie personalizată",
-  //     },
-  //   ],
-  //   slug: "dr-calin-stefan_fiziokinetoterapie",
-  // },
   // {
   //   name: "Dr. Octavian Neagoe",
   //   specialization: "Endocrinologie",

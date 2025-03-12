@@ -110,8 +110,8 @@ const changeUserPassword = async (username: string, newPassword: string) => {
 };
 
 ///changeUserPassword("George-Mihai-Nodiți", "1");
-///deleteUserByFullname("Dr. George-Mihai-Nodiți");
+///deleteUserByFullname("");
 //seedUsers();
-//logAllUsers();
+///logAllUsers();
 
 export default User;

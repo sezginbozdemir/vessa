@@ -30,38 +30,6 @@ export const serviciiMedicale = [
       "Cardiologie, afecțiuni cardiovasculare, boli coronariene, hipertensiune arterială, aritmii, ecocardiografie, Holter EKG, consult cardiologic, test de efort, stimulator cardiac, prevenire boli inimă, VESSA Hospital Timișoara.",
     slug: "cardiologie",
   },
-  {
-    title: "Fiziokinetoterapie",
-    description:
-      "Fiziokinetoterapia este o disciplină medicală esențială care se concentrează pe prevenirea, tratarea și reabilitarea funcțională a pacienților cu diverse afecțiuni fizice, neurologice sau musculo-scheletale.",
-    prezentare:
-      "Fiziokinetoterapia este o disciplină medicală esențială care se concentrează pe prevenirea, tratarea și reabilitarea funcțională a pacienților cu diverse afecțiuni fizice, neurologice sau musculo-scheletale. Rolul principal al fiziokinetoterapiei este de a ajuta pacienții să-și recâștige mobilitatea, să reducă durerea și să-și îmbunătățească calitatea vieții, folosind metode non-invazive și personalizate. Printr-o combinație de tehnici bazate pe exerciții fizice, masaj terapeutic, electroterapie și terapie manuală, fiziokinetoterapia contribuie la recuperarea pacienților după traumatisme, intervenții chirurgicale, boli cronice sau alte afecțiuni care afectează mișcarea. Această specializare are o importanță deosebită nu doar pentru tratament, ci și pentru prevenție, contribuind la educarea pacienților în vederea adoptării unui stil de viață activ și sănătos. Într-o lume în care sedentarismul și stresul sunt factori majori de risc, fiziokinetoterapia joacă un rol-cheie în menținerea sănătății și funcționalității pe termen lung.",
-    statistici: [
-      " Aproximativ 80% dintre persoanele adulte suferă de dureri de spate la un moment dat în viață, iar fizioterapia este unul dintre cele mai eficiente tratamente non-invazive.",
-      " În România, 1 din 5 persoane diagnosticate cu afecțiuni reumatice beneficiază de tratament fizioterapeutic ca parte a reabilitării.",
-      " Conform Organizației Mondiale a Sănătății, 30% dintre pacienții cu AVC (accident vascular cerebral) necesită fiziokinetoterapie pentru recuperarea mobilității.",
-      " În România, peste 50.000 de persoane anual urmează programe de fiziokinetoterapie după intervenții ortopedice sau neurologice.",
-    ],
-    title3: "Medicul fizioterapeut",
-    text3:
-      "Medicul fizioterapeut este un specialist calificat în evaluarea, diagnosticarea și tratarea afecțiunilor care limitează mișcarea și funcționarea optimă a organismului. Acesta are o pregătire complexă, care îi permite să înțeleagă mecanismele din spatele durerii, inflamației și restricțiilor de mobilitate, oferind soluții personalizate pentru fiecare pacient. Rolul unui fizioterapeut nu se limitează la tratamentul propriu-zis, ci include și educarea pacienților cu privire la prevenirea accidentărilor, menținerea unei posturi corecte și înțelegerea factorilor care pot agrava afecțiunile. De asemenea, medicul fizioterapeut colaborează adesea cu alte specialități medicale, cum ar fi ortopedia, reumatologia sau neurologia, pentru a oferi o abordare multidisciplinară. În cabinet, acesta folosește o varietate de tehnici, cum ar fi terapia prin exerciții, masajul terapeutic, stretchingul sau metodele de relaxare, toate cu scopul de a restabili echilibrul și funcționalitatea corpului.",
-    title4: "Ce investigații fac medicii în Fiziokinetoterapie?",
-    text4:
-      "Medicul fizioterapeut efectuează o serie de investigații pentru a evalua starea de sănătate a pacientului și pentru a crea un plan de tratament personalizat. Acesta începe printr-o anamneză detaliată, în care discută istoricul medical al pacientului, simptomele actuale și obiectivele pe termen lung. Urmează o evaluare clinică, care poate include teste de mobilitate articulară și musculară pentru a determina flexibilitatea, forța și rezistența. Totodată, fizioterapeutul analizează postura, mersul și biomecanica mișcărilor, pentru a identifica eventualele disfuncții sau dezechilibre. În unele cazuri, se poate recomanda efectuarea unor investigații imagistice, cum ar fi radiografiile sau RMN-ul, în colaborare cu alți medici specialiști. Toate aceste informații sunt integrate pentru a stabili un program de recuperare adaptat nevoilor specifice ale pacientului.",
-    title5: "Când să vezi un fizioterapeut?",
-    text5:
-      "Este indicat să consulți un fizioterapeut dacă te confrunți cu dureri persistente în spate, gât, articulații sau mușchi, care nu cedează la tratamentele obișnuite. De asemenea, o vizită la fizioterapeut este esențială după un accident sau o intervenție chirurgicală, mai ales dacă acestea au afectat mobilitatea sau capacitatea de a desfășura activitățile zilnice. Dacă întâmpini dificultăți în mișcarea normală, cum ar fi urcatul scărilor, mersul sau menținerea echilibrului, fizioterapeutul poate identifica cauzele și poate propune soluții eficiente. Persoanele diagnosticate cu afecțiuni cronice, cum ar fi artrita, diabetul sau osteoporoza, pot beneficia de un program personalizat pentru gestionarea simptomelor și prevenirea complicațiilor. De asemenea, dacă dorești să-ți îmbunătățești performanța fizică sau să previi accidentările, o consultație cu un fizioterapeut te poate ajuta să-ți atingi obiectivele într-un mod sigur și eficient.",
-    buttonText: "Servicii medicale",
-    imageUrl: "/images/fiziokinetoterapie-icon.png",
-    headerImageUrl: "/images/headers/fiziokinetoterapie.jpg",
-    metaTitle:
-      "Fiziokinetoterapie - Recuperare și Prevenție | VESSA Hospital Timișoara",
-    metaDescription:
-      "Descoperă serviciile de fiziokinetoterapie oferite de VESSA Hospital. Programe personalizate pentru recuperare și prevenție, utilizând tehnici avansate și non-invazive.",
-    keywords:
-      "Fiziokinetoterapie, recuperare, prevenție, fizioterapie, tratament non-invaziv, masaj terapeutic, electroterapie, VESSA Hospital Timișoara, reabilitare, recuperare după accident",
-    slug: "fiziokinetoterapie",
-  },
 
   {
     title: "Neurochirurgie",
