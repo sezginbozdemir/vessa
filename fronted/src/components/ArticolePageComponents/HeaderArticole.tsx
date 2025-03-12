@@ -5,12 +5,21 @@ import WrapperLarge from "../UI/WrapperLarge";
 
 interface HeaderArticoleProps {
   promo: boolean | undefined;
+  slug: string;
 }
 
-const HeaderArticole = ({ promo }: HeaderArticoleProps) => {
-  const imageSrc = promo
-    ? "/images/header-articole-promo.jpg"
-    : "/images/header-articole.jpg";
+const HeaderArticole = ({ promo, slug }: HeaderArticoleProps) => {
+  let imageSrc = "/images/header-articole.jpg";
+
+  if (slug === "beneficiile-infiltratiilor-acid-hialuronic") {
+    imageSrc = "/images/header-acid.png";
+  } else if (slug === "consulturi-preventive-neurochirurgie") {
+    imageSrc = "/images/header-neuro.png";
+  } else if (slug === "beneficiile-holter-ekg") {
+    imageSrc = "/images/header-holter.png";
+  } else if (promo) {
+    imageSrc = "/images/header-articole-promo.jpg";
+  }
   return (
     <section className="relative w-full h-[60vh] md:h-[50vh] sm:h-[40vh] xs:h-[30vh] transition-all bg-light-blue">
       <div className="absolute inset-0 z-0">

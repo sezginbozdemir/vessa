@@ -1,13 +1,241 @@
 export const articleCards = [
   {
     promo: true,
+    imageUrl: "/images/acid-article-06.webp",
+    title: "Beneficiile Infiltrațiilor cu Acid Hialuronic",
+    description:
+      "Infiltrațiile cu acid hialuronic au devenit un tratament extrem de popular în estetica modernă datorită rezultatelor rapide și eficiente pe care le oferă....",
+    guestName: "CentroKinetic",
+    prezentare:
+      "Infiltrațiile cu acid hialuronic au devenit un tratament extrem de popular în estetica modernă datorită rezultatelor rapide și eficiente pe care le oferă. Acidul hialuronic este o substanță naturală prezentă în organism, care joacă un rol esențial în hidratarea și menținerea elasticității pielii. În acest articol, vom explica ce sunt <a href='/servicii_medicale/ortopedie/infiltratie-genunchi-acid-hialuronic-sub-control-radiologic' class='text-dark-blue font-[700]'>infiltrațiile cu acid hialuronic</a>, cum se desfășoară procedura și care sunt beneficiile acestei proceduri. Vom discuta, de asemenea, și despre afecțiunile pentru care infiltrațiile sunt recomandate.",
+    titlu2: "",
+    titlu3: "Ce sunt infiltratiile cu acid hialuronic?",
+    titlu4: "Care este procedura de infiltrație cu acid hialuronic?",
+    titlu5: "Afectiuni care necesita infiltratii cu acid hialuronic",
+    titlu6: "Care sunt beneficiile infiltratiilor cu acid hialuronic?",
+    titlu7: "1. Inhibă/ameliorează durerea (efect analgezic)",
+    titlu8: "2. Reduce inflamația",
+    titlu9: "3. Crește mobilitatea articulației",
+    titlu10: "4. Lubrifiază articulația",
+    titlu11: "5. Protejează cartilajul osos",
+    titlu12: "6. Protejează membrana sinovială",
+    titlu13: "7. Întârzie progresia osteoartritei",
+    titlu14: "8. Reduce consumul de medicamente",
+    titlu15: "9. Nu are efecte secundare",
+    titlu16: "Concluzie",
+    text2: "",
+    text3:
+      "<a href='/servicii_medicale/ortopedie/infiltratie-genunchi-acid-hialuronic-sub-control-radiologic' class='text-dark-blue font-[700]'>Infiltrațiile cu acid hialuronic</a> în articulații (pentru dureri de șold, genunchi, umăr, glezne) reprezintă o procedură simplu de realizat, având ca scop ameliorarea simptomelor resimțite de pacient în cazul unor afecțiuni precum tendinita, artroza și altele.<br/><br/>Este esențial de menționat că efectul infiltratiilor cu acid hialuronic variază în funcție de stadiul afecțiunii. Astfel, dacă boala este într-o fază moderată, rezultatele sunt maxime. În schimb, în caz de afecțiuni avansate, efectul este mai puțin semnificativ. Totuși, de obicei, rezultatele infiltratiilor durează între 6 și 12 luni, dacă tipul și concentrația acidului hialuronic sunt alese corect.",
+    text4:
+      "<ul class='list-disc ml-8'><li><strong>Poziția pacientului:</strong> Pacientul se află întins pe spate sau cu genunchiul ușor îndoit.</li><li><strong>Dezinfectarea:</strong> Zona genunchiului este curățată cu alcool sau iod.</li><li><strong>Injecția:</strong> Acidul hialuronic este introdus în articulație, iar zona este bandajată.</li><li><strong>Mișcarea genunchiului:</strong> Pacientul va îndoi și îndrepta genunchiul pentru a distribui uniform substanța.</li></ul>",
+    text4a:
+      "Procedura de infiltrare cu acid hialuronic în genunchi este o metodă eficientă pentru ameliorarea durerilor și inflamațiilor articulare. Iată pașii principali ai acesteia:",
+    text5:
+      "<ol class='list-decimal ml-8'><li><strong>Artroza:</strong> Deși nu este tratamentul principal pentru artroză, infiltrațiile cu acid hialuronic pot fi o opțiune pentru persoanele cu forme moderate ale bolii sau pentru cei care nu pot sau nu doresc să recurgă la intervenții chirurgicale, dorind să amâne operația.</li><li><strong>Sinovita:</strong> Această afecțiune apare atunci când membrana care acoperă interiorul capsulei articulare este inflamată. Poate fi cauzată și de alte boli, precum guta, iar dacă nu este tratată, poate duce la erodarea osului.</li><li><strong>Bursita:</strong> Inflamația acută sau cronică a bursei, care provoacă dureri moderate sau severe în zona afectată.</li><li><strong>Guta:</strong> Cunoscută și sub denumirea de artrita gutoasă, aceasta este o afecțiune care cauzează dureri articulare intense, fiind însoțită adesea de febră, frisoane și mâncărimi.</li><li><strong>Gonartroza:</strong> O boală articulară degenerativă ce apare mai frecvent la femei, după vârsta de 60 de ani. Aceasta provoacă dureri și limitarea mișcărilor, iar, netratată, poate duce la leziuni osoase, inflamații, scăderea mobilității și formarea de ciocuri osoase.</li><li><strong>Coxartroza:</strong> O afecțiune degenerativ-distrofică a articulației șoldului.</li><li><strong>Tendinita:</strong> Inflamația unui tendon, cauzată de suprasolicitarea acestuia, având un caracter degenerativ.</li></ol>",
+    text6:
+      "<a href='/servicii_medicale/ortopedie/infiltratie-genunchi-acid-hialuronic-sub-control-radiologic' class='text-dark-blue font-[700]'>Infiltrațiile cu acid hialuronic</a> sunt un tratament eficient pentru diverse afecțiuni articulare, având multiple beneficii pentru sănătatea și mobilitatea articulațiilor. Acestea nu doar că ajută la ameliorarea simptomelor, dar și contribuie la prevenirea deteriorării ulterioare a țesuturilor. Iată principalele beneficii ale acestui tratament::",
+    text7:
+      "Acidul hialuronic ajută la reducerea senzației de durere prin creșterea lubrifierii articulației și reducerea fricțiunii dintre structurile articulare, contribuind astfel la ameliorarea durerii.",
+    text8:
+      "Acidul hialuronic are efecte antiinflamatorii, ajutând la reducerea inflamației din articulație, ceea ce contribuie la scăderea umflăturii și a disconfortului.",
+    text9:
+      "Prin lubrifierea eficientă a articulației, acidul hialuronic contribuie la îmbunătățirea mișcărilor, facilitând o mobilitate mai bună și o funcționare mai fluidă a articulației.",
+    text10:
+      "Acidul hialuronic acționează ca un lubrifiant natural, reducând frecarea dintre oasele articulare și ajutând la menținerea unui nivel optim de umiditate în interiorul articulației.",
+    text11:
+      "Infiltrațiile cu acid hialuronic protejează cartilajul, prevenind deteriorarea acestuia și ajutând la menținerea integrității sale pe termen lung.",
+    text12:
+      "Acidul hialuronic ajută la protejarea membranei sinoviale, reducând riscul de inflamație și de afectare a țesuturilor din jurul articulației.",
+    text13:
+      "Tratamentul cu acid hialuronic poate contribui la încetinirea progresiei osteoartritei, prevenind uzura suplimentară a articulației și îmbunătățind funcția acesteia pe termen lung.",
+    text14:
+      "Tratamentul cu acid hialuronic poate contribui la încetinirea progresiei osteoartritei, prevenind uzura suplimentară a articulației și îmbunătățind funcția acesteia pe termen lung.",
+    text15:
+      "Acidul hialuronic este o substanță naturală prezentă în organism, ceea ce face ca infiltrațiile să fie în general sigure, cu un risc minim de efecte secundare.",
+    text16:
+      "Infiltrațiile cu acid hialuronic reprezintă o soluție eficientă și minim invazivă pentru ameliorarea durerilor articulare și pentru îmbunătățirea mobilității. Cu beneficii semnificative, cum ar fi reducerea inflamației, protejarea cartilajului și prevenirea progresiei afecțiunilor articulare, acest tratament poate oferi pacienților o calitate mai bună a vieții, fără a recurge la intervenții chirurgicale. Fiind un tratament sigur și cu un risc minim de efecte secundare, infiltrările cu acid hialuronic rămân o opțiune valoroasă pentru persoanele care doresc să-și îmbunătățească starea de sănătate articulară.",
+
+    textList: [
+      "Ce sunt infiltrațiile cu acid hialuronic?",
+      "Care este procedura de infiltrație cu acid hialuronic?",
+      "Afectiuni care necesita infiltratii cu acid hialuronic",
+      "Care sunt beneficiile infiltratiilor cu acid hialuronic?",
+    ],
+    image1: "/images/acid-article-06.webp",
+    image2: "/images/acid-article-01.webp",
+    image3: "/images/acid-article-02.webp",
+    image4: "/images/acid-article-03.webp",
+    image5: "/images/acid-article-04.webp",
+    image6: "/images/acid-article-05.webp",
+    isArticle: true,
+    date: "Feb 2025",
+    specialization: "Ortopedie",
+    metaTitle:
+      "Beneficiile Infiltrațiilor cu Acid Hialuronic | VESSA Hospital Timișoara ",
+    metaDescription: "",
+    keywords: "",
+    slug: "beneficiile-infiltratiilor-acid-hialuronic",
+  },
+  {
+    promo: true,
+    imageUrl: "/images/neuro-article-01.png",
+    title: "Consulturi Preventive în Neurochirurgie",
+    description:
+      "Într-o lume în care sănătatea creierului și a sistemului nervos joacă un rol esențial în menținerea calității vieții...",
+    guestName: "Southern California",
+    prezentare:
+      "Într-o lume în care sănătatea creierului și a sistemului nervos joacă un rol esențial în menținerea calității vieții, consulturile preventive în neurochirurgie devin tot mai relevante. Deși mulți oameni asociază această ramură a medicinei doar cu intervențiile chirurgicale complexe, prevenția și diagnosticul precoce sunt aspecte la fel de importante.",
+    titlu2: "",
+    titlu3: "Ce sunt consulturile preventive în neurochirurgie?",
+    titlu4: "Când ar trebui să mergem la un consult preventiv?",
+    titlu5: "Cum să te pregătești pentru un consult neurochirurgial preventiv?",
+    titlu6: "Beneficiile consultului neurochirurgical preventiv",
+    titlu7: "1. Depistarea precoce a afecțiunilor",
+    titlu8: "2. Reducerea riscului de complicații",
+    titlu9: "3. Monitorizarea pacienților cu factori de risc",
+    titlu10: "4. Îmbunătățirea calității vieții",
+    titlu11: "",
+    titlu12: "",
+    titlu13: "",
+    titlu14: "",
+    titlu15: "",
+    titlu16: "Concluzie",
+    text2: "",
+    text3:
+      "<a href='/servicii_medicale/neurochirurgie/consult-neurochirurgie' class='text-dark-blue font-[700]'>Consulturile preventive în neurochirurgie</a> presupun evaluări periodice realizate de un specialist pentru a identifica eventuale afecțiuni ale sistemului nervos central sau periferic înainte ca acestea să devină severe. Aceste evaluări pot include examinări clinice, investigații imagistice (RMN, CT) și teste neurologice, în funcție de simptomele pacientului. Un consult preventiv nu este doar o măsură de precauție, ci și o metodă eficientă de a preveni complicații majore care pot afecta semnificativ calitatea vieții pacientului. De asemenea, aceste consulturi pot implica și recomandări privind stilul de viață, alimentația și exercițiile fizice care contribuie la sănătatea sistemului nervos.",
+    text4:
+      "<ul class='list-disc ml-8'><li>Persoanele cu antecedente familiale de afecțiuni neurologice (tumori cerebrale, anevrisme, epilepsie);</li><li>Pacienții care au suferit traumatisme craniene, chiar și minore;</li><li>Cei care prezintă simptome precum dureri de cap persistente, amețeli, furnicături, slăbiciune musculară sau tulburări de echilibru;</li><li>Persoanele cu afecțiuni cronice care pot afecta sistemul nervos, cum ar fi diabetul sau hipertensiunea arterială;</li><li>Sportivii de performanță expuși riscului de lovituri la nivelul capului.</li></ul>",
+    text4a:
+      "Multe afecțiuni neurologice evoluează lent și fără simptome evidente în stadiile incipiente. De aceea, se recomandă un consult neurochirurgical preventiv în următoarele situații:",
+    text5:
+      "<ul class='list-decimal'><li><strong>Ține un Jurnal al Simptomelor:</strong> Ținerea unui jurnal cu simptomele tale te ajută să le monitorizezi și oferă informații utile neurochirurgului tău.</li><li><strong>Fii Sincer cu Privire la Istoricul Tău Medical:</strong> Este important să oferi detalii exacte despre istoricul tău medical, inclusiv intervențiile chirurgicale anterioare, accidentările sau afecțiunile de care ai suferit.</li><li><strong>Pune Întrebări:</strong> Nu ezita să pui întrebări în timpul consultației. Este momentul potrivit pentru a înțelege mai bine afecțiunea ta și opțiunile de tratament disponibile.</li><li><strong>Urmează Recomandările Neurochirurgului:</strong> Respectă indicațiile neurochirurgului privind tratamentul și îngrijirea ulterioară pentru a obține cele mai bune rezultate.</li></ul>",
+    text6:
+      "<a href='/servicii_medicale/neurochirurgie/consult-neurochirurgie' class='text-dark-blue font-[700]'>Consulturile preventive</a> oferă o gamă largă de avantaje care contribuie la menținerea sănătății sistemului nervos și la prevenirea afecțiunilor grave. Prin identificarea timpurie a problemelor și monitorizarea constantă a pacienților cu factori de risc, aceste evaluări pot face diferența dintre o intervenție simplă și complicații severe. Printre principalele beneficii se numără:",
+    text7:
+      "Multe boli neurologice, precum tumorile cerebrale sau malformațiile vasculare, pot fi tratate mai eficient dacă sunt descoperite devreme. Un diagnostic rapid permite aplicarea unor tratamente mai eficiente, reducând astfel riscul de progresie a bolii și de afectare severă a calității vieții.",
+    text8:
+      "Identificarea din timp a unor anomalii poate preveni intervențiile chirurgicale de urgență și poate permite aplicarea unor tratamente mai puțin invazive. În plus, gestionarea timpurie a afecțiunilor reduce riscul de invaliditate și necesitatea unor tratamente complexe sau costisitoare.",
+    text9:
+      "Cei cu predispoziție genetică sau alte probleme de sănătate pot beneficia de un plan personalizat de supraveghere și tratament. Aceasta permite ajustarea tratamentelor și intervențiilor la timp, prevenind apariția complicațiilor severe și menținând o stare optimă de sănătate pe termen lung.",
+    text10:
+      "Prin prevenție, pacienții pot evita simptomele debilitante ale unor afecțiuni grave și pot menține o viață activă și sănătoasă. Detectarea timpurie și tratamentele adecvate pot reduce considerabil impactul negativ al bolilor neurologice asupra vieții de zi cu zi, permițând pacienților să își continue activitățile obișnuite fără restricții majore.",
+    text11: "",
+    text12: "",
+    text13: "",
+    text14: "",
+    text15: "",
+    text16:
+      "<a href='/servicii_medicale/neurochirurgie/consult-neurochirurgie' class='text-dark-blue font-[700]'>Consulturile preventive în neurochirurgie</a> sunt esențiale pentru menținerea sănătății creierului și a sistemului nervos. Prevenția și monitorizarea periodică pot face diferența între un tratament eficient și complicații severe. Prin urmare, este recomandat ca fiecare persoană să acorde importanță acestor evaluări, mai ales dacă există factori de risc asociați.",
+
+    textList: [
+      "Ce sunt consulturile preventive în neurochirurgie?",
+      "Când ar trebui să mergem la un consult preventiv?",
+      "Cine ar trebui să meargă la un consult neurochirurgical  preventiv?",
+      "Cum să te pregătești pentru un consult neurochirurgial preventiv?",
+      "Beneficiile consultului neurochirurgical preventiv",
+    ],
+    image1: "/images/neuro-article-06.png",
+    image2: "/images/neuro-article-01.png",
+    image3: "/images/neuro-article-02.png",
+    image4: "/images/neuro-article-03.png",
+    image5: "/images/neuro-article-04.png",
+    image6: "/images/neuro-article-05.png",
+    isArticle: true,
+    date: "Feb 2025",
+    specialization: "Neurochirurgie",
+    metaTitle:
+      " Beneficiile Consultului cu Holter EKG  | VESSA Hospital Timișoara ",
+    metaDescription: "",
+    keywords: "",
+    slug: "consulturi-preventive-neurochirurgie",
+  },
+  {
+    promo: true,
+    imageUrl: "/images/holter-articole-01.png",
+    title: "Beneficiile Consultului cu Holter EKG",
+    description:
+      "Inima este motorul care menține întregul organism în funcțiune, asigurând circulația sângelui și furnizarea de oxigen și nutrienți fiecărei celule...",
+    guestName: "Cardio Holter",
+    prezentare:
+      "Inima este motorul care menține întregul organism în funcțiune, asigurând circulația sângelui și furnizarea de oxigen și nutrienți fiecărei celule. Pentru a ne proteja sănătatea cardiovasculară, identificarea timpurie a problemelor cardiace este esențială. Un instrument esențial în acest proces este <a href='/servicii_medicale/cardiologie/holter-ekg-monitorizarea-ritmului-inimii-24h' class='text-dark-blue font-[700]'>Holter-ul EKG</a>, care permite monitorizarea continuă a activității electrice a inimii pe o perioadă extinsă, oferind medicilor informații valoroase despre ritmul cardiac în diverse condiții de viață. În acest articol, vei descoperi ce este <a href='/servicii_medicale/cardiologie/holter-ekg-monitorizarea-ritmului-inimii-24h' class='text-dark-blue font-[700]'>Holter-ul EKG</a>, cum funcționează și de ce reprezintă o metodă eficientă de diagnosticare a afecțiunilor cardiace.",
+    titlu2: "",
+    titlu3: "Ce este Holter-ul EKG?",
+    titlu4: "Cum se desfășoară investigația?",
+    titlu5: "Importanța diagnosticării cu Holter EKG",
+    titlu6: "Beneficiile consultului cu Holter EKG",
+    titlu7: "1. Monitorizarea continuă a ritmului cardiac",
+    titlu8: "2. Detectarea aritmilor cardiace",
+    titlu9: "3. Evaluarea riscului de evenimente cardiovasculare majore",
+    titlu10: "4. Identificarea disfuncțiilor de conductibilitate",
+    titlu11: "5. Prevenirea sincopei sau a colapsurilor cardiovasculare",
+    titlu12: "6. Detectarea evenimentelor ischemice silente",
+    titlu13:
+      "7. Evaluarea riscurilor de atac de cord sau accident vascular cerebral",
+    titlu14: "8. Identificarea factorilor declanșatori ai simptomelor cardiace",
+    titlu15: "9. Evaluarea riscului de colaps în timpul activităților fizice",
+    titlu16: "10. Prevenirea și managementul insuficienței cardiace",
+    text2: "",
+    text3:
+      "Consultul <a href='/servicii_medicale/cardiologie/holter-ekg-monitorizarea-ritmului-inimii-24h' class='text-dark-blue font-[700]'>Holter cu EKG</a> reprezintă o metodă modernă și eficientă de monitorizare a activității electrice a inimii pe o perioadă extinsă, de obicei între 24 și 48 de ore. Spre deosebire de un electrocardiogramă (EKG) standard, care înregistrează activitatea inimii doar pentru câteva secunde, monitorizarea Holter permite identificarea unor aritmii, episoade de ischemie miocardică sau alte probleme cardiace care pot apărea ocazional și nu sunt surprinse în timpul unui consult obișnuit. Această investigație este esențială pentru pacienții care prezintă simptome intermitente, precum palpitațiile, amețelile, durerile în piept sau pierderile de conștiență, oferind medicului o imagine clară și detaliată a ritmului cardiac în activitățile zilnice ale pacientului.",
+    text4:
+      "Pe parcursul monitorizării, pacientul este sfătuit să țină un jurnal al activităților și simptomelor resimțite, precum palpitații, amețeli, dureri în piept sau dificultăți de respirație. Aceste informații ajută medicul să coreleze datele înregistrate cu posibilele disfuncții cardiace.<br/><br/>După perioada stabilită de monitorizare, pacientul revine la cabinet pentru îndepărtarea dispozitivului și analiza datelor. Medicul cardiolog examinează ritmul cardiac și identifică eventualele anomalii, cum ar fi aritmii, episoade de ischemie miocardică sau alte tulburări ale activității electrice a inimii. Pe baza acestor rezultate, se stabilește un diagnostic precis și, dacă este necesar, se recomandă un tratament personalizat sau investigații suplimentare.",
+    text4a:
+      "Investigația începe prin aplicarea mai multor electrozi adezivi pe pieptul pacientului, conectați prin fire subțiri la un dispozitiv portabil de dimensiunea unui telefon mobil. Acesta este prins de curea sau purtat pe umăr și trebuie menținut pe toată durata monitorizării. Pacientul își desfășoară activitățile normale, permițând astfel înregistrarea ritmului cardiac în condiții reale de viață, inclusiv în timpul somnului, efortului fizic sau în momente de stres.",
+    text5:
+      "Importanța acestui consult derivă din capacitatea sa de a identifica tulburările de ritm cardiac, episoadele de ischemie miocardică silențioasă și alte anomalii care ar putea trece neobservate în investigațiile standard. De asemenea, Holter-ul EKG este un instrument valoros pentru pacienții care suferă de boli cardiovasculare cronice, permițând medicului să monitorizeze evoluția afecțiunii și să ajusteze tratamentul în funcție de nevoile individuale ale fiecărui pacient.<br/><br/>În plus, această monitorizare oferă o imagine clară asupra modului în care inima reacționează la diferite activități zilnice, inclusiv la efort fizic, somn sau stres emoțional. Prin această metodă, medicii pot detecta oscilații anormale ale ritmului cardiac care pot indica probleme mai serioase, necesitând investigații suplimentare sau inițierea unui tratament adecvat.",
+    text6:
+      "Consultul cu Holter EKG oferă multiple beneficii, fiind esențial pentru monitorizarea ritmului cardiac și detectarea unor probleme care nu pot fi identificate într-un test EKG standard. În continuare, vei descoperi detaliile fiecărui beneficiu al acestui test, care ajută la diagnosticarea și managementul afecțiunilor cardiace.",
+    text7:
+      "Unul dintre cele mai importante beneficii ale monitorizării cu <a href='/servicii_medicale/cardiologie/holter-ekg-monitorizarea-ritmului-inimii-24h' class='text-dark-blue font-[700]'>Holter EKG</a> este capacitatea de a înregistra activitatea electrică a inimii pe o perioadă mai lungă, de obicei 24-48 de ore. Acest lucru permite medicului să observe fluctuațiile ritmului cardiac care pot apărea pe parcursul zilei, inclusiv în condiții de stres, somn sau activitate fizică, care nu pot fi capturate într-un simplu EKG de birou.",
+    text8:
+      "Unele aritmii pot fi rare și greu de observat, mai ales atunci când apar ocazional sau doar în anumite condiții (cum ar fi în timpul stresului sau efortului fizic). Holterul EKG ajută la monitorizarea constantă a ritmului cardiac pe termen lung, ceea ce permite identificarea unor tulburări de ritm care pot fi asimptomatice sau care se manifestă doar în anumite circumstanțe. Acesta poate dezvălui chiar și cele mai subtile modificări, care ar putea trece neobservate într-un EKG convențional.",
+    text9:
+      "Holterul EKG joacă un rol important în evaluarea riscurilor de evenimente majore, precum infarctul miocardic sau accidentul vascular cerebral, prin identificarea semnelor precursoare de ischemie sau aritmii severe, care pot duce la complicații grave. De asemenea, monitorizarea continuă poate oferi informații despre răspunsul inimii la condiții de stres fizic sau emoțional, contribuind astfel la o evaluare mai completă a stării cardiovasculare.",
+    text10:
+      "Holterul EKG este deosebit de util pentru identificarea disfuncțiunilor de conductibilitate electrică ale inimii, cum ar fi blocajele cardiace. Acestea pot fi subtile și pot să nu fie vizibile într-un EKG standard, însă pot duce la scăderea eficienței contracțiilor inimii și la tulburări de ritm periculoase. Monitorizarea pe termen lung ajută la observarea acestor blocaje în diferite momente ale zilei și, astfel, la ajustarea corespunzătoare a tratamentului.",
+    text11:
+      "Holterul EKG poate fi folosit pentru a evalua riscul de sincopă (pierdere temporară de conștiență) sau de colaps, care poate fi cauzată de aritmii severe sau de fluctuații ale tensiunii arteriale. Prin monitorizarea continuă, acest test poate ajuta la identificarea episoadelor care ar putea duce la astfel de evenimente și, în funcție de rezultate, poate ghida medicul în alegerea unui tratament preventiv, cum ar fi implantarea unui pacemaker sau ajustarea medicamentației.",
+    text12:
+      "Uneori, un infarct miocardic sau o reducere a fluxului sanguin către inimă (ischemie) nu provoacă simptome evidente, dar poate lăsa urme semnificative în activitatea electrică a inimii. Holter EKG poate detecta modificările subtile ale ritmului cardiac, care ar putea semnala astfel de evenimente, chiar și atunci când pacientul nu resimte durere sau disconfort.",
+    text13:
+      "Monitorizarea continuă a activității electrice a inimii poate ajuta la evaluarea riscului de a dezvolta un atac de cord sau un accident vascular cerebral. Identificarea precoce a unor aritmii periculoase, cum ar fi fibrilația atrială, poate permite intervenția rapidă și adoptarea unor măsuri preventive, cum ar fi administrarea de anticoagulante pentru prevenirea formării cheagurilor.",
+    text14:
+      "Holter EKG permite înregistrarea ritmului cardiac în diverse situații de zi cu zi, inclusiv în timpul exercițiilor fizice sau al perioadelor de stres. Acest lucru ajută medicul să identifice posibilii factori declanșatori ai simptomelor și să elaboreze un plan de tratament care să țină cont de aceste influențe externe.",
+    text15:
+      "Sportivii sau persoanele care practică activități fizice intense pot beneficia de monitorizarea ritmului cardiac pentru a detecta orice anomalii care ar putea duce la colaps sau alte evenimente cardiace neprevăzute. Holterul EKG oferă o imagine clară a răspunsului inimii la exerciții fizice, identificând posibilele riscuri asociate.",
+    text16:
+      "În cazul pacienților cu insuficiență cardiacă, Holter EKG poate oferi informații valoroase despre activitatea ritmică a inimii și eficiența tratamentelor aplicate. Monitorizarea continuă poate ajuta la prevenirea unor evenimente severe, cum ar fi stopul cardiac, prin ajustarea promptă a terapiei în funcție de datele obținute.",
+
+    textList: [
+      "Ce este <a href='/servicii_medicale/cardiologie/holter-ekg-monitorizarea-ritmului-inimii-24h' class='text-dark-blue font-[700]'>Holter-ul EKG</a>?",
+      "Cum se desfășoară investigația?",
+      "Importanța diagnosticării cu Holter EKG?",
+      "Beneficiile consultului cu Holter EKG",
+    ],
+    image1: "/images/holter-articole-06.png",
+    image2: "/images/holter-articole-01.png",
+    image3: "/images/holter-articole-02.png",
+    image4: "/images/holter-articole-03.png",
+    image5: "/images/holter-articole-04.png",
+    image6: "/images/holter-articole-05.png",
+    isArticle: true,
+    date: "Feb 2025",
+    specialization: "Cardiologie",
+    metaTitle:
+      " Beneficiile Consultului cu Holter EKG  | VESSA Hospital Timișoara ",
+    metaDescription: "",
+    keywords: "",
+    slug: "beneficiile-holter-ekg",
+  },
+  {
+    promo: true,
     imageUrl: "/images/article-promo-01.png",
     title: "Tehnologii Avansate în Protezarea de Șold și Genunchi",
     description:
       "Mai multe tehnologii moderne au revoluționat chirurgia de protezare articulară, incluzând robotica, navigația computerizată, implanturile personalizate prin imprimare 3D...",
     guestName: "HSS",
     prezentare:
-      "În ultimii ani, tehnologiile utilizate în <span class='text-dark-blue font-[700]'>implantul de proteză</span> a șoldului și genunchiului au evoluat semnificativ. Printre inovațiile principale se numără:",
+      "În ultimii ani, tehnologiile utilizate în implantul de proteză a șoldului și genunchiului au evoluat semnificativ. Printre inovațiile principale se numără:",
     titlu2: "",
     titlu3: "Proteză articulară asistată robotic",
     titlu4: "Navigația computerizată",
@@ -20,17 +248,17 @@ export const articleCards = [
     text2:
       "Mai multe tehnologii moderne au revoluționat chirurgia de protezare articulară, incluzând robotica, navigația computerizată, implanturile personalizate prin imprimare 3D, senzorii inteligenți și realitatea augmentată. Aceste inovații îmbunătățesc precizia intervențiilor și recuperarea pacienților.<br/><br/>Chirurgia artroscopică sau minim invazivă este utilizată în anumite proceduri ortopedice, dar protezarea genunchiului necesită îndepărtarea unei părți semnificative de os, ceea ce face imposibilă realizarea acesteia printr-o abordare artroscopică clasică.",
     text3:
-      "Brațele robotizate utilizate în chirurgia de <span class='text-dark-blue font-[700]'>protezare a șoldului</span> și genunchiului oferă o precizie excepțională, permițând personalizarea fiecărei intervenții. Înainte de operație, senzori speciali sunt plasați în jurul articulației pentru a transmite poziția și orientarea acesteia către sistemul robotic. Acest sistem ajustează alinierea în timp real și poate opri procedura dacă apar deviații.<br/><br/>În timpul intervenției, chirurgul și brațul robotic controlează simultan instrumentele, iar sistemul previne abaterile de la planul inițial. Dacă sunt necesare modificări, echipa medicală le poate implementa și recalibra dispozitivul în timp real.<br/><br/>După implantarea protezei, computerul creează o randare 3D a poziției finale a implantului, permițând chirurgilor să evalueze stabilitatea și alinierea articulației. Această tehnologie ajută la prevenirea complicațiilor și la optimizarea rezultatelor postoperatorii, asigurând o proteză bine poziționată și funcțională pe termen lung.",
+      "Brațele robotizate utilizate în chirurgia de <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare a șoldului</a> și genunchiului oferă o precizie excepțională, permițând personalizarea fiecărei intervenții. Înainte de operație, senzori speciali sunt plasați în jurul articulației pentru a transmite poziția și orientarea acesteia către sistemul robotic. Acest sistem ajustează alinierea în timp real și poate opri procedura dacă apar deviații.<br/><br/>În timpul intervenției, chirurgul și brațul robotic controlează simultan instrumentele, iar sistemul previne abaterile de la planul inițial. Dacă sunt necesare modificări, echipa medicală le poate implementa și recalibra dispozitivul în timp real.<br/><br/>După implantarea protezei, computerul creează o randare 3D a poziției finale a implantului, permițând chirurgilor să evalueze stabilitatea și alinierea articulației. Această tehnologie ajută la prevenirea complicațiilor și la optimizarea rezultatelor postoperatorii, asigurând o proteză bine poziționată și funcțională pe termen lung.",
     text4:
-      "În cazul protezării genunchiului, navigația computerizată ajută la alinierea corectă a protezei cu structura osoasă și ligamentele pacientului, reducând riscul de instabilitate articulară și alte complicații. Pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, chirurgul poate folosi navigația pentru a poziționa optim cupa acetabulară, ceea ce este esențial pentru funcționalitatea implantului și pentru prevenirea luxațiilor postoperatorii.<br/><br/>Această tehnologie nu este potrivită pentru toți pacienții sau pentru toate tipurile de protezare articulară, însă studiile arată că utilizarea navigației computerizate contribuie la o mai bună precizie chirurgicală, ceea ce poate duce la o reducere a durerii postoperatorii și la o recuperare mai rapidă.",
+      "În cazul protezării genunchiului, navigația computerizată ajută la alinierea corectă a protezei cu structura osoasă și ligamentele pacientului, reducând riscul de instabilitate articulară și alte complicații. Pentru <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>proteza de șold</a>, chirurgul poate folosi navigația pentru a poziționa optim cupa acetabulară, ceea ce este esențial pentru funcționalitatea implantului și pentru prevenirea luxațiilor postoperatorii.<br/><br/>Această tehnologie nu este potrivită pentru toți pacienții sau pentru toate tipurile de protezare articulară, însă studiile arată că utilizarea navigației computerizate contribuie la o mai bună precizie chirurgicală, ceea ce poate duce la o reducere a durerii postoperatorii și la o recuperare mai rapidă.",
     text4a:
-      "Navigația computerizată este o tehnologie avansată utilizată în chirurgia de <span class='text-dark-blue font-[700]'>protezare a șoldului</span> și genunchiului pentru a asigura o aliniere precisă a implantului. Acest sistem utilizează software specializat și senzori care creează un model tridimensional al articulației pacientului înainte de operație. Chirurgul poate folosi acest model digital în timp real pentru a ghida poziționarea implantului cu o precizie milimetrică.",
+      "Navigația computerizată este o tehnologie avansată utilizată în chirurgia de <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare a șoldului</a> și genunchiului pentru a asigura o aliniere precisă a implantului. Acest sistem utilizează software specializat și senzori care creează un model tridimensional al articulației pacientului înainte de operație. Chirurgul poate folosi acest model digital în timp real pentru a ghida poziționarea implantului cu o precizie milimetrică.",
     text5:
       "Tehnicile imagistice, cum ar fi radiografiile și RMN-ul, au fost mereu esențiale în chirurgia de protezare a șoldului și genunchiului, atât înainte, cât și îndupă intervenție. O inovație recentă în acest domeniu este tehnologia de captură a mișcării 3D, care utilizează un set de camere pentru a monitoriza în timp real mișcarea pacientului, oferind imagini detaliate pentru planificarea chirurgicală.<br/><br/>După operație, chirurgii pot folosi fluoroscopia pentru a analiza performanța biomecanică a implantului și pentru a evalua modul întrucât acesta reproduce mișcarea naturală a articulației. Fluoroscopia este o tehnică imagistică de înaltă rezoluție, bazată pe raze X continue, care permite vizualizarea structurilor interne ale corpului în timp real.<br/><br/>După operație, chirurgii pot folosi fluoroscopia pentru a analiza performanța biomecanică a implantului și pentru a evalua modul întrucât acesta reproduce mișcarea naturală a articulației. Fluoroscopia este o tehnică imagistică de înaltă rezoluție, bazată pe raze X continue, care permite vizualizarea structurilor interne ale corpului în timp real.",
     text6:
       "La începutul anului 2021, HSS a realizat prima intervenție de înlocuire a genunchiului asistată de realitate augmentată din Statele Unite. În această variantă a navigației computerizate, chirurgii poartă ochelari inteligenți de realitate augmentată (AR), care le permit să vizualizeze structurile genunchiului pacientului și să urmărească progresul intervenției în timp real, suprapunând imaginile direct pe câmpul chirurgical. Astfel, chirurgul nu mai trebuie să își întoarcă privirea spre un ecran de computer. Această tehnologie are potențialul de a îmbunătăți poziționarea implanturilor.",
     text7:
-      "Scopul final al oricărei intervenții de <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare de șold</a> este de a crea un implant care să funcționeze pe toată durata vieții pacientului. Pentru unii pacienți, tehnologiile de imprimare 3D permit chirurgilor de la HSS să construiască implanturi personalizate pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, adaptate anatomiei lor specifice. Aceste implanturi personalizate pot reduce sau chiar elimina necesitatea utilizării fixativelor, cum ar fi cimentul osos.<br/><br/>Implanturile personalizate oferă, de asemenea, o mai bună integrare a osului natural cu implantul, un aspect esențial în cazul pacienților cu afecțiuni complexe, inclusiv al celor care au avut <span class='text-dark-blue font-[700]'>proteze de șold</span> anterioare care nu au avut succes.<br/><br/>În 2021, HSS și LimaCorporate au deschis primul centru de design și imprimare 3D într-un spital. Acest centru permite HSS să creeze implanturi personalizate pentru <span class='text-dark-blue font-[700]'>proteza de șold</span>, destinate pacienților care necesită intervenții complexe de reconstrucție a șoldului.",
+      "Scopul final al oricărei intervenții de protezare de șold este de a crea un implant care să funcționeze pe toată durata vieții pacientului. Pentru unii pacienți, tehnologiile de imprimare 3D permit chirurgilor de la HSS să construiască implanturi personalizate pentru proteza de șold, adaptate anatomiei lor specifice. Aceste implanturi personalizate pot reduce sau chiar elimina necesitatea utilizării fixativelor, cum ar fi cimentul osos.<br/><br/>Implanturile personalizate oferă, de asemenea, o mai bună integrare a osului natural cu implantul, un aspect esențial în cazul pacienților cu afecțiuni complexe, inclusiv al celor care au avut proteze de șold anterioare care nu au avut succes.<br/><br/>În 2021, HSS și LimaCorporate au deschis primul centru de design și imprimare 3D într-un spital. Acest centru permite HSS să creeze implanturi personalizate pentru proteza de șold, destinate pacienților care necesită intervenții complexe de reconstrucție a șoldului.",
     text8:
       "Tehnologiile wearable și implanturile „inteligente” transformă recuperarea post-chirurgicală, facilitând în același timp parteneriate mai active între pacient, chirurg și kinetoterapeut.<br/><br/>În octombrie 2021, chirurgii de la HSS au realizat prima intervenție de protezare a genunchiului care a inclus un implant protezic cu senzor inteligent. Senzorul are capacitatea de a măsura pașii pacientului, viteza de mers, amplitudinea mișcării și alți indicatori ai funcției genunchiului după intervenție. Tehnologia utilizată este similară cu cea din multe dispozitive de tip pacemaker cardiac, care colectează date ce sunt trimise către cardiologul pacientului.<br/><br/>După implantare, genunchiul „inteligent” înregistrează și transmite wireless date care permit chirurgilor să monitorizeze progresul pacientului, în special în primii ani de după operație. Datele colectate de implant sunt trimise către un dispozitiv care se conectează la o priză din locuința pacientului. Ulterior, acestea sunt trimise securizat pe o platformă bazată pe cloud, unde echipa medicală le poate analiza pentru a verifica progresul și recuperarea pacientului și a face ajustări ale regimului de kinetoterapie, dacă este necesar.<br/><br/>Implanturile inteligente și dispozitivele, cum ar fi inelele și ceasurile inteligente, permit medicilor și kinetoterapeuților să monitorizeze activitățile pacienților. Senzorii purtabili ajută kinetoterapeuții să evalueze impactul anumitor mișcări asupra piciorului pacientului după intervenția de protezare a genunchiului.",
     text9:
@@ -39,7 +267,7 @@ export const articleCards = [
       "De la momentul în care un pacient de la HSS primește prima sa radiografie sau RMN, începe colectarea datelor. Aceste date – fie că sunt obținute prin imagistică, simulare a mersului sau kinetoterapie – permit chirurgilor să înțeleagă mai bine anatomia pacientului și să studieze rezultatele diferitelor abordări chirurgicale.<br/><br/>Nicio altă instituție ortopedică nu dispune de volumul de date ale pacienților pe care îl are HSS. Registrul nostru colaborativ de protezare articulară include date despre mai mult de 55.000 de pacienți. Fiecare dintre chirurgii noștri specializați în <a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>protezare de șold</a> și genunchi participă la cercetări clinice continue, folosind datele colectate pentru a evalua noi tehnologii. Această cercetare ne ajută să ghidăm dezvoltarea de noi standarde în chirurgia de protezare articulară, impactând pacienții de astăzi și din viitor.",
 
     textList: [
-      "<span class='text-dark-blue font-[700]'>Proteza de șold</span> <strong>asistată robotic</strong> – Precizie sporită în alinierea implantului prin utilizarea brațelor robotizate.",
+      "<a href='/servicii_medicale/ortopedie/artroplastie-totala-de-sold-unilateral' class='text-dark-blue font-[700]'>Proteza de șold</a> <strong>asistată robotic</strong> – Precizie sporită în alinierea implantului prin utilizarea brațelor robotizate.",
       "<strong>Navigație computerizată</strong> – Modelare 3D a articulației pentru poziționarea optimă a protezei.",
       "<strong>Implanturi inteligente</strong> – Senzori ce monitorizează recuperarea pacientului.",
       "<strong>Tehnologie 3D</strong> – Personalizarea implanturilor pentru o integrare osoasă superioară.",

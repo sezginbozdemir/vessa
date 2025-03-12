@@ -11,12 +11,14 @@ type ServiceDetailsSection = {
     title: string;
     servicesText: string;
     title1?: string;
+    titleA?: string;
     title2?: string;
     title3?: string;
     title4?: string;
     title5?: string;
     title6?: string;
     title7?: string;
+    textA?: string;
     text1?: string;
     text2?: string;
     text3?: string;
@@ -63,6 +65,21 @@ const ServiceDetail = ({ serviceDetails }: ServiceDetailsSection) => {
           <Typography variant="paragraph" className="text-dark-black-75">
             {serviceDetails.servicesText}
           </Typography>
+          {serviceDetails.titleA && (
+            <>
+              <Spacing size="4" md="6" sm="6" />
+
+              <Typography variant="h3" className="text-black">
+                {serviceDetails.titleA}
+              </Typography>
+              <Spacing size="2" md="3" sm="3" />
+              <Typography variant="paragraph" className="text-dark-black-75">
+                <span
+                  dangerouslySetInnerHTML={{ __html: serviceDetails.textA! }}
+                />
+              </Typography>
+            </>
+          )}
 
           {/* Section 1: Title 1, Text 1, List 1 */}
           {serviceDetails.title1 && (
@@ -143,7 +160,9 @@ const ServiceDetail = ({ serviceDetails }: ServiceDetailsSection) => {
               </Typography>
               <Spacing size="2" md="3" sm="3" />
               <Typography variant="paragraph" className="text-dark-black-75">
-                {serviceDetails.text3}
+                <span
+                  dangerouslySetInnerHTML={{ __html: serviceDetails.text3! }}
+                />
               </Typography>
               <Spacing size="2" md="3" sm="3" />
             </>
@@ -158,7 +177,9 @@ const ServiceDetail = ({ serviceDetails }: ServiceDetailsSection) => {
               </Typography>
               <Spacing size="2" md="3" sm="3" />
               <Typography variant="paragraph" className="text-dark-black-75">
-                {serviceDetails.text4}
+                <span
+                  dangerouslySetInnerHTML={{ __html: serviceDetails.text4! }}
+                />
               </Typography>
               <Spacing size="2" md="3" sm="3" />
               {serviceDetails.list3 && (

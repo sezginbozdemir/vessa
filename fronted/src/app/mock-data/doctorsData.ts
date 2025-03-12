@@ -112,7 +112,44 @@ export const doctorsData = [
       {
         title: "Consult Neurochirurgie",
         servicesText:
-          "Consultul neurochirurgical reprezintă evaluarea specializată a pacientului cu afecțiuni neurologice care necesită intervenție chirurgicală. Acesta se bazează pe o evaluare amănunțită a simptomelor și istoricului medical al pacientului, urmărind semnele unei posibile afecțiuni neurologice. Neurochirurgia se ocupă cu diagnosticarea și tratarea afecțiunilor creierului, măduvei spinării și nervilor periferici, cum ar fi tumori cerebrale, malformații vasculare, hernii de disc, leziuni ale măduvei spinării și alte tulburări neurologice. Medicul neurochirurg va discuta simptomele pacientului, care pot include dureri de cap persistente, amețeli, parestezii, dificultăți de coordonare, tulburări de mers sau de vedere, iar pe baza acestora va decide dacă sunt necesare investigații suplimentare, precum tomografie computerizată (CT) sau imagistică prin rezonanță magnetică (RMN).\n\nÎn cadrul consultului, se vor analiza opțiunile de tratament: tratamente conservatoare, cum ar fi medicația sau fizioterapia, sau intervenții chirurgicale, în funcție de severitatea afecțiunii. Un rol important în acest proces este colaborarea interdisciplinară între medicii neurochirurgi și alți specialiști, cum ar fi neurologi sau anesteziologi, pentru a stabili un plan terapeutic optim. De asemenea, consultul neurochirurgical poate include și o discuție detaliată despre riscurile și beneficiile fiecărei opțiuni terapeutice, ajutând pacientul să ia o decizie informată.\n\nAceastă consultație este esențială pentru pacienții care suferă de afecțiuni severe, cum ar fi accidente vasculare cerebrale, tumori cerebrale sau afecțiuni degenerative ale coloanei vertebrale, care ar putea necesita intervenție chirurgicală de urgență sau planificată. Consultațiile neurochirurgicale sunt, prin urmare, fundamentale pentru stabilirea unui diagnostic corect și a unui tratament adecvat.",
+          "Consultul neurochirurgical reprezintă evaluarea specializată a pacientului cu afecțiuni neurologice care necesită intervenție chirurgicală. Acesta se bazează pe o evaluare amănunțită a simptomelor și istoricului medical al pacientului, urmărind semnele unei posibile afecțiuni neurologice. Neurochirurgia se ocupă cu diagnosticarea și tratarea afecțiunilor creierului, măduvei spinării și nervilor periferici, cum ar fi tumori cerebrale, malformații vasculare, hernii de disc, leziuni ale măduvei spinării și alte tulburări neurologice. Medicul neurochirurg va discuta simptomele pacientului, care pot include dureri de cap persistente, amețeli, parestezii, dificultăți de coordonare, tulburări de mers sau de vedere, iar pe baza acestora va decide dacă sunt necesare investigații suplimentare, precum tomografie computerizată (CT) sau imagistică prin rezonanță magnetică (RMN).",
+        titleA: "Opțiuni de Tratament la Vessa Hospital",
+        title1: "Când Este Necesară o Consultație la Neurochirurg?",
+        title2: "Cum Să Te Pregătești pentru Consult?",
+        title3: "Beneficiile Consultului Neurochirurgical la Vessa Hospital",
+        title4: "Ce Se Întâmplă în Timpul Consultației?",
+        title5: "Investigații Suplimentare",
+        title6: "Concluzie",
+        title7: "",
+        textA:
+          "În funcție de diagnostic, tratamentul poate include:<br/><br/><ul class='list-disc ml-8'><li><strong>Medicație personalizată</strong></li><li><strong>Kinetoterapie și fizioterapie</strong></li><li><strong>Infiltrații pentru reducerea inflamației</strong></li><li><strong>Intervenții chirurgicale minim invazive</strong></li></ul>",
+        text1: "Programează-te la Vessa Hospital dacă te confrunți cu:",
+        text2:
+          "Pentru un consult eficient la Vessa Hospital, este recomandat să:<br/><br/><ul class='list-disc ml-8'><li>Pregătești un istoric medical detaliat</li><li>Notezi simptomele resimțite, durata și intensitatea lor</li><li>Aduni documentele medicale anterioare (RMN, CT, analize)</li><li>Pregătești o listă cu întrebări pentru medic</li></ul>",
+        text3:
+          "Consultul neurochirurgical include mai multe etape:<br/><br/><ul class='list-decimal ml-8'><li><strong>Discuția inițială</strong> – Medicul îți va pune întrebări despre simptome, istoricul medical și stilul de viață</li><li><strong>Examinarea neurologică</strong> – Se verifică reflexele, forța musculară, echilibrul, coordonarea și sensibilitatea</li><li><strong>Interpretarea investigațiilor </strong> – Dacă ai efectuat imagistică (RMN, CT), medicul le va analiza pentru a identifica eventualele probleme</li><li><strong>Recomandări și plan de tratament</strong> – Neurochirurgul va propune un plan de tratament, care poate include medicație, kinetoterapie sau intervenție chirurgicală, în funcție de severitatea afecțiunii</li></ul>",
+        text4:
+          "Dacă neurochirurgul consideră necesar, îți poate recomanda investigații suplimentare, precum:<br/><br/><ul class='list-decimal ml-8'><li><strong>RMN (Rezonanță Magnetică Nucleară)</strong> – Oferă imagini detaliate ale creierului și coloanei vertebrale</li><li><strong>CT (Tomografie Computerizată)</strong> – Evidențiază leziunile, fracturile sau hemoragiile</li><li><strong>Electromiografie (EMG)</strong> – Evaluează activitatea musculară și funcția nervilor periferici</li><li><strong>Analize de sânge</strong> – Pot detecta inflamații, infecții sau alte probleme care afectează sistemul nervos</li></ul>",
+        text5:
+          "Consultul neurochirurgical la Vessa Hospital Timișoara oferă diagnostic precis, tratament modern și îngrijire personalizată. Dacă te confrunți cu simptome neurologice, programează-te pentru un consult și beneficiază de cele mai bune servicii medicale pentru sănătatea ta!",
+        list1: [
+          "Dureri de cap frecvente și severe",
+          "Amețeli, pierderi de echilibru sau probleme de coordonare",
+          "Dureri intense de spate sau gât care radiază în brațe sau picioare",
+          "Amorțeli, furnicături sau slăbiciune musculară inexplicabilă",
+          "Pierderi de conștiență sau episoade convulsive",
+          "Traumatisme craniene sau ale coloanei vertebrale",
+          "Diagnostic de tumoră cerebrală sau spinală",
+        ],
+        list2: [
+          "<strong>Diagnostic Rapid și Corect:</strong>Unul dintre cele mai mari beneficii ale consultului neurochirurgical este identificarea precisă a afecțiunii. Prin examinare detaliată și interpretarea investigațiilor imagistice avansate (RMN, CT), neurochirurgii de la Vessa Hospital pot stabili un diagnostic rapid și corect.",
+          "<strong>Prevenirea Complicațiilor:</strong>Consultul timpuriu poate preveni agravarea simptomelor și complicațiile severe. Afecțiunile neurologice netratate pot duce la pierderea mobilității, dureri cronice sau chiar invaliditate, motiv pentru care este esențială evaluarea de către un specialist.",
+          "<strong>Plan de Tratament Personalizat:</strong>Fiecare pacient primește un plan de tratament adaptat nevoilor sale, care poate include medicație pentru controlul durerii și inflamației, kinetoterapie și fizioterapie pentru recuperare, recomandări pentru stilul de viață și prevenirea recidivelor și intervenții chirurgicale minim invazive, dacă sunt necesare",
+          "<strong>Posibilitatea unei A Doua Opinii Medicale:</strong>Pentru pacienții cu diagnostice complexe, consultul neurochirurgical oferă oportunitatea de a solicita o a doua opinie medicală, asigurând astfel cel mai bun plan de tratament",
+        ],
+        list3: [],
+        list4: [],
+
         slug: "consult-neurochirurgie",
         metaTitle:
           "Consult Neurochirurgie | Evaluare și Tratament Afecțiuni Neurologice | vessahospital.ro",
@@ -1133,7 +1170,40 @@ export const doctorsData = [
       {
         title: "Infiltrație Genunchi cu Acid Hialuronic Sub Control Radiologic",
         servicesText:
-          "Infiltrația cu acid hialuronic la nivelul genunchiului este o procedură minim invazivă utilizată pentru tratarea gonartrozei și a altor afecțiuni articulare care provoacă durere și inflamație. Procedura constă în injectarea unei substanțe viscoelastice care imită lichidul sinovial natural, sub control radiologic, asigurând o precizie maximă. Aceasta ajută la reducerea frecării dintre suprafețele articulare, stimulează regenerarea cartilajului, ameliorează durerea și îmbunătățește mobilitatea. Realizată sub anestezie locală într-un mediu steril, procedura permite pacienților să își reia activitățile normale după câteva zile, evitând însă efortul intens. Recomandată pacienților care nu mai răspund la tratamentele conservatoare, infiltrarea are efecte de lungă durată, ajutând la reducerea durerii și la întârzierea necesității unei intervenții chirurgicale majore. Riscurile sunt minime, incluzând inflamația locală temporară.",
+          "Infiltrațiile cu acid hialuronic sunt un tratament non-chirurgical utilizat pentru ameliorarea durerilor și inflamațiilor articulației genunchiului, în special în cazurile de osteoartrită, gonartroză și alte afecțiuni articulare degenerative. Acidul hialuronic este o substanță naturală prezentă în lichidul sinovial al articulațiilor, care ajută la menținerea lubrifierii și protejării cartilajului articular.",
+        titleA: "Cum funcționează?",
+        title1: "Cum se administrează?",
+        title2: "Indicații:",
+        title3:
+          "Beneficii ale infiltratiilor cu acid hialuronic la Vessa Hospital:",
+        title4: "Posibile efecte secundare:",
+        title5: "Durata efectului:",
+        title6: "Concluzie",
+        title7: "",
+        textA:
+          "În articulațiile sănătoase, acidul hialuronic ajută la lubrifierea și amortizarea impactului, reducând frecarea între oase. În articulațiile afectate de artrită sau alte afecțiuni, cantitatea de acid hialuronic scade, iar această scădere poate contribui la durere și rigiditate. Infiltrațiile cu acid hialuronic ajută la restabilirea unui nivel adecvat de lubrifiere, reducând durerea și inflamația și îmbunătățind mobilitatea articulației.",
+        text1:
+          "Infiltrațiile sunt realizate de obicei sub formă de injecții directe în articulația genunchiului. De obicei, sunt necesare între 1 și 3 injectări, la intervale de 1 săptămână, în funcție de recomandările medicului. Procedura este relativ rapidă și se efectuează într-un cadru clinic, fără necesitatea internării. În unele cazuri, ultrasunetele pot fi utilizate pentru a ghida injecția și a asigura o administrare precisă a acidului hialuronic.",
+        text2:
+          "Acest tip de tratament este recomandat în special pentru persoanele care suferă de:<br/><br/><ul class='list-disc ml-8'><li><strong>Osteoartrită de genunchi (gonartroză)</strong> – unde acidul hialuronic poate ajuta la reducerea durerii și îmbunătățirea funcționalității articulației.</li><li><strong>Tendinite</strong> și alte afecțiuni inflamatorii ale genunchiului.</li><li><strong>Artroza de genunchi</strong> în stadii moderate, pentru pacienții care nu sunt pregătiți pentru intervenții chirurgicale sau care doresc să amâne operația.</li></ul>",
+        text3:
+          "De obicei, infiltrațiile cu acid hialuronic sunt foarte sigure, dar pot apărea unele reacții ușoare și temporare, cum ar fi:<br/><br/><ul class='list-disc ml-8'><li>Roșeață, umflare sau durere locală la locul injectării.</li><li>Senzație de rigiditate sau disconfort după procedură.</li></ul>",
+        text4:
+          "Efectele infiltratiilor cu acid hialuronic pot dura între 6 și 12 luni, în funcție de gravitatea afecțiunii și de tipul de acid hialuronic utilizat. După acest interval, este posibil să fie necesar un nou tratament pentru a menține beneficiile.",
+        text5:
+          "Infiltrațiile cu acid hialuronic la genunchi sunt o soluție eficientă și minim invazivă pentru persoanele care suferă de dureri articulare sau afecțiuni degenerative, cum ar fi osteoartrita sau gonartroza. La Vessa Hospital, pacienții beneficiază de un tratament personalizat, realizat de o echipă de specialiști experimentați, cu utilizarea celor mai noi tehnologii pentru a asigura precizie și siguranță. În plus, cu o recuperare rapidă și fără efecte secundare semnificative, infiltrările cu acid hialuronic sunt o opțiune ideală pentru cei care doresc să-și protejeze articulațiile pe termen lung.",
+        list1: [],
+        list2: [
+          "<strong>Tratament personalizat:</strong>La Vessa Hospital, tratamentele sunt personalizate în funcție de nevoile fiecărui pacient, având în vedere stadiul bolii și istoricul medical.",
+          "<strong>Echipamente moderne:</strong>Spitalul utilizează tehnologie de ultimă generație, inclusiv ultrasunete, pentru ghidarea precisă a injecțiilor, ceea ce asigură o procedură mai sigură și mai eficientă.",
+          "<strong>Echipa de specialiști:</strong>Tratamentul este efectuat de medici cu experiență și specializați în problemele articulare, garantând o abordare profesională și o îngrijire de calitate superioară.",
+          "<strong>Ambianță confortabilă:</strong>Vessa Hospital oferă un mediu confortabil și primitor, iar pacienții beneficiază de îngrijire individualizată și un tratament dedicat.",
+          "<strong>Recuperare rapidă:</strong>Procedura de infiltrație cu acid hialuronic la Vessa Hospital este minim invazivă, iar recuperarea este rapidă, permițând pacienților să revină la activitățile lor zilnice în scurt timp.",
+          "<strong>Reducerea nevoii de tratamente medicamentoase:</strong>În urma procedurii, pacienții pot observa o scădere semnificativă a consumului de medicamente analgezice sau antiinflamatoare.",
+        ],
+        list3: [],
+        list4: [],
+
         slug: "infiltratie-genunchi-acid-hialuronic-sub-control-radiologic",
         metaTitle:
           "Infiltrație Genunchi cu Acid Hialuronic Sub Control Radiologic | vessahospital.ro",
@@ -1666,7 +1736,41 @@ export const doctorsData = [
       {
         title: "Holter EKG - Monitorizarea Ritmului Inimii 24H",
         servicesText:
-          "Monitorizarea Holter EKG este o procedură importantă folosită pentru evaluarea ritmului cardiac pe o perioadă prelungită, de obicei 24 sau 48 de ore. Acest test ajută medicii să detecteze aritmii sau alte probleme ale ritmului cardiac care nu pot fi identificate în cadrul unui ECG standard, care măsoară activitatea inimii pe termen scurt. Holterul este un aparat portabil care se atașează pe pieptul pacientului prin electrozi și înregistrează continuu activitatea electrică a inimii pe întreaga durată a testului. Acesta este un instrument esențial pentru identificarea unor afecțiuni cardiovasculare care se manifestă intermitent, cum ar fi fibrilația atrială, tahicardia sau bradicardia. De asemenea, Holterul poate fi utilizat pentru a evalua eficiența tratamentului pacientului sau pentru a monitoriza starea acestuia după o intervenție chirurgicală cardiacă. Pacientul poartă dispozitivul pe parcursul activităților zilnice, ceea ce oferă medicului o imagine de ansamblu asupra funcționării inimii în diverse contexte. La Vessa Hospital, monitorizarea Holter EKG este realizată cu echipamente de ultimă generație, care asigură o înregistrare precisă și continuă a activității inimii. Aceasta procedură non-invazivă nu necesită spitalizare și nu provoacă disconfort pacientului, oferind o soluție eficientă pentru diagnosticul și gestionarea afecțiunilor cardiace. Prin monitorizarea atentă a ritmului cardiac pe o perioadă extinsă, Holterul EKG este esențial pentru diagnosticarea timpurie a unor afecțiuni grave și pentru planificarea unui tratament adecvat.",
+          "Monitorizarea Holter EKG este o procedură importantă folosită pentru evaluarea ritmului cardiac pe o perioadă prelungită, de obicei 24 sau 48 de ore. Acest test ajută medicii să detecteze aritmii sau alte probleme ale ritmului cardiac care nu pot fi identificate în cadrul unui ECG standard, care măsoară activitatea inimii pe termen scurt. Holterul este un aparat portabil care se atașează pe pieptul pacientului prin electrozi și înregistrează continuu activitatea electrică a inimii pe întreaga durată a testului. Acesta este un instrument esențial pentru identificarea unor afecțiuni cardiovasculare care se manifestă intermitent, cum ar fi fibrilația atrială, tahicardia sau bradicardia. De asemenea, Holterul poate fi utilizat pentru a evalua eficiența tratamentului pacientului sau pentru a monitoriza starea acestuia după o intervenție chirurgicală cardiacă.",
+        titleA: "Cum se efectuează procedura?",
+        title1: "Indicațiile pentru Holter EKG",
+        title2:
+          "De ce să alegeți Vessa Hospital pentru procedura de Holter EKG?",
+        title3: "Beneficiile unui Holter EKG efectuat la Vessa Hospital:",
+        title4: "Cum vă ajută Holter EKG în diagnostic?",
+        title5: "",
+        title6: "Concluzie",
+        title7: "",
+        textA:
+          "La Vessa Hospital, Holterul EKG este realizat de medici specializați, într-un mediu profesional, asigurându-se astfel că întregul proces se desfășoară în siguranță. Procedura constă în aplicarea unor electrozi pe pielea pacientului, de obicei pe piept, care sunt conectați la un mic dispozitiv portabil. Acesta înregistrează continuu semnalele electrice ale inimii pe durata monitorizării. Este important ca pacientul să își continue activitățile normale pe parcursul perioadei de monitorizare, iar toate datele colectate sunt analizate ulterior de un medic cardiolog.",
+        text1:
+          "Holter-ul EKG este recomandat în diverse situații, printre care:",
+        text2:
+          "Vessa Hospital este un loc ideal pentru efectuarea unui Holter EKG datorită echipamentelor de ultimă generație și a personalului medical de înaltă specializare. Spitalul oferă un mediu sigur și confortabil, iar pacienții beneficiază de o monitorizare atentă pe toată durata procedurii. De asemenea, medicii de la Vessa Hospital sunt specializați în diagnosticarea afecțiunilor cardiace, asigurându-se că orice rezultat este interpretat corect și prompt.",
+        text3:
+          "Monitorizarea continuă oferită de Holter EKG poate identifica probleme cardiace care nu pot fi observate într-un EKG tradițional. Aceasta înseamnă că pot fi detectate aritmii rare sau simptome care se manifestă doar într-un anumit context sau perioadă de timp. Datorită acestei monitorizări continue, medicii de la Vessa Hospital pot oferi diagnostice mai precise și planuri de tratament mai eficiente.",
+        text4: "",
+        text5:
+          "Holter EKG este o metodă de diagnostic valoroasă pentru identificarea problemelor de sănătate ale inimii, iar la Vessa Hospital beneficiați de toate condițiile necesare pentru o procedură de calitate. Indiferent dacă aveți simptome de aritmii sau doriți doar un control de rutină, Vessa Hospital este locul ideal pentru monitorizarea stării de sănătate a inimii dumneavoastră.",
+        list1: [
+          "Detectarea aritmiilor cardiace (bătăi neregulate ale inimii);",
+          "Evaluarea efectelor tratamentului pentru afecțiuni cardiace;",
+          "Investigații pentru simptome precum palpitații, amețeli sau oboseală inexplicabilă;",
+          "Diagnosticul unor afecțiuni precum infarctul miocardic sau alte probleme cardiace.",
+        ],
+        list2: [
+          "<strong>Tehnologie de ultimă oră:</strong> Echipamentele utilizate pentru monitorizarea Holter sunt de cea mai bună calitate, garantând rezultate precise.",
+          "<strong>Expertiză medicală:</strong> La Vessa Hospital, veți fi monitorizați și evaluați de medici cardiologi cu experiență",
+          "<strong>Confortul pacientului:</strong> Spitalul oferă un mediu confortabil și profesional, asigurându-se că pacienții sunt bine informați și sprijiniți pe tot parcursul procedurii.",
+          "<strong>Raport rapid și detaliat:</strong> După finalizarea procedurii, veți primi un raport detaliat al rezultatelor, iar medicii vor discuta cu dvs. pașii următori în tratament, dacă este cazul.",
+        ],
+        list3: [],
+        list4: [],
         slug: "holter-ekg-monitorizarea-ritmului-inimii-24h",
         metaTitle:
           "Holter EKG - Monitorizarea Ritmului Inimii 24H | vessahospital.ro",

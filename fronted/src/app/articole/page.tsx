@@ -10,7 +10,7 @@ const ArticolePage = () => {
   return (
     <div>
       <Header />
-      <HeaderArticole promo={false} />
+      <HeaderArticole slug="" promo={false} />
       <Spacing size="8" md="6" sm="6" />
       <ArticleFilter />
       <NewsletterSection />

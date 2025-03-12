@@ -32,6 +32,12 @@ type Article = {
   titlu8?: string;
   titlu9?: string;
   titlu10?: string;
+  titlu11?: string;
+  titlu12?: string;
+  titlu13?: string;
+  titlu14?: string;
+  titlu15?: string;
+  titlu16?: string;
   text2: string;
   text3: string;
   text4: string;
@@ -42,6 +48,12 @@ type Article = {
   text8?: string;
   text9?: string;
   text10?: string;
+  text11?: string;
+  text12?: string;
+  text13?: string;
+  text14?: string;
+  text15?: string;
+  text16?: string;
   textList: string[];
   date: string;
   specialization: string;
@@ -113,7 +125,7 @@ const ArticleDetailPromo = ({ article }: { article: Article }) => {
           {/* Unordered List */}
           <Typography
             variant="paragraph"
-            className="text-dark-opacity-75 flex items-center justify-center gap-[15px] sm:flex-col xs:flex-col"
+            className="text-dark-opacity-75 flex items-center justify-between gap-[15px] sm:flex-col xs:flex-col"
           >
             <ul className="ml-8 list-disc">
               {article.textList.map((text, index) => (
@@ -263,6 +275,91 @@ const ArticleDetailPromo = ({ article }: { article: Article }) => {
           </Typography>
           <Spacing size="4" md="3" sm="3" />
         </div>
+        {article.titlu11 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu11}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text11! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
+
+        {article.titlu12 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu12}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text12! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
+        {article.titlu13 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu13}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text13! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
+        {article.titlu14 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu14}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text14! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
+        {article.titlu15 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu15}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text15! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
+        {article.titlu16 && (
+          <>
+            {/* Title 10 */}
+            <Typography variant="h3" className="text-black">
+              {article.titlu16}
+            </Typography>
+            <Spacing size="2.5" md="2.5" sm="2.5" />
+            {/* Text 10 */}
+            <Typography variant="paragraph" className="text-dark-opacity-75">
+              <span dangerouslySetInnerHTML={{ __html: article.text16! }} />
+            </Typography>
+            <Spacing size="4" md="3" sm="3" />
+          </>
+        )}
 
         {/* Info and Images */}
       </div>

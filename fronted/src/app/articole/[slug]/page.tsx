@@ -32,7 +32,7 @@ const ArticleDetailPage = async ({ params }: PageProps) => {
   return (
     <div>
       <Header />
-      <HeaderArticole promo={article.promo} />
+      <HeaderArticole promo={article.promo} slug={article.slug} />
       <Spacing size="8" md="8" sm="8" />
       {article.promo ? (
         <ArticleDetailPromo article={article} />
