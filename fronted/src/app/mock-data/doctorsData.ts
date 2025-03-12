@@ -11,416 +11,6 @@ export const doctorsData = [
     metaDescription:
       "Dr. Isaic Alexandru, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
     keywords: "Dr. Isaic Alexandru, chirurgie generală, Vessa Hospital",
-    servicesWithDetails: [],
-    slug: "dr-isaic-alexandru_chirurgie-generala",
-    schedule: [
-      /*
-    {
-      "day": "Luni",
-      "hours": "08:00-12:00"
-    },
-    {
-      "day": "Vineri",
-      "hours": "10:00-14:00"
-    }
-    */
-    ],
-  },
-  {
-    name: "Dr. George Mihai Nodiți",
-    specialization: "Chirurgie Generala",
-    imageUrl: "/images/noditi-george-mihai.png",
-    about:
-      "Dr. George Mihai Nodiți este un medic specialist în chirurgie generală, cu o vastă experiență în chirurgia laparoscopică și minim invazivă. În calitate de asistent universitar la UMFT, Dr. Nodiți a contribuit semnificativ la formarea noilor generații de medici, împărtășindu-le cunoștințele și expertiza sa în domeniul chirurgical. Aderarea sa la echipa Vessa Hospital din Timișoara aduce multiple beneficii instituției. Expertiza sa în tehnici chirurgicale avansate, precum chirurgia laparoscopică, permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | vessahospital.ro",
-    metaDescription:
-      "Dr. George Mihai Nodiți, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
-    keywords: "Dr. George Mihai Nodiți, chirurgie generală, Vessa Hospital",
-    servicesWithDetails: [],
-    slug: "dr-noditi-george-mihai_chirurgie-generala",
-    schedule: [
-      /*
-    {
-      "day": "Luni",
-      "hours": "08:00-12:00"
-    },
-    {
-      "day": "Vineri",
-      "hours": "10:00-14:00"
-    }
-    */
-    ],
-  },
-  {
-    name: "Dr. Călin Ștefan",
-    specialization: "Fiziokinetoterapie",
-    imageUrl: "/images/calin-stefan.png",
-    about:
-      "Dr. Călin Ștefan este un specialist în fiziokinetoterapie cu o vastă experiență și expertiză în domeniu, activând în cadrul Vessa Hospital din Timișoara. Având o pregătire solidă și un parcurs profesional remarcabil, Dr. Ștefan este dedicat recuperării și îmbunătățirii mobilității pacienților, ajutându-i să depășească diverse afecțiuni musculo-scheletale și neurologice printr-o abordare integrată a fizioterapiei și kinetoterapiei. Printr-o combinație de exerciții terapeutice, masaj, electroterapie, termoterapie și alte metode inovative, Dr. Ștefan ajută pacienții să își recâștige mobilitatea și să își reducă durerile cauzate de afecțiuni cronice sau leziuni recente.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Călin Ștefan - Specialist Fiziokinetoterapie | Vessa Hospital Timișoara",
-    metaDescription:
-      "Dr. Călin Ștefan este specialist în fiziokinetoterapie la Vessa Hospital Timișoara. Oferă tratamente personalizate pentru afecțiuni musculo-scheletale și neurologice, ajutând pacienții să își recâștige mobilitatea.",
-    keywords:
-      "Dr. Călin Ștefan, fiziokinetoterapie, Vessa Hospital, recuperare mobilitate, fizioterapie Timișoara, terapie musculo-scheletală, kinetoterapie Timișoara, electroterapie, masaj terapeutic, recuperare afecțiuni neurologice",
-    servicesWithDetails: [
-      {
-        title: "Recuperare postoperatorie",
-        servicesText:
-          "Serviciul de Recuperare Postoperatorie oferit de Vessa Hospital Timișoara este o etapă esențială în procesul de recuperare a pacienților care au suferit intervenții chirurgicale, având ca scop principal restabilirea funcționalității și a mobilității pacienților într-un interval cât mai scurt, cu minimizarea riscurilor de complicații și cu o calitate îmbunătățită a vieții. Recuperarea postoperatorie nu se limitează doar la vindecarea fizică, ci se concentrează pe un proces integrat ce include atât aspectele fizioterapeutice, cât și pe cele emoționale și psihologice ale pacientului, asigurând astfel o recuperare completă. În cadrul Vessa Hospital, procesul de recuperare este personalizat, adaptat tipului de intervenție chirurgicală efectuată și stării generale a pacientului. Echipa de specialiști în fiziokinetoterapie și recuperare postoperatorie colaborează îndeaproape cu medicii chirurgi, astfel încât să se poată realiza un plan de tratament optim pentru fiecare pacient în parte. În general, programul de recuperare postoperatorie include o combinație de tehnici de fizioterapie, exerciții de mobilizare pasivă și activă, terapie manuală, electroterapie, masaj terapeutic și alte metode inovative care ajută la reducerea durerii și inflamației, stimularea circulației sanguine și îmbunătățirea flexibilității și forței musculare.",
-        slug: "recuperare-postoperatorie",
-        metaTitle:
-          "Recuperare Postoperatorie Personalizată: Tratament Fizioterapeutic și Suport | vessahospital.ro",
-        metaDescription:
-          "Recuperare postoperatorie completă la Vessa Hospital: tratamente fizioterapeutice, exerciții de mobilizare și masaj terapeutic pentru o recuperare rapidă și eficientă.",
-        keywords:
-          "recuperare postoperatorie, tratament postchirurgical, fizioterapie, masaj terapeutic, Vessa Hospital, recuperare postoperatorie personalizată",
-      },
-    ],
-    slug: "dr-calin-stefan_fiziokinetoterapie",
-    schedule: [
-      /*
-    {
-      "day": "Luni",
-      "hours": "08:00-12:00"
-    },
-    {
-      "day": "Vineri",
-      "hours": "10:00-14:00"
-    }
-    */
-    ],
-  },
-
-  {
-    name: "Dr. Andreea Albotă",
-    specialization: "Neurochirurgie",
-    imageUrl: "/images/Andreea-Albota.png",
-    about:
-      " Specialist în Neurochirurgie, Dr. Andreea Albotă abordează cu dedicare și profesionalism cazurile complexe din acest domeniu. Cu o combinație de expertiză tehnică și empatie, oferă soluții moderne și eficiente pentru afecțiuni ale sistemului nervos. Prin precizia și angajamentul său față de pacienți, Dr. Albota contribuie la îmbunătățirea calității vieții acestora, fiind un membru valoros al echipei Vessa Hospital.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Andreea Albota - Specialist Neurochirurgie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Andreea Albota, specialist în Neurochirurgie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni ale sistemului nervos, având o abordare personalizată și empatică.",
-    keyworChi:
-      "Dr. Andreea Albota, neurochirurgie, afecțiuni sistem nervos, Vessa Hospital, tratamente neurochirurgicale",
-    servicesWithDetails: [
-      {
-        title: "Consult Neurochirurgie",
-        servicesText:
-          "Consultul neurochirurgical reprezintă evaluarea specializată a pacientului cu afecțiuni neurologice care necesită intervenție chirurgicală. Acesta se bazează pe o evaluare amănunțită a simptomelor și istoricului medical al pacientului, urmărind semnele unei posibile afecțiuni neurologice. Neurochirurgia se ocupă cu diagnosticarea și tratarea afecțiunilor creierului, măduvei spinării și nervilor periferici, cum ar fi tumori cerebrale, malformații vasculare, hernii de disc, leziuni ale măduvei spinării și alte tulburări neurologice. Medicul neurochirurg va discuta simptomele pacientului, care pot include dureri de cap persistente, amețeli, parestezii, dificultăți de coordonare, tulburări de mers sau de vedere, iar pe baza acestora va decide dacă sunt necesare investigații suplimentare, precum tomografie computerizată (CT) sau imagistică prin rezonanță magnetică (RMN).",
-        titleA: "Opțiuni de Tratament la Vessa Hospital",
-        title1: "Când Este Necesară o Consultație la Neurochirurg?",
-        title2: "Cum Să Te Pregătești pentru Consult?",
-        title3: "Beneficiile Consultului Neurochirurgical la Vessa Hospital",
-        title4: "Ce Se Întâmplă în Timpul Consultației?",
-        title5: "Investigații Suplimentare",
-        title6: "Concluzie",
-        title7: "",
-        textA:
-          "În funcție de diagnostic, tratamentul poate include:<br/><br/><ul class='list-disc ml-8'><li><strong>Medicație personalizată</strong></li><li><strong>Kinetoterapie și fizioterapie</strong></li><li><strong>Infiltrații pentru reducerea inflamației</strong></li><li><strong>Intervenții chirurgicale minim invazive</strong></li></ul>",
-        text1: "Programează-te la Vessa Hospital dacă te confrunți cu:",
-        text2:
-          "Pentru un consult eficient la Vessa Hospital, este recomandat să:<br/><br/><ul class='list-disc ml-8'><li>Pregătești un istoric medical detaliat</li><li>Notezi simptomele resimțite, durata și intensitatea lor</li><li>Aduni documentele medicale anterioare (RMN, CT, analize)</li><li>Pregătești o listă cu întrebări pentru medic</li></ul>",
-        text3:
-          "Consultul neurochirurgical include mai multe etape:<br/><br/><ul class='list-decimal ml-8'><li><strong>Discuția inițială</strong> – Medicul îți va pune întrebări despre simptome, istoricul medical și stilul de viață</li><li><strong>Examinarea neurologică</strong> – Se verifică reflexele, forța musculară, echilibrul, coordonarea și sensibilitatea</li><li><strong>Interpretarea investigațiilor </strong> – Dacă ai efectuat imagistică (RMN, CT), medicul le va analiza pentru a identifica eventualele probleme</li><li><strong>Recomandări și plan de tratament</strong> – Neurochirurgul va propune un plan de tratament, care poate include medicație, kinetoterapie sau intervenție chirurgicală, în funcție de severitatea afecțiunii</li></ul>",
-        text4:
-          "Dacă neurochirurgul consideră necesar, îți poate recomanda investigații suplimentare, precum:<br/><br/><ul class='list-decimal ml-8'><li><strong>RMN (Rezonanță Magnetică Nucleară)</strong> – Oferă imagini detaliate ale creierului și coloanei vertebrale</li><li><strong>CT (Tomografie Computerizată)</strong> – Evidențiază leziunile, fracturile sau hemoragiile</li><li><strong>Electromiografie (EMG)</strong> – Evaluează activitatea musculară și funcția nervilor periferici</li><li><strong>Analize de sânge</strong> – Pot detecta inflamații, infecții sau alte probleme care afectează sistemul nervos</li></ul>",
-        text5:
-          "Consultul neurochirurgical la Vessa Hospital Timișoara oferă diagnostic precis, tratament modern și îngrijire personalizată. Dacă te confrunți cu simptome neurologice, programează-te pentru un consult și beneficiază de cele mai bune servicii medicale pentru sănătatea ta!",
-        list1: [
-          "Dureri de cap frecvente și severe",
-          "Amețeli, pierderi de echilibru sau probleme de coordonare",
-          "Dureri intense de spate sau gât care radiază în brațe sau picioare",
-          "Amorțeli, furnicături sau slăbiciune musculară inexplicabilă",
-          "Pierderi de conștiență sau episoade convulsive",
-          "Traumatisme craniene sau ale coloanei vertebrale",
-          "Diagnostic de tumoră cerebrală sau spinală",
-        ],
-        list2: [
-          "<strong>Diagnostic Rapid și Corect:</strong>Unul dintre cele mai mari beneficii ale consultului neurochirurgical este identificarea precisă a afecțiunii. Prin examinare detaliată și interpretarea investigațiilor imagistice avansate (RMN, CT), neurochirurgii de la Vessa Hospital pot stabili un diagnostic rapid și corect.",
-          "<strong>Prevenirea Complicațiilor:</strong>Consultul timpuriu poate preveni agravarea simptomelor și complicațiile severe. Afecțiunile neurologice netratate pot duce la pierderea mobilității, dureri cronice sau chiar invaliditate, motiv pentru care este esențială evaluarea de către un specialist.",
-          "<strong>Plan de Tratament Personalizat:</strong>Fiecare pacient primește un plan de tratament adaptat nevoilor sale, care poate include medicație pentru controlul durerii și inflamației, kinetoterapie și fizioterapie pentru recuperare, recomandări pentru stilul de viață și prevenirea recidivelor și intervenții chirurgicale minim invazive, dacă sunt necesare",
-          "<strong>Posibilitatea unei A Doua Opinii Medicale:</strong>Pentru pacienții cu diagnostice complexe, consultul neurochirurgical oferă oportunitatea de a solicita o a doua opinie medicală, asigurând astfel cel mai bun plan de tratament",
-        ],
-        list3: [],
-        list4: [],
-
-        slug: "consult-neurochirurgie",
-        metaTitle:
-          "Consult Neurochirurgie | Evaluare și Tratament Afecțiuni Neurologice | vessahospital.ro",
-        metaDescription:
-          "Consultul neurochirurgical oferă evaluare specializată pentru afecțiuni ale creierului, măduvei spinării și nervilor periferici, incluzând opțiuni de tratament conservator sau chirurgical.",
-        keywords:
-          "consult neurochirurgie, afecțiuni neurologice, tumori cerebrale, accidente vasculare cerebrale, hernie de disc, tratament neurochirurgical, RMN, CT",
-      },
-      {
-        title: "Interpretare Imagistică",
-        servicesText:
-          "Interpretarea imagistică reprezintă un serviciu esențial în diagnosticarea afecțiunilor neurologice și musculoscheletale, având un rol fundamental în planificarea tratamentului. Acest serviciu presupune analiza și interpretarea imaginilor obținute prin diverse tehnici de imagistică, precum tomografia computerizată (CT), rezonanța magnetică nucleară (RMN), radiografii sau angiografie, pentru a vizualiza structurile interne ale corpului, cum ar fi creierul, măduva spinării și coloana vertebrală.\n\nSpecialiștii în imagistică, cum ar fi radiologii și neurochirurgii, sunt responsabili de examinarea și interpretarea acestor imagini pentru a identifica eventualele anomalii, cum ar fi tumori, leziuni traumatice, hernii de disc, stenoze ale canalului spinal sau alte patologii care pot afecta funcționarea normală a sistemului nervos. De exemplu, un RMN al creierului poate ajuta la identificarea tumorilor cerebrale sau a semnelor unui accident vascular cerebral, în timp ce un CT al coloanei vertebrale poate dezvălui fracturi vertebrale sau compresiuni ale nervilor.\n\nInterpretarea corectă a imaginilor este esențială pentru formularea unui diagnostic precis, iar radiologii sau neurochirurgii care se ocupă de acest proces trebuie să fie extrem de atenți la detalii și să aibă experiență în analiza acestora, deoarece un diagnostic incorect poate duce la tratamente inadecvate sau întârzieri în tratament. De asemenea, interpretarea imagistică permite monitorizarea progresului tratamentului și evaluarea eficienței intervențiilor terapeutice, cum ar fi intervențiile chirurgicale sau terapiile medicamentoase.\n\nImaginile obținute prin tehnicile imagistice ajută la vizualizarea structurii interne a corpului uman, iar interpretarea acestora poate contribui semnificativ la stabilirea unui plan de tratament personalizat, eficient și sigur, pentru diverse afecțiuni neurologice și ortopedice. Astfel, acest serviciu este un pas fundamental în diagnosticarea și tratamentul multor afecțiuni grave.",
-        slug: "interpretare-imagistica",
-        metaTitle:
-          "Interpretare Imagistică | Diagnosticare Afecțiuni Neurologice și Musculoscheletale | vessahospital.ro",
-        metaDescription:
-          "Serviciul de interpretare imagistică analizează imagini obținute prin CT, RMN, radiografii și angiografie, pentru a diagnostica afecțiuni neurologice și musculoscheletale.",
-        keywords:
-          "interpretare imagistică, diagnostic imagistic, CT, RMN, radiografii, angiografie, diagnostic afecțiuni neurologice, hernie de disc, tumori cerebrale",
-      },
-      {
-        title: "Terapia Durerii",
-        servicesText:
-          "Terapia durerii reprezintă o ramură a medicinii care se concentrează pe diagnosticarea și tratamentul durerii cronice sau acute, care afectează pacientul din diverse cauze, inclusiv afecțiuni neurologice, ortopedice, oncologice sau musculare. Scopul principal al terapiei durerii este de a ameliora simptomele și de a îmbunătăți funcționarea zilnică a pacientului. Tratamentul poate include administrarea de medicamente analgezice și antiinflamatorii, dar și proceduri invazive precum injecțiile de corticoizi sau blocajele nervoase. Terapia durerii poate include și terapii complementare, cum ar fi fizioterapia, terapia prin masaj și psihoterapia, pentru a ajuta pacientul să gestioneze durerea pe termen lung. Printre tehnicile avansate de terapie a durerii se numără neurostimularea electrică a nervilor și neurostimularea medulară, care implică implantarea unui dispozitiv care furnizează impulsuri electrice pentru a reduce durerea cronică severă.",
-        slug: "terapia-durerii",
-        metaTitle: "Terapia Durerii | vessahospital.ro",
-        metaDescription:
-          "Terapia durerii la Vessa Hospital oferă soluții personalizate pentru ameliorarea durerii cronice și acute. Utilizăm tehnici avansate, inclusiv neurostimulare și terapii complementare pentru a îmbunătăți calitatea vieții pacienților.",
-        keywords:
-          "terapia durerii, durere cronica, tratamente durere, neurostimulare, blocaje nervoase, fizioterapie, masaj terapeutic, neurostimulator",
-      },
-      {
-        title: "Neurostimulare Medulară",
-        servicesText:
-          "Neurostimularea medulară este o tehnică inovatoare utilizată în tratamentul durerii cronice, în special a celor care suferă de dureri lombare severe sau dureri la nivelul extremităților. Această metodă implică implantarea unui dispozitiv mic, cunoscut sub denumirea de stimulator spinal, care furnizează impulsuri electrice la nivelul măduvei spinării, având scopul de a modula semnalele de durere transmise către creier. Procesul începe cu evaluarea pacientului, în cadrul unui consult medical detaliat, în care se discută istoricul durerii și opțiunile de tratament disponibile. Dacă pacientul este considerat un candidat potrivit, se efectuează o fază de testare, în care un dispozitiv temporar este implantat pentru a evalua răspunsul la stimulare. Dacă testul este eficient, se trece la implantarea unui dispozitiv permanent care va elibera impulsuri electrice controlate. Neurostimularea medulară este eficientă pentru pacienții care nu au răspuns la tratamentele conservatoare sau care nu sunt candidați pentru intervenții chirurgicale. Beneficiile acestei tehnici includ reducerea consumului de medicamente analgezice, îmbunătățirea mobilității și a calității vieții, precum și o recuperare rapidă și un risc minim de complicații.",
-        slug: "neurostimulare-medulara",
-        metaTitle: "Neurostimulare Medulară | vessahospital.ro",
-        metaDescription:
-          "Neurostimularea medulară la Vessa Hospital este o tehnică avansată pentru tratamentul durerii cronice lombare sau a durerilor extremităților, care ajută la reducerea semnificativă a durerii și îmbunătățirea mobilității.",
-        keywords:
-          "neurostimulare medulară, durere lombară, stimulator spinal, durere cronică, tratamente durere, implant stimulator spinal",
-      },
-      {
-        title: "Tratament Hernie de Disc Cervical",
-        servicesText:
-          "Tratamentul herniei de disc cervicală se adresează pacienților care suferă de o afecțiune a coloanei vertebrale cervicale, în care unul sau mai multe dintre discurile intervertebrale se deplasează sau se rup, comprimând nervii sau măduva spinării. Această afecțiune poate cauza dureri severe la nivelul gâtului, brațelor sau spatelui superior, precum și amorțeală sau slăbiciune musculară. Tratamentul herniei de disc cervicală poate include atât măsuri conservatoare, cât și intervenții chirurgicale, în funcție de severitatea simptomelor și de răspunsul la tratamentele inițiale. În stadiile incipiente ale afecțiunii, tratamentele non-chirurgicale pot include fizioterapie, medicamente antiinflamatoare și analgezice pentru a reduce durerea și inflamația, iar injecțiile de corticosteroizi pot fi recomandate pentru a calma inflamația nervilor afectați. În cazul în care tratamentele conservatoare nu sunt eficiente, se poate recomanda intervenția chirurgicală, cum ar fi discectomia sau fuzionarea vertebrelor. Recuperarea post-operatorie implică, de obicei, un regim de fizioterapie și recomandări pentru un stil de viață sănătos pentru a preveni recidivele.",
-        slug: "tratament-hernie-disc-cervical",
-        metaTitle: "Tratament Hernie de Disc Cervical | vessahospital.ro",
-        metaDescription:
-          "Tratamentul herniei de disc cervicală la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale, pentru a reduce durerea și a restabili funcția normală a coloanei vertebrale cervicale.",
-        keywords:
-          "tratament hernie disc cervical, durere gât, disc herniat, discectomie cervicală, fuzionare vertebrală, fizioterapie hernie disc",
-      },
-      {
-        title: "Tratament Hernie de Disc Cervical – 2 Niveluri",
-        servicesText:
-          "Tratamentul herniei de disc cervicală la două niveluri implică abordarea unei afecțiuni mai complexe, în care două discuri intervertebrale cervicale sunt afectate simultan. Această situație poate provoca dureri severe și limitări ale mobilității, deoarece presiunea asupra nervilor sau măduvei spinării crește semnificativ. Tratamentul conservator pentru hernia de disc cervicală la două niveluri poate include fizioterapie, medicație pentru durere și injectarea de steroizi pentru a reduce inflamația. Cu toate acestea, dacă aceste metode nu sunt eficiente sau dacă pacientul experimentează pierderi de funcție ale membrelor superioare sau dureri intense, intervenția chirurgicală devine adesea necesară. Intervenția chirurgicală poate include discectomia și fuzionarea vertebrelor, îndepărtarea discurilor herniate și stabilirea unei fuziuni între vertebrele adiacente. În cazuri specifice, se poate folosi un grefon osos sau un dispozitiv artificial pentru a menține stabilitatea coloanei vertebrale. De asemenea, se pot utiliza proceduri minim invazive, cum ar fi discectomia endoscopică sau abordarea cu laser. După intervenție, pacientul va urma un program de fizioterapie și reabilitare pentru a restabili mișcarea și a preveni rigiditatea gâtului. Recuperarea completă poate dura între câteva luni și un an, în funcție de complexitatea intervenției.",
-        slug: "tratament-hernie-disc-cervical-2-niveluri",
-        metaTitle:
-          "Tratament Hernie de Disc Cervical – 2 Niveluri | vessahospital.ro",
-        metaDescription:
-          "Tratamentul herniei de disc cervicală la două niveluri la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru a ameliora durerea și a restabili mobilitatea coloanei vertebrale cervicale.",
-        keywords:
-          "tratament hernie disc cervical 2 niveluri, durere gât, discectomie cervicală, fuzionare vertebrală, fizioterapie hernie disc, intervenție chirurgicală hernie disc",
-      },
-      {
-        title: "Tratament Hernie de Disc Toracal",
-        servicesText:
-          "Hernia de disc toracal reprezintă o afecțiune rară, dar gravă, care afectează coloana vertebrală toracală (zona superioară a coloanei între gât și zona lombară). Discurile intervertebrale din această regiune pot hernia, provocând dureri severe și simptome neurologice. Cauzele comune ale herniilor de disc toracal includ traume, îmbătrânire sau degenerare a discurilor. Simptomele includ dureri în zona toracală, iradierea durerii către piept sau abdomen și, în cazuri severe, pierderea sensibilității sau slăbiciune în membrele inferioare. Tratamentul poate începe cu măsuri conservatoare, precum medicație antiinflamatorie și analgezică, fizioterapie pentru întărirea musculaturii spatelui și îmbunătățirea posturii, și injecții de corticosteroizi pentru a reduce inflamația. În cazurile severe sau persistente, se poate apela la tratamente chirurgicale, inclusiv discectomie sau fuzionare vertebrală, pentru a elibera presiunea asupra nervilor și a stabiliza coloana. Intervențiile minim invazive, cum ar fi cele endoscopice sau cu laser, oferă o recuperare mai rapidă și incizii mai mici. După tratament, pacienții trebuie să urmeze un regim de reabilitare, care include fizioterapie și exerciții pentru a îmbunătăți flexibilitatea și forța musculaturii spinale.",
-        slug: "tratament-hernie-disc-toracal",
-        metaTitle: "Tratament Hernie de Disc Toracal | vessahospital.ro",
-        metaDescription:
-          "Tratamentul herniei de disc toracal la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru ameliorarea durerii și stabilizarea coloanei vertebrale toracale.",
-        keywords:
-          "tratament hernie disc toracal, durere toracală, discectomie toracală, fuzionare vertebrală toracală, fizioterapie hernie disc, intervenție chirurgicală hernie disc toracal",
-      },
-      {
-        title: "Tratament Hernie de Disc Lombar – 2 Niveluri",
-        servicesText:
-          "Tratamentul herniei de disc lombare la două niveluri se referă la o afecțiune complexă în care două dintre discurile intervertebrale de la nivelul coloanei lombare sunt afectate simultan. Această afecțiune poate cauza dureri severe în partea inferioară a spatelui și poate iradia către membrele inferioare, provocând amorțeală, slăbiciune sau dificultăți de mers. Tratamentul conservator poate include fizioterapie, medicație pentru durere, utilizarea de brate de susținere și injectarea de corticosteroizi pentru a reduce inflamația în zona afectată. Dacă tratamentele conservatoare nu oferă un răspuns satisfăcător și durerea persistă, intervenția chirurgicală devine necesară, procedurile cele mai frecvent utilizate fiind discectomia și fuzionarea vertebrelor, pentru a asigura stabilitatea coloanei lombare. În unele cazuri, se poate utiliza un grefon osos sau un dispozitiv protetic pentru a menține stabilitatea coloanei. Există, de asemenea, opțiuni minim invazive, precum discectomia endoscopică sau intervențiile cu laser, care permit o recuperare mai rapidă și reduc riscurile intervențiilor tradiționale. După tratamentul chirurgical, pacientul va urma un plan de fizioterapie pentru a restabili mobilitatea și pentru a întări musculatura lombară, prevenind recidivele și îmbunătățind calitatea vieții.",
-        slug: "tratament-hernie-disc-lombar-2-niveluri",
-        metaTitle:
-          "Tratament Hernie de Disc Lombar – 2 Niveluri | vessahospital.ro",
-        metaDescription:
-          "Tratamentul herniei de disc lombare la două niveluri la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru ameliorarea durerii și stabilizarea coloanei lombare.",
-        keywords:
-          "tratament hernie disc lombar 2 niveluri, discectomie lombară, fuzionare vertebrală lombară, intervenție chirurgicală hernie disc lombar, fizioterapie hernie disc lombar, discectomie endoscopică, tratament minim invaziv hernie lombară",
-      },
-      {
-        title: "Vertebroplastie",
-        servicesText:
-          "Vertebroplastie este o procedură minim invazivă destinată tratării fracturilor vertebrale cauzate de osteoporoză, tumori sau alte afecțiuni care duc la slăbirea structurii vertebrale. Fracturile vertebrale pot provoca dureri severe și pot afecta mobilitatea pacientului, iar vertebroplastie oferă o soluție eficientă pentru ameliorarea durerii și stabilizarea vertebrelor afectate. Procedura presupune injectarea unui material special, numit ciment osteosintezic, în vertebra fracturată, pentru a întări și stabiliza acea zonă a coloanei vertebrale. Intervenția se efectuează sub anestezie locală, cu ghidaj imagistic, de obicei prin radiografie sau tomografie computerizată (CT), pentru a asigura poziționarea corectă a acului și a cimentului. După injectarea cimentului, vertebra devine stabilă, iar durerile semnificative sunt adesea ameliorate aproape imediat, iar recuperarea pacientului este rapidă. Vertebroplastie este recomandată pacienților care suferă de dureri intense din cauza fracturilor vertebrale și care nu au răspuns la tratamentele conservatoare, cum ar fi analgezicele sau fizioterapia. De asemenea, procedura poate fi utilizată și în cazul pacienților cu tumori vertebrale, pentru a reduce durerea și pentru a stabiliza coloana vertebrală. Avantajele vertebroplastiei includ un timp de recuperare scurt, riscuri minime de complicații și eficiență ridicată în reducerea durerii. După intervenție, pacienții pot începe rapid programul de reabilitare pentru a întări musculatura spatelui și pentru a preveni complicațiile ulterioare. Deși vertebroplastie este o procedură eficientă, ea nu tratează cauza principală a fracturii, iar pacienții trebuie să urmeze recomandările medicului pentru a preveni recidivele și pentru a îmbunătăți starea generală a sănătății coloanei vertebrale.",
-        slug: "vertebroplastie",
-        metaTitle: "Vertebroplastie | vessahospital.ro",
-        metaDescription:
-          "Vertebroplastie este o procedură minim invazivă pentru tratamentul fracturilor vertebrale cauzate de osteoporoză sau tumori, oferind ameliorarea durerii și stabilizarea coloanei vertebrale.",
-        keywords:
-          "vertebroplastie, fracturi vertebrale, osteoporoză, tumori vertebrale, tratament minim invaziv fracturi vertebrale, ciment osteosintezic, reabilitare spinală",
-      },
-      {
-        title: "Tratament Kifoplastie Vertebrală",
-        servicesText:
-          "Kifoplastia vertebrală este o procedură similară vertebroplastiei, dar cu un scop mai specific: corectarea deformărilor vertebrale cauzate de fracturi, în special în cazurile de fracturi vertebrale compressive, adesea provocate de osteoporoză. În timp ce vertebroplastie se concentrează pe stabilizarea vertebrei fracturate, kifoplastia presupune și restabilirea formei normale a vertebrei prin crearea unui spațiu în interiorul acesteia. Aceasta implică injectarea unui ciment special, dar înainte de injectare, medicul efectuează o procedură de „balonizare”, adică insuflă aer într-o cavitate creată în vertebra afectată pentru a o restabili la dimensiunile inițiale, reducând astfel deformarea acesteia. Kifoplastia este recomandată pacienților cu fracturi vertebrale care au suferit o comprimare semnificativă a vertebrei, iar această procedură ajută la restabilirea înălțimii vertebrale și la reducerea durii, iar stabilizarea structurii vertebrale contribuie la prevenirea unor fracturi ulterioare. Procedura este efectuată sub anestezie locală și ghidaj imagistic, iar pacientul poate experimenta o reducere semnificativă a durerii aproape imediat după procedură. Recuperearea este rapidă, iar majoritatea pacienților pot relua activitățile zilnice în câteva zile. Kifoplastia este o opțiune eficientă pentru pacienții cu fracturi vertebrale care nu pot fi tratate prin metode conservatoare și care suferă de dureri intense sau invalidante. Deși procedura este foarte eficientă în reducerea durerii și restabilirea formei vertebrale, este esențial ca pacienții să urmeze recomandările pentru prevenirea osteoporozei și pentru menținerea sănătății coloanei vertebrale pe termen lung.",
-        slug: "kifoplastie-vertebrala",
-        metaTitle: "Tratament Kifoplastie Vertebrală | vessahospital.ro",
-        metaDescription:
-          "Kifoplastia vertebrală este o procedură minim invazivă eficientă pentru corectarea deformărilor vertebrale cauzate de fracturi și osteoporoză, oferind reducerea durerii și restabilirea formei vertebrale.",
-        keywords:
-          "kifoplastie vertebrală, fracturi vertebrale compressive, osteoporoză, procedură minim invazivă, restabilirea vertebrelor, durere vertebrală, balonizare vertebrală",
-      },
-      {
-        title: "Tratament Metastaze Cerebrale",
-        servicesText:
-          "Metastazele cerebrale sunt tumori care au apărut în alte părți ale corpului și care s-au răspândit la nivelul creierului. Tratamentul metastazelor cerebrale este complex și depinde de mai mulți factori, inclusiv tipul și stadiul cancerului primar, numărul și locația metastazelor și starea generală a pacientului. Opțiunile de tratament includ intervenții chirurgicale, radioterapie, chimioterapie și terapii țintite. În unele cazuri, se poate opta pentru o combinație a acestor metode pentru a maximiza eficiența tratamentului și a îmbunătăți prognosticul pacientului. Intervențiile chirurgicale pot fi utilizate pentru îndepărtarea metastazelor cerebrale, în special atunci când acestea sunt localizate într-o zonă accesibilă și nu sunt multiple. Această opțiune este adesea combinată cu radioterapie adjuvantă pentru a distruge orice celule tumorale reziduale. Radioterapia este o metodă eficientă de a reduce dimensiunea tumorilor și de a ameliora simptomele asociate, precum durerile de cap, pierderea de coordonare și deficitul neurologic. De asemenea, tratamentele farmacologice, inclusiv chimioterapia și terapiile țintite, pot fi utilizate pentru a combate cancerul primar și pentru a împiedica extinderea metastazelor. Tratamentul metastazelor cerebrale trebuie să fie individualizat în funcție de fiecare caz, iar medicii se concentrează pe reducerea simptomelor și pe îmbunătățirea calității vieții pacientului. De asemenea, este important ca pacientul să beneficieze de sprijin psihologic și de tratamente care să ajute la gestionarea efectelor secundare ale terapiei, cum ar fi oboseala, greața și pierderea poftei de mâncare.",
-        slug: "tratament-metastaze-cerebrale",
-        metaTitle: "Tratament Metastaze Cerebrale | vessahospital.ro",
-        metaDescription:
-          "Tratamentul metastazelor cerebrale include opțiuni precum intervenții chirurgicale, radioterapie, chimioterapie și terapii țintite, personalizate pentru fiecare pacient pentru a îmbunătăți calitatea vieții.",
-        keywords:
-          "tratament metastaze cerebrale, metastaze cerebrale, radioterapie metastaze, chimioterapie metastaze cerebrale, terapii țintite, intervenție chirurgicală metastaze cerebrale",
-      },
-      {
-        title:
-          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză",
-        servicesText:
-          "Stenoza de canal cervical reprezintă o îngustare a canalului spinal la nivelul gâtului, care poate cauza compresia măduvei spinării sau a rădăcinilor nervoase. Această afecțiune poate duce la dureri de gât, amorțeală, slăbiciune musculară și, în cazuri severe, pierderea funcției motorii sau senzoriale. Tratamentul pentru stenoza de canal cervical poate include intervenții chirurgicale, cum ar fi recalibrarea canalului spinal sub microscop și osteosinteza. Recalibrarea sub microscop presupune utilizarea unui microscop chirurgical pentru a permite chirurgului să vizualizeze detaliile fine ale canalului spinal și să elimine țesuturile sau oasele care comprimă măduva spinării sau nervii. Osteosinteza se referă la utilizarea de dispozitive de fixare, precum plăci și șuruburi, pentru a stabiliza vertebrele și a preveni mișcările care ar putea duce la recidivele stenozei. Această intervenție chirurgicală poate adresa atât cauza principală a stenozei, cât și simptomele asociate, restabilind funcția normală a coloanei cervicale. După intervenție, pacienții vor urma un program de reabilitare pentru a îmbunătăți mobilitatea gâtului și a reduce riscurile de recidivă.",
-        slug: "stenoza-canal-cervical-recalibrare-sub-microscop-si-osteosinteza",
-        metaTitle:
-          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză | vessahospital.ro",
-        metaDescription:
-          "Tratamentul stenozei de canal cervical include recalibrarea sub microscop și osteosinteza pentru a îmbunătăți mobilitatea și a preveni recidivele, restaurând funcția coloanei cervicale.",
-        keywords:
-          "stenoza canal cervical, recalibrare canal cervical, osteosinteza cervicală, intervenție chirurgicală canal cervical, microscop chirurgical, tratament stenoza cervicală",
-      },
-      {
-        title:
-          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză",
-        servicesText:
-          "Stenoza de canal cervical reprezintă o îngustare a canalului spinal la nivelul gâtului, care poate cauza compresia măduvei spinării sau a rădăcinilor nervoase. Această afecțiune poate duce la dureri de gât, amorțeală, slăbiciune musculară și, în cazuri severe, pierderea funcției motorii sau senzoriale. Tratamentul pentru stenoza de canal cervical poate include intervenții chirurgicale, cum ar fi recalibrarea canalului spinal sub microscop și osteosinteza. Recalibrarea sub microscop presupune utilizarea unui microscop chirurgical pentru a permite chirurgului să vizualizeze detaliile fine ale canalului spinal și să elimine țesuturile sau oasele care comprimă măduva spinării sau nervii. Osteosinteza se referă la utilizarea de dispozitive de fixare, precum plăci și șuruburi, pentru a stabiliza vertebrele și a preveni mișcările care ar putea duce la recidivele stenozei. Această intervenție chirurgicală poate adresa atât cauza principală a stenozei, cât și simptomele asociate, restabilind funcția normală a coloanei cervicale. După intervenție, pacienții vor urma un program de reabilitare pentru a îmbunătăți mobilitatea gâtului și a reduce riscurile de recidivă.",
-        slug: "stenoza-canal-cervical-recalibrare-sub-microscop-si-osteosinteza",
-        metaTitle:
-          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză | vessahospital.ro",
-        metaDescription:
-          "Tratamentul stenozei de canal cervical include recalibrarea sub microscop și osteosinteza pentru a îmbunătăți mobilitatea și a preveni recidivele, restaurând funcția coloanei cervicale.",
-        keywords:
-          "stenoza canal cervical, recalibrare canal cervical, osteosinteza cervicală, intervenție chirurgicală canal cervical, microscop chirurgical, tratament stenoza cervicală",
-      },
-      {
-        title: "Tratament Sindrom de Tunel Carpian",
-        servicesText:
-          'Sindromul de tunel carpian este o afecțiune frecventă cauzată de presiunea exercitată asupra nervului median, care trece prin tunelul carpian la nivelul încheieturii mâinii. Această presiune poate duce la simptome precum amorțeală, furnicături și durere în mâini și degete, și poate afecta grav funcționalitatea mâinii. Sindromul de tunel carpian este adesea asociat cu mișcările repetate ale mâinii sau cu condiții precum artrita, diabetul sau sarcina. Tratamentul pentru sindromul de tunel carpian poate include măsuri conservatoare, cum ar fi imobilizarea încheieturii cu ajutorul unei atelle, pentru a reduce mișcările care agravează simptomele. De asemenea, medicamentele antiinflamatoare și fizioterapia pot ajuta la reducerea inflamației și la îmbunătățirea mobilității. Dacă aceste măsuri nu sunt eficiente și simptomele continuă să persiste, se poate recomanda intervenția chirurgicală. Intervenția chirurgicală pentru sindromul de tunel carpian presupune de obicei o procedură numită "decompresia nervului median", care presupune tăierea ligamentului care presează nervul median, lărgind astfel tunelul carpian și reducând presiunea asupra nervului. Această procedură poate fi efectuată atât printr-o incizie deschisă, cât și prin tehnici minim invazive. Majoritatea pacienților care suferă de sindromul de tunel carpian au o recuperare rapidă după tratament, iar simptomele sunt adesea ameliorate imediat după intervenție.',
-        slug: "tratament-sindrom-tunel-carpian",
-        metaTitle: "Tratament Sindrom de Tunel Carpian | vessahospital.ro",
-        metaDescription:
-          "Sindromul de tunel carpian poate fi tratat prin măsuri conservatoare sau intervenții chirurgicale, în funcție de severitatea simptomelor, pentru a reduce durerea și a îmbunătăți funcționalitatea mâinii.",
-        keywords:
-          "sindrom tunel carpian, tratament sindrom tunel carpian, decompresie nerv median, tratament chirurgical tunel carpian, fizioterapie sindrom tunel carpian, artrită tunel carpian",
-      },
-      {
-        title: "Tratament Sindrom de Tunel Ulnar",
-        servicesText:
-          "Sindromul de tunel ulnar este o afecțiune similară sindromului de tunel carpian, dar afectează nervul ulnar, care trece printr-un canal la nivelul cotului, cunoscut sub numele de tunelul ulnar. Acest sindrom poate provoca dureri, amorțeală și slăbiciune în degetele al cincilea și al patrulea (degetul mic și inelar), precum și în zona cotului. Sindromul de tunel ulnar poate apărea din cauza pozițiilor incorecte ale brațului sau din cauza presiunii exercitate asupra nervului, cum ar fi atunci când se susține greutate pe cot pe perioade lungi de timp. Tratamentul pentru sindromul de tunel ulnar poate începe cu măsuri conservatoare, cum ar fi evitarea activităților care agravează simptomele, imobilizarea cotului cu ajutorul unei orteze și utilizarea de medicamente antiinflamatoare pentru a reduce durerea și inflamația. În unele cazuri, fizioterapia poate ajuta la întărirea mușchilor și la îmbunătățirea mobilității articulației cotului. Dacă simptomele nu se ameliorează prin tratamente conservatoare și există riscul de deteriorare nervoasă permanentă, se poate recomanda intervenția chirurgicală. Chirurgia pentru sindromul de tunel ulnar implică, de obicei, eliberarea nervului ulnar prin tăierea ligamentului care apasă pe nerv. În funcție de severitatea afecțiunii, această procedură poate fi realizată prin tehnici deschise sau minim invazive.",
-        slug: "tratament-sindrom-tunel-ulnar",
-        metaTitle: "Tratament Sindrom de Tunel Ulnar | vessahospital.ro",
-        metaDescription:
-          "Sindromul de tunel ulnar poate fi tratat prin măsuri conservatoare sau intervenții chirurgicale, în funcție de severitatea simptomelor, pentru a reduce durerea și a îmbunătăți funcționalitatea brațului.",
-        keywords:
-          "sindrom tunel ulnar, tratament sindrom tunel ulnar, eliberare nerv ulnar, chirurgie sindrom tunel ulnar, fizioterapie sindrom tunel ulnar",
-      },
-      {
-        title: "Tratament Kifoplastie Lombară",
-        servicesText:
-          "Kifoplastia lombară este o procedură chirurgicală destinată tratării fracturilor vertebrale lombare, de obicei cauzate de osteoporoză sau traumatisme. Aceasta presupune restabilirea înălțimii vertebrale prin utilizarea unui balon pentru a dilata vertebra fracturată, urmată de injectarea unui ciment special pentru a întări vertebra și a preveni deformările suplimentare. Kifoplastia lombară ajută la reducerea durerii, îmbunătățirea stabilității vertebrale și la prevenirea complicațiilor care ar putea apărea din cauza fracturilor vertebrale. Procedura se efectuează sub anestezie locală sau sedare și este ghidată de imagistică (fluoroscopie). După tratament, pacienții pot observa o reducere semnificativă a durerii și îmbunătățirea mobilității coloanei vertebrale, iar recuperarea este, de obicei, rapidă. Kifoplastia lombară este o opțiune eficientă pentru pacienții care au suferit fracturi vertebrale care nu răspund la tratamentele conservatoare. Recuperarea completă depinde de severitatea fracturii și de răspunsul pacientului la tratament.",
-        slug: "tratament-kifoplastie-lombara",
-        metaTitle: "Tratament Kifoplastie Lombară | vessahospital.ro",
-        metaDescription:
-          "Kifoplastia lombară este o procedură chirurgicală destinată tratării fracturilor vertebrale lombare prin utilizarea unui balon și ciment special pentru a reduce durerea și a restabili stabilitatea vertebrală.",
-        keywords:
-          "kifoplastie lombară, tratament fracturi vertebrale lombare, tratament osteoporoză, chirurgie lombară, reducerea durerii vertebrale, stabilitate vertebrală",
-      },
-      {
-        title: "Tratament Kifoplastie Cervicală",
-        servicesText:
-          "Kifoplastia cervicală este similară cu kifoplastia lombară, dar se adresează fracturilor vertebrale cervicale. Procedura implică insuflarea unui balon în vertebra fracturată pentru a restabili înălțimea acesteia, urmată de injectarea unui ciment osteosintezic pentru a stabiliza vertebra și a reduce durerea. Acest tratament este util în cazul pacienților care au fracturi ale coloanei cervicale și care nu pot beneficia de alte tratamente mai conservatoare. Procedura este minim invazivă și, de obicei, pacienții pot observa o ameliorare semnificativă a simptomelor imediat după intervenție. După tratament, recuperarea este rapidă, iar majoritatea pacienților își pot relua activitățile normale într-un interval scurt de timp.",
-        slug: "tratament-kifoplastie-cervicala",
-        metaTitle: "Tratament Kifoplastie Cervicală | vessahospital.ro",
-        metaDescription:
-          "Kifoplastia cervicală tratează fracturile vertebrale cervicale prin insuflarea unui balon și injectarea de ciment osteosintezic pentru a stabiliza vertebra și a reduce durerea.",
-        keywords:
-          "kifoplastie cervicală, tratament fracturi vertebrale cervicale, fracturi cervicale, chirurgie cervicală, tratament minim invaziv, reducerea durerii cervicale",
-      },
-      {
-        title: "Tratament Hidrocefalie (Drenaj Ventriculo-Peritoneal)",
-        servicesText:
-          "Hidrocefalia este o afecțiune caracterizată prin acumularea excesivă de lichid cefalorahidian (LCR) în ventriculele creierului, ceea ce poate duce la mărirea acestora și la presiune asupra structurilor cerebrale. Aceasta poate fi cauzată de diverse condiții, inclusiv malformații congenitale, leziuni cerebrale, infecții sau hemoragii. Simptomele hidrocefaliei includ dureri de cap, greață, tulburări de echilibru, și în cazuri severe, afectarea funcției cognitive sau motorii. Tratamentul principal pentru hidrocefalie constă în drenajul excesului de lichid cefalorahidian pentru a preveni deteriorarea creierului. Una dintre cele mai utilizate metode de tratament este instalarea unui sistem de drenaj ventriculo-peritoneal (VP). Aceasta presupune plasarea unui cateter care drenează lichidul din ventriculele cerebrale într-o zonă a corpului (de obicei peritoneul), unde lichidul este absorbit în mod natural. Procedura se efectuează printr-o intervenție chirurgicală minim invazivă, sub anestezie generală, și presupune monitorizarea atentă a pacienților pe parcursul tratamentului. După intervenție, majoritatea pacienților observă o îmbunătățire semnificativă a simptomelor, iar riscurile de complicații sunt reduse, în ciuda faptului că drenajul poate necesita ajustări periodice, în funcție de creșterea sau scăderea presiunii intracraniene. Tratamentul prin drenaj ventriculo-peritoneal poate fi pe termen lung și necesită o monitorizare regulată pentru a preveni eventualele infecții sau obstrucții ale cateterului.",
-        slug: "tratament-hidrocefalie-drenaj-ventriculo-peritoneal",
-        metaTitle:
-          "Tratament Hidrocefalie (Drenaj Ventriculo-Peritoneal) | vessahospital.ro",
-        metaDescription:
-          "Hidrocefalie tratată prin drenaj ventriculo-peritoneal. Reducerea presiunii intracraniene prin cateterizare minim invazivă pentru ameliorarea simptomelor și prevenirea deteriorării cerebrale.",
-        keywords:
-          "hidrocefalie, drenaj ventriculo-peritoneal, tratament hidrocefalie, lichid cefalorahidian, presiune intracraniană, chirurgie hidrocefalie",
-      },
-      {
-        title: "Tratament Rezecție Tumorală de Maximă Complexitate",
-        servicesText:
-          "Rezectia tumorală de maximă complexitate reprezintă o intervenție chirurgicală destinată îndepărtării tumorilor cerebrale de dimensiuni mari sau localizate în zone dificile ale creierului. Aceste tumori pot include gliome, meningiome sau metastaze cerebrale și, în multe cazuri, sunt localizate în zone care sunt esențiale pentru funcționarea normală a creierului. Procedura presupune o abordare chirurgicală foarte delicată, realizată cu ajutorul tehnologiilor moderne, cum ar fi imagistica intraoperatorie, microscopul chirurgical sau neurostimularea pentru a identifica și proteja zonele funcționale ale creierului. De obicei, rezectia tumorală de maximă complexitate este realizată sub anestezie generală și presupune o echipă multidisciplinară formată din neurochirurgi, anesteziști și alți specialiști pentru a asigura succesul procedurii. În funcție de localizarea și tipul tumorii, chirurgul va decide dacă este posibilă îndepărtarea completă a tumorii sau dacă se va opta pentru o rezecție parțială pentru a reduce riscurile de afectare a funcțiilor cerebrale esențiale. După intervenție, pacientul va necesita o perioadă de recuperare, care poate include monitorizarea intensivă și reabilitare neurologică. Prognosticul depinde de tipul și stadiul tumorii, precum și de starea generală a pacientului. Intervențiile de acest tip sunt esențiale pentru creșterea speranței de viață și îmbunătățirea calității vieții pacientului, iar succesul acestora depinde de diagnosticarea precoce și de expertiza echipei medicale.",
-        slug: "rezectie-tumorala-de-maxima-complexitate",
-        metaTitle:
-          "Tratament Rezecție Tumorală de Maximă Complexitate | vessahospital.ro",
-        metaDescription:
-          "Rezectia tumorală de maximă complexitate pentru tumori cerebrale mari sau localizate în zone dificile. Intervenție chirurgicală avansată pentru creșterea speranței de viață.",
-        keywords:
-          "rezecție tumorală, tumori cerebrale, gliome, meningiome, metastaze cerebrale, neurochirurgie, intervenție chirurgicală complexă",
-      },
-      {
-        title: "Tratament Tumora Craniană, Cura Chirurgicală",
-        servicesText:
-          "Tumorile craniene sunt mase anormale de țesut care se dezvoltă în interiorul craniului și pot include tumori cerebrale primare, metastaze cerebrale sau leziuni benigne. Tratamentul chirurgical al tumorilor craniene reprezintă abordarea de bază în multe cazuri, mai ales atunci când tumora este localizată într-o zonă accesibilă și nu poate fi tratată eficient prin alte metode, cum ar fi radioterapia sau chimioterapia. Intervenția chirurgicală poate avea scopul de a elimina complet tumora, de a reduce presiunea intracraniană sau de a obține biopsii pentru diagnostic. Procedura chirurgicală pentru tumora craniană variază în funcție de dimensiunea, tipul și localizarea tumorii. Unele tumori pot fi îndepărtate printr-o intervenție chirurgicală standard, în timp ce altele, mai complexe, pot necesita tehnici mai avansate, cum ar fi utilizarea unui microscop chirurgical, neurostimulare sau imagistică intraoperatorie pentru a identifica și a păstra țesutul cerebral sănătos. De obicei, pacientul va fi supus unei anestezii generale, iar intervenția se va desfășura sub monitorizare atentă. După operație, pacientul va necesita o perioadă de recuperare postoperatorie, care poate include monitorizarea în unități de terapie intensivă și intervenții de reabilitare neurologică. Riscurile de complicații includ infecții, hemoragii și afectări neurologice temporare sau permanente, iar succesul tratamentului depinde de faptul dacă tumora a fost complet îndepărtată și de stadiul în care a fost diagnosticată. În cazul tumorilor maligne sau metastatice, chirurgia este adesea combinată cu alte tratamente, precum radioterapia sau chimioterapia, pentru a maximiza șansele de succes și a preveni recidivele.",
-        slug: "tumora-craniana-cura-chirurgicala",
-        metaTitle:
-          "Tratament Tumora Craniană, Cura Chirurgicală | vessahospital.ro",
-        metaDescription:
-          "Tratamentul chirurgical al tumorilor craniene pentru îndepărtarea completă a tumorii sau reducerea presiunii intracraniene. Intervenții precise cu tehnici avansate pentru succesul tratamentului.",
-        keywords:
-          "tumora craniană, tratament chirurgical, tumori cerebrale, metastaze cerebrale, îndepărtare tumoare craniană, chirurgie cerebrală, intervenție neurochirurgicală",
-      },
-    ],
-    slug: "dr-andreea-albota_neurochirurgie",
-    schedule: [
-      {
-        day: "Marti",
-        hours: "13:00-16:00",
-        interval: "30 min/pacient",
-      },
-    ],
-  },
-  {
-    name: "Dr. Daniel Costea",
-    specialization: "Neurochirurgie",
-    imageUrl: "/images/Daniel-Costea.png",
-    about:
-      " Specialist în Neurochirurgie, Dr. Daniel Costea este recunoscut pentru abordarea sa inovatoare și precisă în tratarea afecțiunilor sistemului nervos. Cu o pregătire temeinică și o pasiune pentru excelență, oferă soluții personalizate pentru pacienți, punând accent pe recuperare și calitatea vieții. Prin profesionalismul său și dedicarea față de fiecare caz, Dr. Costea este un element esențial al echipei medicale de la Vessa Hospital.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Daniel Costea - Specialist Neurochirurgie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Daniel Costea, specialist în Neurochirurgie la Vessa Hospital, folosește o abordare inovatoare și precisă pentru tratamente neurochirurgicale eficiente și personalizate.",
-    keywords:
-      "Dr. Daniel Costea, neurochirurgie, afecțiuni sistem nervos, tratamente personalizate, Vessa Hospital",
-    slug: "dr-daniel-costea_neurochirurgie",
-    schedule: [
-      {
-        day: "Vineri",
-        hours: "13:00-16:00",
-        interval: "30 min/pacient",
-      },
-    ],
-  },
-  {
-    name: "Dr. Dragan Maximov",
-    specialization: "Chirurgie Generala",
-    imageUrl: "/images/icon-medic.png",
-    about:
-      "Specialist în Chirurgie Generală, Dr. Dragan Maximov oferă îngrijire medicală cuprinzătoare, abordând atât cazuri chirurgicale, cât și afecțiuni endocrine complexe. Cu o combinație de expertiză multidisciplinară și o abordare empatică, se concentrează pe oferirea de soluții eficiente și sigure, adaptate nevoilor fiecărui pacient. Profesionalismul și dedicarea sa contribuie la excelența echipei Vessa Hospital, asigurând o îngrijire de încredere pentru toți pacienții.",
-    contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Dragan Maximov - Specialist Chirurgie Generală și Endocrinologie | vessahospital.ro ",
-    metaDescription:
-      "Dr. Dragan Maximov, specialist în Chirurgie Generală și Endocrinologie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni endocrine și intervenții chirurgicale complexe.",
-    keywords: "Dr. Dragan Maximov, chirurgie generală, Vessa Hospital",
     servicesWithDetails: [
       {
         title: "Abdominoplastie",
@@ -937,6 +527,417 @@ export const doctorsData = [
           "varice hidrostatice, tratament varice, chirurgie varice, scleroterapie, laser endovenos, ablație cu radiofrecvență, vene dilatate, ciorapi compresivi, tratamente varice, chirurgie vene inferioare",
       },
     ],
+
+    slug: "dr-isaic-alexandru_chirurgie-generala",
+    schedule: [
+      /*
+    {
+      "day": "Luni",
+      "hours": "08:00-12:00"
+    },
+    {
+      "day": "Vineri",
+      "hours": "10:00-14:00"
+    }
+    */
+    ],
+  },
+  {
+    name: "Dr. George Mihai Nodiți",
+    specialization: "Chirurgie Generala",
+    imageUrl: "/images/noditi-george-mihai.png",
+    about:
+      "Dr. George Mihai Nodiți este un medic specialist în chirurgie generală, cu o vastă experiență în chirurgia laparoscopică și minim invazivă. În calitate de asistent universitar la UMFT, Dr. Nodiți a contribuit semnificativ la formarea noilor generații de medici, împărtășindu-le cunoștințele și expertiza sa în domeniul chirurgical. Aderarea sa la echipa Vessa Hospital din Timișoara aduce multiple beneficii instituției. Expertiza sa în tehnici chirurgicale avansate, precum chirurgia laparoscopică, permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | vessahospital.ro",
+    metaDescription:
+      "Dr. George Mihai Nodiți, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
+    keywords: "Dr. George Mihai Nodiți, chirurgie generală, Vessa Hospital",
+    servicesWithDetails: [],
+    slug: "dr-noditi-george-mihai_chirurgie-generala",
+    schedule: [
+      /*
+    {
+      "day": "Luni",
+      "hours": "08:00-12:00"
+    },
+    {
+      "day": "Vineri",
+      "hours": "10:00-14:00"
+    }
+    */
+    ],
+  },
+  {
+    name: "Dr. Călin Ștefan",
+    specialization: "Fiziokinetoterapie",
+    imageUrl: "/images/calin-stefan.png",
+    about:
+      "Dr. Călin Ștefan este un specialist în fiziokinetoterapie cu o vastă experiență și expertiză în domeniu, activând în cadrul Vessa Hospital din Timișoara. Având o pregătire solidă și un parcurs profesional remarcabil, Dr. Ștefan este dedicat recuperării și îmbunătățirii mobilității pacienților, ajutându-i să depășească diverse afecțiuni musculo-scheletale și neurologice printr-o abordare integrată a fizioterapiei și kinetoterapiei. Printr-o combinație de exerciții terapeutice, masaj, electroterapie, termoterapie și alte metode inovative, Dr. Ștefan ajută pacienții să își recâștige mobilitatea și să își reducă durerile cauzate de afecțiuni cronice sau leziuni recente.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. Călin Ștefan - Specialist Fiziokinetoterapie | Vessa Hospital Timișoara",
+    metaDescription:
+      "Dr. Călin Ștefan este specialist în fiziokinetoterapie la Vessa Hospital Timișoara. Oferă tratamente personalizate pentru afecțiuni musculo-scheletale și neurologice, ajutând pacienții să își recâștige mobilitatea.",
+    keywords:
+      "Dr. Călin Ștefan, fiziokinetoterapie, Vessa Hospital, recuperare mobilitate, fizioterapie Timișoara, terapie musculo-scheletală, kinetoterapie Timișoara, electroterapie, masaj terapeutic, recuperare afecțiuni neurologice",
+    servicesWithDetails: [
+      {
+        title: "Recuperare postoperatorie",
+        servicesText:
+          "Serviciul de Recuperare Postoperatorie oferit de Vessa Hospital Timișoara este o etapă esențială în procesul de recuperare a pacienților care au suferit intervenții chirurgicale, având ca scop principal restabilirea funcționalității și a mobilității pacienților într-un interval cât mai scurt, cu minimizarea riscurilor de complicații și cu o calitate îmbunătățită a vieții. Recuperarea postoperatorie nu se limitează doar la vindecarea fizică, ci se concentrează pe un proces integrat ce include atât aspectele fizioterapeutice, cât și pe cele emoționale și psihologice ale pacientului, asigurând astfel o recuperare completă. În cadrul Vessa Hospital, procesul de recuperare este personalizat, adaptat tipului de intervenție chirurgicală efectuată și stării generale a pacientului. Echipa de specialiști în fiziokinetoterapie și recuperare postoperatorie colaborează îndeaproape cu medicii chirurgi, astfel încât să se poată realiza un plan de tratament optim pentru fiecare pacient în parte. În general, programul de recuperare postoperatorie include o combinație de tehnici de fizioterapie, exerciții de mobilizare pasivă și activă, terapie manuală, electroterapie, masaj terapeutic și alte metode inovative care ajută la reducerea durerii și inflamației, stimularea circulației sanguine și îmbunătățirea flexibilității și forței musculare.",
+        slug: "recuperare-postoperatorie",
+        metaTitle:
+          "Recuperare Postoperatorie Personalizată: Tratament Fizioterapeutic și Suport | vessahospital.ro",
+        metaDescription:
+          "Recuperare postoperatorie completă la Vessa Hospital: tratamente fizioterapeutice, exerciții de mobilizare și masaj terapeutic pentru o recuperare rapidă și eficientă.",
+        keywords:
+          "recuperare postoperatorie, tratament postchirurgical, fizioterapie, masaj terapeutic, Vessa Hospital, recuperare postoperatorie personalizată",
+      },
+    ],
+    slug: "dr-calin-stefan_fiziokinetoterapie",
+    schedule: [
+      /*
+    {
+      "day": "Luni",
+      "hours": "08:00-12:00"
+    },
+    {
+      "day": "Vineri",
+      "hours": "10:00-14:00"
+    }
+    */
+    ],
+  },
+
+  {
+    name: "Dr. Andreea Albotă",
+    specialization: "Neurochirurgie",
+    imageUrl: "/images/Andreea-Albota.png",
+    about:
+      " Specialist în Neurochirurgie, Dr. Andreea Albotă abordează cu dedicare și profesionalism cazurile complexe din acest domeniu. Cu o combinație de expertiză tehnică și empatie, oferă soluții moderne și eficiente pentru afecțiuni ale sistemului nervos. Prin precizia și angajamentul său față de pacienți, Dr. Albota contribuie la îmbunătățirea calității vieții acestora, fiind un membru valoros al echipei Vessa Hospital.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. Andreea Albota - Specialist Neurochirurgie | vessahospital.ro ",
+    metaDescription:
+      "Dr. Andreea Albota, specialist în Neurochirurgie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni ale sistemului nervos, având o abordare personalizată și empatică.",
+    keyworChi:
+      "Dr. Andreea Albota, neurochirurgie, afecțiuni sistem nervos, Vessa Hospital, tratamente neurochirurgicale",
+    servicesWithDetails: [
+      {
+        title: "Consult Neurochirurgie",
+        servicesText:
+          "Consultul neurochirurgical reprezintă evaluarea specializată a pacientului cu afecțiuni neurologice care necesită intervenție chirurgicală. Acesta se bazează pe o evaluare amănunțită a simptomelor și istoricului medical al pacientului, urmărind semnele unei posibile afecțiuni neurologice. Neurochirurgia se ocupă cu diagnosticarea și tratarea afecțiunilor creierului, măduvei spinării și nervilor periferici, cum ar fi tumori cerebrale, malformații vasculare, hernii de disc, leziuni ale măduvei spinării și alte tulburări neurologice. Medicul neurochirurg va discuta simptomele pacientului, care pot include dureri de cap persistente, amețeli, parestezii, dificultăți de coordonare, tulburări de mers sau de vedere, iar pe baza acestora va decide dacă sunt necesare investigații suplimentare, precum tomografie computerizată (CT) sau imagistică prin rezonanță magnetică (RMN).",
+        titleA: "Opțiuni de Tratament la Vessa Hospital",
+        title1: "Când Este Necesară o Consultație la Neurochirurg?",
+        title2: "Cum Să Te Pregătești pentru Consult?",
+        title3: "Beneficiile Consultului Neurochirurgical la Vessa Hospital",
+        title4: "Ce Se Întâmplă în Timpul Consultației?",
+        title5: "Investigații Suplimentare",
+        title6: "Concluzie",
+        title7: "",
+        textA:
+          "În funcție de diagnostic, tratamentul poate include:<br/><br/><ul class='list-disc ml-8'><li><strong>Medicație personalizată</strong></li><li><strong>Kinetoterapie și fizioterapie</strong></li><li><strong>Infiltrații pentru reducerea inflamației</strong></li><li><strong>Intervenții chirurgicale minim invazive</strong></li></ul>",
+        text1: "Programează-te la Vessa Hospital dacă te confrunți cu:",
+        text2:
+          "Pentru un consult eficient la Vessa Hospital, este recomandat să:<br/><br/><ul class='list-disc ml-8'><li>Pregătești un istoric medical detaliat</li><li>Notezi simptomele resimțite, durata și intensitatea lor</li><li>Aduni documentele medicale anterioare (RMN, CT, analize)</li><li>Pregătești o listă cu întrebări pentru medic</li></ul>",
+        text3:
+          "Consultul neurochirurgical include mai multe etape:<br/><br/><ul class='list-decimal ml-8'><li><strong>Discuția inițială</strong> – Medicul îți va pune întrebări despre simptome, istoricul medical și stilul de viață</li><li><strong>Examinarea neurologică</strong> – Se verifică reflexele, forța musculară, echilibrul, coordonarea și sensibilitatea</li><li><strong>Interpretarea investigațiilor </strong> – Dacă ai efectuat imagistică (RMN, CT), medicul le va analiza pentru a identifica eventualele probleme</li><li><strong>Recomandări și plan de tratament</strong> – Neurochirurgul va propune un plan de tratament, care poate include medicație, kinetoterapie sau intervenție chirurgicală, în funcție de severitatea afecțiunii</li></ul>",
+        text4:
+          "Dacă neurochirurgul consideră necesar, îți poate recomanda investigații suplimentare, precum:<br/><br/><ul class='list-decimal ml-8'><li><strong>RMN (Rezonanță Magnetică Nucleară)</strong> – Oferă imagini detaliate ale creierului și coloanei vertebrale</li><li><strong>CT (Tomografie Computerizată)</strong> – Evidențiază leziunile, fracturile sau hemoragiile</li><li><strong>Electromiografie (EMG)</strong> – Evaluează activitatea musculară și funcția nervilor periferici</li><li><strong>Analize de sânge</strong> – Pot detecta inflamații, infecții sau alte probleme care afectează sistemul nervos</li></ul>",
+        text5:
+          "Consultul neurochirurgical la Vessa Hospital Timișoara oferă diagnostic precis, tratament modern și îngrijire personalizată. Dacă te confrunți cu simptome neurologice, programează-te pentru un consult și beneficiază de cele mai bune servicii medicale pentru sănătatea ta!",
+        list1: [
+          "Dureri de cap frecvente și severe",
+          "Amețeli, pierderi de echilibru sau probleme de coordonare",
+          "Dureri intense de spate sau gât care radiază în brațe sau picioare",
+          "Amorțeli, furnicături sau slăbiciune musculară inexplicabilă",
+          "Pierderi de conștiență sau episoade convulsive",
+          "Traumatisme craniene sau ale coloanei vertebrale",
+          "Diagnostic de tumoră cerebrală sau spinală",
+        ],
+        list2: [
+          "<strong>Diagnostic Rapid și Corect:</strong>Unul dintre cele mai mari beneficii ale consultului neurochirurgical este identificarea precisă a afecțiunii. Prin examinare detaliată și interpretarea investigațiilor imagistice avansate (RMN, CT), neurochirurgii de la Vessa Hospital pot stabili un diagnostic rapid și corect.",
+          "<strong>Prevenirea Complicațiilor:</strong>Consultul timpuriu poate preveni agravarea simptomelor și complicațiile severe. Afecțiunile neurologice netratate pot duce la pierderea mobilității, dureri cronice sau chiar invaliditate, motiv pentru care este esențială evaluarea de către un specialist.",
+          "<strong>Plan de Tratament Personalizat:</strong>Fiecare pacient primește un plan de tratament adaptat nevoilor sale, care poate include medicație pentru controlul durerii și inflamației, kinetoterapie și fizioterapie pentru recuperare, recomandări pentru stilul de viață și prevenirea recidivelor și intervenții chirurgicale minim invazive, dacă sunt necesare",
+          "<strong>Posibilitatea unei A Doua Opinii Medicale:</strong>Pentru pacienții cu diagnostice complexe, consultul neurochirurgical oferă oportunitatea de a solicita o a doua opinie medicală, asigurând astfel cel mai bun plan de tratament",
+        ],
+        list3: [],
+        list4: [],
+
+        slug: "consult-neurochirurgie",
+        metaTitle:
+          "Consult Neurochirurgie | Evaluare și Tratament Afecțiuni Neurologice | vessahospital.ro",
+        metaDescription:
+          "Consultul neurochirurgical oferă evaluare specializată pentru afecțiuni ale creierului, măduvei spinării și nervilor periferici, incluzând opțiuni de tratament conservator sau chirurgical.",
+        keywords:
+          "consult neurochirurgie, afecțiuni neurologice, tumori cerebrale, accidente vasculare cerebrale, hernie de disc, tratament neurochirurgical, RMN, CT",
+      },
+      {
+        title: "Interpretare Imagistică",
+        servicesText:
+          "Interpretarea imagistică reprezintă un serviciu esențial în diagnosticarea afecțiunilor neurologice și musculoscheletale, având un rol fundamental în planificarea tratamentului. Acest serviciu presupune analiza și interpretarea imaginilor obținute prin diverse tehnici de imagistică, precum tomografia computerizată (CT), rezonanța magnetică nucleară (RMN), radiografii sau angiografie, pentru a vizualiza structurile interne ale corpului, cum ar fi creierul, măduva spinării și coloana vertebrală.\n\nSpecialiștii în imagistică, cum ar fi radiologii și neurochirurgii, sunt responsabili de examinarea și interpretarea acestor imagini pentru a identifica eventualele anomalii, cum ar fi tumori, leziuni traumatice, hernii de disc, stenoze ale canalului spinal sau alte patologii care pot afecta funcționarea normală a sistemului nervos. De exemplu, un RMN al creierului poate ajuta la identificarea tumorilor cerebrale sau a semnelor unui accident vascular cerebral, în timp ce un CT al coloanei vertebrale poate dezvălui fracturi vertebrale sau compresiuni ale nervilor.\n\nInterpretarea corectă a imaginilor este esențială pentru formularea unui diagnostic precis, iar radiologii sau neurochirurgii care se ocupă de acest proces trebuie să fie extrem de atenți la detalii și să aibă experiență în analiza acestora, deoarece un diagnostic incorect poate duce la tratamente inadecvate sau întârzieri în tratament. De asemenea, interpretarea imagistică permite monitorizarea progresului tratamentului și evaluarea eficienței intervențiilor terapeutice, cum ar fi intervențiile chirurgicale sau terapiile medicamentoase.\n\nImaginile obținute prin tehnicile imagistice ajută la vizualizarea structurii interne a corpului uman, iar interpretarea acestora poate contribui semnificativ la stabilirea unui plan de tratament personalizat, eficient și sigur, pentru diverse afecțiuni neurologice și ortopedice. Astfel, acest serviciu este un pas fundamental în diagnosticarea și tratamentul multor afecțiuni grave.",
+        slug: "interpretare-imagistica",
+        metaTitle:
+          "Interpretare Imagistică | Diagnosticare Afecțiuni Neurologice și Musculoscheletale | vessahospital.ro",
+        metaDescription:
+          "Serviciul de interpretare imagistică analizează imagini obținute prin CT, RMN, radiografii și angiografie, pentru a diagnostica afecțiuni neurologice și musculoscheletale.",
+        keywords:
+          "interpretare imagistică, diagnostic imagistic, CT, RMN, radiografii, angiografie, diagnostic afecțiuni neurologice, hernie de disc, tumori cerebrale",
+      },
+      {
+        title: "Terapia Durerii",
+        servicesText:
+          "Terapia durerii reprezintă o ramură a medicinii care se concentrează pe diagnosticarea și tratamentul durerii cronice sau acute, care afectează pacientul din diverse cauze, inclusiv afecțiuni neurologice, ortopedice, oncologice sau musculare. Scopul principal al terapiei durerii este de a ameliora simptomele și de a îmbunătăți funcționarea zilnică a pacientului. Tratamentul poate include administrarea de medicamente analgezice și antiinflamatorii, dar și proceduri invazive precum injecțiile de corticoizi sau blocajele nervoase. Terapia durerii poate include și terapii complementare, cum ar fi fizioterapia, terapia prin masaj și psihoterapia, pentru a ajuta pacientul să gestioneze durerea pe termen lung. Printre tehnicile avansate de terapie a durerii se numără neurostimularea electrică a nervilor și neurostimularea medulară, care implică implantarea unui dispozitiv care furnizează impulsuri electrice pentru a reduce durerea cronică severă.",
+        slug: "terapia-durerii",
+        metaTitle: "Terapia Durerii | vessahospital.ro",
+        metaDescription:
+          "Terapia durerii la Vessa Hospital oferă soluții personalizate pentru ameliorarea durerii cronice și acute. Utilizăm tehnici avansate, inclusiv neurostimulare și terapii complementare pentru a îmbunătăți calitatea vieții pacienților.",
+        keywords:
+          "terapia durerii, durere cronica, tratamente durere, neurostimulare, blocaje nervoase, fizioterapie, masaj terapeutic, neurostimulator",
+      },
+      {
+        title: "Neurostimulare Medulară",
+        servicesText:
+          "Neurostimularea medulară este o tehnică inovatoare utilizată în tratamentul durerii cronice, în special a celor care suferă de dureri lombare severe sau dureri la nivelul extremităților. Această metodă implică implantarea unui dispozitiv mic, cunoscut sub denumirea de stimulator spinal, care furnizează impulsuri electrice la nivelul măduvei spinării, având scopul de a modula semnalele de durere transmise către creier. Procesul începe cu evaluarea pacientului, în cadrul unui consult medical detaliat, în care se discută istoricul durerii și opțiunile de tratament disponibile. Dacă pacientul este considerat un candidat potrivit, se efectuează o fază de testare, în care un dispozitiv temporar este implantat pentru a evalua răspunsul la stimulare. Dacă testul este eficient, se trece la implantarea unui dispozitiv permanent care va elibera impulsuri electrice controlate. Neurostimularea medulară este eficientă pentru pacienții care nu au răspuns la tratamentele conservatoare sau care nu sunt candidați pentru intervenții chirurgicale. Beneficiile acestei tehnici includ reducerea consumului de medicamente analgezice, îmbunătățirea mobilității și a calității vieții, precum și o recuperare rapidă și un risc minim de complicații.",
+        slug: "neurostimulare-medulara",
+        metaTitle: "Neurostimulare Medulară | vessahospital.ro",
+        metaDescription:
+          "Neurostimularea medulară la Vessa Hospital este o tehnică avansată pentru tratamentul durerii cronice lombare sau a durerilor extremităților, care ajută la reducerea semnificativă a durerii și îmbunătățirea mobilității.",
+        keywords:
+          "neurostimulare medulară, durere lombară, stimulator spinal, durere cronică, tratamente durere, implant stimulator spinal",
+      },
+      {
+        title: "Tratament Hernie de Disc Cervical",
+        servicesText:
+          "Tratamentul herniei de disc cervicală se adresează pacienților care suferă de o afecțiune a coloanei vertebrale cervicale, în care unul sau mai multe dintre discurile intervertebrale se deplasează sau se rup, comprimând nervii sau măduva spinării. Această afecțiune poate cauza dureri severe la nivelul gâtului, brațelor sau spatelui superior, precum și amorțeală sau slăbiciune musculară. Tratamentul herniei de disc cervicală poate include atât măsuri conservatoare, cât și intervenții chirurgicale, în funcție de severitatea simptomelor și de răspunsul la tratamentele inițiale. În stadiile incipiente ale afecțiunii, tratamentele non-chirurgicale pot include fizioterapie, medicamente antiinflamatoare și analgezice pentru a reduce durerea și inflamația, iar injecțiile de corticosteroizi pot fi recomandate pentru a calma inflamația nervilor afectați. În cazul în care tratamentele conservatoare nu sunt eficiente, se poate recomanda intervenția chirurgicală, cum ar fi discectomia sau fuzionarea vertebrelor. Recuperarea post-operatorie implică, de obicei, un regim de fizioterapie și recomandări pentru un stil de viață sănătos pentru a preveni recidivele.",
+        slug: "tratament-hernie-disc-cervical",
+        metaTitle: "Tratament Hernie de Disc Cervical | vessahospital.ro",
+        metaDescription:
+          "Tratamentul herniei de disc cervicală la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale, pentru a reduce durerea și a restabili funcția normală a coloanei vertebrale cervicale.",
+        keywords:
+          "tratament hernie disc cervical, durere gât, disc herniat, discectomie cervicală, fuzionare vertebrală, fizioterapie hernie disc",
+      },
+      {
+        title: "Tratament Hernie de Disc Cervical – 2 Niveluri",
+        servicesText:
+          "Tratamentul herniei de disc cervicală la două niveluri implică abordarea unei afecțiuni mai complexe, în care două discuri intervertebrale cervicale sunt afectate simultan. Această situație poate provoca dureri severe și limitări ale mobilității, deoarece presiunea asupra nervilor sau măduvei spinării crește semnificativ. Tratamentul conservator pentru hernia de disc cervicală la două niveluri poate include fizioterapie, medicație pentru durere și injectarea de steroizi pentru a reduce inflamația. Cu toate acestea, dacă aceste metode nu sunt eficiente sau dacă pacientul experimentează pierderi de funcție ale membrelor superioare sau dureri intense, intervenția chirurgicală devine adesea necesară. Intervenția chirurgicală poate include discectomia și fuzionarea vertebrelor, îndepărtarea discurilor herniate și stabilirea unei fuziuni între vertebrele adiacente. În cazuri specifice, se poate folosi un grefon osos sau un dispozitiv artificial pentru a menține stabilitatea coloanei vertebrale. De asemenea, se pot utiliza proceduri minim invazive, cum ar fi discectomia endoscopică sau abordarea cu laser. După intervenție, pacientul va urma un program de fizioterapie și reabilitare pentru a restabili mișcarea și a preveni rigiditatea gâtului. Recuperarea completă poate dura între câteva luni și un an, în funcție de complexitatea intervenției.",
+        slug: "tratament-hernie-disc-cervical-2-niveluri",
+        metaTitle:
+          "Tratament Hernie de Disc Cervical – 2 Niveluri | vessahospital.ro",
+        metaDescription:
+          "Tratamentul herniei de disc cervicală la două niveluri la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru a ameliora durerea și a restabili mobilitatea coloanei vertebrale cervicale.",
+        keywords:
+          "tratament hernie disc cervical 2 niveluri, durere gât, discectomie cervicală, fuzionare vertebrală, fizioterapie hernie disc, intervenție chirurgicală hernie disc",
+      },
+      {
+        title: "Tratament Hernie de Disc Toracal",
+        servicesText:
+          "Hernia de disc toracal reprezintă o afecțiune rară, dar gravă, care afectează coloana vertebrală toracală (zona superioară a coloanei între gât și zona lombară). Discurile intervertebrale din această regiune pot hernia, provocând dureri severe și simptome neurologice. Cauzele comune ale herniilor de disc toracal includ traume, îmbătrânire sau degenerare a discurilor. Simptomele includ dureri în zona toracală, iradierea durerii către piept sau abdomen și, în cazuri severe, pierderea sensibilității sau slăbiciune în membrele inferioare. Tratamentul poate începe cu măsuri conservatoare, precum medicație antiinflamatorie și analgezică, fizioterapie pentru întărirea musculaturii spatelui și îmbunătățirea posturii, și injecții de corticosteroizi pentru a reduce inflamația. În cazurile severe sau persistente, se poate apela la tratamente chirurgicale, inclusiv discectomie sau fuzionare vertebrală, pentru a elibera presiunea asupra nervilor și a stabiliza coloana. Intervențiile minim invazive, cum ar fi cele endoscopice sau cu laser, oferă o recuperare mai rapidă și incizii mai mici. După tratament, pacienții trebuie să urmeze un regim de reabilitare, care include fizioterapie și exerciții pentru a îmbunătăți flexibilitatea și forța musculaturii spinale.",
+        slug: "tratament-hernie-disc-toracal",
+        metaTitle: "Tratament Hernie de Disc Toracal | vessahospital.ro",
+        metaDescription:
+          "Tratamentul herniei de disc toracal la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru ameliorarea durerii și stabilizarea coloanei vertebrale toracale.",
+        keywords:
+          "tratament hernie disc toracal, durere toracală, discectomie toracală, fuzionare vertebrală toracală, fizioterapie hernie disc, intervenție chirurgicală hernie disc toracal",
+      },
+      {
+        title: "Tratament Hernie de Disc Lombar – 2 Niveluri",
+        servicesText:
+          "Tratamentul herniei de disc lombare la două niveluri se referă la o afecțiune complexă în care două dintre discurile intervertebrale de la nivelul coloanei lombare sunt afectate simultan. Această afecțiune poate cauza dureri severe în partea inferioară a spatelui și poate iradia către membrele inferioare, provocând amorțeală, slăbiciune sau dificultăți de mers. Tratamentul conservator poate include fizioterapie, medicație pentru durere, utilizarea de brate de susținere și injectarea de corticosteroizi pentru a reduce inflamația în zona afectată. Dacă tratamentele conservatoare nu oferă un răspuns satisfăcător și durerea persistă, intervenția chirurgicală devine necesară, procedurile cele mai frecvent utilizate fiind discectomia și fuzionarea vertebrelor, pentru a asigura stabilitatea coloanei lombare. În unele cazuri, se poate utiliza un grefon osos sau un dispozitiv protetic pentru a menține stabilitatea coloanei. Există, de asemenea, opțiuni minim invazive, precum discectomia endoscopică sau intervențiile cu laser, care permit o recuperare mai rapidă și reduc riscurile intervențiilor tradiționale. După tratamentul chirurgical, pacientul va urma un plan de fizioterapie pentru a restabili mobilitatea și pentru a întări musculatura lombară, prevenind recidivele și îmbunătățind calitatea vieții.",
+        slug: "tratament-hernie-disc-lombar-2-niveluri",
+        metaTitle:
+          "Tratament Hernie de Disc Lombar – 2 Niveluri | vessahospital.ro",
+        metaDescription:
+          "Tratamentul herniei de disc lombare la două niveluri la Vessa Hospital include opțiuni conservatoare și intervenții chirurgicale pentru ameliorarea durerii și stabilizarea coloanei lombare.",
+        keywords:
+          "tratament hernie disc lombar 2 niveluri, discectomie lombară, fuzionare vertebrală lombară, intervenție chirurgicală hernie disc lombar, fizioterapie hernie disc lombar, discectomie endoscopică, tratament minim invaziv hernie lombară",
+      },
+      {
+        title: "Vertebroplastie",
+        servicesText:
+          "Vertebroplastie este o procedură minim invazivă destinată tratării fracturilor vertebrale cauzate de osteoporoză, tumori sau alte afecțiuni care duc la slăbirea structurii vertebrale. Fracturile vertebrale pot provoca dureri severe și pot afecta mobilitatea pacientului, iar vertebroplastie oferă o soluție eficientă pentru ameliorarea durerii și stabilizarea vertebrelor afectate. Procedura presupune injectarea unui material special, numit ciment osteosintezic, în vertebra fracturată, pentru a întări și stabiliza acea zonă a coloanei vertebrale. Intervenția se efectuează sub anestezie locală, cu ghidaj imagistic, de obicei prin radiografie sau tomografie computerizată (CT), pentru a asigura poziționarea corectă a acului și a cimentului. După injectarea cimentului, vertebra devine stabilă, iar durerile semnificative sunt adesea ameliorate aproape imediat, iar recuperarea pacientului este rapidă. Vertebroplastie este recomandată pacienților care suferă de dureri intense din cauza fracturilor vertebrale și care nu au răspuns la tratamentele conservatoare, cum ar fi analgezicele sau fizioterapia. De asemenea, procedura poate fi utilizată și în cazul pacienților cu tumori vertebrale, pentru a reduce durerea și pentru a stabiliza coloana vertebrală. Avantajele vertebroplastiei includ un timp de recuperare scurt, riscuri minime de complicații și eficiență ridicată în reducerea durerii. După intervenție, pacienții pot începe rapid programul de reabilitare pentru a întări musculatura spatelui și pentru a preveni complicațiile ulterioare. Deși vertebroplastie este o procedură eficientă, ea nu tratează cauza principală a fracturii, iar pacienții trebuie să urmeze recomandările medicului pentru a preveni recidivele și pentru a îmbunătăți starea generală a sănătății coloanei vertebrale.",
+        slug: "vertebroplastie",
+        metaTitle: "Vertebroplastie | vessahospital.ro",
+        metaDescription:
+          "Vertebroplastie este o procedură minim invazivă pentru tratamentul fracturilor vertebrale cauzate de osteoporoză sau tumori, oferind ameliorarea durerii și stabilizarea coloanei vertebrale.",
+        keywords:
+          "vertebroplastie, fracturi vertebrale, osteoporoză, tumori vertebrale, tratament minim invaziv fracturi vertebrale, ciment osteosintezic, reabilitare spinală",
+      },
+      {
+        title: "Tratament Kifoplastie Vertebrală",
+        servicesText:
+          "Kifoplastia vertebrală este o procedură similară vertebroplastiei, dar cu un scop mai specific: corectarea deformărilor vertebrale cauzate de fracturi, în special în cazurile de fracturi vertebrale compressive, adesea provocate de osteoporoză. În timp ce vertebroplastie se concentrează pe stabilizarea vertebrei fracturate, kifoplastia presupune și restabilirea formei normale a vertebrei prin crearea unui spațiu în interiorul acesteia. Aceasta implică injectarea unui ciment special, dar înainte de injectare, medicul efectuează o procedură de „balonizare”, adică insuflă aer într-o cavitate creată în vertebra afectată pentru a o restabili la dimensiunile inițiale, reducând astfel deformarea acesteia. Kifoplastia este recomandată pacienților cu fracturi vertebrale care au suferit o comprimare semnificativă a vertebrei, iar această procedură ajută la restabilirea înălțimii vertebrale și la reducerea durii, iar stabilizarea structurii vertebrale contribuie la prevenirea unor fracturi ulterioare. Procedura este efectuată sub anestezie locală și ghidaj imagistic, iar pacientul poate experimenta o reducere semnificativă a durerii aproape imediat după procedură. Recuperearea este rapidă, iar majoritatea pacienților pot relua activitățile zilnice în câteva zile. Kifoplastia este o opțiune eficientă pentru pacienții cu fracturi vertebrale care nu pot fi tratate prin metode conservatoare și care suferă de dureri intense sau invalidante. Deși procedura este foarte eficientă în reducerea durerii și restabilirea formei vertebrale, este esențial ca pacienții să urmeze recomandările pentru prevenirea osteoporozei și pentru menținerea sănătății coloanei vertebrale pe termen lung.",
+        slug: "kifoplastie-vertebrala",
+        metaTitle: "Tratament Kifoplastie Vertebrală | vessahospital.ro",
+        metaDescription:
+          "Kifoplastia vertebrală este o procedură minim invazivă eficientă pentru corectarea deformărilor vertebrale cauzate de fracturi și osteoporoză, oferind reducerea durerii și restabilirea formei vertebrale.",
+        keywords:
+          "kifoplastie vertebrală, fracturi vertebrale compressive, osteoporoză, procedură minim invazivă, restabilirea vertebrelor, durere vertebrală, balonizare vertebrală",
+      },
+      {
+        title: "Tratament Metastaze Cerebrale",
+        servicesText:
+          "Metastazele cerebrale sunt tumori care au apărut în alte părți ale corpului și care s-au răspândit la nivelul creierului. Tratamentul metastazelor cerebrale este complex și depinde de mai mulți factori, inclusiv tipul și stadiul cancerului primar, numărul și locația metastazelor și starea generală a pacientului. Opțiunile de tratament includ intervenții chirurgicale, radioterapie, chimioterapie și terapii țintite. În unele cazuri, se poate opta pentru o combinație a acestor metode pentru a maximiza eficiența tratamentului și a îmbunătăți prognosticul pacientului. Intervențiile chirurgicale pot fi utilizate pentru îndepărtarea metastazelor cerebrale, în special atunci când acestea sunt localizate într-o zonă accesibilă și nu sunt multiple. Această opțiune este adesea combinată cu radioterapie adjuvantă pentru a distruge orice celule tumorale reziduale. Radioterapia este o metodă eficientă de a reduce dimensiunea tumorilor și de a ameliora simptomele asociate, precum durerile de cap, pierderea de coordonare și deficitul neurologic. De asemenea, tratamentele farmacologice, inclusiv chimioterapia și terapiile țintite, pot fi utilizate pentru a combate cancerul primar și pentru a împiedica extinderea metastazelor. Tratamentul metastazelor cerebrale trebuie să fie individualizat în funcție de fiecare caz, iar medicii se concentrează pe reducerea simptomelor și pe îmbunătățirea calității vieții pacientului. De asemenea, este important ca pacientul să beneficieze de sprijin psihologic și de tratamente care să ajute la gestionarea efectelor secundare ale terapiei, cum ar fi oboseala, greața și pierderea poftei de mâncare.",
+        slug: "tratament-metastaze-cerebrale",
+        metaTitle: "Tratament Metastaze Cerebrale | vessahospital.ro",
+        metaDescription:
+          "Tratamentul metastazelor cerebrale include opțiuni precum intervenții chirurgicale, radioterapie, chimioterapie și terapii țintite, personalizate pentru fiecare pacient pentru a îmbunătăți calitatea vieții.",
+        keywords:
+          "tratament metastaze cerebrale, metastaze cerebrale, radioterapie metastaze, chimioterapie metastaze cerebrale, terapii țintite, intervenție chirurgicală metastaze cerebrale",
+      },
+      {
+        title:
+          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză",
+        servicesText:
+          "Stenoza de canal cervical reprezintă o îngustare a canalului spinal la nivelul gâtului, care poate cauza compresia măduvei spinării sau a rădăcinilor nervoase. Această afecțiune poate duce la dureri de gât, amorțeală, slăbiciune musculară și, în cazuri severe, pierderea funcției motorii sau senzoriale. Tratamentul pentru stenoza de canal cervical poate include intervenții chirurgicale, cum ar fi recalibrarea canalului spinal sub microscop și osteosinteza. Recalibrarea sub microscop presupune utilizarea unui microscop chirurgical pentru a permite chirurgului să vizualizeze detaliile fine ale canalului spinal și să elimine țesuturile sau oasele care comprimă măduva spinării sau nervii. Osteosinteza se referă la utilizarea de dispozitive de fixare, precum plăci și șuruburi, pentru a stabiliza vertebrele și a preveni mișcările care ar putea duce la recidivele stenozei. Această intervenție chirurgicală poate adresa atât cauza principală a stenozei, cât și simptomele asociate, restabilind funcția normală a coloanei cervicale. După intervenție, pacienții vor urma un program de reabilitare pentru a îmbunătăți mobilitatea gâtului și a reduce riscurile de recidivă.",
+        slug: "stenoza-canal-cervical-recalibrare-sub-microscop-si-osteosinteza",
+        metaTitle:
+          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză | vessahospital.ro",
+        metaDescription:
+          "Tratamentul stenozei de canal cervical include recalibrarea sub microscop și osteosinteza pentru a îmbunătăți mobilitatea și a preveni recidivele, restaurând funcția coloanei cervicale.",
+        keywords:
+          "stenoza canal cervical, recalibrare canal cervical, osteosinteza cervicală, intervenție chirurgicală canal cervical, microscop chirurgical, tratament stenoza cervicală",
+      },
+      {
+        title:
+          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză",
+        servicesText:
+          "Stenoza de canal cervical reprezintă o îngustare a canalului spinal la nivelul gâtului, care poate cauza compresia măduvei spinării sau a rădăcinilor nervoase. Această afecțiune poate duce la dureri de gât, amorțeală, slăbiciune musculară și, în cazuri severe, pierderea funcției motorii sau senzoriale. Tratamentul pentru stenoza de canal cervical poate include intervenții chirurgicale, cum ar fi recalibrarea canalului spinal sub microscop și osteosinteza. Recalibrarea sub microscop presupune utilizarea unui microscop chirurgical pentru a permite chirurgului să vizualizeze detaliile fine ale canalului spinal și să elimine țesuturile sau oasele care comprimă măduva spinării sau nervii. Osteosinteza se referă la utilizarea de dispozitive de fixare, precum plăci și șuruburi, pentru a stabiliza vertebrele și a preveni mișcările care ar putea duce la recidivele stenozei. Această intervenție chirurgicală poate adresa atât cauza principală a stenozei, cât și simptomele asociate, restabilind funcția normală a coloanei cervicale. După intervenție, pacienții vor urma un program de reabilitare pentru a îmbunătăți mobilitatea gâtului și a reduce riscurile de recidivă.",
+        slug: "stenoza-canal-cervical-recalibrare-sub-microscop-si-osteosinteza",
+        metaTitle:
+          "Stenoza de Canal Cervical, Recalibrare Sub Microscop și Osteosinteză | vessahospital.ro",
+        metaDescription:
+          "Tratamentul stenozei de canal cervical include recalibrarea sub microscop și osteosinteza pentru a îmbunătăți mobilitatea și a preveni recidivele, restaurând funcția coloanei cervicale.",
+        keywords:
+          "stenoza canal cervical, recalibrare canal cervical, osteosinteza cervicală, intervenție chirurgicală canal cervical, microscop chirurgical, tratament stenoza cervicală",
+      },
+      {
+        title: "Tratament Sindrom de Tunel Carpian",
+        servicesText:
+          'Sindromul de tunel carpian este o afecțiune frecventă cauzată de presiunea exercitată asupra nervului median, care trece prin tunelul carpian la nivelul încheieturii mâinii. Această presiune poate duce la simptome precum amorțeală, furnicături și durere în mâini și degete, și poate afecta grav funcționalitatea mâinii. Sindromul de tunel carpian este adesea asociat cu mișcările repetate ale mâinii sau cu condiții precum artrita, diabetul sau sarcina. Tratamentul pentru sindromul de tunel carpian poate include măsuri conservatoare, cum ar fi imobilizarea încheieturii cu ajutorul unei atelle, pentru a reduce mișcările care agravează simptomele. De asemenea, medicamentele antiinflamatoare și fizioterapia pot ajuta la reducerea inflamației și la îmbunătățirea mobilității. Dacă aceste măsuri nu sunt eficiente și simptomele continuă să persiste, se poate recomanda intervenția chirurgicală. Intervenția chirurgicală pentru sindromul de tunel carpian presupune de obicei o procedură numită "decompresia nervului median", care presupune tăierea ligamentului care presează nervul median, lărgind astfel tunelul carpian și reducând presiunea asupra nervului. Această procedură poate fi efectuată atât printr-o incizie deschisă, cât și prin tehnici minim invazive. Majoritatea pacienților care suferă de sindromul de tunel carpian au o recuperare rapidă după tratament, iar simptomele sunt adesea ameliorate imediat după intervenție.',
+        slug: "tratament-sindrom-tunel-carpian",
+        metaTitle: "Tratament Sindrom de Tunel Carpian | vessahospital.ro",
+        metaDescription:
+          "Sindromul de tunel carpian poate fi tratat prin măsuri conservatoare sau intervenții chirurgicale, în funcție de severitatea simptomelor, pentru a reduce durerea și a îmbunătăți funcționalitatea mâinii.",
+        keywords:
+          "sindrom tunel carpian, tratament sindrom tunel carpian, decompresie nerv median, tratament chirurgical tunel carpian, fizioterapie sindrom tunel carpian, artrită tunel carpian",
+      },
+      {
+        title: "Tratament Sindrom de Tunel Ulnar",
+        servicesText:
+          "Sindromul de tunel ulnar este o afecțiune similară sindromului de tunel carpian, dar afectează nervul ulnar, care trece printr-un canal la nivelul cotului, cunoscut sub numele de tunelul ulnar. Acest sindrom poate provoca dureri, amorțeală și slăbiciune în degetele al cincilea și al patrulea (degetul mic și inelar), precum și în zona cotului. Sindromul de tunel ulnar poate apărea din cauza pozițiilor incorecte ale brațului sau din cauza presiunii exercitate asupra nervului, cum ar fi atunci când se susține greutate pe cot pe perioade lungi de timp. Tratamentul pentru sindromul de tunel ulnar poate începe cu măsuri conservatoare, cum ar fi evitarea activităților care agravează simptomele, imobilizarea cotului cu ajutorul unei orteze și utilizarea de medicamente antiinflamatoare pentru a reduce durerea și inflamația. În unele cazuri, fizioterapia poate ajuta la întărirea mușchilor și la îmbunătățirea mobilității articulației cotului. Dacă simptomele nu se ameliorează prin tratamente conservatoare și există riscul de deteriorare nervoasă permanentă, se poate recomanda intervenția chirurgicală. Chirurgia pentru sindromul de tunel ulnar implică, de obicei, eliberarea nervului ulnar prin tăierea ligamentului care apasă pe nerv. În funcție de severitatea afecțiunii, această procedură poate fi realizată prin tehnici deschise sau minim invazive.",
+        slug: "tratament-sindrom-tunel-ulnar",
+        metaTitle: "Tratament Sindrom de Tunel Ulnar | vessahospital.ro",
+        metaDescription:
+          "Sindromul de tunel ulnar poate fi tratat prin măsuri conservatoare sau intervenții chirurgicale, în funcție de severitatea simptomelor, pentru a reduce durerea și a îmbunătăți funcționalitatea brațului.",
+        keywords:
+          "sindrom tunel ulnar, tratament sindrom tunel ulnar, eliberare nerv ulnar, chirurgie sindrom tunel ulnar, fizioterapie sindrom tunel ulnar",
+      },
+      {
+        title: "Tratament Kifoplastie Lombară",
+        servicesText:
+          "Kifoplastia lombară este o procedură chirurgicală destinată tratării fracturilor vertebrale lombare, de obicei cauzate de osteoporoză sau traumatisme. Aceasta presupune restabilirea înălțimii vertebrale prin utilizarea unui balon pentru a dilata vertebra fracturată, urmată de injectarea unui ciment special pentru a întări vertebra și a preveni deformările suplimentare. Kifoplastia lombară ajută la reducerea durerii, îmbunătățirea stabilității vertebrale și la prevenirea complicațiilor care ar putea apărea din cauza fracturilor vertebrale. Procedura se efectuează sub anestezie locală sau sedare și este ghidată de imagistică (fluoroscopie). După tratament, pacienții pot observa o reducere semnificativă a durerii și îmbunătățirea mobilității coloanei vertebrale, iar recuperarea este, de obicei, rapidă. Kifoplastia lombară este o opțiune eficientă pentru pacienții care au suferit fracturi vertebrale care nu răspund la tratamentele conservatoare. Recuperarea completă depinde de severitatea fracturii și de răspunsul pacientului la tratament.",
+        slug: "tratament-kifoplastie-lombara",
+        metaTitle: "Tratament Kifoplastie Lombară | vessahospital.ro",
+        metaDescription:
+          "Kifoplastia lombară este o procedură chirurgicală destinată tratării fracturilor vertebrale lombare prin utilizarea unui balon și ciment special pentru a reduce durerea și a restabili stabilitatea vertebrală.",
+        keywords:
+          "kifoplastie lombară, tratament fracturi vertebrale lombare, tratament osteoporoză, chirurgie lombară, reducerea durerii vertebrale, stabilitate vertebrală",
+      },
+      {
+        title: "Tratament Kifoplastie Cervicală",
+        servicesText:
+          "Kifoplastia cervicală este similară cu kifoplastia lombară, dar se adresează fracturilor vertebrale cervicale. Procedura implică insuflarea unui balon în vertebra fracturată pentru a restabili înălțimea acesteia, urmată de injectarea unui ciment osteosintezic pentru a stabiliza vertebra și a reduce durerea. Acest tratament este util în cazul pacienților care au fracturi ale coloanei cervicale și care nu pot beneficia de alte tratamente mai conservatoare. Procedura este minim invazivă și, de obicei, pacienții pot observa o ameliorare semnificativă a simptomelor imediat după intervenție. După tratament, recuperarea este rapidă, iar majoritatea pacienților își pot relua activitățile normale într-un interval scurt de timp.",
+        slug: "tratament-kifoplastie-cervicala",
+        metaTitle: "Tratament Kifoplastie Cervicală | vessahospital.ro",
+        metaDescription:
+          "Kifoplastia cervicală tratează fracturile vertebrale cervicale prin insuflarea unui balon și injectarea de ciment osteosintezic pentru a stabiliza vertebra și a reduce durerea.",
+        keywords:
+          "kifoplastie cervicală, tratament fracturi vertebrale cervicale, fracturi cervicale, chirurgie cervicală, tratament minim invaziv, reducerea durerii cervicale",
+      },
+      {
+        title: "Tratament Hidrocefalie (Drenaj Ventriculo-Peritoneal)",
+        servicesText:
+          "Hidrocefalia este o afecțiune caracterizată prin acumularea excesivă de lichid cefalorahidian (LCR) în ventriculele creierului, ceea ce poate duce la mărirea acestora și la presiune asupra structurilor cerebrale. Aceasta poate fi cauzată de diverse condiții, inclusiv malformații congenitale, leziuni cerebrale, infecții sau hemoragii. Simptomele hidrocefaliei includ dureri de cap, greață, tulburări de echilibru, și în cazuri severe, afectarea funcției cognitive sau motorii. Tratamentul principal pentru hidrocefalie constă în drenajul excesului de lichid cefalorahidian pentru a preveni deteriorarea creierului. Una dintre cele mai utilizate metode de tratament este instalarea unui sistem de drenaj ventriculo-peritoneal (VP). Aceasta presupune plasarea unui cateter care drenează lichidul din ventriculele cerebrale într-o zonă a corpului (de obicei peritoneul), unde lichidul este absorbit în mod natural. Procedura se efectuează printr-o intervenție chirurgicală minim invazivă, sub anestezie generală, și presupune monitorizarea atentă a pacienților pe parcursul tratamentului. După intervenție, majoritatea pacienților observă o îmbunătățire semnificativă a simptomelor, iar riscurile de complicații sunt reduse, în ciuda faptului că drenajul poate necesita ajustări periodice, în funcție de creșterea sau scăderea presiunii intracraniene. Tratamentul prin drenaj ventriculo-peritoneal poate fi pe termen lung și necesită o monitorizare regulată pentru a preveni eventualele infecții sau obstrucții ale cateterului.",
+        slug: "tratament-hidrocefalie-drenaj-ventriculo-peritoneal",
+        metaTitle:
+          "Tratament Hidrocefalie (Drenaj Ventriculo-Peritoneal) | vessahospital.ro",
+        metaDescription:
+          "Hidrocefalie tratată prin drenaj ventriculo-peritoneal. Reducerea presiunii intracraniene prin cateterizare minim invazivă pentru ameliorarea simptomelor și prevenirea deteriorării cerebrale.",
+        keywords:
+          "hidrocefalie, drenaj ventriculo-peritoneal, tratament hidrocefalie, lichid cefalorahidian, presiune intracraniană, chirurgie hidrocefalie",
+      },
+      {
+        title: "Tratament Rezecție Tumorală de Maximă Complexitate",
+        servicesText:
+          "Rezectia tumorală de maximă complexitate reprezintă o intervenție chirurgicală destinată îndepărtării tumorilor cerebrale de dimensiuni mari sau localizate în zone dificile ale creierului. Aceste tumori pot include gliome, meningiome sau metastaze cerebrale și, în multe cazuri, sunt localizate în zone care sunt esențiale pentru funcționarea normală a creierului. Procedura presupune o abordare chirurgicală foarte delicată, realizată cu ajutorul tehnologiilor moderne, cum ar fi imagistica intraoperatorie, microscopul chirurgical sau neurostimularea pentru a identifica și proteja zonele funcționale ale creierului. De obicei, rezectia tumorală de maximă complexitate este realizată sub anestezie generală și presupune o echipă multidisciplinară formată din neurochirurgi, anesteziști și alți specialiști pentru a asigura succesul procedurii. În funcție de localizarea și tipul tumorii, chirurgul va decide dacă este posibilă îndepărtarea completă a tumorii sau dacă se va opta pentru o rezecție parțială pentru a reduce riscurile de afectare a funcțiilor cerebrale esențiale. După intervenție, pacientul va necesita o perioadă de recuperare, care poate include monitorizarea intensivă și reabilitare neurologică. Prognosticul depinde de tipul și stadiul tumorii, precum și de starea generală a pacientului. Intervențiile de acest tip sunt esențiale pentru creșterea speranței de viață și îmbunătățirea calității vieții pacientului, iar succesul acestora depinde de diagnosticarea precoce și de expertiza echipei medicale.",
+        slug: "rezectie-tumorala-de-maxima-complexitate",
+        metaTitle:
+          "Tratament Rezecție Tumorală de Maximă Complexitate | vessahospital.ro",
+        metaDescription:
+          "Rezectia tumorală de maximă complexitate pentru tumori cerebrale mari sau localizate în zone dificile. Intervenție chirurgicală avansată pentru creșterea speranței de viață.",
+        keywords:
+          "rezecție tumorală, tumori cerebrale, gliome, meningiome, metastaze cerebrale, neurochirurgie, intervenție chirurgicală complexă",
+      },
+      {
+        title: "Tratament Tumora Craniană, Cura Chirurgicală",
+        servicesText:
+          "Tumorile craniene sunt mase anormale de țesut care se dezvoltă în interiorul craniului și pot include tumori cerebrale primare, metastaze cerebrale sau leziuni benigne. Tratamentul chirurgical al tumorilor craniene reprezintă abordarea de bază în multe cazuri, mai ales atunci când tumora este localizată într-o zonă accesibilă și nu poate fi tratată eficient prin alte metode, cum ar fi radioterapia sau chimioterapia. Intervenția chirurgicală poate avea scopul de a elimina complet tumora, de a reduce presiunea intracraniană sau de a obține biopsii pentru diagnostic. Procedura chirurgicală pentru tumora craniană variază în funcție de dimensiunea, tipul și localizarea tumorii. Unele tumori pot fi îndepărtate printr-o intervenție chirurgicală standard, în timp ce altele, mai complexe, pot necesita tehnici mai avansate, cum ar fi utilizarea unui microscop chirurgical, neurostimulare sau imagistică intraoperatorie pentru a identifica și a păstra țesutul cerebral sănătos. De obicei, pacientul va fi supus unei anestezii generale, iar intervenția se va desfășura sub monitorizare atentă. După operație, pacientul va necesita o perioadă de recuperare postoperatorie, care poate include monitorizarea în unități de terapie intensivă și intervenții de reabilitare neurologică. Riscurile de complicații includ infecții, hemoragii și afectări neurologice temporare sau permanente, iar succesul tratamentului depinde de faptul dacă tumora a fost complet îndepărtată și de stadiul în care a fost diagnosticată. În cazul tumorilor maligne sau metastatice, chirurgia este adesea combinată cu alte tratamente, precum radioterapia sau chimioterapia, pentru a maximiza șansele de succes și a preveni recidivele.",
+        slug: "tumora-craniana-cura-chirurgicala",
+        metaTitle:
+          "Tratament Tumora Craniană, Cura Chirurgicală | vessahospital.ro",
+        metaDescription:
+          "Tratamentul chirurgical al tumorilor craniene pentru îndepărtarea completă a tumorii sau reducerea presiunii intracraniene. Intervenții precise cu tehnici avansate pentru succesul tratamentului.",
+        keywords:
+          "tumora craniană, tratament chirurgical, tumori cerebrale, metastaze cerebrale, îndepărtare tumoare craniană, chirurgie cerebrală, intervenție neurochirurgicală",
+      },
+    ],
+    slug: "dr-andreea-albota_neurochirurgie",
+    schedule: [
+      {
+        day: "Marti",
+        hours: "13:00-16:00",
+        interval: "30 min/pacient",
+      },
+    ],
+  },
+  {
+    name: "Dr. Daniel Costea",
+    specialization: "Neurochirurgie",
+    imageUrl: "/images/Daniel-Costea.png",
+    about:
+      " Specialist în Neurochirurgie, Dr. Daniel Costea este recunoscut pentru abordarea sa inovatoare și precisă în tratarea afecțiunilor sistemului nervos. Cu o pregătire temeinică și o pasiune pentru excelență, oferă soluții personalizate pentru pacienți, punând accent pe recuperare și calitatea vieții. Prin profesionalismul său și dedicarea față de fiecare caz, Dr. Costea este un element esențial al echipei medicale de la Vessa Hospital.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. Daniel Costea - Specialist Neurochirurgie | vessahospital.ro ",
+    metaDescription:
+      "Dr. Daniel Costea, specialist în Neurochirurgie la Vessa Hospital, folosește o abordare inovatoare și precisă pentru tratamente neurochirurgicale eficiente și personalizate.",
+    keywords:
+      "Dr. Daniel Costea, neurochirurgie, afecțiuni sistem nervos, tratamente personalizate, Vessa Hospital",
+    slug: "dr-daniel-costea_neurochirurgie",
+    schedule: [
+      {
+        day: "Vineri",
+        hours: "13:00-16:00",
+        interval: "30 min/pacient",
+      },
+    ],
+  },
+  {
+    name: "Dr. Dragan Maximov",
+    specialization: "Chirurgie Generala",
+    imageUrl: "/images/icon-medic.png",
+    about:
+      "Specialist în Chirurgie Generală, Dr. Dragan Maximov oferă îngrijire medicală cuprinzătoare, abordând atât cazuri chirurgicale, cât și afecțiuni endocrine complexe. Cu o combinație de expertiză multidisciplinară și o abordare empatică, se concentrează pe oferirea de soluții eficiente și sigure, adaptate nevoilor fiecărui pacient. Profesionalismul și dedicarea sa contribuie la excelența echipei Vessa Hospital, asigurând o îngrijire de încredere pentru toți pacienții.",
+    contact: "+40 744 833 815",
+    metaTitle:
+      "Dr. Dragan Maximov - Specialist Chirurgie Generală și Endocrinologie | vessahospital.ro ",
+    metaDescription:
+      "Dr. Dragan Maximov, specialist în Chirurgie Generală și Endocrinologie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni endocrine și intervenții chirurgicale complexe.",
+    keywords: "Dr. Dragan Maximov, chirurgie generală, Vessa Hospital",
+    servicesWithDetails: [],
     slug: "dr-dragan-maximox_chirurgie-generala",
   },
 

@@ -133,7 +133,6 @@ const ServiciuMedical = async ({
     );
   }
   const serviciuDetails = serviciiMedicale.find((serv) => serv.slug === slug);
-
   return (
     <div>
       <Header />
