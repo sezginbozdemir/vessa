@@ -1,9 +1,9 @@
 # Ignore node_modules in both frontend and backend
 node_modules/
-.tar.gz
+*.tar.gz
 # Ignore environment variables files
 .env
-.DS_Store
+*.DS_Store
 
 # Ignore build output (for frontend)
 .next/
