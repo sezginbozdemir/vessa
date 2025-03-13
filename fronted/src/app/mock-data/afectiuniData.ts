@@ -2437,7 +2437,7 @@ export const afectiuniData = [
       "Află despre bronșiolită: cauze, simptome și metode de tratament pentru gestionarea acestei infecții respiratorii la copii.",
     keywordsMeta:
       "bronșiolită, cauze bronșiolită, simptome bronșiolită, tratament bronșiolită",
-    slug: "bronșiolită",
+    slug: "bronsiolita",
   },
   {
     name: "Conjunctivită alergică",
@@ -2910,7 +2910,7 @@ export const afectiuniData = [
       "Află despre bronșita cronică: cauze, simptome și metode de tratament pentru gestionarea acestei afecțiuni pulmonare grave.",
     keywordsMeta:
       "bronșită cronică, cauze bronșită cronică, simptome bronșită cronică, tratament bronșită cronică",
-    slug: "bronșită-cronică",
+    slug: "bronsita-cronica",
   },
   {
     name: "Hiperglicemie",
@@ -7723,7 +7723,7 @@ export const afectiuniData = [
       "Informații despre bronșiectazie: cauze, simptome și tratamente pentru această afecțiune cronică ce afectează bronhiile.",
     keywordsMeta:
       "bronșiectazie, cauze bronșiectazie, simptome bronșiectazie, tratament bronșiectazie",
-    slug: "bronșiectazie",
+    slug: "bronsiectazie",
   },
   {
     name: "Carcinom pulmonar",

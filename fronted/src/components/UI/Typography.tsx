@@ -19,12 +19,14 @@ const Typography = ({
   className,
   onClick,
 }: TypographyProps) => {
+  const Tag = variant === "h1" ? "h1" : variant === "h2" ? "h3" : "div";
+
   const variants = {
-    h1: "text-h1 md:text-[40px] sm:text-[32px] font-montserrat ",
+    h1: "text-h1 md:text-[40px] sm:text-[32px] font-montserrat",
     h2: "text-h2 md:text-[35px] sm:text-[28px] font-montserrat",
     h3: "text-h3 md:text-[18px] sm:text-[15px] font-montserrat",
     paragraph:
-      "text-paragraph md:text-[15px] sm:text-[15px] xs:text-[13px]  font-openSans",
+      "text-paragraph md:text-[15px] sm:text-[15px] xs:text-[13px] font-openSans",
     menu: "text-menu md:text-[16px] sm:text-[16px] xs:text-[13px] font-montserrat",
     details:
       "text-details md:text-[12px] sm:text-[12px] xs:text-[12px] font-openSans",
@@ -34,9 +36,9 @@ const Typography = ({
   };
 
   return (
-    <div onClick={onClick} className={`${variants[variant]} ${className}`}>
+    <Tag onClick={onClick} className={`${variants[variant]} ${className}`}>
       {children}
-    </div>
+    </Tag>
   );
 };
 

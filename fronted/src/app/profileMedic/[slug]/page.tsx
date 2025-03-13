@@ -8,6 +8,7 @@ import ArticleSection from "@/components/ArticleSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import GoogleMaps from "@/components/UI/GoogleMaps";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return doctorsData.map((doctor) => ({
@@ -19,7 +20,7 @@ const ProfileMedic = ({ params }: { params: { slug: string } }) => {
   const doctor = doctorsData.find((doc) => doc.slug === params.slug);
 
   if (!doctor) {
-    return <p>Medicul nu a fost găsit.</p>;
+    notFound();
   }
 
   return (

@@ -7,6 +7,10 @@ declare global {
       eventName: string,
       parameters?: object
     ) => void;
+    dataLayer: Array<{
+      event: string;
+      [key: string]: string | number | boolean | object;
+    }>;
   }
 }
 
@@ -14,6 +18,7 @@ import Script from "next/script";
 import Image from "next/image";
 import "./globals.css";
 import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
+import { useEffect } from "react";
 
 const WhatsAppIcon = () => {
   return (
@@ -38,6 +43,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    console.log("Initial dataLayer:", window.dataLayer);
+  }, []);
   return (
     <html lang="ro">
       <head>

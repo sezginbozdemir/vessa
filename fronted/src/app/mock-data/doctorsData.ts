@@ -143,10 +143,10 @@ export const doctorsData = [
           "tratament chist pilonidal, drenaj chist pilonidal, excizie chist pilonidal, chirurgie pilonidală, abces pilonidal, recuperare rapidă",
       },
       {
-        title: "Tratament Fisura Anala",
+        title: "Tratament Fisura Anală",
         servicesText:
           "Fisura anală este o leziune mică sau o ruptură la nivelul mucoasei anale, care poate cauza durere și disconfort în timpul sau după defecație. Aceasta poate apărea ca urmare a constipației severe, a unui traumatism local sau a unor infecții. Tratamentul inițial al fisurii anale constă, de obicei, în măsuri conservatoare, cum ar fi creșterea consumului de lichide, modificarea dietei pentru a include alimente bogate în fibre și utilizarea de unguente topice pentru a calma durerea și a reduce inflamația. În cazurile în care tratamentele conservatoare nu sunt eficiente, se poate recomanda o intervenție chirurgicală, cum ar fi injectarea de toxină botulinică pentru a relaxa mușchii sfincterului anal și a favoriza vindecarea fisurii. Dacă fisura persista sau se recidivează, poate fi necesară o procedură mai complexă, cum ar fi analfistulotomia sau excizia chirurgicală a fisurii. Intervențiile chirurgicale pentru fisura anală sunt de obicei minore, iar recuperarea este rapidă, de obicei într-o perioadă de câteva zile, în funcție de tipul de tratament aplicat. Urmarea unei igiene riguroase și utilizarea medicamentelor prescrise sunt esențiale pentru prevenirea recidivelor.",
-        slug: "tratament-fisura-anală",
+        slug: "tratament-fisura-anala",
         metaTitle:
           "Tratament Chirurgical Fisura Anala - Soluții pentru Durere și Vindecare Rapidă a Fisurii Anale",
         metaDescription:
@@ -415,7 +415,7 @@ export const doctorsData = [
           "Masectomie Radicală cu Evidare Ganglionară - Tratament Chirurgical pentru Cancerul de Sân Avansat",
         servicesText:
           "Masectomia radicală cu evidare ganglionară este o intervenție chirurgicală majoră folosită în tratamentul cancerului de sân avansat. Aceasta presupune îndepărtarea completă a sânului afectat, inclusiv țesuturile din jur și ganglionii limfatici axilari. Este recomandată în cazurile de cancer de sân avansat, când tumora este mare sau s-a răspândit la ganglionii limfatici. Procedura se efectuează prin abord chirurgical deschis și implică o perioadă de recuperare mai lungă, ce poate varia între câteva săptămâni și câteva luni, în funcție de starea pacientului și necesitatea unor tratamente suplimentare. După intervenție, pacientul poate urma terapii suplimentare, cum ar fi chimioterapia sau radioterapia, pentru a preveni recidiva bolii.",
-        slug: "masectomie-radicala-cu-evidare-ganglionară",
+        slug: "masectomie-radicala-cu-evidare-ganglionara",
         metaTitle:
           "Masectomie Radicală cu Evidare Ganglionară - Tratament Chirurgical Cancer Sân | vessahospital.ro",
         metaDescription:
@@ -1247,7 +1247,7 @@ export const doctorsData = [
         title: "Puncție Genunchi cu Evacuare Lichid",
         servicesText:
           "Puncția genunchiului este o procedură minim invazivă utilizată pentru a evacua excesul de lichid acumulat în articulație, cunoscut sub numele de efuziune articulară. Aceasta poate fi cauzată de diverse afecțiuni, inclusiv artrită, traumatisme, infecții sau boli inflamatorii. Procedura implică introducerea unui ac steril în spațiul articular, sub anestezie locală, pentru a extrage lichidul acumulat. În unele cazuri, lichidul poate fi trimis la laborator pentru analize suplimentare, în vederea identificării cauzei. Puncția are multiple beneficii: reducerea presiunii și a durerii, îmbunătățirea mobilității și prevenirea deteriorării suplimentare a articulației. Este o procedură sigură, efectuată în condiții sterile, iar pacientul resimte un confort imediat după finalizare. În funcție de diagnosticul ulterior, medicul poate recomanda tratamente adjuvante, precum medicația antiinflamatoare sau fizioterapia, pentru a preveni reapariția efuziunii.",
-        slug: "puncție-genunchi-cu-evacuare-lichid",
+        slug: "punctie-genunchi-cu-evacuare-lichid",
         metaTitle: "Puncție Genunchi cu Evacuare Lichid | vessahospital.ro",
         metaDescription:
           "Puncția genunchiului pentru evacuarea lichidului acumulat, reducerea presiunii și durerii. Procedură minim invazivă, eficientă în tratamentele de efuziune articulară.",
@@ -1258,7 +1258,7 @@ export const doctorsData = [
         title: "Sutură Plagă Post Traumatică",
         servicesText:
           "Suturarea unei plăgi post-traumatice este o procedură esențială pentru închiderea rapidă și eficientă a unei răni, reducând riscul de infecție și promovând vindecarea corectă. Medicul examinează rana pentru a evalua gravitatea acesteia, curățând zona cu soluții antiseptice pentru a îndepărta murdăria sau alte contaminări. În funcție de dimensiunea și localizarea plăgii, se utilizează fire de sutură absorbabile sau neabsorbabile, care sunt aplicate cu precizie pentru a minimiza cicatricile. Anestezia locală este folosită pentru a reduce disconfortul pe durata procedurii. După suturare, rana este acoperită cu un pansament steril, iar pacientul primește indicații privind schimbarea acestuia și semnele care ar putea indica o infecție. În cazul firelor neabsorbabile, pacientul trebuie să revină la medic pentru extragerea acestora după vindecare. Procedura asigură o recuperare rapidă și o cicatrice estetică, protejând totodată zona afectată de complicații.",
-        slug: "sutură-plagă-post-traumatică",
+        slug: "sutura-plaga-post-traumatica",
         metaTitle: "Sutură Plagă Post Traumatică | vessahospital.ro",
         metaDescription:
           "Suturarea unei plăgi post-traumatice pentru o vindecare rapidă, reducerea riscului de infecție și minimizarea cicatricilor. Procedură eficientă și sigură.",
