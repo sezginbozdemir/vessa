@@ -1,5 +1,4 @@
 "use client";
-
 declare global {
   interface Window {
     fbq: (
@@ -18,6 +17,7 @@ import Script from "next/script";
 import Image from "next/image";
 import "./globals.css";
 import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
+import { useEffect, useState } from "react";
 
 const WhatsAppIcon = () => {
   return (
@@ -42,9 +42,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [pageTitle, setPageTitle] = useState("");
+  useEffect(() => {
+    setPageTitle(document.title || "Vessa Hospital");
+  }, []);
   return (
     <html lang="ro">
       <head>
+        {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -55,6 +60,7 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Facebook Pixel */}
         <Script
           id="fb-pixel"
           strategy="afterInteractive"
@@ -73,6 +79,7 @@ export default function RootLayout({
           }}
         />
 
+        {/* WhatsApp Click Tracking */}
         <Script
           id="whatsapp-tracking"
           strategy="afterInteractive"
@@ -90,7 +97,21 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`antialiased`}>
+        <h1
+          style={{
+            position: "absolute",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+            clip: "rect(0 0 0 0)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {pageTitle}
+        </h1>
+
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TG4SNGDH"
@@ -99,11 +120,11 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-
         <SpecialtyProvider>{children}</SpecialtyProvider>
 
         <WhatsAppIcon />
 
+        {/* Facebook Pixel */}
         <noscript>
           <Image
             height="1"
