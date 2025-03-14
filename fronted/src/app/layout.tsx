@@ -1,5 +1,4 @@
 "use client";
-
 declare global {
   interface Window {
     fbq: (
@@ -18,7 +17,7 @@ import Script from "next/script";
 import Image from "next/image";
 import "./globals.css";
 import { SpecialtyProvider } from "@/components/ProgramatorPageComponents/SpecialtyContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const WhatsAppIcon = () => {
   return (
@@ -43,8 +42,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [pageTitle, setPageTitle] = useState("");
   useEffect(() => {
-    console.log("Initial dataLayer:", window.dataLayer);
+    setPageTitle(document.title || "Vessa Hospital");
   }, []);
   return (
     <html lang="ro">
@@ -98,6 +98,19 @@ export default function RootLayout({
         />
       </head>
       <body className={`antialiased`}>
+        <h1
+          style={{
+            position: "absolute",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+            clip: "rect(0 0 0 0)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {pageTitle}
+        </h1>
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -107,8 +120,8 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-
         <SpecialtyProvider>{children}</SpecialtyProvider>
+
         <WhatsAppIcon />
 
         {/* Facebook Pixel */}

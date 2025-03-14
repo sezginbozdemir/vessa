@@ -19,8 +19,6 @@ const Typography = ({
   className,
   onClick,
 }: TypographyProps) => {
-  const Tag = variant === "h1" ? "h1" : variant === "h2" ? "h3" : "div";
-
   const variants = {
     h1: "text-h1 md:text-[40px] sm:text-[32px] font-montserrat",
     h2: "text-h2 md:text-[35px] sm:text-[28px] font-montserrat",
@@ -36,9 +34,9 @@ const Typography = ({
   };
 
   return (
-    <Tag onClick={onClick} className={`${variants[variant]} ${className}`}>
+    <div onClick={onClick} className={`${variants[variant]} ${className}`}>
       {children}
-    </Tag>
+    </div>
   );
 };
 
