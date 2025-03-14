@@ -7,10 +7,10 @@ export const doctorsData = [
       "Dr. Alexandru Isaic este medic primar în chirurgie generală și asistent universitar la UMFT. Cu o vastă experiență în tehnici chirurgicale moderne, precum chirurgia laparoscopică și minim invazivă, Dr. Isaic își desfășoară activitatea în cadrul spitalului privat Vessa Hospital din Timișoara.Aderarea sa la echipa Vessa Hospital aduce multiple beneficii instituției. Expertiza sa în proceduri chirurgicale avansate permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte. Prin dedicarea și profesionalismul său, Dr. Alexandru Isaic consolidează reputația Vessa Hospital ca un centru de excelență în domeniul chirurgiei generale, asigurând pacienților servicii medicale de înaltă calitate și acces la cele mai recente inovații în practica chirurgicală.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Isaic Alexandru - Specialist Chirurgie Generală | Vessa Hospital Timișoara",
+      "Dr. Isaic Alexandru - Specialist Chirurgie Generală | vessahospital.ro",
     metaDescription:
       "Dr. Isaic Alexandru, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
-    keywords: "Dr. Isaic Alexandru, chirurgie generală, Vessa Hospital, Timișoara, vessahospital.ro",
+    keywords: "Dr. Isaic Alexandru, chirurgie generală, Vessa Hospital",
     servicesWithDetails: [
       {
         title: "Abdominoplastie",
@@ -550,10 +550,10 @@ export const doctorsData = [
       "Dr. George Mihai Nodiți este un medic specialist în chirurgie generală, cu o vastă experiență în chirurgia laparoscopică și minim invazivă. În calitate de asistent universitar la UMFT, Dr. Nodiți a contribuit semnificativ la formarea noilor generații de medici, împărtășindu-le cunoștințele și expertiza sa în domeniul chirurgical. Aderarea sa la echipa Vessa Hospital din Timișoara aduce multiple beneficii instituției. Expertiza sa în tehnici chirurgicale avansate, precum chirurgia laparoscopică, permite spitalului să ofere pacienților opțiuni de tratament moderne, caracterizate prin incizii mai mici, dureri postoperatorii reduse și perioade de recuperare mai scurte.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | Vessa Hospital Timișoara",
+      "Dr. George Mihai Nodiți - Specialist Chirurgie Generală | vessahospital.ro",
     metaDescription:
       "Dr. George Mihai Nodiți, specialist în Chirurgie Generală la Vessa Hospital, oferă intervenții chirurgicale complexe.",
-    keywords: "Dr. George Mihai Nodiți, chirurgie generală, Vessa Hospital, Timișoara, vessahospital.ro",
+    keywords: "Dr. George Mihai Nodiți, chirurgie generală, Vessa Hospital",
     servicesWithDetails: [],
     slug: "dr-noditi-george-mihai_chirurgie-generala",
     schedule: [
@@ -578,11 +578,11 @@ export const doctorsData = [
       " Specialist în Neurochirurgie, Dr. Andreea Albotă abordează cu dedicare și profesionalism cazurile complexe din acest domeniu. Cu o combinație de expertiză tehnică și empatie, oferă soluții moderne și eficiente pentru afecțiuni ale sistemului nervos. Prin precizia și angajamentul său față de pacienți, Dr. Albota contribuie la îmbunătățirea calității vieții acestora, fiind un membru valoros al echipei Vessa Hospital.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Andreea Albota - Specialist Neurochirurgie | Vessa Hospital Timișoara",
+      "Dr. Andreea Albota - Specialist Neurochirurgie | vessahospital.ro ",
     metaDescription:
       "Dr. Andreea Albota, specialist în Neurochirurgie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni ale sistemului nervos, având o abordare personalizată și empatică.",
     keyworChi:
-      "Dr. Andreea Albota, neurochirurgie, afecțiuni sistem nervos, Vessa Hospital, Timișoara, vessahospital.ro, tratamente neurochirurgicale",
+      "Dr. Andreea Albota, neurochirurgie, afecțiuni sistem nervos, Vessa Hospital, tratamente neurochirurgicale",
     servicesWithDetails: [
       {
         title: "Consult Neurochirurgie",
@@ -870,11 +870,11 @@ export const doctorsData = [
       " Specialist în Neurochirurgie, Dr. Daniel Costea este recunoscut pentru abordarea sa inovatoare și precisă în tratarea afecțiunilor sistemului nervos. Cu o pregătire temeinică și o pasiune pentru excelență, oferă soluții personalizate pentru pacienți, punând accent pe recuperare și calitatea vieții. Prin profesionalismul său și dedicarea față de fiecare caz, Dr. Costea este un element esențial al echipei medicale de la Vessa Hospital.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Daniel Costea - Specialist Neurochirurgie | Vessa Hospital Timișoara",
+      "Dr. Daniel Costea - Specialist Neurochirurgie | vessahospital.ro ",
     metaDescription:
       "Dr. Daniel Costea, specialist în Neurochirurgie la Vessa Hospital, folosește o abordare inovatoare și precisă pentru tratamente neurochirurgicale eficiente și personalizate.",
     keywords:
-      "Dr. Daniel Costea, neurochirurgie, afecțiuni sistem nervos, tratamente personalizate, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Daniel Costea, neurochirurgie, afecțiuni sistem nervos, tratamente personalizate, Vessa Hospital",
     slug: "dr-daniel-costea_neurochirurgie",
     schedule: [
       {
@@ -892,10 +892,10 @@ export const doctorsData = [
       "Specialist în Chirurgie Generală, Dr. Dragan Maximov oferă îngrijire medicală cuprinzătoare, abordând atât cazuri chirurgicale, cât și afecțiuni endocrine complexe. Cu o combinație de expertiză multidisciplinară și o abordare empatică, se concentrează pe oferirea de soluții eficiente și sigure, adaptate nevoilor fiecărui pacient. Profesionalismul și dedicarea sa contribuie la excelența echipei Vessa Hospital, asigurând o îngrijire de încredere pentru toți pacienții.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Dragan Maximov - Specialist Chirurgie Generală și Endocrinologie | Vessa Hospital Timișoara",
+      "Dr. Dragan Maximov - Specialist Chirurgie Generală și Endocrinologie | vessahospital.ro ",
     metaDescription:
       "Dr. Dragan Maximov, specialist în Chirurgie Generală și Endocrinologie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni endocrine și intervenții chirurgicale complexe.",
-    keywords: "Dr. Dragan Maximov, chirurgie generală, Vessa Hospital, Timișoara, vessahospital.ro",
+    keywords: "Dr. Dragan Maximov, chirurgie generală, Vessa Hospital",
     servicesWithDetails: [],
     slug: "dr-dragan-maximox_chirurgie-generala",
   },
@@ -908,11 +908,11 @@ export const doctorsData = [
       "Dr. Ana Silvia Coran este un specialist în endocrinologie cu o vastă experiență, activând în cadrul Vessa Hospital din Timișoara. Prin competențele sale profesionale, Dr. Coran oferă tratamente personalizate pentru o gamă largă de afecțiuni endocrine, cu o abordare centrată pe nevoile pacientului. În cadrul clinicii, sunt tratate condiții precum tulburările tiroidiene, disfuncțiile hormonale și problemele legate de metabolism, utilizând metode moderne și eficiente.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Ana Silvia Corlan - Specialist în Endocrinologie | Vessa Hospital Timișoara",
+      "Dr. Ana Silvia Corlan - Specialist în Endocrinologie | vessahospital.ro ",
     metaDescription:
       "Dr. Ana Silvia Corlan, specialist în Endocrinologie la Vessa Hospital, oferă tratamente eficiente pentru afecțiuni endocrine și intervenții chirurgicale complexe.",
     keywords:
-      "Dr. Ana Silvia Corlan, endocrinologie, afecțiuni endocrine, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Ana Silvia Corlan, endocrinologie, afecțiuni endocrine, Vessa Hospital",
     servicesWithDetails: [
       {
         title:
@@ -1110,11 +1110,11 @@ export const doctorsData = [
       " Dr. Dragoș Miroșu este medic primar în Ortopedie-Traumatologie, cu experiență în tratamentele pentru afecțiunile musculo-scheletale. Se axează pe utilizarea tehnicilor moderne pentru intervenții chirurgicale și tratamente de recuperare, ajutând pacienții să-și restabilească mobilitatea și calitatea vieții. Este cunoscut pentru abordările personalizate și soluțiile eficiente în tratamentul afecțiunilor ortopedice.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | Vessa Hospital Timișoara",
+      "Dr. Dragoș Mirosu - Specialist Ortopedie-Traumatologie | vessahospital.ro ",
     metaDescription:
       "Dr. Dragoș Mirosu, specialist în Ortopedie-Traumatologie la Vessa Hospital, utilizează tehnici moderne pentru tratamente chirurgicale și de recuperare, restabilind mobilitatea pacienților.",
     keywords:
-      "Dr. Dragoș Mirosu, ortopedie, traumatologie, tratamente ortopedice, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Dragoș Mirosu, ortopedie, traumatologie, tratamente ortopedice, Vessa Hospital",
     servicesWithDetails: [
       {
         title: "Consultație Ortopedie și Traumatologie",
@@ -1574,11 +1574,11 @@ export const doctorsData = [
       " Dr. Adrian Lupascu este medic primar ortopedie și traumatologie, cu o experiență vastă în tratamentele afecțiunilor musculoscheletale. La Vessa Hospital, oferă consultanță și soluții personalizate pentru diverse leziuni și afecțiuni ortopedice, concentrându-se pe tratamente moderne și eficiente. Dr. Lupascu este dedicat îmbunătățirii sănătății pacienților săi, utilizând tehnici inovative pentru recuperare și mobilitate.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Adrian Lupascu - Medic Primar Ortopedie | Vessa Hospital Timișoara",
+      "Dr. Adrian Lupascu - Medic Primar Ortopedie | vessahospital.ro ",
     metaDescription:
       "Dr. Adrian Lupascu, medic primar ortopedie și traumatologie, la Vessa Hospital, oferă tratamente personalizate pentru afecțiuni ortopedice folosind tehnici inovative pentru recuperare rapidă.",
     keywords:
-      "Dr. Adrian Lupascu, medic primar ortopedie, tratamente ortopedice, leziuni ortopedice, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Adrian Lupascu, medic primar ortopedie, tratamente ortopedice, leziuni ortopedice, Vessa Hospital",
     slug: "dr-adrian-lupascu_ortopedie",
     schedule: [
       {
@@ -1593,15 +1593,9 @@ export const doctorsData = [
     specialization: "Cardiologie",
     imageUrl: "/images/Liviu-Cirin.png",
     about:
-      " Specialist în Cardiologie, Dr. Liviu Cirin este dedicat diagnosticării și tratamentului afecțiunilor cardiace complexe, având o vastă experiență în ecocardiografie transtoracică și dispozitive cardiace implantabile. Cu o abordare bazată pe excelență și o profundă înțelegere a sistemului cardiovascular, oferă pacienților soluții medicale personalizate. Participarea sa activă la congrese naționale și internaționale, precum și implicarea în cercetare, reflectă angajamentul său față de inovație și dezvoltare continuă. Empatia și profesionalismul său contribuie la îmbunătățirea calității vieții pacienților, fiind un pilon de încredere în echipa Vessa Hospital.",
+      " Specialist în Cardiologie, Dr. Liviu Cirin este dedicat diagnosticării și tratamentului afecțiunilor cardiace complexe. Cu o abordare bazată pe excelență și o profundă înțelegere a sistemului cardiovascular, oferă pacienților soluții medicale personalizate. Empatia și profesionalismul său contribuie la îmbunătățirea calității vieții pacienților, fiind un pilon de încredere în echipa Vessa Hospital.",
     contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Liviu Cirin - Medic Cardiologie | Vessa Hospital Timișoara",
-    metaDescription:
-      "Dr. Liviu Cirin, medic specialist cardiologie la Vessa Hospital, oferă diagnostic și tratament avansat pentru afecțiuni cardiace, fiind specializat în ecocardiografie transtoracică și dispozitive cardiace implantabile.",
-    keywords:
-      "Dr. Liviu Cirin, medic specialist cardiologie, ecocardiografie transtoracică, dispozitive cardiace implantabile, tratamente cardiologice, Vessa Hospital, Timișoara, vessahospital.ro",
-      servicesWithDetails: [
+    servicesWithDetails: [
       {
         title: "Consult Cardiologic",
         servicesText:
@@ -1764,11 +1758,11 @@ export const doctorsData = [
       " Dr. Sorin Chiriac este medic specialist în Endocrinologie și Chirurgie Generală, cu o vastă experiență în tratamentele afecțiunilor glandelor endocrine, dar și în intervențiile chirurgicale pentru diverse afecțiuni abdominale și ale aparatului digestiv. La Vessa Hospital, Dr. Chiriac aplică metode moderne pentru diagnostic și tratament, având ca scop îmbunătățirea calității vieții pacienților prin intervenții chirurgicale precise și tratamente adaptate fiecărui caz în parte.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Sorin Chiriac - Specialist Endocrinologie și Chirurgie Generală | Vessa Hospital Timișoara",
+      "Dr. Sorin Chiriac - Specialist Endocrinologie și Chirurgie Generală | vessahospital.ro",
     metaDescription:
       "Dr. Sorin Chiriac, specialist în Endocrinologie și Chirurgie Generală la Vessa Hospital, oferă tratamente personalizate pentru afecțiuni endocrine și intervenții chirurgicale abdominale.",
     keywords:
-      "Dr. Sorin Chiriac, endocrinologie, chirurgie generală, afecțiuni endocrine, tratamente abdominale, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Sorin Chiriac, endocrinologie, chirurgie generală, afecțiuni endocrine, tratamente abdominale, Vessa Hospital",
     slug: "dr-sorin-chiriac_chirurgie-generala",
     schedule: [
       {
@@ -1791,11 +1785,11 @@ export const doctorsData = [
       " Dr. Cristian Banciu este specialist în Gastroenterologie și Medicină Internă, cu o abordare integrată în tratarea afecțiunilor digestive și ale sistemului intern. La Vessa Hospital, Dr. Banciu se concentrează pe diagnosticarea și tratamentul bolilor gastrointestinale, utilizând tehnici avansate și metode personalizate. Este dedicat îmbunătățirii stării de sănătate a pacienților săi prin soluții eficiente și intervenții precise.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Cristian Banciu - Specialist în Medicină Internă | Vessa Hospital Timișoara",
+      "Dr. Cristian Banciu - Specialist Gastroenterologie | vessahospital.ro ",
     metaDescription:
-      "Dr. Cristian Banciu, specialist în Medicină Internă și Gastroenterologie, oferă tratamente avansate pentru afecțiuni digestive, folosind soluții personalizate pentru pacienți.",
+      "Dr. Cristian Banciu, specialist în Gastroenterologie și Medicină Internă, oferă tratamente avansate pentru afecțiuni digestive, folosind soluții personalizate pentru pacienți.",
     keywords:
-      "Dr. Cristian Banciu, medicină internă, afecțiuni digestive, Vessa Hospital, Timișoara, vessahospital.ro",
+      "Dr. Cristian Banciu, gastroenterologie, medicină internă, afecțiuni digestive, Vessa Hospital",
     servicesWithDetails: [
       {
         title: "Consult de specialitate",
@@ -1867,12 +1861,6 @@ export const doctorsData = [
     about:
       " Dr. Cristian Banciu este specialist în Gastroenterologie și Medicină Internă, cu o abordare integrată în tratarea afecțiunilor digestive și ale sistemului intern. La Vessa Hospital, Dr. Banciu se concentrează pe diagnosticarea și tratamentul bolilor gastrointestinale, utilizând tehnici avansate și metode personalizate. Este dedicat îmbunătățirii stării de sănătate a pacienților săi prin soluții eficiente și intervenții precise.",
     contact: "+40 744 833 815",
-    metaTitle:
-      "Dr. Cristian Banciu - Specialist Gastroenterologie | Vessa Hospital Timișoara",
-    metaDescription:
-      "Dr. Cristian Banciu, specialist în Gastroenterologie și Medicină Internă, oferă tratamente avansate pentru afecțiuni digestive, folosind soluții personalizate pentru pacienți.",
-    keywords:
-      "Dr. Cristian Banciu, gastroenterologie, afecțiuni digestive, Vessa Hospital, Timișoara, vessahospital.ro",
     servicesWithDetails: [
       {
         title: "Consult de specialitate",
@@ -2031,10 +2019,10 @@ export const doctorsData = [
       "Dr. Eduard Szucsik este medic specialist în chirurgie generală, cu o carieră bine conturată și o expertiză vastă în diverse tipuri de intervenții chirurgicale. Este dedicat îngrijirii pacienților la Vessa Hospital din Timișoara, unde contribuie activ la dezvoltarea unui standard ridicat al serviciilor medicale. Printre ariile sale de expertiză se numără chirurgia endocrină, gestionarea afecțiunilor herniilor și alte proceduri chirurgicale complexe. Dr. Szucsik este apreciat pentru abilitățile sale tehnice, dar și pentru empatia și profesionalismul pe care le aduce în relația cu pacienții. El pune un accent deosebit pe comunicarea deschisă și explicarea detaliată a tratamentelor și procedurilor, asigurând confortul și încrederea pacienților săi.",
     contact: "+40 744 833 815",
     metaTitle:
-      "Dr. Eduard Szucsik - Specialist Chirurgie Generala | Vessa Hospital Timișoara",
+      "Dr. Eduard Szucsik - Specialist Chirurgie Generala | vessahospital.ro ",
     metaDescription:
       "Dr. Eduard Szucsik este medic specialist în chirurgie generală, cu o carieră bine conturată și o expertiză vastă în diverse tipuri de intervenții chirurgicale.",
-    keywords: "Dr. Eduard Szucsik, chirurgie generală, Vessa Hospital, Timișoara, vessahospital.ro",
+    keywords: "Dr. Eduard Szucsik, chirurgie generală, Vessa Hospital",
 
     servicesWithDetails: [],
 

@@ -57,7 +57,7 @@ const Home = () => {
     "@type": "Hospital",
     "name": "Vessa Hospital",
     "url": "https://www.vessahospital.ro",
-    "logo": "https://vessahospital.ro/images/logo.webp",
+    "logo": "https://vessahospital.ro/images/logo_square.webp",
     "image": [
       {
         "@type": "ImageObject",
